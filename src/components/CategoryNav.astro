@@ -1,0 +1,25 @@
+---
+import data from '../data/portfolio.json';
+const { lang, active = 'all' } = Astro.props;
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+---
+<nav class="pf-cats">
+  <a class={active === 'all' ? 'on' : ''} href={`/${lang}/portfolio`}>All</a>
+  {data.categories.map((c) => (
+    <a class={active === c ? 'on' : ''} href={`/${lang}/portfolio/${c}`}>{cap(c)}</a>
+  ))}
+</nav>
+<style>
+  .pf-cats {
+    display: flex; justify-content: center; gap: 26px;
+    padding: 8px 20px 10px; flex-wrap: wrap;
+  }
+  .pf-cats a {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--text3); text-decoration: none;
+    padding: 6px 0; border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .pf-cats a:hover { color: var(--text2); }
+  .pf-cats a.on { color: var(--text); border-bottom-color: var(--text); }
+</style>

@@ -1,0 +1,45 @@
+---
+interface Item { type: string; src: string; name: string; loc: string; category: string; location: string; colBreak?: boolean; }
+const { items } = Astro.props as { items: Item[] };
+---
+<div class="portfolio-grid">
+  {items.map((it) => (
+    <div
+      class={`pg-item${it.colBreak ? ' col-break' : ''}`}
+      data-src={it.src}
+      data-name={it.name}
+      data-loc={it.loc}
+      data-type={it.type}
+    >
+      {it.type === 'video' ? (
+        <video autoplay muted loop playsinline src={it.src}></video>
+      ) : (
+        <img loading="lazy" src={it.src} alt={it.name} />
+      )}
+      <div class="pg-hover">
+        <div class="pg-hover-cat">{it.loc}</div>
+        <div class="pg-hover-name">{it.name}</div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<noscript>
+  <style>.pg-item { opacity: 1 !important; transform: none !important; }</style>
+</noscript>
+
+<script is:inline>
+  (function () {
+    var items = document.querySelectorAll('.portfolio-grid .pg-item');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (i) { i.classList.add('in-view'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    items.forEach(function (i) { io.observe(i); });
+  })();
+</script>

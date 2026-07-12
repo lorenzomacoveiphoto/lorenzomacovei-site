@@ -1,0 +1,109 @@
+---
+import Base from '../../../layouts/Base.astro';
+import i18nData from '../../../data/i18n.json';
+import { articles, type Article } from '../../../data/journal';
+
+const i18n = i18nData as Record<string, Record<string, string>>;
+
+export function getStaticPaths() {
+  const langs = ['en', 'it', 'es'];
+  const paths = [];
+  for (const a of articles) {
+    if (a.type !== 'story') continue; // la guida W-Trek ha la sua pagina dedicata
+    for (const lang of langs) paths.push({ params: { lang, slug: a.slug }, props: { article: a } });
+  }
+  return paths;
+}
+
+const { lang } = Astro.params;
+const { article } = Astro.props as { article: Article };
+const t = i18n[lang];
+
+const count = article.bodyCount ?? 0;
+const paras = Array.from({ length: count }, (_, i) => t[`${article.bodyPrefix}${i}`]);
+
+const pStyle =
+  'font-family:var(--display); font-size:16px; font-weight:300; color:var(--text); line-height:1.9; margin-bottom:28px; letter-spacing:0.01em;';
+---
+<Base
+  lang={lang}
+  page="journal"
+  title={`${t[article.titleKey]} — Lorenzo Macovei`}
+  description={t[article.descKey]}
+  image={article.cover}
+>
+  <main style="background:var(--bg-journal);">
+    <div style="padding:92px 24px 0; max-width:680px; margin:0 auto;">
+      <a
+        href={`/${lang}/journal`}
+        style="font-family:var(--mono); font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text3); text-decoration:none;"
+        >← {t.nav_journal}</a
+      >
+    </div>
+
+    <article class="journal-article-inner">
+      <div
+        style="font-family:var(--mono); font-size:9px; letter-spacing:0.22em; text-transform:uppercase; color:var(--text3); margin-bottom:24px; text-align:center;"
+      >
+        {article.meta}
+      </div>
+      <h1
+        style="font-family:var(--serif); font-size:clamp(32px,4vw,52px); font-weight:400; font-style:italic; color:#fbf9f4; line-height:1.1; margin-bottom:16px; text-align:center;"
+      >
+        {t[article.titleKey]}
+      </h1>
+      <p
+        style="font-family:var(--display); font-size:15px; font-weight:300; color:rgba(232,228,220,0.72); line-height:1.7; margin-bottom:40px; letter-spacing:0.02em; text-align:center; max-width:520px; margin-left:auto; margin-right:auto;"
+      >
+        {t[article.descKey]}
+      </p>
+      <div class="journal-rule"></div>
+      <img
+        src={article.hero}
+        alt={t[article.titleKey]}
+        style="width:100%; height:auto; display:block; margin-bottom:48px; filter:brightness(0.95);"
+      />
+
+      {paras.map((p) => <p class="journal-p" style={pStyle}>{p}</p>)}
+
+      {article.endImage && (
+        <>
+          <img
+            src={article.endImage}
+            alt="Lorenzo Macovei"
+            style="width:100%; height:auto; display:block; margin:44px 0 18px; filter:brightness(0.95);"
+          />
+          <div
+            style="font-family:var(--mono); font-size:9px; letter-spacing:0.22em; text-transform:uppercase; color:var(--text3); text-align:center;"
+          >
+            Lorenzo Macovei
+          </div>
+        </>
+      )}
+    </article>
+  </main>
+</Base>
+
+<style is:global>
+  /* i vari elementi dell'articolo entrano dal basso mentre scorri */
+  .journal-article-inner.reveal-on > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.85s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1);
+  }
+  .journal-article-inner.reveal-on > *.in { opacity: 1; transform: none; }
+</style>
+
+<script is:inline>
+  (function () {
+    var inner = document.querySelector('.journal-article-inner');
+    if (!inner || !('IntersectionObserver' in window)) return;
+    inner.classList.add('reveal-on');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+    Array.prototype.forEach.call(inner.children, function (k) { io.observe(k); });
+  })();
+</script>

@@ -1,0 +1,95 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { raja, rajaMeta, type Lang } from '../../../data/raja';
+
+export function getStaticPaths() {
+  return (['en', 'it', 'es'] as Lang[]).map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const d = raja[lang];
+---
+<Base
+  lang={lang}
+  page="journal"
+  title={`${rajaMeta.title[lang]} — Lorenzo Macovei`}
+  description={rajaMeta.desc[lang]}
+  image={rajaMeta.cover}
+>
+  <div style="max-width:680px; margin:0 auto; padding:92px 24px 0;">
+    <a
+      href={`/${lang}/journal`}
+      style="font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--text3); text-decoration:none;"
+      >{d.back}</a
+    >
+  </div>
+
+  <div id="journal-post-wtrek">
+    <div class="wrap">
+      <div class="hero">
+        <div class="kicker">{d.kicker}</div>
+        <h1>{d.title}</h1>
+        <p class="sub">{d.sub}</p>
+        <div class="facts">
+          {d.facts.map((f) => (
+            <div class="fact"><div class="n">{f.n}</div><div class="l">{f.l}</div></div>
+          ))}
+        </div>
+      </div>
+
+      <nav class="toc" aria-label={d.tocTitle}>
+        <div class="toc-h">{d.tocTitle}</div>
+        <ol>
+          {d.toc.map((i) => (
+            <li><a href={`#${i.id}`}><span class="idx">{i.n}</span><span class="txt">{i.label}</span></a></li>
+          ))}
+        </ol>
+      </nav>
+
+      <Fragment set:html={d.body} />
+    </div>
+  </div>
+</Base>
+
+<style is:global>
+  /* i salti dell'indice non finiscono sotto la barra fissa */
+  #journal-post-wtrek section { scroll-margin-top: 92px; }
+</style>
+
+<script is:inline>
+  (function () {
+    function val(id) { var el = document.getElementById(id); return el ? el.value : ''; }
+    function skyCode(v) {
+      var map = {
+        roma: 'rome', rome: 'rome', fiumicino: 'fco', fco: 'fco', ciampino: 'cia',
+        milano: 'miln', milan: 'miln', malpensa: 'mxp', mxp: 'mxp', linate: 'lin', bergamo: 'bgy',
+        venezia: 'vce', vce: 'vce', bologna: 'blq', blq: 'blq', napoli: 'nap', nap: 'nap', torino: 'trn', trn: 'trn',
+        bali: 'dps', denpasar: 'dps', dps: 'dps', giacarta: 'cgk', jakarta: 'cgk', cgk: 'cgk',
+        makassar: 'upg', upg: 'upg', sorong: 'soq', soq: 'soq',
+      };
+      var key = (v || '').trim().toLowerCase();
+      return map[key] || key.replace(/\s+/g, '-');
+    }
+    function skyDate(x) { if (!x) return ''; var p = x.split('-'); return p[0].slice(2) + p[1] + p[2]; }
+
+    window.rajaFlights = function (e) {
+      e.preventDefault();
+      var o = skyCode(val('rf-origin')), dst = skyCode(val('rf-dest'));
+      var dep = skyDate(val('rf-depart')), ret = skyDate(val('rf-return'));
+      if (!o || !dst || !dep) return false;
+      var u = 'https://www.skyscanner.it/trasporti/voli/' + o + '/' + dst + '/' + dep + '/';
+      if (ret) u += ret + '/';
+      window.open(u, '_blank', 'noopener');
+      return false;
+    };
+    window.rajaStay = function (e) {
+      e.preventDefault();
+      var q = val('rs-dest'), ci = val('rs-checkin'), co = val('rs-checkout');
+      var p = new URLSearchParams();
+      if (q) p.set('q', q);
+      if (ci) p.set('checkin', ci);
+      if (co) p.set('checkout', co);
+      window.open('https://www.stayrajaampat.com/?' + p.toString(), '_blank', 'noopener');
+      return false;
+    };
+  })();
+</script>

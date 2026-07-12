@@ -1,0 +1,76 @@
+---
+import Base from '../../../layouts/Base.astro';
+import i18n from '../../../data/i18n.json';
+import { articles, byDateDesc } from '../../../data/journal';
+
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (i18n as Record<string, Record<string, string>>)[lang];
+const list = [...articles].sort(byDateDesc);
+const jcat = (type: string) => (type === 'guide' ? 'guides' : 'stories');
+---
+<Base lang={lang} page="journal" title={`${t.nav_journal} — Lorenzo Macovei`} description={t.journal_sub ?? ''}>
+  <main>
+    <header class="page-header" style="padding-top:110px;">
+      <h1 class="page-title">{t.nav_journal}</h1>
+      <p class="page-subtitle">{t.journal_sub}</p>
+    </header>
+
+    <div class="journal-tabs">
+      <button class="journal-tab active" data-tab="stories" type="button">{t.journal_tab_stories}</button>
+      <button class="journal-tab" data-tab="guides" type="button">{t.journal_tab_guides}</button>
+    </div>
+    <div id="journal-empty" style="display:none; text-align:center; padding:56px 20px; font-family:var(--display); color:var(--text3);">
+      {t.journal_wip}
+    </div>
+
+    <div class="journal-list" style="padding: 0 40px 80px; max-width: 1200px; margin: 0 auto;">
+      {list.map((a) => (
+        <a
+          class="blog-post"
+          href={`/${lang}/journal/${a.slug}`}
+          data-jcat={jcat(a.type)}
+          style={`text-decoration:none; cursor:pointer;${a.type === 'guide' ? ' display:none;' : ''}`}
+        >
+          <div class="blog-thumb">
+            <img src={a.cover} alt={t[a.titleKey]} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">{a.meta}</div>
+            <div class="blog-post-title">{t[a.titleKey]}</div>
+            <div class="blog-excerpt">{t[a.descKey]}</div>
+            <div class="blog-read">{t.article_read ?? 'Read'} <span class="blog-arrow">→</span></div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</Base>
+
+<script is:inline>
+  (function () {
+    var tabs = document.querySelectorAll('.journal-tab');
+    var posts = document.querySelectorAll('.journal-list .blog-post');
+    var empty = document.getElementById('journal-empty');
+    function apply(cat) {
+      var any = false;
+      posts.forEach(function (p) {
+        var show = p.getAttribute('data-jcat') === cat;
+        p.style.display = show ? '' : 'none';
+        if (show) any = true;
+      });
+      if (empty) empty.style.display = any ? 'none' : 'block';
+    }
+    tabs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        tabs.forEach(function (x) { x.classList.remove('active'); });
+        b.classList.add('active');
+        apply(b.getAttribute('data-tab'));
+      });
+    });
+    apply('stories');
+  })();
+</script>

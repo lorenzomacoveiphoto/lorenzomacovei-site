@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import i18nData from '../../data/i18n.json';
+import homeData from '../../data/home-html.json';
+import Lightbox from '../../components/Lightbox.astro';
+
+const i18n = i18nData as Record<string, Record<string, string>>;
+const home = homeData as Record<string, string>;
+
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+const { lang } = Astro.params;
+const t = i18n[lang];
+const titles: Record<string, string> = {
+  en: 'Lorenzo Macovei — Borderless Photographer',
+  it: 'Lorenzo Macovei — Fotografo Senza Confini',
+  es: 'Lorenzo Macovei — Fotógrafo Sin Fronteras',
+};
+---
+<Base lang={lang} page="home" title={titles[lang]} description={t.tagline}>
+  <Fragment set:html={home[lang]} />
+  <Lightbox />
+</Base>
+
+<script define:vars={{ LANG: lang }}>
+  let featIdx = 0, featLoopInit = false;
+  function featInitLoop() {
+    if (innerWidth <= 768) return;
+    var grid = document.getElementById('featGrid');
+    if (!grid || featLoopInit) return;
+    featLoopInit = true;
+    [...grid.querySelectorAll('.feat-item')].forEach(function (it) { grid.appendChild(it.cloneNode(true)); });
+  }
+  window.featSlide = function (dir) {
+    if (innerWidth <= 768) return;
+    var grid = document.getElementById('featGrid');
+    if (!grid) return;
+    var items = grid.querySelectorAll('.feat-item');
+    if (!items.length) return;
+    var origCount = items.length / 2;
+    var itemW = items[0].offsetWidth;
+    var gap = 3;
+    featIdx += dir;
+    grid.style.transition = 'transform .55s cubic-bezier(0.65,0,0.35,1)';
+    grid.style.transform = 'translateX(-' + (featIdx * (itemW + gap)) + 'px)';
+    setTimeout(function () {
+      if (featIdx >= origCount) { grid.style.transition = 'none'; featIdx -= origCount; grid.style.transform = 'translateX(-' + (featIdx * (itemW + gap)) + 'px)'; }
+      if (featIdx < 0) { grid.style.transition = 'none'; featIdx += origCount; grid.style.transform = 'translateX(-' + (featIdx * (itemW + gap)) + 'px)'; }
+    }, 560);
+  };
+  var featAutoTimer = null;
+  function featStartAuto() { featAutoTimer = setInterval(function () { window.featSlide(1); }, 4000); }
+  function featStopAuto() { if (featAutoTimer) { clearInterval(featAutoTimer); featAutoTimer = null; } }
+
+  window.showPage = function () {};
+  window.showCat = function (cat) { location.href = '/' + LANG + '/portfolio/' + cat; };
+
+  function initHome() {
+    if (innerWidth > 768) { featInitLoop(); window.featSlide(0); featStartAuto(); }
+    var wrap = document.getElementById('featSliderWrap');
+    if (wrap) { wrap.addEventListener('mouseenter', featStopAuto); wrap.addEventListener('mouseleave', featStartAuto); }
+    var homeScroll = document.getElementById('homeScroll');
+    var heroBg = document.getElementById('heroBgImg');
+    var s2Inner = document.getElementById('s2Inner');
+    var s2Loc = document.getElementById('s2Loc');
+    var topNav = document.getElementById('top-nav');
+    if (homeScroll) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var id = e.target.id;
+          if (id === 'scene1') {
+            heroBg && heroBg.classList.remove('bright');
+            s2Inner && s2Inner.classList.remove('visible');
+            s2Loc && s2Loc.classList.remove('visible');
+            topNav && topNav.classList.remove('scrolled');
+          } else if (id === 'scene2') {
+            heroBg && heroBg.classList.add('bright');
+            s2Inner && s2Inner.classList.add('visible');
+            s2Loc && s2Loc.classList.add('visible');
+            topNav && topNav.classList.add('scrolled');
+          } else if (id === 'sceneBio') {
+            heroBg && heroBg.classList.remove('bright');
+            s2Inner && s2Inner.classList.remove('visible');
+            topNav && topNav.classList.add('scrolled');
+            var bi = document.getElementById('bioInner');
+            bi && bi.classList.add('visible');
+          } else {
+            topNav && topNav.classList.add('scrolled');
+          }
+        });
+      }, { root: homeScroll, threshold: 0.55 });
+      document.querySelectorAll('#homeScroll .snap-scene').forEach(function (s) { obs.observe(s); });
+    }
+  }
+  if (document.readyState !== 'loading') initHome();
+  else document.addEventListener('DOMContentLoaded', initHome);
+  window.addEventListener('resize', function () {
+    featIdx = 0; featLoopInit = false;
+    if (innerWidth > 768) { featInitLoop(); window.featSlide(0); }
+  });
+</script>

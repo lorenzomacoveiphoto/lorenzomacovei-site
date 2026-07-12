@@ -1,0 +1,442 @@
+{
+  "categories": [
+    "nature",
+    "people",
+    "places",
+    "climate"
+  ],
+  "items": [
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872218/IMG_6343_ff4jyl.jpg",
+      "name": "End of the World",
+      "loc": "Nature · Patagonia",
+      "category": "nature",
+      "location": "Patagonia",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780877248/IMG_5830_hdbgjg.jpg",
+      "name": "Golden South",
+      "loc": "Nature · Patagonia",
+      "category": "nature",
+      "location": "Patagonia",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780878725/IMG_5483_nrpkcu.jpg",
+      "name": "White Silence",
+      "loc": "Nature · Patagonia",
+      "category": "nature",
+      "location": "Patagonia",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781115266/IMG_6405_fxah0k.jpg",
+      "name": "The Valley Holds Its Breath",
+      "loc": "Nature · Himalaya",
+      "category": "nature",
+      "location": "Himalaya",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780953817/000026_gapsur.jpg",
+      "name": "The River Runs Cold",
+      "loc": "Nature · Europe",
+      "category": "nature",
+      "location": "Europe",
+      "colBreak": false
+    },
+    {
+      "type": "video",
+      "src": "https://res.cloudinary.com/dligvuje7/video/upload/q_auto/v1781044743/dji_fly_20251109_160518_142_1762733363182_video_irb0kc.mp4",
+      "name": "The Thin Line",
+      "loc": "Nature · Ocean",
+      "category": "nature",
+      "location": "Ocean",
+      "colBreak": true
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780942498/001804340010_yyltpp.jpg",
+      "name": "Jade Lagoon",
+      "loc": "Nature · Asia Pacific",
+      "category": "nature",
+      "location": "Asia Pacific",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781115295/IMG_2815_mvaeqj.jpg",
+      "name": "Red Cliffs, Blue Sea",
+      "loc": "Nature · Brazil",
+      "category": "nature",
+      "location": "Brazil",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780878850/IMG_6092_qhxs9r.jpg",
+      "name": "The Fitz Roy",
+      "loc": "Nature · Patagonia",
+      "category": "nature",
+      "location": "Patagonia",
+      "colBreak": true
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781115672/001804340004_dv9qkq.jpg",
+      "name": "Thaw",
+      "loc": "Nature · Iceland",
+      "category": "nature",
+      "location": "Iceland",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780954114/IMG_7954_njn95r.jpg",
+      "name": "The Archipelago",
+      "loc": "Nature · Asia Pacific",
+      "category": "nature",
+      "location": "Asia Pacific",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965466/IMG_0180_2_ttkrnu.jpg",
+      "name": "The Weight of Silk",
+      "loc": "People · Japan",
+      "category": "people",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965490/DSCF4788_afyd63.jpg",
+      "name": "Leading Small Steps",
+      "loc": "People · Japan",
+      "category": "people",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780967398/IMG_9823_edit_lg2go5.jpg",
+      "name": "Casting Light",
+      "loc": "People · Japan",
+      "category": "people",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780968426/9900000018609-0012_cvurox.jpg",
+      "name": "Roots",
+      "loc": "People · Sri Lanka",
+      "category": "people",
+      "location": "Sri Lanka",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965526/IMG_7933_2_gtddha.jpg",
+      "name": "The Leading Woman",
+      "loc": "People · Vietnam",
+      "category": "people",
+      "location": "Vietnam",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872224/IMG_9603_i9bik4.jpg",
+      "name": "The Last Pages",
+      "loc": "People · Japan",
+      "category": "people",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965533/2025-09-12_18-03-46_0384_cqa9tf.jpg",
+      "name": "Market Hours",
+      "loc": "People · Vietnam",
+      "category": "people",
+      "location": "Vietnam",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965544/000058_p428w3.jpg",
+      "name": "Against the Current",
+      "loc": "People · Thailand",
+      "category": "people",
+      "location": "Thailand",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965571/000054_lbcgxn.jpg",
+      "name": "Between Tides",
+      "loc": "People · Thailand",
+      "category": "people",
+      "location": "Thailand",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965636/0017__nwduae.jpg",
+      "name": "Window Seat",
+      "loc": "People · India",
+      "category": "people",
+      "location": "India",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965645/IMG_7144_2_n91ush.jpg",
+      "name": "Folding the Sky",
+      "loc": "People · Egypt",
+      "category": "people",
+      "location": "Egypt",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965677/9900000018609-0011_b32w79.jpg",
+      "name": "The Offering",
+      "loc": "People · Asia",
+      "category": "people",
+      "location": "Asia",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781044218/IMG_4297_svp4oa.jpg",
+      "name": "Still Together",
+      "loc": "People · Europe",
+      "category": "people",
+      "location": "Europe",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965656/0026__grdoop.jpg",
+      "name": "A Vintage Excitement",
+      "loc": "People · India",
+      "category": "people",
+      "location": "India",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781202379/9900000018609-0010_lhnpja.jpg",
+      "name": "The Weight of Tea",
+      "loc": "People · Sri Lanka",
+      "category": "people",
+      "location": "Sri Lanka",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780987166/000078370007_2_ftopbp.jpg",
+      "name": "Last Light",
+      "loc": "Places · New York",
+      "category": "places",
+      "location": "New York",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872653/IMG_1716_mo4npi.jpg",
+      "name": "Drift",
+      "loc": "Places · Amazon",
+      "category": "places",
+      "location": "Amazon",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985370/IMG_8656_2_gfmb1z.jpg",
+      "name": "Giannasi, 1967",
+      "loc": "Places · Milano",
+      "category": "places",
+      "location": "Milano",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985384/IMG_1946_2_dqvmhe.jpg",
+      "name": "Semana Santa",
+      "loc": "Places · Guatemala",
+      "category": "places",
+      "location": "Guatemala",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983223/IMG_0410_nbmqrs.jpg",
+      "name": "Golden Hour",
+      "loc": "Places · Japan",
+      "category": "places",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985849/001804340006_ybdgrf.jpg",
+      "name": "Black Church",
+      "loc": "Places · Iceland",
+      "category": "places",
+      "location": "Iceland",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985323/IMG_9325_2_stucpf.jpg",
+      "name": "White Rose",
+      "loc": "Places · New York",
+      "category": "places",
+      "location": "New York",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985753/IMG_4058_cad9vp.jpg",
+      "name": "L Train",
+      "loc": "Places · New York",
+      "category": "places",
+      "location": "New York",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983241/IMG_9838_ehdtbp.jpg",
+      "name": "Night Ascent",
+      "loc": "Places · Japan",
+      "category": "places",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983248/IMG_9965_wefixu.jpg",
+      "name": "Rain, Shibuya",
+      "loc": "Places · Japan",
+      "category": "places",
+      "location": "Japan",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781042867/000011300014_d7ohsn.jpg",
+      "name": "Before the Gods Left",
+      "loc": "Places · Athens",
+      "category": "places",
+      "location": "Athens",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983992/IMG_7520_tdhcyb.jpg",
+      "name": "Inner Room",
+      "loc": "Places · Buenos Aires",
+      "category": "places",
+      "location": "Buenos Aires",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985857/IMG_7157_aqf5vk.jpg",
+      "name": "The Pipe",
+      "loc": "Places · Cairo",
+      "category": "places",
+      "location": "Cairo",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983380/IMG_7604_kytett.jpg",
+      "name": "Wired",
+      "loc": "Places · Buenos Aires",
+      "category": "places",
+      "location": "Buenos Aires",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781041966/IMG_1152_gpovsd.jpg",
+      "name": "The March",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781041971/IMG_1155_etfjj8.jpg",
+      "name": "Golden Hour, Belém",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781041979/IMG_1159_devhvz.jpg",
+      "name": "The Warrior",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781041988/IMG_1168_h1ujxx.jpg",
+      "name": "Standing Ground",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781042008/IMG_1211_2_qpcgjw.jpg",
+      "name": "The Next Generation",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781042016/IMG_1199_2_mkyrqm.jpg",
+      "name": "Refuse",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781042028/IMG_1740_aj42xm.jpg",
+      "name": "The River",
+      "loc": "Climate · Amazon",
+      "category": "climate",
+      "location": "Amazon",
+      "colBreak": false
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781042039/IMG_1216_ddpzse.jpg",
+      "name": "Wayra",
+      "loc": "Climate · COP30 Belém",
+      "category": "climate",
+      "location": "COP30 Belém",
+      "colBreak": false
+    }
+  ]
+}

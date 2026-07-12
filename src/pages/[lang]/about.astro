@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import i18nData from '../../data/i18n.json';
+import aboutData from '../../data/about-html.json';
+
+const i18n = i18nData as Record<string, Record<string, string>>;
+const about = aboutData as Record<string, string>;
+
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+const { lang } = Astro.params;
+const t = i18n[lang];
+---
+<Base
+  lang={lang}
+  page="about"
+  title={`${t.nav_about} — Lorenzo Macovei`}
+  description={t.about_intro_short ?? t.tagline}
+>
+  <div id="page-about" style="height:100vh;" set:html={about[lang]}></div>
+</Base>
+
+<style is:global>
+  /* spazio solo sulla prima scena (bio), così la barra non la copre;
+     la scena contatti resta a tutta altezza e raggiungibile in fondo */
+  #page-about { scroll-padding-top: 84px; }
+  #page-about .about-scene:first-child { padding-top: 84px; }
+  @media (max-width: 768px) {
+    #page-about .about-scene:first-child { padding-top: 0; }
+  }
+</style>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script is:inline>
+  (function () {
+    try { if (window.emailjs) emailjs.init('GSxU9XygDuEyTovjf'); } catch (e) {}
+
+    // effetto slide come in home: ogni scena si rivela quando entra in vista
+    function revealAll() {
+      ['aboutIntro', 'aboutBio', 'aboutContact'].forEach(function (id) {
+        var el = document.getElementById(id); if (el) el.classList.add('visible');
+      });
+      var im = document.getElementById('aboutImg'); if (im) im.classList.add('revealed');
+    }
+    var scroller = document.getElementById('page-about');
+    if (scroller && 'IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.querySelectorAll('.about-s1-intro, .about-s1-bio, .about-s2-inner').forEach(function (el) { el.classList.add('visible'); });
+          var im = e.target.querySelector('.about-s1-img'); if (im) im.classList.add('revealed');
+        });
+      }, { root: scroller, threshold: 0.35 });
+      scroller.querySelectorAll('.about-scene').forEach(function (s) { obs.observe(s); });
+    } else {
+      revealAll();
+    }
+
+    function submit(ids, successId, e) {
+      e.preventDefault();
+      var btn = e.target.querySelector('button[type=submit]');
+      var orig = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      if (!window.emailjs) { btn.textContent = orig; btn.disabled = false; alert('Email service not loaded — please email me directly.'); return; }
+      emailjs.send('service_5o3o6vd', 'template_erjuszw', {
+        from_name: document.getElementById(ids.name).value,
+        from_email: document.getElementById(ids.email).value,
+        inquiry: document.getElementById(ids.inquiry).value,
+        message: document.getElementById(ids.message).value,
+        email: document.getElementById(ids.email).value,
+        name: document.getElementById(ids.name).value,
+      }).then(function () {
+        var s = document.getElementById(successId);
+        if (s) s.style.display = 'block';
+        btn.textContent = 'Message sent';
+        e.target.reset();
+      }).catch(function () {
+        btn.textContent = orig;
+        btn.disabled = false;
+        alert('Something went wrong — please try again or email me directly.');
+      });
+    }
+    window.submitContactForm = function (e) {
+      submit({ name: 'cf-name', email: 'cf-email', inquiry: 'cf-inquiry', message: 'cf-message' }, 'contactSuccess', e);
+    };
+    window.submitContactFormMobile = function (e) {
+      submit({ name: 'mcf-name', email: 'mcf-email', inquiry: 'mcf-inquiry', message: 'mcf-message' }, 'mContactSuccess', e);
+    };
+  })();
+</script>

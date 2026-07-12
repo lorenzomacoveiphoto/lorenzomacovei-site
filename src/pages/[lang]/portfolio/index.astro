@@ -1,0 +1,18 @@
+---
+// Il portfolio parte da "Nature" come nell'originale: /portfolio → /portfolio/nature
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+const { lang } = Astro.params;
+const target = `/${lang}/portfolio/nature`;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={`https://lorenzomacovei.com${target}`} />
+    <title>Portfolio — Lorenzo Macovei</title>
+  </head>
+  <body><a href={target}>Portfolio</a></body>
+</html>

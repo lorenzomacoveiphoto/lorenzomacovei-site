@@ -1,0 +1,160 @@
+---
+// Layout fedele all'originale: top-nav + sidebar (in portfolio-mode) + #main.
+import '../styles/site.css';
+import i18n from '../data/i18n.json';
+
+const {
+  lang = 'en',
+  title = 'Lorenzo Macovei — Borderless Photographer',
+  description = 'Lorenzo Macovei is an Italian travel photographer, climate activist and full-time wanderer.',
+  image = 'https://res.cloudinary.com/dligvuje7/image/upload/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg',
+  page = '',
+  category = '',
+} = Astro.props;
+
+const site = 'https://lorenzomacovei.com';
+const locales = ['en', 'it', 'es'];
+const path = Astro.url.pathname.replace(/^\/(en|it|es)/, '') || '/';
+const suffix = path === '/' ? '/' : path;
+const canonical = `${site}/${lang}${suffix}`;
+const htmlLang = { en: 'en', it: 'it', es: 'es' }[lang] ?? 'en';
+
+const t = (i18n as Record<string, Record<string, string>>)[lang] ?? {};
+const isPortfolio = page === 'portfolio';
+
+const cats = [
+  { slug: 'nature', label: t.cat_nature ?? 'Nature' },
+  { slug: 'people', label: t.cat_people ?? 'People' },
+  { slug: 'places', label: t.cat_places ?? 'Places' },
+  { slug: 'climate', label: t.cat_climate ?? 'Climate' },
+];
+const pages = [
+  { key: 'home', href: `/${lang}/`, label: t.nav_home ?? 'Home' },
+  { key: 'portfolio', href: `/${lang}/portfolio`, label: t.nav_portfolio ?? 'Portfolio' },
+  { key: 'journal', href: `/${lang}/journal`, label: t.nav_journal ?? 'Journal' },
+  { key: 'about', href: `/${lang}/about`, label: t.nav_about ?? 'About' },
+];
+---
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={`${site}/${l}${suffix}`} />)}
+    <link rel="alternate" hreflang="x-default" href={`${site}/en${suffix}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Lorenzo Macovei Photography" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@100;200;300&family=Jost:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class={isPortfolio ? 'portfolio-mode' : ''}>
+    <nav id="top-nav" class={page && page !== 'home' ? 'scrolled' : ''}>
+      <a class="top-nav-left" href={`/${lang}/`}>
+        <div class="top-logo">Lorenzo Macovei</div>
+        <div class="top-tagline">{t.tagline}</div>
+      </a>
+      <ul class="top-nav-links">
+        {pages.map((p) => (
+          <li class={page === p.key ? 'active' : ''}>
+            <a href={p.href} style="color:inherit;text-decoration:none;display:block;">{p.label}</a>
+          </li>
+        ))}
+      </ul>
+      <div id="lang-switcher">
+        {locales.map((l, i) => (
+          <>
+            {i > 0 && <span class="lang-sep">·</span>}
+            <a class={`lang-btn${l === lang ? ' active' : ''}`} href={`/${l}${suffix}`} style="text-decoration:none;">{l.toUpperCase()}</a>
+          </>
+        ))}
+      </div>
+      <div id="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div id="mobile-cat-tabs">
+      {cats.map((c) => (
+        <a class={`mobile-cat-tab${category === c.slug ? ' active' : ''}`} href={`/${lang}/portfolio/${c.slug}`} style="text-decoration:none;">{c.label}</a>
+      ))}
+    </div>
+
+    <div id="mobile-menu">
+      <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">✕</button>
+      <div class="mobile-menu-name">Lorenzo<br />Macovei</div>
+      <nav class="mobile-menu-nav">
+        {pages.map((p) => <a class="mobile-menu-item" href={p.href} style="text-decoration:none;display:block;">{p.label}</a>)}
+      </nav>
+      <div class="mobile-menu-links">
+        <a class="mobile-menu-link" href="https://instagram.com/lorenzomacovei_" target="_blank" rel="noopener">Instagram</a>
+        <span class="mobile-menu-link-dot">·</span>
+        <a class="mobile-menu-link" href="mailto:lorenzomacoveiphoto@gmail.com">Mail</a>
+      </div>
+    </div>
+
+    <nav id="sidebar">
+      <div>
+        <a class="sidebar-name" href={`/${lang}/`} style="text-decoration:none;">Lorenzo<br />Macovei</a>
+        <div class="sidebar-tagline">{t.tagline}</div>
+        <div class="sidebar-section-label">{t.nav_portfolio}</div>
+        <ul class="sidebar-cat-links">
+          {cats.map((c) => (
+            <li class={category === c.slug ? 'active' : ''}>
+              <a href={`/${lang}/portfolio/${c.slug}`} style="color:inherit;text-decoration:none;display:block;">{c.label}</a>
+            </li>
+          ))}
+        </ul>
+        <div class="sidebar-divider"></div>
+        <ul class="sidebar-page-links">
+          <li><a href={`/${lang}/`} style="color:inherit;text-decoration:none;display:block;">{t.nav_home}</a></li>
+          <li><a href={`/${lang}/journal`} style="color:inherit;text-decoration:none;display:block;">{t.nav_journal}</a></li>
+          <li><a href={`/${lang}/about`} style="color:inherit;text-decoration:none;display:block;">{t.nav_about}</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-contact-block">
+          <div class="sidebar-contact-label">Contact</div>
+          <a href="https://instagram.com/lorenzomacovei_" target="_blank" rel="noopener" class="sidebar-contact-link">Instagram</a>
+          <a href="mailto:lorenzomacoveiphoto@gmail.com" class="sidebar-contact-link">Mail</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main">
+      <slot />
+    </div>
+
+    <style is:global>
+      /* i link della nav non devono avere sottolineatura né colore-link */
+      #top-nav a, #sidebar a, #mobile-menu a, .top-nav-left,
+      .top-nav-links a, .sidebar-cat-links a, .sidebar-page-links a { text-decoration: none; color: inherit; }
+      .top-nav-left { display: flex; flex-direction: column; gap: 2px; cursor: pointer; }
+    </style>
+
+    <script is:inline>
+      (function () {
+        var nav = document.getElementById('top-nav');
+        if (nav && !nav.classList.contains('scrolled')) {
+          var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 10); };
+          window.addEventListener('scroll', onScroll, { passive: true });
+          onScroll();
+        }
+      })();
+    </script>
+  </body>
+</html>

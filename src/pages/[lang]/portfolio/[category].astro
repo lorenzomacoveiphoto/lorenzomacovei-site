@@ -1,0 +1,34 @@
+---
+import Base from '../../../layouts/Base.astro';
+import i18n from '../../../data/i18n.json';
+import data from '../../../data/portfolio.json';
+import PortfolioGrid from '../../../components/PortfolioGrid.astro';
+import Lightbox from '../../../components/Lightbox.astro';
+
+export function getStaticPaths() {
+  const langs = ['en', 'it', 'es'];
+  const paths = [];
+  for (const category of data.categories) {
+    for (const lang of langs) paths.push({ params: { lang, category }, props: { category } });
+  }
+  return paths;
+}
+
+const { lang } = Astro.params;
+const { category } = Astro.props as { category: string };
+const t = (i18n as Record<string, Record<string, string>>)[lang];
+const items = data.items.filter((i) => i.category === category);
+const label = t[`cat_${category}`] ?? category;
+---
+<Base
+  lang={lang}
+  page="portfolio"
+  category={category}
+  title={`${label} — ${t.nav_portfolio} — Lorenzo Macovei`}
+  description={`${label} — ${t.nav_portfolio} · Lorenzo Macovei.`}
+  image={items[0]?.src}
+>
+  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">{label}</h1>
+  <PortfolioGrid items={items} />
+  <Lightbox />
+</Base>

@@ -1,0 +1,14 @@
+# Configurazione deploy Netlify per il sito Astro.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# la radice reindirizza alla home inglese
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true

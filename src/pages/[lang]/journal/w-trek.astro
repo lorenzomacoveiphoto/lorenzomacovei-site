@@ -1,0 +1,96 @@
+---
+import Base from '../../../layouts/Base.astro';
+import i18nData from '../../../data/i18n.json';
+import wtrekHtml from '../../../data/wtrek-html.json';
+
+const i18n = i18nData as Record<string, Record<string, string>>;
+const html = wtrekHtml as Record<string, string>;
+
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = i18n[lang];
+const cover = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872218/IMG_6343_ff4jyl.jpg';
+---
+<Base
+  lang={lang}
+  page="journal"
+  title={`${t.guide_wtrek_title} — Lorenzo Macovei`}
+  description={t.guide_wtrek_desc}
+  image={cover}
+>
+  <div style="max-width:680px; margin:0 auto; padding:92px 24px 0;">
+    <a
+      href={`/${lang}/journal`}
+      style="font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--text3); text-decoration:none;"
+      >← {t.nav_journal}</a
+    >
+  </div>
+
+  <div id="journal-post-wtrek" set:html={html[lang]}></div>
+</Base>
+
+<script is:inline>
+  // Ricerca alloggi (Google Hotels)
+  window.tdpHotelSearch = function (e) {
+    e.preventDefault();
+    var d = (document.getElementById('th-dest')?.value || '').trim() || 'Puerto Natales';
+    var ci = document.getElementById('th-in')?.value;
+    var co = document.getElementById('th-out')?.value;
+    var u = 'https://www.google.com/travel/search?q=' + encodeURIComponent('hotels in ' + d);
+    if (ci) u += '&checkin=' + ci;
+    if (co) u += '&checkout=' + co;
+    window.open(u, '_blank', 'noopener');
+    return false;
+  };
+
+  // Modale "dove abbiamo dormito"
+  (function () {
+    var m = document.getElementById('stayModal');
+    window.openStay = function () { if (m) m.classList.add('open'); };
+    window.closeStay = function () { if (m) m.classList.remove('open'); };
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && m && m.classList.contains('open')) window.closeStay();
+    });
+  })();
+
+  // Slider foto (frecce + pallini; lo swipe funziona anche senza JS)
+  (function () {
+    var track = document.getElementById('tdpTrack');
+    if (!track) return;
+    var imgs = track.querySelectorAll('img');
+    var dots = document.getElementById('tdpDots');
+    imgs.forEach(function (_, i) {
+      var b = document.createElement('button');
+      b.setAttribute('aria-label', 'Foto ' + (i + 1));
+      if (i === 0) b.className = 'on';
+      b.onclick = function () { track.scrollTo({ left: track.clientWidth * i, behavior: 'smooth' }); };
+      if (dots) dots.appendChild(b);
+    });
+    function cur() { return track.clientWidth ? Math.round(track.scrollLeft / track.clientWidth) : 0; }
+    track.addEventListener('scroll', function () {
+      var i = cur();
+      if (dots) dots.querySelectorAll('button').forEach(function (d, di) { d.classList.toggle('on', di === i); });
+    }, { passive: true });
+    window.tdpSlide = function (dir) {
+      var i = Math.max(0, Math.min(imgs.length - 1, cur() + dir));
+      track.scrollTo({ left: track.clientWidth * i, behavior: 'smooth' });
+    };
+  })();
+
+  // Set-in-view per i video (autoplay muto quando visibili)
+  (function () {
+    var vids = document.querySelectorAll('#journal-post-wtrek video');
+    if (!vids.length || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else v.pause();
+      });
+    }, { threshold: 0.4 });
+    vids.forEach(function (v) { io.observe(v); });
+  })();
+</script>
