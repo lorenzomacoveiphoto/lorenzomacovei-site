@@ -26,7 +26,8 @@ const { items } = Astro.props as { items: Item[] };
 </div>
 
 <style is:global>
-  /* cornici preimpostate a colore; la foto ci si carica dentro in dissolvenza */
+  /* Cornici colorate: compaiono subito col layout. La foto ci si dissolve
+     dentro con calma (dissolvenza lunga), una per una. */
   .portfolio-grid .pg-item {
     opacity: 1 !important;
     transform: none !important;
@@ -40,22 +41,45 @@ const { items } = Astro.props as { items: Item[] };
     object-fit: cover;
     display: block;
     opacity: 0;
-    transition: opacity 0.9s ease;
+    transition: opacity 1.2s cubic-bezier(0.22, 0.61, 0.36, 1);
     filter: brightness(0.9) saturate(0.85);
+    will-change: opacity;
   }
   .portfolio-grid .pg-media.loaded { opacity: 1; }
   .portfolio-grid .pg-item:hover .pg-media {
     filter: brightness(0.62) saturate(0.68);
     transform: scale(1.03);
   }
+  /* Se il browser non ha JS o preferisce meno movimento, la foto resta piena */
+  @media (prefers-reduced-motion: reduce) {
+    .portfolio-grid .pg-media { transition: opacity 0.3s ease; }
+  }
 </style>
 
 <script is:inline>
   (function () {
-    document.querySelectorAll('.portfolio-grid img.pg-media').forEach(function (im) {
-      if (im.complete && im.naturalWidth) im.classList.add('loaded');
-      else im.addEventListener('load', function () { im.classList.add('loaded'); });
+    var grid = document.querySelector('.portfolio-grid');
+    if (!grid) return;
+    var lastAt = 0, step = 0;
+    // Rivela la foto con una piccola cascata (una per una) e SEMPRE in dissolvenza,
+    // anche se è già in cache: un reflow sincrono (offsetWidth) fa "vedere" al
+    // browser opacity:0 prima di passare a 1, così la transizione parte sempre.
+    function reveal(im) {
+      var now = (window.performance && performance.now) ? performance.now() : Date.now();
+      if (now - lastAt > 260) step = 0;               // nuovo gruppo → riparte la cascata
+      lastAt = now;
+      im.style.transitionDelay = Math.min(step * 85, 510) + 'ms';
+      step++;
+      void im.offsetWidth;                            // forza il reflow: niente "scatto"
+      im.classList.add('loaded');
+    }
+    [].forEach.call(grid.querySelectorAll('img.pg-media'), function (im) {
+      if (im.complete && im.naturalWidth) reveal(im);
+      else {
+        im.addEventListener('load', function () { reveal(im); });
+        im.addEventListener('error', function () { im.classList.add('loaded'); });
+      }
     });
-    document.querySelectorAll('.portfolio-grid video.pg-media').forEach(function (v) { v.classList.add('loaded'); });
+    [].forEach.call(grid.querySelectorAll('video.pg-media'), function (v) { v.classList.add('loaded'); });
   })();
 </script>
