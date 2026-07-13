@@ -1464,6 +1464,22 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .hs-i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:8px;border:1px solid var(--accent-dim);color:var(--accent);background:none;border-radius:50%;font-family:'DM Mono',monospace;font-size:10px;line-height:1;cursor:pointer;vertical-align:middle;transition:.2s;padding:0}
 #journal-post-wtrek .hs-i:hover{background:var(--accent);color:var(--ink);border-color:var(--accent)}
 
+/* ── Copertina video a tutto sfondo (in cima all'articolo) ── */
+#journal-post-wtrek .rja-hero-cover{width:100%;height:clamp(300px,70vh,720px);overflow:hidden;background:#0d0c0b}
+#journal-post-wtrek .rja-hero-cover video{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ── Media orizzontali affiancati al testo (niente media isolati) ── */
+#journal-post-wtrek .rja-side{display:flex;gap:32px;align-items:center;margin:40px 0}
+#journal-post-wtrek .rja-side .rs-media{flex:1 1 54%;min-width:0}
+#journal-post-wtrek .rja-side .rs-text{flex:1 1 46%;min-width:0}
+#journal-post-wtrek .rja-side .rs-media img,#journal-post-wtrek .rja-side .rs-media video{width:100%;height:auto;max-height:440px;object-fit:cover;display:block;filter:brightness(0.97)}
+#journal-post-wtrek .rja-side .rs-text > :last-child{margin-bottom:0}
+#journal-post-wtrek .rja-side .tdp-cap{margin-top:10px;text-align:left}
+@media(max-width:640px){
+  #journal-post-wtrek .rja-side{flex-direction:column;gap:14px;margin:30px 0}
+  #journal-post-wtrek .rja-side .rs-media img,#journal-post-wtrek .rja-side .rs-media video{max-height:300px}
+}
+
 /* ── Footer ── */
 #journal-post-wtrek footer{padding:60px 0 84px;text-align:center}
 #journal-post-wtrek footer .fq{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:26px;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}

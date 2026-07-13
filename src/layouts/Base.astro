@@ -65,6 +65,7 @@ const pages = [
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@100;200;300&family=Jost:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <slot name="head" />
   </head>
   <body class={isPortfolio ? 'portfolio-mode' : ''}>
     <nav id="top-nav" class={page && page !== 'home' ? 'scrolled' : ''}>

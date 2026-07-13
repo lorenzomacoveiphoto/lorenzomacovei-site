@@ -7,24 +7,79 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Lang;
 const d = raja[lang];
+
+const site = 'https://lorenzomacovei.com';
+const pageUrl = `${site}/${lang}/journal/raja-ampat`;
+const crumbs = ({ en: ['Home', 'Journal'], it: ['Home', 'Journal'], es: ['Inicio', 'Journal'] } as Record<Lang, string[]>)[lang];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: d.title,
+      description: rajaMeta.desc[lang],
+      image: rajaMeta.cover,
+      inLanguage: lang,
+      author: { '@type': 'Person', name: 'Lorenzo Macovei' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Lorenzo Macovei Photography',
+        logo: { '@type': 'ImageObject', url: rajaMeta.cover },
+      },
+      datePublished: '2026-01-15',
+      dateModified: rajaMeta.date,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+      keywords: rajaMeta.keywords[lang],
+    },
+    {
+      '@type': 'TouristDestination',
+      name: 'Raja Ampat',
+      description: rajaMeta.desc[lang],
+      geo: { '@type': 'GeoCoordinates', latitude: -0.5, longitude: 130.5 },
+      touristType: ['Scuba divers', 'Snorkelers', 'Nature travelers', 'Backpackers'],
+      includesAttraction: [
+        { '@type': 'TouristAttraction', name: 'Cape Kri', description: 'Reef dive site known for strong currents and record fish biomass.' },
+        { '@type': 'TouristAttraction', name: 'Manta Point', description: 'Cleaning-station site with reliable manta ray encounters.' },
+        { '@type': 'TouristAttraction', name: 'Piaynemo', description: 'Karst-island viewpoint over turquoise lagoons.' },
+        { '@type': 'TouristAttraction', name: 'Misool', description: 'Remote southern island group known for karst scenery, caves and reef density.' },
+        { '@type': 'TouristAttraction', name: 'Arborek Village', description: 'Fishing village and jetty known for manta sightings and local craft.' },
+      ],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: crumbs[0], item: `${site}/${lang}/` },
+        { '@type': 'ListItem', position: 2, name: crumbs[1], item: `${site}/${lang}/journal` },
+        { '@type': 'ListItem', position: 3, name: 'Raja Ampat', item: pageUrl },
+      ],
+    },
+  ],
+};
 ---
 <Base
   lang={lang}
   page="journal"
-  title={`${rajaMeta.title[lang]} — Lorenzo Macovei`}
+  title={rajaMeta.titleTag[lang]}
   description={rajaMeta.desc[lang]}
   image={rajaMeta.cover}
 >
-  <div style="max-width:680px; margin:0 auto; padding:92px 24px 0;">
-    <a
-      href={`/${lang}/journal`}
-      style="font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--text3); text-decoration:none;"
-      >{d.back}</a
-    >
-  </div>
+  <Fragment slot="head">
+    <meta name="keywords" content={rajaMeta.keywords[lang]} />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
 
   <div id="journal-post-wtrek">
+    <div class="rja-hero-cover">
+      <video src={rajaMeta.coverVideo} autoplay muted loop playsinline></video>
+    </div>
     <div class="wrap">
+      <a
+        class="rja-back"
+        href={`/${lang}/journal`}
+        style="display:inline-block; margin:26px 0 0; font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); text-decoration:none;"
+        >{d.back}</a
+      >
       <div class="hero">
         <div class="kicker">{d.kicker}</div>
         <h1>{d.title}</h1>

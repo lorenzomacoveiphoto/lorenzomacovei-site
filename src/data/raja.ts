@@ -65,12 +65,12 @@ const en_body = `
 
 <section id="getting-there"><span class="eyebrow">01</span><h2>Getting there</h2>
 <p>No airline flies direct from Europe. Route through a major Indonesian hub, Jakarta, Bali or Makassar, then take a domestic leg into <strong>Sorong (SOQ)</strong>, the mainland gateway city. From Sorong you still need to reach <strong>Waisai</strong>, the regency capital on Waigeo island:</p>
+<div class="tdp-fig"><img src="${M.arrive}" alt="Arriving in Raja Ampat"></div>
 <ul><li><strong>Public ferry</strong>, about two hours. One sailing daily at 14:00, plus an extra 9:00 departure on Sundays. Economy ~150,000 IDR (~€9); VIP cabin with air-con and private bathroom ~250,000 IDR (~€15). Bought same-day at the port.</li>
 <li><strong>Private speedboat</strong>, faster, but roughly €350/400 each way.</li></ul>
 <div class="tip"><b>Buffer nights, both ends</b>Ferry and flight connections are tight and delays are common, so plan <strong>two extra nights in Sorong</strong>, one on the way in, one on the way out. A good excuse to treat yourself to a proper hotel before and after the spartan homestay stretch: the <strong>Aston Sorong</strong> (~€35/night) is the reliable pick, or the <strong>Favehotel</strong> for a fair balance of comfort and price, with a small but decent spa.</div>
 <div class="tip"><b>Bali/Sorong: only Garuda</b><strong>Garuda Indonesia</strong> is currently the only carrier on the Bali/Sorong route, and it isn't always reliable, mine was cancelled and rerouted via Jakarta.</div>
 FLIGHT
-<div class="tdp-fig"><img src="${M.arrive}" alt="Arriving in Raja Ampat"></div>
 </section>
 
 <section id="getting-around"><span class="eyebrow">02</span><h2>Moving between the islands</h2>
@@ -225,12 +225,12 @@ const it_body = `
 
 <section id="getting-there"><span class="eyebrow">01</span><h2>Come arrivare</h2>
 <p>Nessuna compagnia vola diretta dall'Europa. Si passa da un hub indonesiano, Giacarta, Bali o Makassar, e da lì un volo interno fino a <strong>Sorong (SOQ)</strong>, la città-porta sulla terraferma. Da Sorong bisogna raggiungere <strong>Waisai</strong>, capoluogo della reggenza sull'isola di Waigeo:</p>
+<div class="tdp-fig"><img src="${M.arrive}" alt="Arrivo a Raja Ampat"></div>
 <ul><li><strong>Traghetto pubblico</strong>, circa due ore. Una corsa al giorno alle 14:00, più una extra alle 9:00 la domenica. Economy ~150.000 IDR (~9€); cabina VIP con aria condizionata e bagno privato ~250.000 IDR (~15€). Si compra in giornata al porto.</li>
 <li><strong>Speedboat privato</strong>, più veloce, ma sui 350/400€ a tratta.</li></ul>
 <div class="tip"><b>Notti cuscinetto, a inizio e fine</b>Le coincidenze tra traghetti e voli sono strette e i ritardi frequenti: metti in conto <strong>due notti in più a Sorong</strong>, una all'andata e una al ritorno. Ottima scusa per concederti un vero hotel prima e dopo la parte spartana in homestay: l'<strong>Aston Sorong</strong> (~35€/notte) è la scelta affidabile, oppure il <strong>Favehotel</strong> per un buon equilibrio tra comfort e prezzo, con una spa piccola ma dignitosa.</div>
 <div class="tip"><b>Bali/Sorong: solo Garuda</b><strong>Garuda Indonesia</strong> è al momento l'unica compagnia sulla tratta Bali/Sorong, e non sempre affidabile, il mio volo è stato cancellato e dirottato via Giacarta.</div>
 FLIGHT
-<div class="tdp-fig"><img src="${M.arrive}" alt="Arrivo a Raja Ampat"></div>
 </section>
 
 <section id="getting-around"><span class="eyebrow">02</span><h2>Spostarsi tra le isole</h2>
@@ -385,12 +385,12 @@ const es_body = `
 
 <section id="getting-there"><span class="eyebrow">01</span><h2>Cómo llegar</h2>
 <p>Ninguna aerolínea vuela directa desde Europa. Se hace escala en un hub indonesio, Yakarta, Bali o Makassar, y desde allí un vuelo interno hasta <strong>Sorong (SOQ)</strong>, la ciudad-puerta en tierra firme. Desde Sorong aún hay que llegar a <strong>Waisai</strong>, capital de la regencia en la isla de Waigeo:</p>
+<div class="tdp-fig"><img src="${M.arrive}" alt="Llegada a Raja Ampat"></div>
 <ul><li><strong>Ferry público</strong>, unas dos horas. Una salida diaria a las 14:00, más una extra a las 9:00 los domingos. Economy ~150.000 IDR (~9€); camarote VIP con aire acondicionado y baño privado ~250.000 IDR (~15€). Se compra el mismo día en el puerto.</li>
 <li><strong>Lancha privada</strong>, más rápida, pero unos 350/400€ por trayecto.</li></ul>
 <div class="tip"><b>Noches colchón, a la ida y a la vuelta</b>Las conexiones entre ferries y vuelos son ajustadas y los retrasos frecuentes: cuenta con <strong>dos noches extra en Sorong</strong>, una a la ida y otra a la vuelta. Buena excusa para darte un hotel decente antes y después de la parte espartana en homestay: el <strong>Aston Sorong</strong> (~35€/noche) es la opción fiable, o el <strong>Favehotel</strong> por un buen equilibrio entre comodidad y precio, con un pequeño pero digno spa.</div>
 <div class="tip"><b>Bali/Sorong: solo Garuda</b><strong>Garuda Indonesia</strong> es de momento la única compañía en la ruta Bali/Sorong, y no siempre fiable, el mío fue cancelado y desviado por Yakarta.</div>
 FLIGHT
-<div class="tdp-fig"><img src="${M.arrive}" alt="Llegada a Raja Ampat"></div>
 </section>
 
 <section id="getting-around"><span class="eyebrow">02</span><h2>Moverse entre las islas</h2>
@@ -537,8 +537,32 @@ ${hsModal({ k: 'Homestays', title: 'Qué esperar', close: 'Cerrar', body: 'Bási
 const es_flight = flightForm({ k: 'BUSCA VUELOS', title: 'Encuentra tu vuelo a Sorong', src: 'Comparador de precios · Skyscanner', from: 'Origen', to: 'Destino', dep: 'Ida', ret: 'Vuelta', btn: 'Buscar vuelos' });
 const es_stay = stayForm({ k: 'RESERVA TU ESTANCIA', title: 'Encuentra dónde dormir', src: 'Disponibilidad · Stay Raja Ampat', zone: 'Zona', zoneph: 'ej. Kri, Arborek…', cin: 'Check-in', cout: 'Check-out', btn: 'Buscar' });
 
+// Affianca ogni figura (.tdp-fig) al paragrafo adiacente in una riga a due
+// colonne (.rja-side), così i media orizzontali stanno al lato del testo e non
+// isolati. Preserva l'ordine di lettura: media→testo resta media a sinistra,
+// testo→media resta testo a sinistra.
+function pairMedia(html: string) {
+  const INNER = '(<video[^>]*><\\/video>|<img[^>]*>(?:<div class="tdp-cap">[\\s\\S]*?<\\/div>)?)';
+  const FIG = '<div class="tdp-fig">' + INNER + '<\\/div>';
+  // un SINGOLO paragrafo (nessun </p> interno): così l'accoppiamento è solo tra
+  // media e testo ADIACENTI e il match non attraversa altri paragrafi/sezioni.
+  const PARA = '(<p>(?:(?!<\\/p>)[\\s\\S])*<\\/p>)';
+  html = html.replace(
+    new RegExp(FIG + '\\s*' + PARA, 'g'),
+    '<div class="rja-side"><div class="rs-media">$1</div><div class="rs-text">$2</div></div>'
+  );
+  html = html.replace(
+    new RegExp(PARA + '\\s*' + FIG, 'g'),
+    '<div class="rja-side"><div class="rs-text">$1</div><div class="rs-media">$2</div></div>'
+  );
+  return html;
+}
+
 function assemble(body: string, flight: string, stay: string) {
-  return body.replace('FLIGHT', flight).replace('STAY', stay);
+  let out = body.replace('FLIGHT', flight).replace('STAY', stay);
+  // il video di copertina in testa diventa hero a tutto sfondo nella pagina
+  out = out.replace(/^\s*<div class="tdp-fig"><video[^>]*><\/video><\/div>\s*/, '');
+  return pairMedia(out);
 }
 
 export interface RajaLang {
@@ -582,7 +606,7 @@ const toc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 export const raja: Record<Lang, RajaLang> = {
   it: {
     kicker: 'Diario · Papua Occidentale · Indonesia',
-    title: 'Raja Ampat: guida completa per uno degli ultimi paradisi terrestri',
+    title: "Guida di viaggio a Raja Ampat: immersioni, homestay e budget per l'arcipelago dei Quattro Re",
     sub: "Sette giorni a ovest, cinque a est, tutto quello che serve per organizzare l'arcipelago dei Quattro Re, raccontato da chi ci è stato davvero.",
     facts: [{ n: '12', l: 'giorni' }, { n: 'SOQ', l: 'scalo' }, { n: '~610€', l: 'in loco' }, { n: 'Ott/Apr', l: 'stagione' }],
     tocTitle: 'In questa guida',
@@ -592,7 +616,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   en: {
     kicker: 'Diary · West Papua · Indonesia',
-    title: 'Raja Ampat: the complete guide to one of the last paradises on Earth',
+    title: 'Raja Ampat Travel Guide: Diving, Homestays & Budget Itinerary for the Four Kings Archipelago',
     sub: "Seven days west, five east, everything you need to plan the archipelago of the Four Kings, told by someone who's actually been there.",
     facts: [{ n: '12', l: 'days' }, { n: 'SOQ', l: 'hub' }, { n: '~€610', l: 'on-site' }, { n: 'Oct/Apr', l: 'season' }],
     tocTitle: 'In this guide',
@@ -602,7 +626,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   es: {
     kicker: 'Diario · Papúa Occidental · Indonesia',
-    title: 'Raja Ampat: la guía completa a uno de los últimos paraísos de la Tierra',
+    title: 'Guía de viaje a Raja Ampat: buceo, homestays y presupuesto para el archipiélago de los Cuatro Reyes',
     sub: 'Siete días al oeste, cinco al este, todo lo que necesitas para organizar el archipiélago de los Cuatro Reyes, contado por quien ha estado de verdad.',
     facts: [{ n: '12', l: 'días' }, { n: 'SOQ', l: 'escala' }, { n: '~610€', l: 'en el sitio' }, { n: 'Oct/Abr', l: 'temporada' }],
     tocTitle: 'En esta guía',
@@ -616,15 +640,22 @@ export const rajaMeta = {
   slug: 'raja-ampat',
   date: '2026-07-13',
   cover: 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto,f_auto/v1783965784/IMG_8817_sdhbgj.jpg',
+  coverVideo: M.cover,
   meta: { en: 'Indonesia · West Papua · Guide · 2026', it: 'Indonesia · Papua Occidentale · Guida · 2026', es: 'Indonesia · Papúa Occidental · Guía · 2026' } as Record<Lang, string>,
-  title: {
-    en: 'Raja Ampat: the complete guide to one of the last paradises on Earth',
-    it: 'Raja Ampat: guida completa per uno degli ultimi paradisi terrestri',
-    es: 'Raja Ampat: la guía completa a uno de los últimos paraísos de la Tierra',
+  // Title tag (SEO): keyword-first, distinct from the on-page H1.
+  titleTag: {
+    en: 'Raja Ampat Travel Guide 2026: Diving, Homestays & Budget Itinerary for backpackers',
+    it: 'Guida a Raja Ampat 2026: immersioni, homestay e budget per backpacker',
+    es: 'Guía de Raja Ampat 2026: buceo, homestays y presupuesto para mochileros',
+  } as Record<Lang, string>,
+  keywords: {
+    en: 'Raja Ampat travel guide, Raja Ampat diving, Raja Ampat homestay, Raja Ampat budget, how to get to Raja Ampat, Cape Kri diving, Manta Point Raja Ampat, Misool Indonesia, West Papua diving, Four Kings archipelago',
+    it: 'guida Raja Ampat, immersioni Raja Ampat, homestay Raja Ampat, budget Raja Ampat, come arrivare a Raja Ampat, Cape Kri, Manta Point, Misool, Papua Occidentale, arcipelago dei Quattro Re',
+    es: 'guía Raja Ampat, buceo Raja Ampat, homestay Raja Ampat, presupuesto Raja Ampat, cómo llegar a Raja Ampat, Cape Kri, Manta Point, Misool, Papúa Occidental, archipiélago de los Cuatro Reyes',
   } as Record<Lang, string>,
   desc: {
-    en: 'Seven days west, five east, the complete backpacker guide to the Four Kings archipelago.',
-    it: "Sette giorni a ovest, cinque a est, la guida completa all'arcipelago dei Quattro Re.",
-    es: 'Siete días al oeste, cinco al este, la guía completa al archipiélago de los Cuatro Reyes.',
+    en: 'A field-tested Raja Ampat travel guide: how to get there, the best dive sites (Cape Kri, Manta Point, Misool), homestay costs, ferry logistics and a full budget breakdown for the Four Kings, West Papua.',
+    it: "Guida a Raja Ampat provata sul campo: come arrivare, i migliori siti d'immersione (Cape Kri, Manta Point, Misool), costi delle homestay, traghetti e budget completo per i Quattro Re, Papua Occidentale.",
+    es: 'Guía de Raja Ampat probada sobre el terreno: cómo llegar, los mejores puntos de buceo (Cape Kri, Manta Point, Misool), costes de homestays, ferries y presupuesto completo de los Cuatro Reyes, Papúa Occidental.',
   } as Record<Lang, string>,
 };
