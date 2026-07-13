@@ -45,7 +45,7 @@ export const articles: Article[] = [
     date: '2026-02-01',
     meta: 'Italy · Moldova · 2026',
     cover: `${CDN}/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg`,
-    hero: `${CDN}/v1780983992/IMG_7520_tdhcyb.jpg`,
+    hero: '',
     titleKey: 'article_confini_title',
     descKey: 'article_confini_desc',
     bodyPrefix: 'article_confini_p_',

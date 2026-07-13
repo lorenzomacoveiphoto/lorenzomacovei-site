@@ -48,7 +48,7 @@ const pStyle =
         {article.meta}
       </div>
       <h1
-        style="font-family:var(--serif); font-size:clamp(32px,4vw,52px); font-weight:400; font-style:italic; color:#fbf9f4; line-height:1.1; margin-bottom:16px; text-align:center;"
+        style="font-family:var(--display); font-size:clamp(28px,4vw,44px); font-weight:300; letter-spacing:0.08em; text-transform:uppercase; color:#fbf9f4; line-height:1.25; margin-bottom:16px; text-align:center;"
       >
         {t[article.titleKey]}
       </h1>
@@ -58,11 +58,13 @@ const pStyle =
         {t[article.descKey]}
       </p>
       <div class="journal-rule"></div>
-      <img
-        src={article.hero}
-        alt={t[article.titleKey]}
-        style="width:100%; height:auto; display:block; margin-bottom:48px; filter:brightness(0.95);"
-      />
+      {article.hero && (
+        <img
+          src={article.hero}
+          alt={t[article.titleKey]}
+          style="width:100%; height:auto; display:block; margin-bottom:48px; filter:brightness(0.95);"
+        />
+      )}
 
       {paras.map((p) => <p class="journal-p" style={pStyle}>{p}</p>)}
 

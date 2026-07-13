@@ -1,20 +1,21 @@
 ---
-interface Item { type: string; src: string; name: string; loc: string; category: string; location: string; colBreak?: boolean; }
+interface Item { type: string; src: string; name: string; loc: string; category: string; location: string; w: number; h: number; color: string; }
 const { items } = Astro.props as { items: Item[] };
 ---
 <div class="portfolio-grid">
   {items.map((it) => (
     <div
-      class={`pg-item${it.colBreak ? ' col-break' : ''}`}
+      class="pg-item"
       data-src={it.src}
       data-name={it.name}
       data-loc={it.loc}
       data-type={it.type}
+      style={`aspect-ratio:${it.w} / ${it.h}; background-color:${it.color};`}
     >
       {it.type === 'video' ? (
-        <video autoplay muted loop playsinline src={it.src}></video>
+        <video class="pg-media" autoplay muted loop playsinline src={it.src}></video>
       ) : (
-        <img loading="lazy" src={it.src} alt={it.name} />
+        <img class="pg-media" loading="lazy" src={it.src} alt={it.name} />
       )}
       <div class="pg-hover">
         <div class="pg-hover-cat">{it.loc}</div>
@@ -24,22 +25,37 @@ const { items } = Astro.props as { items: Item[] };
   ))}
 </div>
 
-<noscript>
-  <style>.pg-item { opacity: 1 !important; transform: none !important; }</style>
-</noscript>
+<style is:global>
+  /* cornici preimpostate a colore; la foto ci si carica dentro in dissolvenza */
+  .portfolio-grid .pg-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-grid .pg-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    filter: brightness(0.9) saturate(0.85);
+  }
+  .portfolio-grid .pg-media.loaded { opacity: 1; }
+  .portfolio-grid .pg-item:hover .pg-media {
+    filter: brightness(0.62) saturate(0.68);
+    transform: scale(1.03);
+  }
+</style>
 
 <script is:inline>
   (function () {
-    var items = document.querySelectorAll('.portfolio-grid .pg-item');
-    if (!('IntersectionObserver' in window)) {
-      items.forEach(function (i) { i.classList.add('in-view'); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
-      });
-    }, { rootMargin: '0px 0px -6% 0px' });
-    items.forEach(function (i) { io.observe(i); });
+    document.querySelectorAll('.portfolio-grid img.pg-media').forEach(function (im) {
+      if (im.complete && im.naturalWidth) im.classList.add('loaded');
+      else im.addEventListener('load', function () { im.classList.add('loaded'); });
+    });
+    document.querySelectorAll('.portfolio-grid video.pg-media').forEach(function (v) { v.classList.add('loaded'); });
   })();
 </script>
