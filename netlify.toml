@@ -12,3 +12,20 @@
   to = "/en/"
   status = 302
   force = true
+
+# /portfolio va direttamente alla prima categoria (niente pagina-ponte bianca)
+[[redirects]]
+  from = "/en/portfolio"
+  to = "/en/portfolio/nature"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/it/portfolio"
+  to = "/it/portfolio/nature"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/es/portfolio"
+  to = "/es/portfolio/nature"
+  status = 301
+  force = true
