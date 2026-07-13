@@ -152,6 +152,19 @@ body.portfolio-mode #sidebar { transform: translateX(0); }
 }
 body.portfolio-mode #main { margin-left: 240px; }
 
+/* Ingresso pagina: leggera dissolvenza + entrata laterale ad ogni cambio pagina.
+   È un'animazione d'ingresso del contenuto (non un cross-fade tra documenti),
+   così non riappare il "flash" del portfolio. Il keyframe finisce con
+   transform:none per non lasciare un containing-block che romperebbe il
+   position:fixed del lightbox. */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateX(22px); }
+  to   { opacity: 1; transform: none; }
+}
+#main { animation: pageEnter 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) backwards; }
+body { overflow-x: hidden; }
+@media (prefers-reduced-motion: reduce) { #main { animation: none; } }
+
 /* ═══════════════════════════════════
    PAGES  (fade/slide transitions)
 ═══════════════════════════════════ */
