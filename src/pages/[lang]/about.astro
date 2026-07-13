@@ -22,13 +22,10 @@ const t = i18n[lang];
 </Base>
 
 <style is:global>
-  /* spazio solo sulla prima scena (bio), così la barra non la copre;
-     la scena contatti resta a tutta altezza e raggiungibile in fondo */
-  #page-about { scroll-padding-top: 84px; }
-  #page-about .about-scene:first-child { padding-top: 84px; }
-  @media (max-width: 768px) {
-    #page-about .about-scene:first-child { padding-top: 0; }
-  }
+  /* niente scroll-padding sul contenitore (sfasava lo snap della 2ª scena):
+     la clearance dalla barra la do solo alla colonna di testo della bio,
+     così la scena contatti resta perfettamente centrata a tutta altezza */
+  #page-about .about-s1-text { padding-top: 90px; }
 </style>
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
