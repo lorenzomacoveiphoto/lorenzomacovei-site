@@ -1451,6 +1451,19 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .tdp-dots button.on{background:var(--accent);transform:scale(1.3)}
 #journal-post-wtrek .tdp-cap-live{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:14px;line-height:1.7;text-align:center}
 
+/* ── Accordion price-cards (dettagli a tendina) ── */
+#journal-post-wtrek .tdp-acc{border:1px solid var(--line);background:var(--ink-soft);margin:24px 0}
+#journal-post-wtrek .tdp-acc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+#journal-post-wtrek .tdp-acc summary::-webkit-details-marker{display:none}
+#journal-post-wtrek .tdp-acc summary::after{content:'+';font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1;color:var(--muted);transition:color .2s}
+#journal-post-wtrek .tdp-acc[open] summary::after{content:'–';color:var(--accent)}
+#journal-post-wtrek .tdp-acc .acc-body{padding:4px 18px 16px;border-top:1px solid var(--line-soft)}
+#journal-post-wtrek .tdp-acc .acc-body p{margin:14px 0 0;font-size:15px;line-height:1.75;color:var(--paper-dim)}
+#journal-post-wtrek .tdp-acc .acc-body table{margin:6px 0 0}
+/* homestay info button */
+#journal-post-wtrek .hs-i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:8px;border:1px solid var(--accent-dim);color:var(--accent);background:none;border-radius:50%;font-family:'DM Mono',monospace;font-size:10px;line-height:1;cursor:pointer;vertical-align:middle;transition:.2s;padding:0}
+#journal-post-wtrek .hs-i:hover{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+
 /* ── Footer ── */
 #journal-post-wtrek footer{padding:60px 0 84px;text-align:center}
 #journal-post-wtrek footer .fq{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:26px;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}
