@@ -67,7 +67,7 @@ const pages = [
   <body class={isPortfolio ? 'portfolio-mode' : ''}>
     <nav id="top-nav" class={page && page !== 'home' ? 'scrolled' : ''}>
       <a class="top-nav-left" href={`/${lang}/`}>
-        <div class="top-logo">Lorenzo Macovei</div>
+        <div class="top-logo"><span class="lm-w lm-l"></span><span class="lm-w lm-m"></span></div>
         <div class="top-tagline">{t.tagline}</div>
       </a>
       <ul class="top-nav-links">
@@ -85,7 +85,7 @@ const pages = [
           </>
         ))}
       </div>
-      <div id="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <div id="hamburger" onclick="document.body.classList.toggle('menu-open')">
         <span></span><span></span><span></span>
       </div>
     </nav>
@@ -97,8 +97,8 @@ const pages = [
     </div>
 
     <div id="mobile-menu">
-      <button class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">✕</button>
-      <div class="mobile-menu-name">Lorenzo<br />Macovei</div>
+      <button class="mobile-menu-close" onclick="document.body.classList.remove('menu-open')">✕</button>
+      <div class="mobile-menu-name"><span class="lm-w lm-l"></span><span class="lm-w lm-m"></span></div>
       <nav class="mobile-menu-nav">
         {pages.map((p) => <a class="mobile-menu-item" href={p.href} style="text-decoration:none;display:block;">{p.label}</a>)}
       </nav>
@@ -111,7 +111,7 @@ const pages = [
 
     <nav id="sidebar">
       <div>
-        <a class="sidebar-name" href={`/${lang}/`} style="text-decoration:none;">Lorenzo<br />Macovei</a>
+        <a class="sidebar-name" href={`/${lang}/`} style="text-decoration:none;"><span class="lm-w lm-l"></span><span class="lm-w lm-m"></span></a>
         <div class="sidebar-tagline">{t.tagline}</div>
         <div class="sidebar-section-label">{t.nav_portfolio}</div>
         <ul class="sidebar-cat-links">
@@ -146,6 +146,29 @@ const pages = [
       #top-nav a, #sidebar a, #mobile-menu a, .top-nav-left,
       .top-nav-links a, .sidebar-cat-links a, .sidebar-page-links a { text-decoration: none; color: inherit; }
       .top-nav-left { display: flex; flex-direction: column; gap: 2px; cursor: pointer; }
+
+      /* ── Logo-nome vettoriale (LORENZO / MACOVEI) su header, sidebar, menu mobile.
+         Usa il colore del testo circostante via currentColor. ── */
+      .lm-w {
+        display: block; width: auto; background-color: currentColor;
+        -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+        -webkit-mask-position: left center; mask-position: left center;
+        -webkit-mask-size: contain; mask-size: contain;
+      }
+      .lm-l { aspect-ratio: 2002 / 340.42; -webkit-mask-image: url(/lorenzo.svg); mask-image: url(/lorenzo.svg); }
+      .lm-m { aspect-ratio: 1919.87 / 349.4; -webkit-mask-image: url(/macovei.svg); mask-image: url(/macovei.svg); }
+
+      /* header: nome+cognome sulla stessa riga */
+      .top-logo { display: flex; align-items: center; gap: 0.4em; letter-spacing: 0 !important; }
+      .top-logo .lm-w { height: 15px; }
+
+      /* sidebar (portfolio) e menu mobile: impilati */
+      .sidebar-name { display: flex; flex-direction: column; gap: 0.16em; align-items: flex-start; }
+      .sidebar-name .lm-w { height: 26px; }
+      .mobile-menu-name { display: flex; flex-direction: column; gap: 0.14em; align-items: flex-start; }
+      .mobile-menu-name .lm-w { height: 13px; }
+
+      @media (max-width: 768px) { .top-logo .lm-w { height: 13px; } }
     </style>
 
     <script is:inline>
