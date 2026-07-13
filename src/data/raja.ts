@@ -542,18 +542,34 @@ const es_stay = stayForm({ k: 'RESERVA TU ESTANCIA', title: 'Encuentra dónde do
 // isolati. Preserva l'ordine di lettura: media→testo resta media a sinistra,
 // testo→media resta testo a sinistra.
 function pairMedia(html: string) {
-  const INNER = '(<video[^>]*><\\/video>|<img[^>]*>(?:<div class="tdp-cap">[\\s\\S]*?<\\/div>)?)';
-  const FIG = '<div class="tdp-fig">' + INNER + '<\\/div>';
-  // un SINGOLO paragrafo (nessun </p> interno): così l'accoppiamento è solo tra
-  // media e testo ADIACENTI e il match non attraversa altri paragrafi/sezioni.
+  // I media VERTICALI (video piaynemo/corepen/ethics + foto diving) vanno
+  // affiancati al testo in una riga a due colonne (.rja-side). Un SINGOLO
+  // paragrafo (nessun </p> interno) → accoppiamento solo tra elementi ADIACENTI.
+  const PINNER =
+    '(<video[^>]*src="[^"]*(?:vhx30u|k2igtz|IMG_9402)[^"]*"[^>]*><\\/video>|<img[^>]*src="[^"]*IMG_8571[^"]*"[^>]*>)';
+  const PFIG = '<div class="tdp-fig">' + PINNER + '<\\/div>';
   const PARA = '(<p>(?:(?!<\\/p>)[\\s\\S])*<\\/p>)';
   html = html.replace(
-    new RegExp(FIG + '\\s*' + PARA, 'g'),
+    new RegExp(PFIG + '\\s*' + PARA, 'g'),
     '<div class="rja-side"><div class="rs-media">$1</div><div class="rs-text">$2</div></div>'
   );
   html = html.replace(
-    new RegExp(PARA + '\\s*' + FIG, 'g'),
+    new RegExp(PARA + '\\s*' + PFIG, 'g'),
     '<div class="rja-side"><div class="rs-text">$1</div><div class="rs-media">$2</div></div>'
+  );
+  // Foto ORIZZONTALI: scenery a tutto schermo (full-bleed)…
+  html = html.replace(
+    /<div class="tdp-fig">(<img src="[^"]*IMG_8816[^"]*"[^>]*>)<\/div>/g,
+    '<figure class="rja-bleed">$1</figure>'
+  );
+  // …arrive e la mappa a piena larghezza del contenuto (intere, non ritagliate).
+  html = html.replace(
+    /<div class="tdp-fig">(<img src="[^"]*IMG_8817[^"]*"[^>]*>)<\/div>/g,
+    '<figure class="rja-wide">$1</figure>'
+  );
+  html = html.replace(
+    /<div class="tdp-fig">(<img src="[^"]*Gemini_Generated[^"]*"[^>]*>)(<div class="tdp-cap">[\s\S]*?<\/div>)?<\/div>/g,
+    '<figure class="rja-wide">$1$2</figure>'
   );
   return html;
 }
