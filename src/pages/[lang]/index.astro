@@ -12,6 +12,11 @@ export function getStaticPaths() {
 }
 const { lang } = Astro.params;
 const t = i18n[lang];
+// Hero: il nome "Lorenzo Macovei" reso coi font vettoriali (niente monogramma).
+const homeHtml = home[lang].replace(
+  /(<div class="hero-title">)[^<]*(<\/div>)/,
+  '$1<span class="ht-w ht-l"></span><span class="ht-w ht-m"></span>$2'
+);
 const titles: Record<string, string> = {
   en: 'Lorenzo Macovei — Borderless Photographer',
   it: 'Lorenzo Macovei — Fotografo Senza Confini',
@@ -19,9 +24,59 @@ const titles: Record<string, string> = {
 };
 ---
 <Base lang={lang} page="home" title={titles[lang]} description={t.tagline}>
-  <Fragment set:html={home[lang]} />
+  <Fragment set:html={homeHtml} />
   <Lightbox />
 </Base>
+
+<style is:global>
+  /* Hero home: nome "Lorenzo Macovei" coi font vettoriali, bianchi,
+     sulla stessa linea; impilati su mobile. */
+  #page-home .hero-title,
+  .snap-scene .hero-title {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(14px, 2.2vw, 40px);
+    color: transparent !important;
+    font-size: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto 12px !important;
+    padding: 0 16px;
+  }
+  #page-home .hero-title .ht-w,
+  .snap-scene .hero-title .ht-w {
+    display: block;
+    width: auto;
+    background-color: #ffffff;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+    -webkit-mask-position: center; mask-position: center;
+    -webkit-mask-size: contain; mask-size: contain;
+  }
+  #page-home .hero-title .ht-l,
+  .snap-scene .hero-title .ht-l {
+    height: clamp(40px, 6.6vw, 104px);
+    aspect-ratio: 1473.39 / 278.55;
+    -webkit-mask-image: url(/lorenzo.svg); mask-image: url(/lorenzo.svg);
+  }
+  #page-home .hero-title .ht-m,
+  .snap-scene .hero-title .ht-m {
+    height: clamp(40px, 6.6vw, 104px);
+    aspect-ratio: 1473.09 / 324.9;
+    -webkit-mask-image: url(/macovei.svg); mask-image: url(/macovei.svg);
+  }
+  @media (max-width: 768px) {
+    #page-home .hero-title,
+    .snap-scene .hero-title {
+      flex-direction: column;
+      gap: clamp(2px, 1vw, 8px);
+    }
+    #page-home .hero-title .ht-l,
+    #page-home .hero-title .ht-m,
+    .snap-scene .hero-title .ht-l,
+    .snap-scene .hero-title .ht-m { height: clamp(32px, 8.5vw, 52px); }
+  }
+</style>
 
 <script define:vars={{ LANG: lang }}>
   let featIdx = 0, featLoopInit = false;
