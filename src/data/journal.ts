@@ -20,6 +20,16 @@ const CDN = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto';
 
 export const articles: Article[] = [
   {
+    slug: 'guaviare',
+    type: 'guide',
+    date: '2026-08-01',
+    meta: 'Colombia · Guaviare · Guide · 2026',
+    cover: 'https://res.cloudinary.com/dligvuje7/image/upload/f_jpg,q_auto/v1786135643/IMG_9455_re1mwz.heic',
+    hero: 'https://res.cloudinary.com/dligvuje7/image/upload/f_jpg,q_auto/v1786135643/IMG_9455_re1mwz.heic',
+    titleKey: 'guide_guaviare_title',
+    descKey: 'guide_guaviare_desc',
+  },
+  {
     slug: 'raja-ampat',
     type: 'guide',
     date: '2026-06-15',

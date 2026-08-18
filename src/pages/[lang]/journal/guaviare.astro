@@ -1,0 +1,109 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { guaviare, guaviareMeta, type Lang } from '../../../data/guaviare';
+
+export function getStaticPaths() {
+  return (['en', 'it', 'es'] as Lang[]).map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const d = guaviare[lang];
+
+const site = 'https://lorenzomacovei.com';
+const pageUrl = `${site}/${lang}/journal/guaviare`;
+const crumbs = ({ en: ['Home', 'Journal'], it: ['Home', 'Journal'], es: ['Inicio', 'Journal'] } as Record<Lang, string[]>)[lang];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: d.title,
+      description: guaviareMeta.desc[lang],
+      image: guaviareMeta.cover,
+      inLanguage: lang,
+      author: { '@type': 'Person', name: 'Lorenzo Macovei' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Lorenzo Macovei Photography',
+        logo: { '@type': 'ImageObject', url: guaviareMeta.cover },
+      },
+      datePublished: '2026-08-01',
+      dateModified: guaviareMeta.date,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+      keywords: guaviareMeta.keywords[lang],
+    },
+    {
+      '@type': 'TouristDestination',
+      name: 'Guaviare',
+      description: guaviareMeta.desc[lang],
+      geo: { '@type': 'GeoCoordinates', latitude: 2.57, longitude: -72.64 },
+      touristType: ['Nature travelers', 'Adventure travelers', 'Cultural travelers'],
+      includesAttraction: [
+        { '@type': 'TouristAttraction', name: 'Cerro Azul', description: 'Rock walls of La Lindosa carrying rock art among the oldest in South America.' },
+        { '@type': 'TouristAttraction', name: 'Tranquilandia', description: 'The Caño Sabana, a river that turns red when the Macarenia clavigera blooms.' },
+        { '@type': 'TouristAttraction', name: 'Raudal del Guayabero', description: 'Rapids on the Guayabero river past painted cliff panels.' },
+        { '@type': 'TouristAttraction', name: 'Puerta de Orión', description: 'A large sandstone arch framing the forest.' },
+      ],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: crumbs[0], item: `${site}/${lang}/` },
+        { '@type': 'ListItem', position: 2, name: crumbs[1], item: `${site}/${lang}/journal` },
+        { '@type': 'ListItem', position: 3, name: 'Guaviare', item: pageUrl },
+      ],
+    },
+  ],
+};
+---
+<Base
+  lang={lang}
+  page="journal"
+  title={guaviareMeta.titleTag[lang]}
+  description={guaviareMeta.desc[lang]}
+  image={guaviareMeta.cover}
+>
+  <Fragment slot="head">
+    <meta name="keywords" content={guaviareMeta.keywords[lang]} />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
+
+  <div id="journal-post-wtrek">
+    <div class="rja-hero-cover">
+      <img src={guaviareMeta.cover} alt="The Guaviare, on the frontier where Colombia's eastern plains dissolve into the Amazon" />
+    </div>
+    <div class="wrap">
+      <a
+        class="rja-back"
+        href={`/${lang}/journal`}
+        style="display:inline-block; margin:26px 0 0; font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); text-decoration:none;"
+        >{d.back}</a
+      >
+      <div class="hero">
+        <div class="kicker">{d.kicker}</div>
+        <h1>{d.title}</h1>
+        <p class="sub">{d.sub}</p>
+        <div class="facts">
+          {d.facts.map((f) => (
+            <div class="fact"><div class="n">{f.n}</div><div class="l">{f.l}</div></div>
+          ))}
+        </div>
+      </div>
+
+      <nav class="toc" aria-label={d.tocTitle}>
+        <div class="toc-h">{d.tocTitle}</div>
+        <ol>
+          {d.toc.map((i) => (
+            <li><a href={`#${i.id}`}><span class="idx">{i.n}</span><span class="txt">{i.label}</span></a></li>
+          ))}
+        </ol>
+      </nav>
+
+      <Fragment set:html={d.body} />
+    </div>
+  </div>
+</Base>
+
+<style is:global>
+  #journal-post-wtrek section { scroll-margin-top: 92px; }
+</style>

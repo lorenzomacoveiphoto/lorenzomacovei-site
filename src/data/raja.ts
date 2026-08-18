@@ -542,22 +542,22 @@ const es_stay = stayForm({ k: 'RESERVA TU ESTANCIA', title: 'Encuentra dónde do
 // isolati. Preserva l'ordine di lettura: media→testo resta media a sinistra,
 // testo→media resta testo a sinistra.
 function pairMedia(html: string) {
-  // I media VERTICALI (video piaynemo/corepen/ethics + foto diving) vanno
-  // affiancati al testo in una riga a due colonne (.rja-side). Un SINGOLO
-  // paragrafo (nessun </p> interno) → accoppiamento solo tra elementi ADIACENTI.
+  // I media VERTICALI (video piaynemo/corepen/ethics + foto diving) diventano
+  // figure FLOTTANTI: il testo scorre attorno (come il .photo-side originale),
+  // così restano incorniciati e non lasciano spazi bianchi.
   const PINNER =
     '(<video[^>]*src="[^"]*(?:vhx30u|k2igtz|IMG_9402)[^"]*"[^>]*><\\/video>|<img[^>]*src="[^"]*IMG_8571[^"]*"[^>]*>)';
   const PFIG = '<div class="tdp-fig">' + PINNER + '<\\/div>';
   const PARA = '(<p>(?:(?!<\\/p>)[\\s\\S])*<\\/p>)';
-  html = html.replace(
-    new RegExp(PFIG + '\\s*' + PARA, 'g'),
-    '<div class="rja-side"><div class="rs-media">$1</div><div class="rs-text">$2</div></div>'
-  );
+  // 1) sposta ogni media verticale PRIMA del paragrafo che lo precede: così
+  //    anche quel paragrafo (es. "Underwater") gli scorre di fianco.
   html = html.replace(
     new RegExp(PARA + '\\s*' + PFIG, 'g'),
-    '<div class="rja-side"><div class="rs-text">$1</div><div class="rs-media">$2</div></div>'
+    '<div class="tdp-fig">$2</div>\n$1'
   );
-  // Foto ORIZZONTALI: scenery a tutto schermo (full-bleed)…
+  // 2) rendi flottanti i media verticali.
+  html = html.replace(new RegExp(PFIG, 'g'), '<figure class="rja-float">$1</figure>');
+  // 3) Foto ORIZZONTALI: scenery a tutto schermo (full-bleed)…
   html = html.replace(
     /<div class="tdp-fig">(<img src="[^"]*IMG_8816[^"]*"[^>]*>)<\/div>/g,
     '<figure class="rja-bleed">$1</figure>'
