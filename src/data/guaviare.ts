@@ -10,6 +10,9 @@ const M = {
   comm2: `${IMG}/q_auto,f_auto/v1786135401/DSCF7796_jzvvg0.jpg`,
   herra: `${IMG}/q_auto,f_auto/v1786135452/DSCF7752_aqdccl.jpg`,
   closing: `${IMG}/q_auto,f_auto/v1786135628/DSCF7705_yo4ujv.jpg`,
+  palms: `${IMG}/q_auto,f_auto/v1787080131/DSCF7746_ofmqsg.jpg`,
+  raudalVid: 'https://res.cloudinary.com/dligvuje7/video/upload/f_auto,q_auto/v1787080343/IMG_9438_chfjvw.mp4',
+  commVid: 'https://res.cloudinary.com/dligvuje7/video/upload/f_auto,q_auto/v1787080409/0801_2_uvh0wi.mp4',
 };
 
 const wide = (src: string, alt: string, cap: string) =>
@@ -18,12 +21,17 @@ const floatFig = (src: string, alt: string, cap: string) =>
   `<figure class="rja-float"><img src="${src}" alt="${alt}" loading="lazy"><figcaption>${cap}</figcaption></figure>`;
 const bleed = (src: string, alt: string, cap: string) =>
   `<figure class="rja-bleed"><img src="${src}" alt="${alt}" loading="lazy"><figcaption>${cap}</figcaption></figure>`;
+const floatVid = (src: string, cap: string) =>
+  `<figure class="rja-float"><video src="${src}" autoplay muted loop playsinline></video><figcaption>${cap}</figcaption></figure>`;
+const wideVid = (src: string, cap: string) =>
+  `<figure class="rja-wide"><video src="${src}" autoplay muted loop playsinline></video><figcaption>${cap}</figcaption></figure>`;
 
 // ─────────────────────────── ENGLISH ───────────────────────────
 const en_body = `
 <section><p class="lead"><span class="drop">T</span>he Guaviare sits on the seam of Colombia where the eastern plains, the <em>llanos</em>, dissolve into the Amazon. It is hot, green and thinly populated, a frontier of sandstone towers, tannin-dark rivers and forest that runs unbroken to the horizon. And for most of recent history, it was a place you could not travel to.</p></section>
 
 <section id="what"><span class="eyebrow">01</span><h2>What the Guaviare is</h2>
+${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and still water: the Guaviare on the seam between llano and Amazon.')}
 <p>For decades this was coca country and FARC territory, one of the corners of Colombia where the armed conflict, the drug economy and the absence of the state were knotted most tightly together. The 2016 peace agreement changed that. Security improved, the region opened, and San José del Guaviare, the small departmental capital, became the base for one of the most surprising trips in the country: rock art painted more than twelve thousand years ago, a river that turns red, natural rock arches, pink river dolphins, and communities deciding for themselves how they want to be met.</p>
 </section>
 
@@ -71,6 +79,7 @@ ${wide(M.cerro, 'Ancient rock paintings on the wall of Cerro Azul', 'Cerro Azul:
 <p>The 2016 peace agreement between the government and the FARC changed the trajectory. Security improved, the guerrilla demobilised across much of the department, and communities turned towards other economies, tourism among them. Projects like Finca Chontaduro now tell that history directly, on the ground where coca once grew. It is a young and fragile transformation, and worth understanding before you arrive.</p>
 </div></details>
 <h3>The Raudal del Guayabero</h3>
+${floatVid(M.raudalVid, 'Up the Guayabero river by boat towards the raudal.')}
 <p>A day on the water. A boat carries you up the <strong>Guayabero river</strong> to the <em>raudal</em>, where the current breaks over rock into rapids, past more painted panels on the cliffs and a string of viewpoints out over the river and the forest. It is the most cinematic day of the loop, and the one where the scale of the landscape really lands.</p>
 <div class="tip"><b>A sample 3-day loop</b>How the classic Geotours circuit breaks down, and a good template whoever you book with.</div>
 <table>
@@ -85,8 +94,10 @@ ${wide(M.cerro, 'Ancient rock paintings on the wall of Cerro Azul', 'Cerro Azul:
 
 <section id="community"><span class="eyebrow">06</span><h2>Meeting the communities</h2>
 <p>The classic loop covers the icons, and covers them well. But the day I keep coming back to was not on the standard itinerary. I asked the person who handles bookings at Geotours whether it would be possible to spend a real day with the indigenous communities of the Guaviare. Not a <em>velada</em> staged for visitors, an hour of dancing laid on and paid for, but an ordinary day, on their terms. He arranged it directly, and the 50€ it cost went to the communities as an offering rather than to an agency.</p>
+<p>What it held was ordinary work, not performance: cassava sieved and toasted into <em>fariña</em>, the coarse flour that anchors daily life here, things made by hand, the slow rhythm of a household going about its day with us in it rather than watching from the outside. That is exactly why it stayed with me. Nothing was staged, and nothing needed to be.</p>
 <div class="tip"><b>How to arrange it</b>Ask for it when you book, and let your operator set it up through the same regulated, community-linked channel that protects everything else here. What you pay goes to the communities directly. Treat the day as a privilege, not a product. It is the single thing that turned a good tour into a trip I won't forget.</div>
 ${wide(M.comm1, 'A day with an indigenous community of the Guaviare', 'A day with one of the indigenous communities of the Guaviare, arranged directly rather than staged for visitors.')}
+${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the day.')}
 ${wide(M.comm2, 'Everyday work in the community', 'An ordinary day, on their terms, not a show put on for outsiders.')}
 </section>
 
@@ -130,6 +141,7 @@ const it_body = `
 <section><p class="lead"><span class="drop">I</span>l Guaviare si trova sulla cucitura della Colombia, dove le pianure orientali, i <em>llanos</em>, si dissolvono nell'Amazzonia. È caldo, verde e poco popolato, una frontiera di torri di arenaria, fiumi scuri di tannino e foresta che corre ininterrotta fino all'orizzonte. E per gran parte della storia recente è stato un posto in cui non si poteva viaggiare.</p></section>
 
 <section id="what"><span class="eyebrow">01</span><h2>Cos'è il Guaviare</h2>
+${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e acqua immobile: il Guaviare sulla cucitura tra llano e Amazzonia.')}
 <p>Per decenni è stato terra di coca e territorio delle FARC, uno degli angoli della Colombia dove il conflitto armato, l'economia della droga e l'assenza dello Stato erano annodati più strettamente. L'accordo di pace del 2016 ha cambiato le cose. La sicurezza è migliorata, la regione si è aperta e San José del Guaviare, la piccola capitale del dipartimento, è diventata la base per uno dei viaggi più sorprendenti del Paese: arte rupestre dipinta più di dodicimila anni fa, un fiume che diventa rosso, archi naturali di roccia, delfini rosa di fiume, e comunità che decidono da sé come vogliono essere incontrate.</p>
 </section>
 
@@ -177,6 +189,7 @@ ${wide(M.cerro, 'Antiche pitture rupestri sulla parete di Cerro Azul', 'Cerro Az
 <p>L'accordo di pace del 2016 tra governo e FARC ha cambiato la traiettoria. La sicurezza è migliorata, la guerriglia si è smobilitata in gran parte del dipartimento, e le comunità si sono rivolte ad altre economie, tra cui il turismo. Progetti come Finca Chontaduro oggi raccontano quella storia direttamente, sul terreno dove un tempo cresceva la coca. È una trasformazione giovane e fragile, che vale la pena capire prima di arrivare.</p>
 </div></details>
 <h3>Il Raudal del Guayabero</h3>
+${floatVid(M.raudalVid, 'Su per il fiume Guayabero in barca, verso il raudal.')}
 <p>Una giornata sull'acqua. Una barca ti porta su per il <strong>fiume Guayabero</strong> fino al <em>raudal</em>, dove la corrente si spezza sulla roccia in rapide, oltre altri pannelli dipinti sulle scogliere e una serie di punti panoramici sul fiume e sulla foresta. È la giornata più cinematografica del circuito, e quella in cui la scala del paesaggio si coglie davvero.</p>
 <div class="tip"><b>Un esempio di circuito da 3 giorni</b>Come si articola il classico circuito di Geotours, e un buon modello con chiunque tu prenoti.</div>
 <table>
@@ -191,8 +204,10 @@ ${wide(M.cerro, 'Antiche pitture rupestri sulla parete di Cerro Azul', 'Cerro Az
 
 <section id="community"><span class="eyebrow">06</span><h2>Incontrare le comunità</h2>
 <p>Il circuito classico copre le icone, e le copre bene. Ma la giornata a cui torno col pensiero non era nell'itinerario standard. Ho chiesto alla persona che gestisce le prenotazioni di Geotours se fosse possibile passare una giornata vera con le comunità indigene del Guaviare. Non una <em>velada</em> messa in scena per i visitatori, un'ora di danze organizzata e pagata, ma una giornata ordinaria, alle loro condizioni. Ha organizzato tutto direttamente, e i 50€ che è costata sono andati alle comunità come offerta, non a un'agenzia.</p>
+<p>Quello che ha offerto era lavoro ordinario, non uno spettacolo: la cassava setacciata e tostata in <em>fariña</em>, la farina grezza attorno a cui ruota la vita quotidiana qui, cose fatte a mano, il ritmo lento di una casa che va avanti con la sua giornata, con noi dentro e non a guardare da fuori. È proprio per questo che mi è rimasta. Niente era messo in scena, e non ce n'era bisogno.</p>
 <div class="tip"><b>Come organizzarla</b>Chiedila al momento della prenotazione, e lascia che il tuo operatore la imposti attraverso lo stesso canale regolato e legato alle comunità che protegge tutto il resto qui. Quello che paghi va direttamente alle comunità. Trattala come un privilegio, non un prodotto. È la cosa che ha trasformato un buon tour in un viaggio che non dimenticherò.</div>
 ${wide(M.comm1, 'Una giornata con una comunità indigena del Guaviare', 'Una giornata con una delle comunità indigene del Guaviare, organizzata direttamente e non messa in scena per i visitatori.')}
+${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a cui ruota la giornata.")}
 ${wide(M.comm2, 'Il lavoro quotidiano nella comunità', 'Una giornata ordinaria, alle loro condizioni, non uno spettacolo per chi viene da fuori.')}
 </section>
 
@@ -236,6 +251,7 @@ const es_body = `
 <section><p class="lead"><span class="drop">E</span>l Guaviare se asienta en la costura de Colombia donde los llanos orientales, los <em>llanos</em>, se disuelven en la Amazonía. Es caluroso, verde y poco poblado, una frontera de torres de arenisca, ríos oscuros de taninos y selva que corre sin interrupción hasta el horizonte. Y durante gran parte de la historia reciente fue un lugar al que no se podía viajar.</p></section>
 
 <section id="what"><span class="eyebrow">01</span><h2>Qué es el Guaviare</h2>
+${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundadas y agua quieta: el Guaviare en la costura entre el llano y la Amazonía.')}
 <p>Durante décadas fue tierra de coca y territorio de las FARC, uno de los rincones de Colombia donde el conflicto armado, la economía de la droga y la ausencia del Estado estaban más estrechamente anudados. El acuerdo de paz de 2016 cambió eso. La seguridad mejoró, la región se abrió, y San José del Guaviare, la pequeña capital departamental, se convirtió en la base de uno de los viajes más sorprendentes del país: arte rupestre pintado hace más de doce mil años, un río que se vuelve rojo, arcos naturales de roca, delfines rosados de río, y comunidades que deciden por sí mismas cómo quieren ser encontradas.</p>
 </section>
 
@@ -283,6 +299,7 @@ ${wide(M.cerro, 'Antiguas pinturas rupestres en la pared de Cerro Azul', 'Cerro 
 <p>El acuerdo de paz de 2016 entre el gobierno y las FARC cambió la trayectoria. La seguridad mejoró, la guerrilla se desmovilizó en gran parte del departamento, y las comunidades se volcaron hacia otras economías, el turismo entre ellas. Proyectos como Finca Chontaduro cuentan hoy esa historia directamente, sobre el terreno donde antes crecía la coca. Es una transformación joven y frágil, que vale la pena entender antes de llegar.</p>
 </div></details>
 <h3>El Raudal del Guayabero</h3>
+${floatVid(M.raudalVid, 'Río Guayabero arriba en lancha, hacia el raudal.')}
 <p>Un día en el agua. Una lancha te lleva río arriba por el <strong>río Guayabero</strong> hasta el <em>raudal</em>, donde la corriente rompe sobre la roca en rápidos, pasando más paneles pintados en los acantilados y una serie de miradores sobre el río y la selva. Es el día más cinematográfico del circuito, y en el que la escala del paisaje realmente se siente.</p>
 <div class="tip"><b>Un ejemplo de circuito de 3 días</b>Cómo se reparte el clásico circuito de Geotours, y una buena plantilla con quien sea que reserves.</div>
 <table>
@@ -297,8 +314,10 @@ ${wide(M.cerro, 'Antiguas pinturas rupestres en la pared de Cerro Azul', 'Cerro 
 
 <section id="community"><span class="eyebrow">06</span><h2>Conocer a las comunidades</h2>
 <p>El circuito clásico cubre los iconos, y los cubre bien. Pero el día al que sigo volviendo no estaba en el itinerario estándar. Le pregunté a la persona que lleva las reservas de Geotours si sería posible pasar un día real con las comunidades indígenas del Guaviare. No una <em>velada</em> montada para visitantes, una hora de danzas preparada y pagada, sino un día corriente, en sus términos. Lo organizó directamente, y los 50€ que costó fueron a las comunidades como ofrenda, no a una agencia.</p>
+<p>Lo que ofreció fue trabajo corriente, no un espectáculo: la yuca cernida y tostada en <em>fariña</em>, la harina gruesa en torno a la que gira la vida diaria aquí, cosas hechas a mano, el ritmo lento de una casa haciendo su día con nosotros dentro y no mirando desde fuera. Por eso mismo se me quedó grabado. Nada estaba montado, y no hacía falta que lo estuviera.</p>
 <div class="tip"><b>Cómo organizarlo</b>Pídelo al reservar, y deja que tu operador lo monte por el mismo canal regulado y ligado a las comunidades que protege todo lo demás aquí. Lo que pagas va directo a las comunidades. Trátalo como un privilegio, no un producto. Es lo único que convirtió un buen tour en un viaje que no olvidaré.</div>
 ${wide(M.comm1, 'Un día con una comunidad indígena del Guaviare', 'Un día con una de las comunidades indígenas del Guaviare, organizado directamente y no montado para visitantes.')}
+${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno al que gira el día.')}
 ${wide(M.comm2, 'El trabajo cotidiano en la comunidad', 'Un día corriente, en sus términos, no un espectáculo para los de fuera.')}
 </section>
 

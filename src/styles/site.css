@@ -1500,7 +1500,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* ── Foto ORIZZONTALI a piena larghezza del contenuto (intere) ── */
 #journal-post-wtrek .rja-wide{margin:44px 0}
-#journal-post-wtrek .rja-wide img{width:100%;height:auto;display:block;filter:brightness(0.97)}
+#journal-post-wtrek .rja-wide img,#journal-post-wtrek .rja-wide video{width:100%;height:auto;display:block;filter:brightness(0.97)}
 #journal-post-wtrek .rja-wide .tdp-cap{margin-top:12px;text-align:left}
 
 /* ── Foto ORIZZONTALI a tutto schermo (full-bleed) ── */
