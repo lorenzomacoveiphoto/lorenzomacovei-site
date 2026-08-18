@@ -13,6 +13,12 @@
   status = 302
   force = true
 
+# Guaviare: vecchio slug -> nuovo slug (per non perdere eventuali link/indicizzazioni)
+[[redirects]]
+  from = "/:lang/journal/guaviare"
+  to = "/:lang/journal/guaviare-giungla-colombia-guida"
+  status = 301
+
 # /portfolio va direttamente alla prima categoria (niente pagina-ponte bianca)
 [[redirects]]
   from = "/en/portfolio"

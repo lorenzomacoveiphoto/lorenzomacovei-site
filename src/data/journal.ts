@@ -20,7 +20,7 @@ const CDN = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto';
 
 export const articles: Article[] = [
   {
-    slug: 'guaviare',
+    slug: 'guaviare-giungla-colombia-guida',
     type: 'guide',
     date: '2026-08-01',
     meta: 'Colombia · Guaviare · Guide · 2026',

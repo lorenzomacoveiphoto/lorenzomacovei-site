@@ -58,7 +58,7 @@ ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and st
 <p>Almost every site worth seeing, the rock art, the coloured river, the rapids, the forest trails, lies inside protected land of enormous archaeological and ecological value. Access is regulated: you visit with <strong>authorised local guides, and usually a jeep</strong>, arranged through a licensed operator. You do not turn up and wander in.</p>
 <p>This is not bureaucracy for its own sake. The rock paintings are among the oldest on the continent and irreplaceable, the ecosystems are fragile, and much of the land and its stories belong to communities who are only now shaping how tourism works here. The permit system, the guides and the community protocols are what keep all of it intact, and what make sure the money reaches the people who live here. Booking through a local tour is not a compromise on the adventure. It <em>is</em> the way in.</p></div>
 <p>In practice that means picking a local agency in San José and letting them handle permits, guides and transport. I went with <strong>Geotours del Guaviare</strong>, a three-day package for 400€ all in, and it was well run. Any reputable local operator will cover the same classic circuit.</p>
-<a class="rja-btn" href="https://wa.me/573115772165" target="_blank" rel="noopener">Book with Geotours · WhatsApp →</a>
+<a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Book with Geotours · WhatsApp →</a>
 </section>
 
 <section id="when"><span class="eyebrow">03</span><h2>When to go</h2>
@@ -167,7 +167,7 @@ ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e 
 <p>Quasi ogni sito che valga la pena vedere, l'arte rupestre, il fiume colorato, le rapide, i sentieri nella foresta, si trova dentro terre protette di enorme valore archeologico ed ecologico. L'accesso è regolato: si visita con <strong>guide locali autorizzate, e di solito una jeep</strong>, tramite un operatore con licenza. Non ci si presenta e si entra a piacere.</p>
 <p>Non è burocrazia fine a sé stessa. Le pitture rupestri sono tra le più antiche del continente e insostituibili, gli ecosistemi sono fragili, e gran parte della terra e delle sue storie appartiene a comunità che solo ora stanno definendo come deve funzionare il turismo qui. Il sistema dei permessi, le guide e i protocolli comunitari sono ciò che tiene tutto integro, e ciò che fa arrivare i soldi alle persone che ci vivono. Prenotare con un tour locale non è un compromesso sull'avventura. <em>È</em> il modo per entrarci.</p></div>
 <p>In pratica significa scegliere un'agenzia locale a San José e lasciare che gestisca permessi, guide e trasporti. Io sono andato con <strong>Geotours del Guaviare</strong>, un pacchetto di tre giorni a 400€ tutto incluso, ben organizzato. Qualsiasi operatore locale serio copre lo stesso circuito classico.</p>
-<a class="rja-btn" href="https://wa.me/573115772165" target="_blank" rel="noopener">Prenota con Geotours · WhatsApp →</a>
+<a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Prenota con Geotours · WhatsApp →</a>
 </section>
 
 <section id="when"><span class="eyebrow">03</span><h2>Quando andare</h2>
@@ -276,7 +276,7 @@ ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundada
 <p>Casi todo sitio que valga la pena ver, el arte rupestre, el río de colores, los rápidos, los senderos de la selva, está dentro de tierras protegidas de enorme valor arqueológico y ecológico. El acceso está regulado: se visita con <strong>guías locales autorizados, y normalmente un jeep</strong>, a través de un operador con licencia. No te presentas y entras a tu aire.</p>
 <p>No es burocracia por sí misma. Las pinturas rupestres están entre las más antiguas del continente e irremplazables, los ecosistemas son frágiles, y gran parte de la tierra y de sus historias pertenece a comunidades que solo ahora están definiendo cómo funciona el turismo aquí. El sistema de permisos, los guías y los protocolos comunitarios son lo que mantiene todo intacto, y lo que hace que el dinero llegue a la gente que vive aquí. Reservar con un tour local no es una concesión en la aventura. <em>Es</em> la manera de entrar.</p></div>
 <p>En la práctica eso significa elegir una agencia local en San José y dejar que gestione permisos, guías y transporte. Yo fui con <strong>Geotours del Guaviare</strong>, un paquete de tres días por 400€ todo incluido, bien organizado. Cualquier operador local serio cubre el mismo circuito clásico.</p>
-<a class="rja-btn" href="https://wa.me/573115772165" target="_blank" rel="noopener">Reserva con Geotours · WhatsApp →</a>
+<a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Reserva con Geotours · WhatsApp →</a>
 </section>
 
 <section id="when"><span class="eyebrow">03</span><h2>Cuándo ir</h2>
@@ -405,7 +405,7 @@ const tocEs = mkToc([
 export const guaviare: Record<Lang, GuaviareLang> = {
   it: {
     kicker: 'Guida · Guaviare · Colombia',
-    title: 'Guaviare: come visitare la giungla riaperta della Colombia',
+    title: 'Guaviare: la giungla perduta (e ritrovata) della Colombia',
     sub: 'Guida pratica a San José del Guaviare: quando andare, come arrivare, cosa vedere, e perché questa regione protetta si visita solo con tour locali regolati.',
     facts: [{ n: 'Lug/Nov', l: 'stagione migliore' }, { n: '3 giorni', l: 'circuito classico' }, { n: '12.000+ anni', l: 'arte rupestre' }, { n: 'da 400€', l: 'guidato' }],
     tocTitle: 'In questa guida',
@@ -436,12 +436,12 @@ export const guaviare: Record<Lang, GuaviareLang> = {
 };
 
 export const guaviareMeta = {
-  slug: 'guaviare',
+  slug: 'guaviare-giungla-colombia-guida',
   date: '2026-08-01',
   cover: M.cover,
   titleTag: {
     en: "Guaviare travel guide 2026: how to visit Colombia's reopened jungle",
-    it: 'Guida al Guaviare 2026: come visitare la giungla riaperta della Colombia',
+    it: 'Guaviare 2026: Guida nella giungla perduta (e ritrovata) della Colombia',
     es: 'Guía del Guaviare 2026: cómo visitar la selva reabierta de Colombia',
   } as Record<Lang, string>,
   keywords: {
