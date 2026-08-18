@@ -1,11 +1,12 @@
-// Metadati degli articoli del Diario. Aggiungere un articolo qui (+ le sue chiavi
-// di traduzione) crea automaticamente la sua pagina reale con URL proprio.
+// Metadati degli articoli del Diario. Ogni articolo ha uno slug PER LINGUA,
+// così l'URL è localizzato (es. IT /journal/ogni-foto-e-una-finestra).
 export type Lang = 'en' | 'it' | 'es';
 
 export interface Article {
-  slug: string;
+  id: string; // chiave stabile interna (non cambia mai)
   type: 'story' | 'guide';
   date: string; // ISO, usata per l'ordine (più recenti prima)
+  slugs: Record<Lang, string>; // slug URL per lingua
   meta: string; // riga occhiello, es. "Guatemala · People · 2025"
   cover: string; // immagine card + anteprima social
   hero: string; // immagine grande nell'articolo
@@ -20,9 +21,14 @@ const CDN = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto';
 
 export const articles: Article[] = [
   {
-    slug: 'guaviare-giungla-colombia-guida',
+    id: 'guaviare',
     type: 'guide',
     date: '2026-08-01',
+    slugs: {
+      en: 'guaviare-jungle-guide-colombia',
+      it: 'guaviare-giungla-colombia-guida',
+      es: 'guaviare-selva-colombia-guia',
+    },
     meta: 'Colombia · Guaviare · Guide · 2026',
     cover: 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1787080141/DSCF7689_2_v8quwj.jpg',
     hero: 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1787080141/DSCF7689_2_v8quwj.jpg',
@@ -30,9 +36,14 @@ export const articles: Article[] = [
     descKey: 'guide_guaviare_desc',
   },
   {
-    slug: 'raja-ampat',
+    id: 'raja-ampat',
     type: 'guide',
     date: '2026-06-15',
+    slugs: {
+      en: 'raja-ampat',
+      it: 'raja-ampat-guida-completa',
+      es: 'raja-ampat-guia-completa',
+    },
     meta: 'Indonesia · West Papua · Guide · 2026',
     cover: `${CDN}/v1780954114/IMG_7954_njn95r.jpg`,
     hero: `${CDN}/v1780954114/IMG_7954_njn95r.jpg`,
@@ -40,9 +51,14 @@ export const articles: Article[] = [
     descKey: 'guide_raja_desc',
   },
   {
-    slug: 'w-trek',
+    id: 'w-trek',
     type: 'guide',
     date: '2026-05-01',
+    slugs: {
+      en: 'w-trek',
+      it: 'w-trek-guida-torres-del-paine',
+      es: 'w-trek-guia-torres-del-paine',
+    },
     meta: 'Chilean Patagonia · Guide · 2026',
     cover: `${CDN}/v1780872218/IMG_6343_ff4jyl.jpg`,
     hero: `${CDN}/v1780872218/IMG_6343_ff4jyl.jpg`,
@@ -50,9 +66,14 @@ export const articles: Article[] = [
     descKey: 'guide_wtrek_desc',
   },
   {
-    slug: 'every-photo-is-a-window',
+    id: 'every-photo-is-a-window',
     type: 'story',
     date: '2026-02-01',
+    slugs: {
+      en: 'every-photo-is-a-window',
+      it: 'ogni-foto-e-una-finestra',
+      es: 'cada-foto-es-una-ventana',
+    },
     meta: 'Italy · Moldova · 2026',
     cover: `${CDN}/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg`,
     hero: '',
@@ -63,9 +84,14 @@ export const articles: Article[] = [
     endImage: `${CDN}/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg`,
   },
   {
-    slug: 'the-silent-witness-of-the-acatenango',
+    id: 'the-silent-witness-of-the-acatenango',
     type: 'story',
     date: '2025-04-01',
+    slugs: {
+      en: 'the-silent-witness-of-the-acatenango',
+      it: 'la-testimone-silenziosa-dell-acatenango',
+      es: 'la-testigo-silenciosa-del-acatenango',
+    },
     meta: 'Guatemala · People · 2025',
     cover: `${CDN}/v1781139855/IMG_1969_2_zifyla.jpg`,
     hero: `${CDN}/v1781139855/IMG_1969_2_zifyla.jpg`,
@@ -77,3 +103,13 @@ export const articles: Article[] = [
 ];
 
 export const byDateDesc = (a: Article, b: Article) => (a.date < b.date ? 1 : -1);
+
+// URL localizzato di un articolo in una lingua.
+export const articlePath = (a: Article, lang: Lang) => `/${lang}/journal/${a.slugs[lang]}`;
+
+// I 3 URL alternati (per hreflang e cambio-lingua).
+export const articleLangPaths = (a: Article): Record<Lang, string> => ({
+  en: `/en/journal/${a.slugs.en}`,
+  it: `/it/journal/${a.slugs.it}`,
+  es: `/es/journal/${a.slugs.es}`,
+});

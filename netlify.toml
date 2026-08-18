@@ -13,10 +13,68 @@
   status = 302
   force = true
 
-# Guaviare: vecchio slug -> nuovo slug (per non perdere eventuali link/indicizzazioni)
+# /journal ora ha due pagine (stories/guides): l'indice va alle storie
 [[redirects]]
-  from = "/:lang/journal/guaviare"
-  to = "/:lang/journal/guaviare-giungla-colombia-guida"
+  from = "/:lang/journal"
+  to = "/:lang/journal/stories"
+  status = 301
+
+# Slug localizzati per lingua: vecchi URL -> nuovi (niente link/indicizzazioni perse)
+# Guaviare (slug interimi -> definitivi per lingua)
+[[redirects]]
+  from = "/en/journal/guaviare"
+  to = "/en/journal/guaviare-jungle-guide-colombia"
+  status = 301
+[[redirects]]
+  from = "/it/journal/guaviare"
+  to = "/it/journal/guaviare-giungla-colombia-guida"
+  status = 301
+[[redirects]]
+  from = "/es/journal/guaviare"
+  to = "/es/journal/guaviare-selva-colombia-guia"
+  status = 301
+[[redirects]]
+  from = "/en/journal/guaviare-giungla-colombia-guida"
+  to = "/en/journal/guaviare-jungle-guide-colombia"
+  status = 301
+[[redirects]]
+  from = "/es/journal/guaviare-giungla-colombia-guida"
+  to = "/es/journal/guaviare-selva-colombia-guia"
+  status = 301
+# Raja Ampat (IT/ES localizzati)
+[[redirects]]
+  from = "/it/journal/raja-ampat"
+  to = "/it/journal/raja-ampat-guida-completa"
+  status = 301
+[[redirects]]
+  from = "/es/journal/raja-ampat"
+  to = "/es/journal/raja-ampat-guia-completa"
+  status = 301
+# W-Trek (IT/ES localizzati)
+[[redirects]]
+  from = "/it/journal/w-trek"
+  to = "/it/journal/w-trek-guida-torres-del-paine"
+  status = 301
+[[redirects]]
+  from = "/es/journal/w-trek"
+  to = "/es/journal/w-trek-guia-torres-del-paine"
+  status = 301
+# Storie (IT/ES localizzate)
+[[redirects]]
+  from = "/it/journal/every-photo-is-a-window"
+  to = "/it/journal/ogni-foto-e-una-finestra"
+  status = 301
+[[redirects]]
+  from = "/es/journal/every-photo-is-a-window"
+  to = "/es/journal/cada-foto-es-una-ventana"
+  status = 301
+[[redirects]]
+  from = "/it/journal/the-silent-witness-of-the-acatenango"
+  to = "/it/journal/la-testimone-silenziosa-dell-acatenango"
+  status = 301
+[[redirects]]
+  from = "/es/journal/the-silent-witness-of-the-acatenango"
+  to = "/es/journal/la-testigo-silenciosa-del-acatenango"
   status = 301
 
 # /portfolio va direttamente alla prima categoria (niente pagina-ponte bianca)

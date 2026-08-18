@@ -1,16 +1,12 @@
 ---
-import Base from '../../../layouts/Base.astro';
-import i18nData from '../../../data/i18n.json';
-import wtrekHtml from '../../../data/wtrek-html.json';
+import Base from '../layouts/Base.astro';
+import i18nData from '../data/i18n.json';
+import wtrekHtml from '../data/wtrek-html.json';
 
 const i18n = i18nData as Record<string, Record<string, string>>;
 const html = wtrekHtml as Record<string, string>;
 
-export function getStaticPaths() {
-  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
-}
-
-const { lang } = Astro.params;
+const { lang, langPaths } = Astro.props as { lang: string; langPaths: Record<string, string> };
 const t = i18n[lang];
 const cover = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872218/IMG_6343_ff4jyl.jpg';
 ---
@@ -20,10 +16,11 @@ const cover = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v
   title={`${t.guide_wtrek_title} — Lorenzo Macovei`}
   description={t.guide_wtrek_desc}
   image={cover}
+  langPaths={langPaths}
 >
   <div style="max-width:680px; margin:0 auto; padding:92px 24px 0;">
     <a
-      href={`/${lang}/journal`}
+      href={`/${lang}/journal/guides`}
       style="font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--text3); text-decoration:none;"
       >← {t.nav_journal}</a
     >

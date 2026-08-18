@@ -1,15 +1,12 @@
 ---
-import Base from '../../../layouts/Base.astro';
-import { raja, rajaMeta, type Lang } from '../../../data/raja';
+import Base from '../layouts/Base.astro';
+import { raja, rajaMeta, type Lang } from '../data/raja';
 
-export function getStaticPaths() {
-  return (['en', 'it', 'es'] as Lang[]).map((lang) => ({ params: { lang } }));
-}
-const lang = Astro.params.lang as Lang;
+const { lang, langPaths } = Astro.props as { lang: Lang; langPaths: Record<string, string> };
 const d = raja[lang];
 
 const site = 'https://lorenzomacovei.com';
-const pageUrl = `${site}/${lang}/journal/raja-ampat`;
+const pageUrl = `${site}${langPaths[lang]}`;
 const crumbs = ({ en: ['Home', 'Journal'], it: ['Home', 'Journal'], es: ['Inicio', 'Journal'] } as Record<Lang, string[]>)[lang];
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -62,6 +59,7 @@ const jsonLd = {
   title={rajaMeta.titleTag[lang]}
   description={rajaMeta.desc[lang]}
   image={rajaMeta.cover}
+  langPaths={langPaths}
 >
   <Fragment slot="head">
     <meta name="keywords" content={rajaMeta.keywords[lang]} />
@@ -76,7 +74,7 @@ const jsonLd = {
     <div class="wrap">
       <a
         class="rja-back"
-        href={`/${lang}/journal`}
+        href={`/${lang}/journal/guides`}
         style="display:inline-block; margin:26px 0 0; font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); text-decoration:none;"
         >{d.back}</a
       >

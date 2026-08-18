@@ -1,0 +1,45 @@
+---
+import Base from '../../../layouts/Base.astro';
+import i18nData from '../../../data/i18n.json';
+import { articles, byDateDesc, articlePath } from '../../../data/journal';
+
+const i18n = i18nData as Record<string, Record<string, string>>;
+
+export function getStaticPaths() {
+  return ['en', 'it', 'es'].map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = i18n[lang];
+const list = articles.filter((a) => a.type === 'guide').sort(byDateDesc);
+const tabStyle = 'text-decoration:none;';
+---
+<Base lang={lang} page="journal" title={`${t.journal_tab_guides} — ${t.nav_journal} — Lorenzo Macovei`} description={t.journal_sub ?? ''}>
+  <main>
+    <header class="page-header" style="padding-top:110px;">
+      <h1 class="page-title">{t.nav_journal}</h1>
+      <p class="page-subtitle">{t.journal_sub}</p>
+    </header>
+
+    <div class="journal-tabs">
+      <a class="journal-tab" href={`/${lang}/journal/stories`} style={tabStyle}>{t.journal_tab_stories}</a>
+      <a class="journal-tab active" href={`/${lang}/journal/guides`} style={tabStyle}>{t.journal_tab_guides}</a>
+    </div>
+
+    <div class="journal-list" style="padding: 0 40px 80px; max-width: 1200px; margin: 0 auto;">
+      {list.map((a) => (
+        <a class="blog-post" href={articlePath(a, lang as 'en' | 'it' | 'es')} style="text-decoration:none; cursor:pointer;">
+          <div class="blog-thumb">
+            <img src={a.cover} alt={t[a.titleKey]} loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">{a.meta}</div>
+            <div class="blog-post-title">{t[a.titleKey]}</div>
+            <div class="blog-excerpt">{t[a.descKey]}</div>
+            <div class="blog-read">{t.article_read ?? 'Read'} <span class="blog-arrow">→</span></div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</Base>

@@ -10,13 +10,18 @@ const {
   image = 'https://res.cloudinary.com/dligvuje7/image/upload/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg',
   page = '',
   category = '',
-} = Astro.props;
+  langPaths = null,
+} = Astro.props as { lang?: string; title?: string; description?: string; image?: string; page?: string; category?: string; langPaths?: Record<string, string> | null };
 
 const site = 'https://lorenzomacovei.com';
 const locales = ['en', 'it', 'es'];
 const path = Astro.url.pathname.replace(/^\/(en|it|es)/, '') || '/';
 const suffix = path === '/' ? '/' : path;
-const canonical = `${site}/${lang}${suffix}`;
+// URL per lingua: se l'articolo ha slug localizzati (langPaths) usa quelli,
+// altrimenti stesso suffisso (pagine con struttura identica tra le lingue).
+const altHref = (l: string) => (langPaths && langPaths[l] ? `${site}${langPaths[l]}` : `${site}/${l}${suffix}`);
+const switchHref = (l: string) => (langPaths && langPaths[l] ? langPaths[l] : `/${l}${suffix}`);
+const canonical = altHref(lang);
 const htmlLang = { en: 'en', it: 'it', es: 'es' }[lang] ?? 'en';
 
 const t = (i18n as Record<string, Record<string, string>>)[lang] ?? {};
@@ -31,7 +36,7 @@ const cats = [
 const pages = [
   { key: 'home', href: `/${lang}/`, label: t.nav_home ?? 'Home' },
   { key: 'portfolio', href: `/${lang}/portfolio/nature`, label: t.nav_portfolio ?? 'Portfolio' },
-  { key: 'journal', href: `/${lang}/journal`, label: t.nav_journal ?? 'Journal' },
+  { key: 'journal', href: `/${lang}/journal/stories`, label: t.nav_journal ?? 'Journal' },
   { key: 'about', href: `/${lang}/about`, label: t.nav_about ?? 'About' },
 ];
 ---
@@ -47,8 +52,8 @@ const pages = [
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {locales.map((l) => <link rel="alternate" hreflang={l} href={`${site}/${l}${suffix}`} />)}
-    <link rel="alternate" hreflang="x-default" href={`${site}/en${suffix}`} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={altHref(l)} />)}
+    <link rel="alternate" hreflang="x-default" href={altHref('en')} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -84,7 +89,7 @@ const pages = [
         {locales.map((l, i) => (
           <>
             {i > 0 && <span class="lang-sep">·</span>}
-            <a class={`lang-btn${l === lang ? ' active' : ''}`} href={`/${l}${suffix}`} style="text-decoration:none;">{l.toUpperCase()}</a>
+            <a class={`lang-btn${l === lang ? ' active' : ''}`} href={switchHref(l)} style="text-decoration:none;">{l.toUpperCase()}</a>
           </>
         ))}
       </div>
@@ -127,7 +132,7 @@ const pages = [
         <div class="sidebar-divider"></div>
         <ul class="sidebar-page-links">
           <li><a href={`/${lang}/`} style="color:inherit;text-decoration:none;display:block;">{t.nav_home}</a></li>
-          <li><a href={`/${lang}/journal`} style="color:inherit;text-decoration:none;display:block;">{t.nav_journal}</a></li>
+          <li><a href={`/${lang}/journal/stories`} style="color:inherit;text-decoration:none;display:block;">{t.nav_journal}</a></li>
           <li><a href={`/${lang}/about`} style="color:inherit;text-decoration:none;display:block;">{t.nav_about}</a></li>
         </ul>
       </div>

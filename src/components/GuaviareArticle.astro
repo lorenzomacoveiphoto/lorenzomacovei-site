@@ -1,15 +1,12 @@
 ---
-import Base from '../../../layouts/Base.astro';
-import { guaviare, guaviareMeta, type Lang } from '../../../data/guaviare';
+import Base from '../layouts/Base.astro';
+import { guaviare, guaviareMeta, type Lang } from '../data/guaviare';
 
-export function getStaticPaths() {
-  return (['en', 'it', 'es'] as Lang[]).map((lang) => ({ params: { lang } }));
-}
-const lang = Astro.params.lang as Lang;
+const { lang, langPaths } = Astro.props as { lang: Lang; langPaths: Record<string, string> };
 const d = guaviare[lang];
 
 const site = 'https://lorenzomacovei.com';
-const pageUrl = `${site}/${lang}/journal/guaviare-giungla-colombia-guida`;
+const pageUrl = `${site}${langPaths[lang]}`;
 const crumbs = ({ en: ['Home', 'Journal'], it: ['Home', 'Journal'], es: ['Inicio', 'Journal'] } as Record<Lang, string[]>)[lang];
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -61,6 +58,7 @@ const jsonLd = {
   title={guaviareMeta.titleTag[lang]}
   description={guaviareMeta.desc[lang]}
   image={guaviareMeta.cover}
+  langPaths={langPaths}
 >
   <Fragment slot="head">
     <meta name="keywords" content={guaviareMeta.keywords[lang]} />
@@ -75,7 +73,7 @@ const jsonLd = {
     <div class="wrap">
       <a
         class="rja-back"
-        href={`/${lang}/journal`}
+        href={`/${lang}/journal/guides`}
         style="display:inline-block; margin:26px 0 0; font-family:var(--mono); font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); text-decoration:none;"
         >{d.back}</a
       >
