@@ -1507,6 +1507,13 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rja-bleed{width:100vw;margin-left:calc(50% - 50vw);margin-top:58px;margin-bottom:58px}
 #journal-post-wtrek .rja-bleed img{width:100%;height:clamp(300px,64vh,660px);object-fit:cover;display:block;filter:brightness(0.97)}
 
+/* ── Album a scorrimento orizzontale (foto a proporzioni reali) ── */
+#journal-post-wtrek .rja-album{width:100vw;margin-left:calc(50% - 50vw);display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;padding:6px 24px 16px;scrollbar-width:thin}
+#journal-post-wtrek .rja-album::-webkit-scrollbar{height:8px}
+#journal-post-wtrek .rja-album::-webkit-scrollbar-thumb{background:var(--line2);border-radius:4px}
+#journal-post-wtrek .rja-album img,#journal-post-wtrek .rja-album video{height:min(62vh,540px);width:auto;flex:0 0 auto;display:block;scroll-snap-align:center;background:#0d0c0b;filter:brightness(0.97)}
+@media(max-width:640px){#journal-post-wtrek .rja-album img,#journal-post-wtrek .rja-album video{height:min(56vh,440px)}}
+
 /* ── Footer ── */
 #journal-post-wtrek footer{padding:60px 0 84px;text-align:center}
 #journal-post-wtrek footer .fq{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:26px;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}

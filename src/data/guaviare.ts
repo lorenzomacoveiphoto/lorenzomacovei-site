@@ -3,7 +3,7 @@ export type Lang = 'en' | 'it' | 'es';
 
 const IMG = 'https://res.cloudinary.com/dligvuje7/image/upload';
 const M = {
-  cover: `${IMG}/f_jpg,q_auto/v1786135643/IMG_9455_re1mwz.heic`,
+  cover: `${IMG}/q_auto,f_auto/v1787080141/DSCF7689_2_v8quwj.jpg`,
   tranq: `${IMG}/q_auto,f_auto/v1786135640/IMG_9356_bayorl.jpg`,
   cerro: `${IMG}/q_auto,f_auto/v1786135243/DSCF7689_acjcls.jpg`,
   comm1: `${IMG}/q_auto,f_auto/v1786135441/DSCF7825_dgvbs5.jpg`,
@@ -25,6 +25,23 @@ const floatVid = (src: string, cap: string) =>
   `<figure class="rja-float"><video src="${src}" autoplay muted loop playsinline></video><figcaption>${cap}</figcaption></figure>`;
 const wideVid = (src: string, cap: string) =>
   `<figure class="rja-wide"><video src="${src}" autoplay muted loop playsinline></video><figcaption>${cap}</figcaption></figure>`;
+
+// Album a scorrimento orizzontale (foto a proporzioni reali) in fondo alla pagina.
+const albumPics = [
+  `${IMG}/f_jpg,q_auto/v1786135643/IMG_9455_re1mwz.heic`,
+  `${IMG}/q_auto,f_auto/v1787080194/IMG_9318_2_i7tnyl.jpg`,
+  M.comm1,
+  `${IMG}/q_auto,f_auto/v1787080125/DSCF7810_blmjcb.jpg`,
+  M.comm2,
+  `${IMG}/q_auto,f_auto/v1787080133/DSCF7803_bye4my.jpg`,
+  `${IMG}/q_auto,f_auto/v1786135241/IMG_9335_cqcs9f.jpg`,
+  `${IMG}/q_auto,f_auto/v1786135246/DSCF7676_xad4er.jpg`,
+  `${IMG}/q_auto,f_auto/v1787080130/DSCF7713_zxl9xq.jpg`,
+  `${IMG}/q_auto,f_auto/v1787080154/DSCF7726_2_apvve9.jpg`,
+];
+const albumScroller = `<div class="rja-album">${albumPics.map((u) => `<img src="${u}" alt="Guaviare" loading="lazy">`).join('')}</div>`;
+const albumSection = (heading: string) =>
+  `<section id="album" style="border-bottom:0"><span class="eyebrow">Album</span><h2>${heading}</h2>${albumScroller}</section>`;
 
 // ─────────────────────────── ENGLISH ───────────────────────────
 const en_body = `
@@ -96,9 +113,7 @@ ${floatVid(M.raudalVid, 'Up the Guayabero river by boat towards the raudal.')}
 <p>The classic loop covers the icons, and covers them well. But the day I keep coming back to was not on the standard itinerary. I asked the person who handles bookings at Geotours whether it would be possible to spend a real day with the indigenous communities of the Guaviare. Not a <em>velada</em> staged for visitors, an hour of dancing laid on and paid for, but an ordinary day, on their terms. He arranged it directly, and the 50€ it cost went to the communities as an offering rather than to an agency.</p>
 <p>What it held was ordinary work, not performance: cassava sieved and toasted into <em>fariña</em>, the coarse flour that anchors daily life here, things made by hand, the slow rhythm of a household going about its day with us in it rather than watching from the outside. That is exactly why it stayed with me. Nothing was staged, and nothing needed to be.</p>
 <div class="tip"><b>How to arrange it</b>Ask for it when you book, and let your operator set it up through the same regulated, community-linked channel that protects everything else here. What you pay goes to the communities directly. Treat the day as a privilege, not a product. It is the single thing that turned a good tour into a trip I won't forget.</div>
-${wide(M.comm1, 'A day with an indigenous community of the Guaviare', 'A day with one of the indigenous communities of the Guaviare, arranged directly rather than staged for visitors.')}
 ${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the day.')}
-${wide(M.comm2, 'Everyday work in the community', 'An ordinary day, on their terms, not a show put on for outsiders.')}
 </section>
 
 <section id="sleep"><span class="eyebrow">07</span><h2>Where to stay</h2>
@@ -134,6 +149,7 @@ ${wide(M.herra, 'Sunset over La Herradura Ecolodge', 'Sunset over La Herradura, 
 ${bleed(M.closing, 'Where the Guaviare gives way to the Amazon', 'Onward: where the Guaviare gives way to the Amazon proper.')}
 <p class="rf-foot" style="margin-top:20px">Words and photographs from the ground in <b>San José del Guaviare</b>.</p>
 </section>
+${albumSection('More from the Guaviare')}
 `;
 
 // ─────────────────────────── ITALIANO ───────────────────────────
@@ -206,9 +222,7 @@ ${floatVid(M.raudalVid, 'Su per il fiume Guayabero in barca, verso il raudal.')}
 <p>Il circuito classico copre le icone, e le copre bene. Ma la giornata a cui torno col pensiero non era nell'itinerario standard. Ho chiesto alla persona che gestisce le prenotazioni di Geotours se fosse possibile passare una giornata vera con le comunità indigene del Guaviare. Non una <em>velada</em> messa in scena per i visitatori, un'ora di danze organizzata e pagata, ma una giornata ordinaria, alle loro condizioni. Ha organizzato tutto direttamente, e i 50€ che è costata sono andati alle comunità come offerta, non a un'agenzia.</p>
 <p>Quello che ha offerto era lavoro ordinario, non uno spettacolo: la cassava setacciata e tostata in <em>fariña</em>, la farina grezza attorno a cui ruota la vita quotidiana qui, cose fatte a mano, il ritmo lento di una casa che va avanti con la sua giornata, con noi dentro e non a guardare da fuori. È proprio per questo che mi è rimasta. Niente era messo in scena, e non ce n'era bisogno.</p>
 <div class="tip"><b>Come organizzarla</b>Chiedila al momento della prenotazione, e lascia che il tuo operatore la imposti attraverso lo stesso canale regolato e legato alle comunità che protegge tutto il resto qui. Quello che paghi va direttamente alle comunità. Trattala come un privilegio, non un prodotto. È la cosa che ha trasformato un buon tour in un viaggio che non dimenticherò.</div>
-${wide(M.comm1, 'Una giornata con una comunità indigena del Guaviare', 'Una giornata con una delle comunità indigene del Guaviare, organizzata direttamente e non messa in scena per i visitatori.')}
 ${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a cui ruota la giornata.")}
-${wide(M.comm2, 'Il lavoro quotidiano nella comunità', 'Una giornata ordinaria, alle loro condizioni, non uno spettacolo per chi viene da fuori.')}
 </section>
 
 <section id="sleep"><span class="eyebrow">07</span><h2>Dove dormire</h2>
@@ -244,6 +258,7 @@ ${wide(M.herra, 'Tramonto su La Herradura Ecolodge', "Tramonto su La Herradura, 
 ${bleed(M.closing, "Dove il Guaviare lascia il posto all'Amazzonia", "Verso l'Amazzonia vera e propria, dove il Guaviare finisce.")}
 <p class="rf-foot" style="margin-top:20px">Parole e fotografie sul campo a <b>San José del Guaviare</b>.</p>
 </section>
+${albumSection('Altro dal Guaviare')}
 `;
 
 // ─────────────────────────── ESPAÑOL ───────────────────────────
@@ -316,9 +331,7 @@ ${floatVid(M.raudalVid, 'Río Guayabero arriba en lancha, hacia el raudal.')}
 <p>El circuito clásico cubre los iconos, y los cubre bien. Pero el día al que sigo volviendo no estaba en el itinerario estándar. Le pregunté a la persona que lleva las reservas de Geotours si sería posible pasar un día real con las comunidades indígenas del Guaviare. No una <em>velada</em> montada para visitantes, una hora de danzas preparada y pagada, sino un día corriente, en sus términos. Lo organizó directamente, y los 50€ que costó fueron a las comunidades como ofrenda, no a una agencia.</p>
 <p>Lo que ofreció fue trabajo corriente, no un espectáculo: la yuca cernida y tostada en <em>fariña</em>, la harina gruesa en torno a la que gira la vida diaria aquí, cosas hechas a mano, el ritmo lento de una casa haciendo su día con nosotros dentro y no mirando desde fuera. Por eso mismo se me quedó grabado. Nada estaba montado, y no hacía falta que lo estuviera.</p>
 <div class="tip"><b>Cómo organizarlo</b>Pídelo al reservar, y deja que tu operador lo monte por el mismo canal regulado y ligado a las comunidades que protege todo lo demás aquí. Lo que pagas va directo a las comunidades. Trátalo como un privilegio, no un producto. Es lo único que convirtió un buen tour en un viaje que no olvidaré.</div>
-${wide(M.comm1, 'Un día con una comunidad indígena del Guaviare', 'Un día con una de las comunidades indígenas del Guaviare, organizado directamente y no montado para visitantes.')}
 ${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno al que gira el día.')}
-${wide(M.comm2, 'El trabajo cotidiano en la comunidad', 'Un día corriente, en sus términos, no un espectáculo para los de fuera.')}
 </section>
 
 <section id="sleep"><span class="eyebrow">07</span><h2>Dónde dormir</h2>
@@ -354,6 +367,7 @@ ${wide(M.herra, 'Atardecer sobre La Herradura Ecolodge', 'Atardecer sobre La Her
 ${bleed(M.closing, 'Donde el Guaviare da paso a la Amazonía', 'Hacia adelante: donde el Guaviare da paso a la Amazonía propiamente dicha.')}
 <p class="rf-foot" style="margin-top:20px">Palabras y fotografías sobre el terreno en <b>San José del Guaviare</b>.</p>
 </section>
+${albumSection('Más del Guaviare')}
 `;
 
 export interface GuaviareLang {
