@@ -1,0 +1,58 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opzioni colore accento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#171614;--paper:#f2efe8;--dim:rgba(242,239,232,.74);--muted:rgba(242,239,232,.45);--line:rgba(255,255,255,.10)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ink);color:var(--paper);font-family:'Open Sans',sans-serif;padding:40px 24px 80px}
+  .head{max-width:960px;margin:0 auto 30px;text-align:center;color:var(--muted);font-family:'Oswald',sans-serif;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+  .grid{max-width:960px;margin:0 auto;display:grid;gap:18px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:26px 28px;display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:center}
+  .swatch{height:96px;border-radius:8px;display:flex;align-items:flex-end;padding:10px;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,0,0,.55);font-weight:600}
+  .demo{display:flex;flex-direction:column;gap:6px}
+  .kick{font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+  .row{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap}
+  .num{font-family:'Oswald',sans-serif;font-weight:600;font-size:38px}
+  .eb{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:.1em}
+  .title{font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;text-transform:uppercase;color:#fbf9f4;letter-spacing:.01em}
+  .drop{font-family:'Oswald',sans-serif;font-weight:600;font-size:46px;line-height:.8}
+  .rule{height:2px;width:80px;margin-top:8px}
+  .name{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+  .hex{font-family:'Open Sans';font-size:12px;color:var(--muted);margin-left:8px}
+  .link{color:inherit}
+</style></head>
+<body>
+<div class="head">Opzioni accento su fondo reale — scegline una (o dimmi un'altra tonalità)</div>
+<div class="grid" id="grid"></div>
+<script>
+  const opts=[
+    ['Terracotta','#C56A45'],
+    ['Ocra / oro caldo','#C9A24C'],
+    ['Verde salvia','#93A17D'],
+    ['Argilla rosa','#C08268'],
+    ['Rame / bronzo','#B0824E'],
+    ['Monocromo panna','#E6E1D7'],
+  ];
+  document.getElementById('grid').innerHTML = opts.map(([n,c],i)=>`
+    <div class="card">
+      <div class="swatch" style="background:${c}">${c}</div>
+      <div class="demo">
+        <span class="name">${i+1}. ${n}<span class="hex">${c}</span></span>
+        <span class="kick" style="color:${c}">Guide · Guaviare · Colombia</span>
+        <div class="row">
+          <span class="eb" style="color:${c}">01</span>
+          <span class="title">What Raja Ampat Really Is</span>
+        </div>
+        <div class="row">
+          <span class="drop" style="color:${c}">T</span>
+          <span class="num" style="color:${c}">12,000+</span>
+          <a class="link" href="#" style="color:${c};font-family:'Open Sans';font-size:15px">Read the full guide →</a>
+        </div>
+        <div class="rule" style="background:${c}"></div>
+      </div>
+    </div>`).join('');
+</script>
+</body></html>

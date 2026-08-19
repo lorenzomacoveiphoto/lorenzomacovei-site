@@ -1293,7 +1293,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   --paper-dim:rgba(242,239,232,0.70);
   --muted:rgba(242,239,232,0.42);
   --faint:rgba(242,239,232,0.26);
-  --accent:#9fc4d0;
+  --accent:#C56A45;
   --accent-soft:rgba(159,196,208,0.62);
   --accent-dim:rgba(159,196,208,0.30);
   --line:rgba(255,255,255,0.10);
@@ -1302,7 +1302,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   --maxw:690px;
 }
 #journal-post-wtrek *{box-sizing:border-box}
-#journal-post-wtrek{background:var(--ink);color:var(--paper);font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1.75;letter-spacing:0;-webkit-font-smoothing:antialiased}
+#journal-post-wtrek{background:var(--ink);color:var(--paper);font-family:'Open Sans',system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1.75;letter-spacing:0;-webkit-font-smoothing:antialiased}
 #journal-post-wtrek::selection{background:var(--accent);color:var(--ink)}
 #journal-post-wtrek a{color:inherit}
 #journal-post-wtrek #tdp-progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:615;transition:width .1s linear}
@@ -1310,40 +1310,40 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* ── Hero ── */
 #journal-post-wtrek .hero{padding:76px 0 54px;text-align:center}
-#journal-post-wtrek .hero .kicker{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
-#journal-post-wtrek .hero h1{font-family:'Inter',system-ui,sans-serif;font-weight:300;font-size:clamp(34px,7vw,58px);line-height:1.12;letter-spacing:.08em;text-transform:uppercase;margin:0 0 20px;color:#fbf9f4}
-#journal-post-wtrek .hero .sub{font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:clamp(17px,2.2vw,20px);line-height:1.6;letter-spacing:.01em;color:rgba(242,239,232,0.85);max-width:34ch;margin:0 auto 48px}
+#journal-post-wtrek .hero .kicker{font-family:'Oswald',system-ui,sans-serif;font-size:9.5px;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
+#journal-post-wtrek .hero h1{font-family:'Oswald',system-ui,sans-serif;font-weight:600;font-size:clamp(30px,6vw,54px);line-height:1.08;letter-spacing:.02em;text-transform:uppercase;margin:0 0 20px;color:#fbf9f4}
+#journal-post-wtrek .hero .sub{font-family:'Lora',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(18px,2.4vw,22px);line-height:1.55;letter-spacing:0;color:rgba(242,239,232,0.85);max-width:34ch;margin:0 auto 48px}
 #journal-post-wtrek .facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
 #journal-post-wtrek .fact{flex:1 1 120px;padding:22px 10px;border-right:1px solid var(--line-soft)}
 #journal-post-wtrek .fact:last-child{border-right:0}
-#journal-post-wtrek .fact .n{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;letter-spacing:0;color:var(--paper);line-height:1}
-#journal-post-wtrek .fact .l{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+#journal-post-wtrek .fact .n{font-family:'Oswald',system-ui,sans-serif;font-size:33px;font-weight:600;letter-spacing:0;color:var(--paper);line-height:1}
+#journal-post-wtrek .fact .l{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px}
 
 /* ── Indice ── */
 #journal-post-wtrek .toc{margin:34px 0 8px;background:none;border:0;border-bottom:1px solid var(--line);border-radius:0}
-#journal-post-wtrek .toc .toc-h{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);padding:0 0 16px}
+#journal-post-wtrek .toc .toc-h{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);padding:0 0 16px}
 #journal-post-wtrek .toc ol{list-style:none;margin:0;padding:0 0 12px;display:grid;grid-template-columns:1fr 1fr;gap:2px 30px}
 #journal-post-wtrek .toc a{display:flex;align-items:baseline;gap:12px;text-decoration:none;padding:4px 0;transition:.25s ease}
 #journal-post-wtrek .toc a:hover,#journal-post-wtrek .toc a:focus-visible{background:none}
-#journal-post-wtrek .toc a .idx{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.1em;color:var(--accent);min-width:22px;transition:.25s ease}
-#journal-post-wtrek .toc a .txt{font-family:'Inter',system-ui,sans-serif;font-size:15px;font-weight:500;line-height:1.3;letter-spacing:.01em;color:rgba(242,239,232,0.9);transition:.25s ease}
+#journal-post-wtrek .toc a .idx{font-family:'Oswald',system-ui,sans-serif;font-size:9.5px;letter-spacing:.1em;color:var(--accent);min-width:22px;transition:.25s ease}
+#journal-post-wtrek .toc a .txt{font-family:'Open Sans',system-ui,sans-serif;font-size:15px;font-weight:500;line-height:1.3;letter-spacing:.01em;color:rgba(242,239,232,0.9);transition:.25s ease}
 #journal-post-wtrek .toc a:hover .txt,#journal-post-wtrek .toc a:focus-visible .txt{color:var(--paper)}
 
 /* ── Testo ── */
 #journal-post-wtrek section{padding:62px 0;border-bottom:1px solid var(--line-soft)}
-#journal-post-wtrek .eyebrow{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:block}
-#journal-post-wtrek h2{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.15;letter-spacing:-0.01em;margin:0 0 28px;color:#fbf9f4}
-#journal-post-wtrek h3{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:21px;letter-spacing:-0.01em;letter-spacing:.01em;margin:0 0 4px;color:#fbf9f4}
+#journal-post-wtrek .eyebrow{font-family:'Oswald',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:block}
+#journal-post-wtrek h2{font-family:'Oswald',system-ui,sans-serif;font-weight:600;font-size:clamp(26px,4vw,37px);line-height:1.15;letter-spacing:.01em;margin:0 0 28px;color:#fbf9f4}
+#journal-post-wtrek h3{font-family:'Oswald',system-ui,sans-serif;font-weight:500;font-size:22px;letter-spacing:.02em;margin:0 0 4px;color:#fbf9f4}
 #journal-post-wtrek p{margin:0 0 26px}
-#journal-post-wtrek .lead{font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.7;letter-spacing:.01em;color:var(--paper)}
-#journal-post-wtrek .lead .drop{font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:700;font-size:64px;line-height:.7;float:left;margin:12px 14px 0 0;padding:0;color:var(--accent)}
+#journal-post-wtrek .lead{font-family:'Open Sans',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.7;letter-spacing:.01em;color:var(--paper)}
+#journal-post-wtrek .lead .drop{font-family:'Oswald',system-ui,sans-serif;font-style:normal;font-weight:700;font-size:64px;line-height:.7;float:left;margin:12px 14px 0 0;padding:0;color:var(--accent)}
 #journal-post-wtrek .lead strong{font-weight:500}
 #journal-post-wtrek strong{color:#fbf9f4;font-weight:500}
 #journal-post-wtrek em{color:var(--paper-dim);font-style:italic}
-#journal-post-wtrek .pull{border-left:2px solid var(--accent);padding:4px 0 4px 26px;margin:38px 0;font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:500;font-size:23px;line-height:1.4;letter-spacing:-0.01em;color:#fbf9f4}
+#journal-post-wtrek .pull{border-left:2px solid var(--accent);padding:4px 0 4px 26px;margin:38px 0;font-family:'Lora',Georgia,serif;font-style:italic;font-weight:500;font-size:24px;line-height:1.45;letter-spacing:0;color:#fbf9f4}
 
 /* ── Mappa ── */
-#journal-post-wtrek .mapcap{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin:16px 2px 0;line-height:1.8}
+#journal-post-wtrek .mapcap{font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin:16px 2px 0;line-height:1.8}
 #journal-post-wtrek .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
 
 /* ── Rifugi e stagioni ── */
@@ -1354,12 +1354,12 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rf.f::before{background:var(--accent-dim)}
 #journal-post-wtrek .rf.c::before{background:var(--line2)}
 #journal-post-wtrek .rf-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
-#journal-post-wtrek .rf-name{font-family:'Inter',system-ui,sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
-#journal-post-wtrek .rf-cost{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;letter-spacing:.04em;white-space:nowrap;color:var(--paper-dim)}
+#journal-post-wtrek .rf-name{font-family:'Oswald',system-ui,sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
+#journal-post-wtrek .rf-cost{font-family:'Oswald',system-ui,sans-serif;font-size:11.5px;letter-spacing:.04em;white-space:nowrap;color:var(--paper-dim)}
 #journal-post-wtrek .rf.v .rf-cost{color:var(--accent)}
-#journal-post-wtrek .rf-sec{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+#journal-post-wtrek .rf-sec{font-family:'Oswald',system-ui,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 #journal-post-wtrek .rf-note{font-size:15.5px;line-height:1.75;color:var(--paper-dim);margin:0}
-#journal-post-wtrek .rf-foot{font-family:'Inter',system-ui,sans-serif;font-size:11px;color:var(--muted);margin-top:20px;line-height:1.8}
+#journal-post-wtrek .rf-foot{font-family:'Open Sans',system-ui,sans-serif;font-size:11px;color:var(--muted);margin-top:20px;line-height:1.8}
 #journal-post-wtrek .rf-foot b{color:var(--accent);font-weight:400}
 #journal-post-wtrek .rf-tier{display:flex;gap:10px;margin:26px 0 0;flex-wrap:wrap}
 
@@ -1369,30 +1369,30 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .grid2 .rf.v .rf-sec b{color:#d9713f!important}
 #journal-post-wtrek .grid2 .rf.f::before{background:#aec9d6}
 #journal-post-wtrek .grid2 .rf.c::before{background:#7fa876}
-#journal-post-wtrek .chip{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper-dim);border:1px solid var(--line);padding:9px 13px;border-radius:0}
+#journal-post-wtrek .chip{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper-dim);border:1px solid var(--line);padding:9px 13px;border-radius:0}
 
 /* ── Giorni ── */
 #journal-post-wtrek .day{margin:0 0 36px;padding:0 0 0 24px;background:none;border:0;border-left:1px solid var(--line);border-radius:0}
-#journal-post-wtrek .d-tag{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+#journal-post-wtrek .d-tag{font-family:'Oswald',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek .day h3{margin:12px 0 12px}
-#journal-post-wtrek .route{font-family:'Inter',system-ui,sans-serif;font-size:11px;letter-spacing:.04em;color:var(--paper-dim);margin:0 0 18px;line-height:1.8}
+#journal-post-wtrek .route{font-family:'Oswald',system-ui,sans-serif;font-size:11px;letter-spacing:.04em;color:var(--paper-dim);margin:0 0 18px;line-height:1.8}
 #journal-post-wtrek .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
-#journal-post-wtrek .stats span{font-family:'Inter',system-ui,sans-serif;font-size:10.5px;letter-spacing:.06em;color:var(--paper);background:none;border:1px solid var(--line);padding:7px 12px;border-radius:0}
+#journal-post-wtrek .stats span{font-family:'Oswald',system-ui,sans-serif;font-size:10.5px;letter-spacing:.06em;color:var(--paper);background:none;border:1px solid var(--line);padding:7px 12px;border-radius:0}
 #journal-post-wtrek .day p{margin:0 0 18px;font-size:16px;line-height:1.8}
 #journal-post-wtrek .day p:last-child{margin-bottom:0}
 #journal-post-wtrek .tip{background:none;border:0;border-left:2px solid var(--accent-dim);border-radius:0;padding:4px 0 4px 20px;font-size:15.5px;line-height:1.75;color:var(--paper-dim)}
-#journal-post-wtrek .tip b{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+#journal-post-wtrek .tip b{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
 
 /* ── Tabella costi ── */
-#journal-post-wtrek table{width:100%;border-collapse:collapse;font-family:'Inter',system-ui,sans-serif;font-size:12.5px;letter-spacing:.02em;margin:6px 0}
+#journal-post-wtrek table{width:100%;border-collapse:collapse;font-family:'Open Sans',system-ui,sans-serif;font-size:12.5px;letter-spacing:.02em;margin:6px 0}
 #journal-post-wtrek th{text-align:left;font-weight:400;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line2);padding:13px 6px}
 #journal-post-wtrek th.r,#journal-post-wtrek td.r{text-align:right}
 #journal-post-wtrek td{padding:14px 6px;border-bottom:1px solid var(--line-soft);color:var(--paper-soft)}
 #journal-post-wtrek tr.total td{border-top:1px solid var(--line2);border-bottom:0;font-size:14px;color:var(--paper);padding-top:18px}
-#journal-post-wtrek tr.total .big{font-family:'Inter',system-ui,sans-serif;font-size:26px;font-weight:600;color:var(--accent)}
+#journal-post-wtrek tr.total .big{font-family:'Oswald',system-ui,sans-serif;font-size:26px;font-weight:600;color:var(--accent)}
 
 /* ── CTA ── */
-#journal-post-wtrek .natales-cta{display:inline-flex;align-items:center;gap:12px;margin-top:12px;font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;background:none;color:var(--accent);border:0;border-bottom:1px solid var(--accent-dim);padding:0 0 9px;border-radius:0;cursor:pointer;transition:.25s ease;font-weight:400}
+#journal-post-wtrek .natales-cta{display:inline-flex;align-items:center;gap:12px;margin-top:12px;font-family:'Open Sans',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;background:none;color:var(--accent);border:0;border-bottom:1px solid var(--accent-dim);padding:0 0 9px;border-radius:0;cursor:pointer;transition:.25s ease;font-weight:400}
 #journal-post-wtrek .natales-cta:hover,#journal-post-wtrek .natales-cta:focus-visible{background:none;color:#fbf9f4;border-bottom-color:#fbf9f4}
 #journal-post-wtrek .natales-cta svg{width:13px;height:13px}
 
@@ -1401,33 +1401,33 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .backdrop.open{display:flex}
 #journal-post-wtrek .modal{background:var(--ink-soft);border:1px solid var(--line);border-radius:0;max-width:560px;width:100%;max-height:88vh;overflow:auto}
 #journal-post-wtrek .modal-h{display:flex;justify-content:space-between;align-items:flex-start;padding:28px 28px 12px}
-#journal-post-wtrek .modal-h .mt{font-family:'Inter',system-ui,sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.15;margin:0}
-#journal-post-wtrek .modal-h .ms{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+#journal-post-wtrek .modal-h .mt{font-family:'Oswald',system-ui,sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.15;margin:0}
+#journal-post-wtrek .modal-h .ms{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
 #journal-post-wtrek .modal-x{background:none;border:1px solid var(--line);color:var(--muted);width:34px;height:34px;border-radius:0;cursor:pointer;font-size:16px;line-height:1;flex-shrink:0;transition:.25s}
 #journal-post-wtrek .modal-x:hover,#journal-post-wtrek .modal-x:focus-visible{border-color:var(--accent);color:var(--accent)}
 #journal-post-wtrek .stay{margin:8px 28px;padding:22px 0;border-top:1px solid var(--line-soft)}
 #journal-post-wtrek .stay:first-of-type{border-top:0}
 #journal-post-wtrek .s-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
-#journal-post-wtrek .s-name{font-family:'Inter',system-ui,sans-serif;font-size:21px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
-#journal-post-wtrek .s-badge{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:0}
+#journal-post-wtrek .s-name{font-family:'Oswald',system-ui,sans-serif;font-size:21px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
+#journal-post-wtrek .s-badge{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:0}
 #journal-post-wtrek .badge-yes{background:none;color:var(--accent);border:1px solid var(--accent-dim)}
 #journal-post-wtrek .badge-no{background:none;color:var(--muted);border:1px solid var(--line)}
 #journal-post-wtrek .s-note{font-size:15.5px;line-height:1.75;color:var(--paper-dim);margin:10px 0 0}
-#journal-post-wtrek .modal-foot{font-family:'Inter',system-ui,sans-serif;font-size:10.5px;line-height:1.8;color:var(--muted);padding:16px 28px 28px}
+#journal-post-wtrek .modal-foot{font-family:'Open Sans',system-ui,sans-serif;font-size:10.5px;line-height:1.8;color:var(--muted);padding:16px 28px 28px}
 
 /* ── Finestra prenotazioni (Google Hotels) ── */
 #journal-post-wtrek .tdp-hotels{margin-top:24px;border:1px solid var(--line);padding:22px 24px}
 #journal-post-wtrek .th-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
-#journal-post-wtrek .th-k{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
-#journal-post-wtrek .th-t{font-family:'Inter',system-ui,sans-serif;font-size:19px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.2}
-#journal-post-wtrek .th-src{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;margin-top:4px}
+#journal-post-wtrek .th-k{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+#journal-post-wtrek .th-t{font-family:'Oswald',system-ui,sans-serif;font-size:19px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.2}
+#journal-post-wtrek .th-src{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;margin-top:4px}
 #journal-post-wtrek .th-fields{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
 #journal-post-wtrek .th-field{display:flex;flex-direction:column;gap:7px;flex:1 1 150px}
 #journal-post-wtrek .th-dest{flex:2 1 220px}
-#journal-post-wtrek .th-field>span{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-#journal-post-wtrek .th-field input{font-family:'Inter',system-ui,sans-serif;font-size:14px;color:var(--paper);background:var(--ink-soft);border:1px solid var(--line);padding:12px 13px;border-radius:0;outline:none;transition:border-color .25s;width:100%;color-scheme:dark}
+#journal-post-wtrek .th-field>span{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+#journal-post-wtrek .th-field input{font-family:'Open Sans',system-ui,sans-serif;font-size:14px;color:var(--paper);background:var(--ink-soft);border:1px solid var(--line);padding:12px 13px;border-radius:0;outline:none;transition:border-color .25s;width:100%;color-scheme:dark}
 #journal-post-wtrek .th-field input:focus{border-color:var(--accent)}
-#journal-post-wtrek .th-btn{flex:0 0 auto;font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:var(--accent);border:1px solid var(--accent);padding:13px 26px;border-radius:0;cursor:pointer;transition:background .25s,border-color .25s}
+#journal-post-wtrek .th-btn{flex:0 0 auto;font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:var(--accent);border:1px solid var(--accent);padding:13px 26px;border-radius:0;cursor:pointer;transition:background .25s,border-color .25s}
 #journal-post-wtrek .th-btn:hover{background:#fbf9f4;border-color:#fbf9f4}
 @media(max-width:600px){#journal-post-wtrek .th-field,#journal-post-wtrek .th-btn{flex-basis:100%;width:100%}}
 
@@ -1435,7 +1435,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .tdp-fig{margin:44px 0}
 #journal-post-wtrek .tdp-fig img{width:auto;max-width:100%;max-height:56vh;margin:0 auto;display:block;filter:brightness(0.97)}
 #journal-post-wtrek .tdp-fig video{width:auto;max-width:100%;max-height:56vh;margin:0 auto;display:block;background:#0d0c0b}
-#journal-post-wtrek .tdp-cap{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:12px;line-height:1.7;text-align:center}
+#journal-post-wtrek .tdp-cap{font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:12px;line-height:1.7;text-align:center}
 
 /* ── Slider foto ── */
 #journal-post-wtrek .tdp-gallery{position:relative;margin:48px 0 8px}
@@ -1449,19 +1449,19 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .tdp-dots{display:flex;justify-content:center;gap:9px;margin-top:16px}
 #journal-post-wtrek .tdp-dots button{width:7px;height:7px;border-radius:50%;background:var(--line2);border:0;padding:0;cursor:pointer;transition:background .25s,transform .25s}
 #journal-post-wtrek .tdp-dots button.on{background:var(--accent);transform:scale(1.3)}
-#journal-post-wtrek .tdp-cap-live{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:14px;line-height:1.7;text-align:center}
+#journal-post-wtrek .tdp-cap-live{font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:14px;line-height:1.7;text-align:center}
 
 /* ── Accordion price-cards (dettagli a tendina) ── */
 #journal-post-wtrek .tdp-acc{border:1px solid var(--line);background:var(--ink-soft);margin:24px 0}
-#journal-post-wtrek .tdp-acc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 18px;font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+#journal-post-wtrek .tdp-acc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 18px;font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek .tdp-acc summary::-webkit-details-marker{display:none}
-#journal-post-wtrek .tdp-acc summary::after{content:'+';font-family:'Inter',system-ui,sans-serif;font-size:24px;line-height:1;color:var(--muted);transition:color .2s}
+#journal-post-wtrek .tdp-acc summary::after{content:'+';font-family:'Open Sans',system-ui,sans-serif;font-size:24px;line-height:1;color:var(--muted);transition:color .2s}
 #journal-post-wtrek .tdp-acc[open] summary::after{content:'–';color:var(--accent)}
 #journal-post-wtrek .tdp-acc .acc-body{padding:4px 18px 16px;border-top:1px solid var(--line-soft)}
 #journal-post-wtrek .tdp-acc .acc-body p{margin:14px 0 0;font-size:15px;line-height:1.75;color:var(--paper-dim)}
 #journal-post-wtrek .tdp-acc .acc-body table{margin:6px 0 0}
 /* homestay info button */
-#journal-post-wtrek .hs-i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:8px;border:1px solid var(--accent-dim);color:var(--accent);background:none;border-radius:50%;font-family:'Inter',system-ui,sans-serif;font-size:10px;line-height:1;cursor:pointer;vertical-align:middle;transition:.2s;padding:0}
+#journal-post-wtrek .hs-i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:8px;border:1px solid var(--accent-dim);color:var(--accent);background:none;border-radius:50%;font-family:'Open Sans',system-ui,sans-serif;font-size:10px;line-height:1;cursor:pointer;vertical-align:middle;transition:.2s;padding:0}
 #journal-post-wtrek .hs-i:hover{background:var(--accent);color:var(--ink);border-color:var(--accent)}
 
 /* ── Copertina video a tutto sfondo (in cima all'articolo) ── */
@@ -1475,23 +1475,23 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek section::after{content:'';display:table;clear:both}
 #journal-post-wtrek h3,#journal-post-wtrek table,#journal-post-wtrek .tdp-acc,#journal-post-wtrek .tdp-hotels,#journal-post-wtrek .rja-wide,#journal-post-wtrek .rja-bleed,#journal-post-wtrek .rja-panel,#journal-post-wtrek .rja-cols{clear:both}
 /* didascalie delle figure (wide / float centrate a sinistra, bleed centrata) */
-#journal-post-wtrek .rja-wide figcaption,#journal-post-wtrek .rja-float figcaption{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;letter-spacing:.01em;color:var(--muted);margin-top:12px;line-height:1.7}
-#journal-post-wtrek .rja-bleed figcaption{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);line-height:1.7;text-align:center;max-width:var(--maxw);margin:12px auto 0;padding:0 24px}
+#journal-post-wtrek .rja-wide figcaption,#journal-post-wtrek .rja-float figcaption{font-family:'Open Sans',system-ui,sans-serif;font-size:11.5px;letter-spacing:.01em;color:var(--muted);margin-top:12px;line-height:1.7}
+#journal-post-wtrek .rja-bleed figcaption{font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);line-height:1.7;text-align:center;max-width:var(--maxw);margin:12px auto 0;padding:0 24px}
 /* pannello informativo in evidenza */
 #journal-post-wtrek .rja-panel{border:1px solid var(--accent-dim);background:var(--ink-soft);padding:22px 24px;margin:30px 0}
-#journal-post-wtrek .rja-panel b{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px}
+#journal-post-wtrek .rja-panel b{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px}
 #journal-post-wtrek .rja-panel p{font-size:15.5px;line-height:1.75;color:var(--paper-dim);margin:0 0 14px}
 #journal-post-wtrek .rja-panel p:last-child{margin-bottom:0}
 /* bottone/link a pillola */
-#journal-post-wtrek .rja-btn{display:inline-flex;align-items:center;gap:8px;margin:2px 0 8px;padding:11px 20px;border:1px solid var(--accent-dim);color:var(--accent);font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+#journal-post-wtrek .rja-btn{display:inline-flex;align-items:center;gap:8px;margin:2px 0 8px;padding:11px 20px;border:1px solid var(--accent-dim);color:var(--accent);font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
 #journal-post-wtrek .rja-btn:hover{background:var(--accent);color:var(--ink)}
 /* box a due colonne (stagioni, alloggi) */
 #journal-post-wtrek .rja-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
 #journal-post-wtrek .rja-box{border:1px solid var(--line);background:var(--ink-soft);padding:18px 20px}
 #journal-post-wtrek .rja-box.hi{border-color:var(--accent-dim)}
-#journal-post-wtrek .rja-box .rb-tag{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+#journal-post-wtrek .rja-box .rb-tag{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 #journal-post-wtrek .rja-box.hi .rb-tag{color:var(--accent)}
-#journal-post-wtrek .rja-box h4{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin:8px 0 8px;color:#fbf9f4}
+#journal-post-wtrek .rja-box h4{font-family:'Oswald',system-ui,sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin:8px 0 8px;color:#fbf9f4}
 #journal-post-wtrek .rja-box p{font-size:14.5px;line-height:1.65;margin:0;color:var(--paper-dim)}
 @media(max-width:600px){#journal-post-wtrek .rja-cols{grid-template-columns:1fr}}
 @media(max-width:640px){
@@ -1516,8 +1516,8 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* ── Footer ── */
 #journal-post-wtrek footer{padding:60px 0 84px;text-align:center}
-#journal-post-wtrek footer .fq{font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:500;font-size:22px;letter-spacing:-0.01em;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}
-#journal-post-wtrek footer .fb{font-family:'Inter',system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+#journal-post-wtrek footer .fq{font-family:'Open Sans',system-ui,sans-serif;font-style:normal;font-weight:500;font-size:22px;letter-spacing:-0.01em;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}
+#journal-post-wtrek footer .fb{font-family:'Open Sans',system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek :focus-visible{outline:1px solid var(--accent);outline-offset:3px}
 @media(max-width:600px){
 #journal-post-wtrek{font-size:17px}
