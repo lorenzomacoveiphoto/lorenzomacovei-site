@@ -162,8 +162,8 @@ ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e 
 <p>Per decenni è stato terra di coca e territorio delle FARC, uno degli angoli della Colombia dove il conflitto armato, l'economia della droga e l'assenza dello Stato erano annodati più strettamente. L'accordo di pace del 2016 ha cambiato le cose. La sicurezza è migliorata, la regione si è aperta e San José del Guaviare, la piccola capitale del dipartimento, è diventata la base per uno dei viaggi più sorprendenti del Paese: arte rupestre dipinta più di dodicimila anni fa, un fiume che diventa rosso, archi naturali di roccia, delfini rosa di fiume, e comunità che decidono da sé come vogliono essere incontrate.</p>
 </section>
 
-<section id="access"><span class="eyebrow">02</span><h2>Una regione protetta e rigidamente regolata</h2>
-<p>Questa è la cosa più importante da capire prima di pianificare un viaggio qui, ed è ciò che rende il Guaviare diverso da gran parte della Colombia.</p>
+<section id="access"><span class="eyebrow">02</span><h2>Il Guaviare è sicuro per chi viaggia da solo e per i backpacker?</h2>
+<p><strong>Risposta breve: sì.</strong> Dopo l'accordo di pace del 2016 San José del Guaviare è diventata una cittadina tranquilla e accogliente, un'ottima base per chi viaggia da solo e per i backpacker. Il vincolo non è la sicurezza, è l'accesso: ed è la cosa più importante da capire prima di pianificare un viaggio qui, ciò che rende il Guaviare diverso da gran parte della Colombia.</p>
 <div class="rja-panel"><b>Non si può fare in autonomia</b>
 <p>Quasi ogni sito che valga la pena vedere, l'arte rupestre, il fiume colorato, le rapide, i sentieri nella foresta, si trova dentro terre protette di enorme valore archeologico ed ecologico. L'accesso è regolato: si visita con <strong>guide locali autorizzate, e di solito una jeep</strong>, tramite un operatore con licenza. Non ci si presenta e si entra a piacere.</p>
 <p>Non è burocrazia fine a sé stessa. Le pitture rupestri sono tra le più antiche del continente e insostituibili, gli ecosistemi sono fragili, e gran parte della terra e delle sue storie appartiene a comunità che solo ora stanno definendo come deve funzionare il turismo qui. Il sistema dei permessi, le guide e i protocolli comunitari sono ciò che tiene tutto integro, e ciò che fa arrivare i soldi alle persone che ci vivono. Prenotare con un tour locale non è un compromesso sull'avventura. <em>È</em> il modo per entrarci.</p></div>
@@ -180,7 +180,7 @@ ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e 
 <div class="tip"><b>Se la priorità è il fiume colorato</b>L'acqua di Tranquilandia diventa rossa solo quando fiorisce la sua pianta endemica, la <em>Macarenia clavigera</em>, all'incirca da <strong>luglio a novembre</strong>, e il colore è più acceso nelle giornate di sole. Fuori da quella finestra il fiume è trasparente e la visita vale molto meno il viaggio. Io ci sono andato a fine luglio ed era già in pieno colore.</div>
 </section>
 
-<section id="getting"><span class="eyebrow">04</span><h2>Come arrivare</h2>
+<section id="getting"><span class="eyebrow">04</span><h2>Come arrivare a San José del Guaviare da Bogotá</h2>
 <p>San José del Guaviare è a circa 400 km a sud di Bogotá, e arrivarci è diventato semplice. Ci sono due modi: un <strong>breve volo interno da Bogotá</strong> direttamente a San José, oppure il <strong>bus</strong>, più lento sulla carta ma con molto più a favore di quanto la distanza suggerisca.</p>
 <p>Il mio percorso è passato per <strong>Villavicencio</strong>, la porta delle pianure orientali. Ho volato <strong>da Cali a Villavicencio con Clic Air per 60€</strong>, su uno dei voli di martedì, giovedì, sabato e domenica, poi ho preso il <strong>bus fino a San José, circa sei ore per 26€</strong>. Costa meno che volare per tutto il tragitto ed è una coincidenza facile se arrivi dal sud o dall'ovest del Paese.</p>
 <div class="tip"><b>Se puoi, prendi il bus</b>Potendo scegliere, prenderei il bus invece dell'aereo. È il modo più economico, il più semplice da organizzare e prenotare, e di gran lunga il più leggero per l'ambiente. La tratta è servita da una sola compagnia, <strong>Flota La Macarena</strong>, quindi non c'è nulla da confrontare. Cerca le <strong>corse notturne</strong>: le migliori hanno i sedili <em>diamante</em>, l'ampia classe executive reclinabile, nove per pullman e comodi abbastanza da dormire davvero. Copri la distanza di notte e arrivi riposato, senza perdere una giornata in viaggio.</div>
@@ -208,7 +208,8 @@ ${wide(M.cerro, 'Antiche pitture rupestri sulla parete di Cerro Azul', 'Cerro Az
 <h3>Il Raudal del Guayabero</h3>
 ${floatVid(M.raudalVid, 'Su per il fiume Guayabero in barca, verso il raudal.')}
 <p>Una giornata sull'acqua. Una barca ti porta su per il <strong>fiume Guayabero</strong> fino al <em>raudal</em>, dove la corrente si spezza sulla roccia in rapide, oltre altri pannelli dipinti sulle scogliere e una serie di punti panoramici sul fiume e sulla foresta. È la giornata più cinematografica del circuito, e quella in cui la scala del paesaggio si coglie davvero.</p>
-<div class="tip"><b>Un esempio di circuito da 3 giorni</b>Come si articola il classico circuito di Geotours, e un buon modello con chiunque tu prenoti.</div>
+<h2 id="itinerary">Itinerario di 3 giorni nel Guaviare: Cerro Azul, Puerta de Orión e Tranquilandia</h2>
+<p>Come si articola il classico circuito di Geotours, e un buon modello con chiunque tu prenoti.</p>
 <table>
 <tr><td>Giorno 1</td><td><strong>Tranquilandia</strong> e la Puerta de Orión</td></tr>
 <tr><td>Giorno 2</td><td><strong>Finca Chontaduro</strong> e <strong>Cerro Azul</strong></td></tr>
@@ -235,7 +236,7 @@ ${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a 
 ${wide(M.herra, 'Tramonto su La Herradura Ecolodge', "Tramonto su La Herradura, l'ecolodge che è stato la mia base per il viaggio.")}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>Quanto costa</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Costi dettagliati: guide locali, cibo e alloggi</h2>
 <p>Il pacchetto Geotours era 400€ per tre giorni, tutto incluso: escursioni, guida e tre notti a La Herradura in mezza pensione. Sopra a questo si sono aggiunti il trasporto per arrivare, il giorno extra con le comunità e la notte in città. Ecco il quadro completo.</p>
 <table><tr><th>Voce</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -271,8 +272,8 @@ ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundada
 <p>Durante décadas fue tierra de coca y territorio de las FARC, uno de los rincones de Colombia donde el conflicto armado, la economía de la droga y la ausencia del Estado estaban más estrechamente anudados. El acuerdo de paz de 2016 cambió eso. La seguridad mejoró, la región se abrió, y San José del Guaviare, la pequeña capital departamental, se convirtió en la base de uno de los viajes más sorprendentes del país: arte rupestre pintado hace más de doce mil años, un río que se vuelve rojo, arcos naturales de roca, delfines rosados de río, y comunidades que deciden por sí mismas cómo quieren ser encontradas.</p>
 </section>
 
-<section id="access"><span class="eyebrow">02</span><h2>Una región protegida y estrictamente regulada</h2>
-<p>Esto es lo más importante que hay que entender antes de planear un viaje aquí, y es lo que hace al Guaviare distinto de gran parte de Colombia.</p>
+<section id="access"><span class="eyebrow">02</span><h2>¿Es seguro el Guaviare para viajeros solos y mochileros?</h2>
+<p><strong>Respuesta corta: sí.</strong> Tras el acuerdo de paz de 2016 San José del Guaviare se ha convertido en un pueblo tranquilo y acogedor, una base cómoda para viajeros solos y mochileros. La limitación no es la seguridad, es el acceso: y es lo más importante que hay que entender antes de planear un viaje aquí, lo que hace al Guaviare distinto de gran parte de Colombia.</p>
 <div class="rja-panel"><b>No se puede hacer por libre</b>
 <p>Casi todo sitio que valga la pena ver, el arte rupestre, el río de colores, los rápidos, los senderos de la selva, está dentro de tierras protegidas de enorme valor arqueológico y ecológico. El acceso está regulado: se visita con <strong>guías locales autorizados, y normalmente un jeep</strong>, a través de un operador con licencia. No te presentas y entras a tu aire.</p>
 <p>No es burocracia por sí misma. Las pinturas rupestres están entre las más antiguas del continente e irremplazables, los ecosistemas son frágiles, y gran parte de la tierra y de sus historias pertenece a comunidades que solo ahora están definiendo cómo funciona el turismo aquí. El sistema de permisos, los guías y los protocolos comunitarios son lo que mantiene todo intacto, y lo que hace que el dinero llegue a la gente que vive aquí. Reservar con un tour local no es una concesión en la aventura. <em>Es</em> la manera de entrar.</p></div>
@@ -289,7 +290,7 @@ ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundada
 <div class="tip"><b>Si tu prioridad es el río de colores</b>El agua de Tranquilandia solo se vuelve roja cuando florece su planta endémica, la <em>Macarenia clavigera</em>, aproximadamente de <strong>julio a noviembre</strong>, y el color es más intenso en un día soleado. Fuera de esa ventana el río corre claro y la visita vale mucho menos el viaje. Yo fui a finales de julio y ya estaba en pleno color.</div>
 </section>
 
-<section id="getting"><span class="eyebrow">04</span><h2>Cómo llegar</h2>
+<section id="getting"><span class="eyebrow">04</span><h2>Cómo llegar a San José del Guaviare desde Bogotá</h2>
 <p>San José del Guaviare está a unos 400 km al sur de Bogotá, y llegar se ha vuelto sencillo. Hay dos formas: un <strong>vuelo interno corto desde Bogotá</strong> directo a San José, o el <strong>bus</strong>, más lento sobre el papel pero con mucho más a favor de lo que sugiere la distancia.</p>
 <p>Mi ruta pasó por <strong>Villavicencio</strong>, la puerta de los llanos orientales. Volé <strong>de Cali a Villavicencio con Clic Air por 60€</strong>, en uno de sus vuelos de martes, jueves, sábado y domingo, y luego tomé el <strong>bus hasta San José, unas seis horas por 26€</strong>. Es más barato que volar todo el trayecto y una conexión fácil si vienes del sur o del oeste del país.</p>
 <div class="tip"><b>Si puedes, toma el bus</b>Pudiendo elegir, tomaría el bus antes que el avión. Es la forma más barata, la más sencilla de organizar y reservar, y con diferencia la más ligera para el medio ambiente. La ruta la cubre una sola compañía, <strong>Flota La Macarena</strong>, así que no hay nada que comparar. Busca los <strong>servicios nocturnos</strong>: los mejores llevan asientos <em>diamante</em>, la amplia clase ejecutiva reclinable, nueve por bus y cómodos de verdad para dormir. Cruzas la distancia de noche y llegas descansado, sin perder un día de viaje.</div>
@@ -317,7 +318,8 @@ ${wide(M.cerro, 'Antiguas pinturas rupestres en la pared de Cerro Azul', 'Cerro 
 <h3>El Raudal del Guayabero</h3>
 ${floatVid(M.raudalVid, 'Río Guayabero arriba en lancha, hacia el raudal.')}
 <p>Un día en el agua. Una lancha te lleva río arriba por el <strong>río Guayabero</strong> hasta el <em>raudal</em>, donde la corriente rompe sobre la roca en rápidos, pasando más paneles pintados en los acantilados y una serie de miradores sobre el río y la selva. Es el día más cinematográfico del circuito, y en el que la escala del paisaje realmente se siente.</p>
-<div class="tip"><b>Un ejemplo de circuito de 3 días</b>Cómo se reparte el clásico circuito de Geotours, y una buena plantilla con quien sea que reserves.</div>
+<h2 id="itinerary">Itinerario de 3 días en Guaviare: Cerro Azul, Puerta de Orión y Tranquilandia</h2>
+<p>Cómo se reparte el clásico circuito de Geotours, y una buena plantilla con quien sea que reserves.</p>
 <table>
 <tr><td>Día 1</td><td><strong>Tranquilandia</strong> y la Puerta de Orión</td></tr>
 <tr><td>Día 2</td><td><strong>Finca Chontaduro</strong> y <strong>Cerro Azul</strong></td></tr>
@@ -344,7 +346,7 @@ ${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno
 ${wide(M.herra, 'Atardecer sobre La Herradura Ecolodge', 'Atardecer sobre La Herradura, el ecolodge que fue mi base para el viaje.')}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>Cuánto cuesta</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Desglose de costes: guías locales, comida y alojamiento</h2>
 <p>El paquete Geotours fue 400€ por tres días, todo incluido: excursiones, guía y tres noches en La Herradura en media pensión. Encima de eso quedaron el transporte de llegada, el día extra con las comunidades y la noche en el pueblo. Aquí está el conjunto.</p>
 <table><tr><th>Concepto</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -389,17 +391,17 @@ const tocEn = mkToc([
   ['09', 'tips', 'Know before you go'],
 ]);
 const tocIt = mkToc([
-  ['01', 'what', "Cos'è il Guaviare"], ['02', 'access', 'Regione regolata'],
+  ['01', 'what', "Cos'è il Guaviare"], ['02', 'access', 'È sicuro?'],
   ['03', 'when', 'Quando andare'], ['04', 'getting', 'Come arrivare'],
   ['05', 'see', 'Cosa vedere e fare'], ['06', 'community', 'Le comunità'],
-  ['07', 'sleep', 'Dove dormire'], ['08', 'costs', 'Quanto costa'],
+  ['07', 'sleep', 'Dove dormire'], ['08', 'costs', 'Costi'],
   ['09', 'tips', 'Da sapere prima'],
 ]);
 const tocEs = mkToc([
-  ['01', 'what', 'Qué es el Guaviare'], ['02', 'access', 'Región regulada'],
+  ['01', 'what', 'Qué es el Guaviare'], ['02', 'access', '¿Es seguro?'],
   ['03', 'when', 'Cuándo ir'], ['04', 'getting', 'Cómo llegar'],
   ['05', 'see', 'Qué ver y hacer'], ['06', 'community', 'Las comunidades'],
-  ['07', 'sleep', 'Dónde dormir'], ['08', 'costs', 'Cuánto cuesta'],
+  ['07', 'sleep', 'Dónde dormir'], ['08', 'costs', 'Costes'],
   ['09', 'tips', 'Antes de ir'],
 ]);
 
