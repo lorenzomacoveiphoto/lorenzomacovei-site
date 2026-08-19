@@ -1567,3 +1567,11 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 .gc-arrow { display: inline-block; transition: transform 0.2s; }
 .guide-card:hover .gc-arrow { transform: translateX(4px); }
 @media (max-width: 768px) { .guide-cards { grid-template-columns: 1fr; } }
+
+/* ── Rifugi/operatori come accordion cliccabili (sezione booking W-Trek) ── */
+#journal-post-wtrek .tdp-acc.rf-op{margin:12px 0}
+#journal-post-wtrek .rf-op .rf-op-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+#journal-post-wtrek .rf-op summary .rf-name{font-family:'Oswald',system-ui,sans-serif;font-size:18px;font-weight:600;letter-spacing:.01em;text-transform:none;color:#fbf9f4}
+#journal-post-wtrek .rf-op summary .rf-cost{font-family:'Oswald',system-ui,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+#journal-post-wtrek .rf-op .acc-body a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line);font-weight:600}
+#journal-post-wtrek .rf-op .acc-body a:hover{border-bottom-color:var(--accent)}
