@@ -1335,7 +1335,8 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek section{padding:62px 0;border-bottom:1px solid var(--line-soft)}
 #journal-post-wtrek .eyebrow{font-family:'Oswald',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:block}
 #journal-post-wtrek h2{font-family:'Oswald',system-ui,sans-serif;font-weight:600;font-size:clamp(26px,4vw,37px);line-height:1.15;letter-spacing:.01em;margin:0 0 28px;color:#fbf9f4}
-#journal-post-wtrek h3{font-family:'Oswald',system-ui,sans-serif;font-weight:500;font-size:22px;letter-spacing:.02em;margin:0 0 4px;color:#fbf9f4}
+#journal-post-wtrek h3{font-family:'Oswald',system-ui,sans-serif;font-weight:500;font-size:22px;letter-spacing:.02em;margin:44px 0 12px;color:#fbf9f4}
+#journal-post-wtrek h2 + h3{margin-top:8px}
 #journal-post-wtrek p{margin:0 0 26px}
 #journal-post-wtrek .lead{font-family:'Open Sans',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.7;letter-spacing:.01em;color:var(--paper)}
 #journal-post-wtrek .lead .drop{font-family:'Oswald',system-ui,sans-serif;font-style:normal;font-weight:700;font-size:64px;line-height:.7;float:left;margin:12px 14px 0 0;padding:0;color:var(--accent)}
@@ -1382,7 +1383,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .stats span{font-family:'Oswald',system-ui,sans-serif;font-size:10.5px;letter-spacing:.06em;color:var(--paper);background:none;border:1px solid var(--line);padding:7px 12px;border-radius:0}
 #journal-post-wtrek .day p{margin:0 0 18px;font-size:16px;line-height:1.8}
 #journal-post-wtrek .day p:last-child{margin-bottom:0}
-#journal-post-wtrek .tip{background:none;border:0;border-left:2px solid var(--accent-dim);border-radius:0;padding:4px 0 4px 20px;font-size:15.5px;line-height:1.75;color:var(--paper-dim)}
+#journal-post-wtrek .tip{background:none;border:0;border-left:2px solid var(--accent-dim);border-radius:0;margin:30px 0;padding:4px 0 4px 20px;font-size:15.5px;line-height:1.75;color:var(--paper-dim)}
 #journal-post-wtrek .tip b{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
 
 /* ── Tabella costi ── */
@@ -1427,8 +1428,10 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .th-field{display:flex;flex-direction:column;gap:7px;flex:1 1 150px}
 #journal-post-wtrek .th-dest{flex:2 1 220px}
 #journal-post-wtrek .th-field>span{font-family:'Oswald',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-#journal-post-wtrek .th-field input{font-family:'Open Sans',system-ui,sans-serif;font-size:14px;color:var(--paper);background:var(--ink-soft);border:1px solid var(--line);padding:12px 13px;border-radius:0;outline:none;transition:border-color .25s;width:100%;color-scheme:dark}
-#journal-post-wtrek .th-field input:focus{border-color:var(--accent)}
+#journal-post-wtrek .th-field input,#journal-post-wtrek .th-field select{font-family:'Open Sans',system-ui,sans-serif;font-size:14px;color:var(--paper);background:var(--ink-soft);border:1px solid var(--line);padding:12px 13px;border-radius:0;outline:none;transition:border-color .25s;width:100%;color-scheme:dark}
+#journal-post-wtrek .th-field select{cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23C56A45' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:32px}
+#journal-post-wtrek .th-field select option{background:var(--ink-soft);color:var(--paper)}
+#journal-post-wtrek .th-field input:focus,#journal-post-wtrek .th-field select:focus{border-color:var(--accent)}
 #journal-post-wtrek .th-btn{flex:0 0 auto;font-family:'Open Sans',system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:var(--accent);border:1px solid var(--accent);padding:13px 26px;border-radius:0;cursor:pointer;transition:background .25s,border-color .25s}
 #journal-post-wtrek .th-btn:hover{background:#fbf9f4;border-color:#fbf9f4}
 @media(max-width:600px){#journal-post-wtrek .th-field,#journal-post-wtrek .th-btn{flex-basis:100%;width:100%}}
@@ -1472,7 +1475,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* ── Media VERTICALI flottanti: il testo scorre attorno (incorniciati) ── */
 #journal-post-wtrek .rja-float{float:right;width:clamp(220px,38%,330px);margin:6px 0 22px 34px}
-#journal-post-wtrek .rja-float img,#journal-post-wtrek .rja-float video{width:100%;height:auto;display:block;filter:brightness(0.97)}
+#journal-post-wtrek .rja-float img,#journal-post-wtrek .rja-float video{width:100%;height:auto;max-height:clamp(340px,50vh,440px);object-fit:cover;object-position:center;display:block;filter:brightness(0.97)}
 /* i blocchi larghi non si incastrano di fianco: vanno a capo sotto il media */
 #journal-post-wtrek section::after{content:'';display:table;clear:both}
 #journal-post-wtrek h3,#journal-post-wtrek table,#journal-post-wtrek .tdp-acc,#journal-post-wtrek .tdp-hotels,#journal-post-wtrek .rja-wide,#journal-post-wtrek .rja-bleed,#journal-post-wtrek .rja-panel,#journal-post-wtrek .rja-cols{clear:both}

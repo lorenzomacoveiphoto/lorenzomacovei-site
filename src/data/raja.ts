@@ -14,11 +14,11 @@ const flightForm = (t: { k: string; title: string; src: string; from: string; to
   </div>
 </form>`;
 
-const stayForm = (t: { k: string; title: string; src: string; zone: string; zoneph: string; cin: string; cout: string; btn: string }) => `
+const stayForm = (t: { k: string; title: string; src: string; zone: string; zonedef: string; cin: string; cout: string; btn: string }) => `
 <form class="tdp-hotels" onsubmit="return rajaStay(event)">
   <div class="th-head"><div><span class="th-k">${t.k}</span><span class="th-t">${t.title}</span></div><span class="th-src">${t.src}</span></div>
   <div class="th-fields">
-    <label class="th-field th-dest"><span>${t.zone}</span><input type="text" id="rs-dest" placeholder="${t.zoneph}"></label>
+    <label class="th-field th-dest"><span>${t.zone}</span><select id="rs-dest"><option value="">${t.zonedef}</option><option>Kri</option><option>Gam</option><option>Arborek</option><option>Batanta</option><option>Waigeo</option><option>Misool</option></select></label>
     <label class="th-field"><span>${t.cin}</span><input type="date" id="rs-checkin"></label>
     <label class="th-field"><span>${t.cout}</span><input type="date" id="rs-checkout"></label>
     <button type="submit" class="th-btn">${t.btn}</button>
@@ -61,20 +61,21 @@ const hsModal = (t: { k: string; title: string; body: string; close: string }) =
 const en_body = `
 <div class="tdp-fig"><video muted loop playsinline src="${M.cover}"></video></div>
 
-<section><p class="lead"><span class="drop">R</span>aja Ampat is an Indonesian archipelago off West Papua, the epicentre of marine biodiversity on the planet. In the heart of the «Coral Triangle» it holds over 1,500 largely uninhabited islands, 75% of the world's known coral species and more than 1,500 fish species. Its name, «The Four Kings», comes from a legend tied to four islands: Waigeo, Batanta, Salawati and Misool. What follows is a field-tested plan, a week in the west, a week in the east.</p></section>
+<section><p class="lead"><span class="drop">R</span>aja Ampat is an archipelago off the far western tip of West Papua, and by most measures the richest marine life left on the planet. In the heart of the «Coral Triangle» it scatters more than 1,500 largely uninhabited islands across the sea, holding three-quarters of the world's known coral species and over 1,500 kinds of fish. The name, «The Four Kings», comes from a legend tied to four islands: Waigeo, Batanta, Salawati and Misool. I gave it two weeks, one in the west and one in the east, and it is still the most extraordinary water I have ever put a mask into.</p></section>
 
 <section id="what"><span class="eyebrow">01</span><h2>What &amp; Where is Raja Ampat, Indonesia?</h2>
-<p><strong>Underwater</strong> is why most people come: mantas, wobbegong sharks, dense fish schools, coral walls, pygmy seahorses. Reefs often start metres from shore or right under the jetties, so snorkelling works for beginners too, though currents at some sites demand real experience.</p>
+<p>On paper Raja Ampat is a scatter of islands off the western edge of West Papua; in the water it becomes something else entirely. Everyone comes for what is <strong>underwater</strong>, and they are right to, mantas, wobbegong sharks, walls of coral, schools so dense they close around you, pygmy seahorses if you know where to look. What caught me off guard was how little it asks to reach all this: the reef often starts a few metres off the beach, or right under the jetty of your homestay, so even snorkelling you are straight into it, though the currents at some sites are serious and want real experience.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
-<p><strong>Piaynemo</strong> holds the archipelago's signature karst viewpoint, turquoise, islet-studded lagoons seen from above after a short, steep climb.</p>
+<p>Above the surface, the image everyone carries of Raja Ampat is <strong>Piaynemo</strong>, the karst viewpoint where turquoise lagoons sit studded with little green islands, seen from a platform at the top of a short, steep climb. For once it is exactly as good as the photographs, and I stayed up there far longer than I meant to.</p>
 <div class="tip"><b>Wayag currently closed</b>Wayag is closed to all visitors for now, following local protests tied to disputes over regional mining permits. Check the latest status before planning around it, Piaynemo remains open and is the more accessible viewpoint anyway.</div>
-<p><strong>Arborek village</strong> is worth a slow wander on its own, not just a snorkel stop, a genuine look at local life and tradition. On land, <strong>Kali Biru</strong> on Waigeo is a strikingly clear freshwater river through the jungle, and guided dawn walks, especially on Batanta, can turn up the Red and Wilson's Birds of Paradise.</p>
-<p>Further south, <strong>Misool</strong> stands apart: dramatic karst rising straight from the sea, hidden caves and submerged archaeological remains, a longer trip, but a different side of Raja Ampat.</p>
+<p>But the places that stayed with me were not only the postcards. <strong>Arborek</strong> deserves a slow morning on its own, not just a snorkel stop, a small island where daily life goes on around you rather than for you. On Waigeo, <strong>Kali Biru</strong> is a freshwater river so clear it barely looks real, and if you drag yourself up before dawn the guided walks, especially on Batanta, can turn up the Red and Wilson's Birds of Paradise.</p>
+<p>Further south, <strong>Misool</strong> stands apart: dramatic karst rising straight out of the sea, hidden caves, submerged archaeological remains. I have not made it there yet, and that, more than anything, is the reason I already want to go back.</p>
 <div class="tdp-fig"><img src="${M.scenery}" alt="Raja Ampat scenery"></div>
 </section>
 
 <section id="cost"><span class="eyebrow">02</span><h2>How Much Does a Raja Ampat Backpacker Trip Cost?</h2>
-<p>On the ground, costs stay reasonable thanks to the exchange rate, and sharing boat transfers is what makes the biggest dent. Flights are the real variable, so here's the full picture, not just the on-site spend.</p>
+<p>Is Raja Ampat expensive? It is the question I get more than any other, and the honest answer is yes and no. People picture it as a high-end, honeymoon-and-liveaboard kind of place, and on that they are mostly wrong. Getting <em>there</em> is what costs, the flights are real money. But once you are on the ground, especially if you are already backpacking around Southeast Asia and find yourself in Indonesia anyway, it is more reasonable than almost anywhere with water this good.</p>
+<p>You can live here on full-board homestay meals for around €30 a day if all you want is to unplug from reality for a while. And if you carry that gloriously expensive habit of <strong>diving</strong>, this is still one of the cheapest places on earth to do it, roughly €30 a dive. Here is the whole picture, flights included, not just the on-site spend.</p>
 <table><tr><th>Item</th><th class="r">Cost</th></tr>
 <tr><td>Corepen Homestay, 7 nights, full board</td><td class="r">€288</td></tr>
 <tr><td>Kalabia Homestay (Arborek), 4 nights, full board</td><td class="r">€128</td></tr>
@@ -102,10 +103,9 @@ const en_body = `
 
 <section id="how-to-get-there"><span class="eyebrow">04</span><h2>How to Get to Raja Ampat: Ferries, Flights &amp; Boats</h2>
 <h3>Flights and the ferry to Waisai</h3>
-<p>No airline flies direct from Europe. Route through a major Indonesian hub, Jakarta, Bali or Makassar, then take a domestic leg into <strong>Sorong (SOQ)</strong>, the mainland gateway city. From Sorong you still need to reach <strong>Waisai</strong>, the regency capital on Waigeo island:</p>
+<p>There's no flying here straight from Europe, so I routed through one of the big Indonesian hubs, Jakarta on my way in, though Bali or Makassar work just as well, and then caught the domestic leg down to <strong>Sorong (SOQ)</strong>, the scruffy port city that everyone passes through. Sorong isn't the destination though: from there I still had to cross to <strong>Waisai</strong>, the small regency capital on Waigeo, and that's where the trip actually begins.</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Arriving in Raja Ampat"></div>
-<ul><li><strong>Public ferry</strong>, about two hours. One sailing daily at 14:00, plus an extra 9:00 departure on Sundays. Economy ~150,000 IDR (~€9); VIP cabin with air-con and private bathroom ~250,000 IDR (~€15). Bought same-day at the port.</li>
-<li><strong>Private speedboat</strong>, faster, but roughly €350/400 each way.</li></ul>
+<p>I took the <strong>public ferry</strong> and I'd do it again without thinking. It's about two hours, once a day at 14:00 with an extra 9:00 sailing on Sundays, and you just buy the ticket at the port the same morning, no booking needed. Economy runs around 150,000 IDR (~€9), or about 250,000 IDR (~€15) for the VIP cabin with air-con and a private bathroom, a fair upgrade after two days of flights. There's a <strong>private speedboat</strong> too if you're in a rush, faster but roughly €350/400 each way, which felt hard to justify.</p>
 <div class="tip"><b>Buffer nights, both ends</b>Ferry and flight connections are tight and delays are common, so plan <strong>two extra nights in Sorong</strong>, one on the way in, one on the way out. A good excuse to treat yourself to a proper hotel before and after the spartan homestay stretch: the <strong>Aston Sorong</strong> (~€35/night) is the reliable pick, or the <strong>Favehotel</strong> for a fair balance of comfort and price, with a small but decent spa.</div>
 <div class="tip"><b>Bali/Sorong: only Garuda</b><strong>Garuda Indonesia</strong> is currently the only carrier on the Bali/Sorong route, and it isn't always reliable, mine was cancelled and rerouted via Jakarta.</div>
 FLIGHT
@@ -206,7 +206,7 @@ ${hsModal({ k: 'Homestays', title: 'What to expect', close: 'Close', body: "Basi
 `;
 
 const en_flight = flightForm({ k: 'SEARCH FLIGHTS', title: 'Find your flight to Sorong', src: 'Price comparison · Skyscanner', from: 'From', to: 'To', dep: 'Depart', ret: 'Return', btn: 'Search flights' });
-const en_stay = stayForm({ k: 'BOOK YOUR STAY', title: 'Find where to sleep', src: 'Availability · Stay Raja Ampat', zone: 'Area', zoneph: 'e.g. Kri, Arborek…', cin: 'Check-in', cout: 'Check-out', btn: 'Search' });
+const en_stay = stayForm({ k: 'BOOK YOUR STAY', title: 'Find where to sleep', src: 'Availability · Stay Raja Ampat', zone: 'Island', zonedef: 'Select an island', cin: 'Check-in', cout: 'Check-out', btn: 'Search' });
 
 // ─────────────────────────── ITALIANO ───────────────────────────
 const it_body = `
@@ -357,7 +357,7 @@ ${hsModal({ k: 'Homestay', title: 'Cosa aspettarsi', close: 'Chiudi', body: "Spa
 `;
 
 const it_flight = flightForm({ k: 'CERCA I VOLI', title: 'Trova il tuo volo per Sorong', src: 'Confronto prezzi · Skyscanner', from: 'Partenza', to: 'Destinazione', dep: 'Andata', ret: 'Ritorno', btn: 'Cerca voli' });
-const it_stay = stayForm({ k: 'PRENOTA IL SOGGIORNO', title: 'Trova dove dormire', src: 'Disponibilità · Stay Raja Ampat', zone: 'Zona', zoneph: 'es. Kri, Arborek…', cin: 'Check-in', cout: 'Check-out', btn: 'Cerca' });
+const it_stay = stayForm({ k: 'PRENOTA IL SOGGIORNO', title: 'Trova dove dormire', src: 'Disponibilità · Stay Raja Ampat', zone: 'Isola', zonedef: "Scegli l'isola", cin: 'Check-in', cout: 'Check-out', btn: 'Cerca' });
 
 // ─────────────────────────── ESPAÑOL ───────────────────────────
 const es_body = `
@@ -508,7 +508,7 @@ ${hsModal({ k: 'Homestays', title: 'Qué esperar', close: 'Cerrar', body: 'Bási
 `;
 
 const es_flight = flightForm({ k: 'BUSCA VUELOS', title: 'Encuentra tu vuelo a Sorong', src: 'Comparador de precios · Skyscanner', from: 'Origen', to: 'Destino', dep: 'Ida', ret: 'Vuelta', btn: 'Buscar vuelos' });
-const es_stay = stayForm({ k: 'RESERVA TU ESTANCIA', title: 'Encuentra dónde dormir', src: 'Disponibilidad · Stay Raja Ampat', zone: 'Zona', zoneph: 'ej. Kri, Arborek…', cin: 'Check-in', cout: 'Check-out', btn: 'Buscar' });
+const es_stay = stayForm({ k: 'RESERVA TU ESTANCIA', title: 'Encuentra dónde dormir', src: 'Disponibilidad · Stay Raja Ampat', zone: 'Isla', zonedef: 'Elige la isla', cin: 'Check-in', cout: 'Check-out', btn: 'Buscar' });
 
 // Affianca ogni figura (.tdp-fig) al paragrafo adiacente in una riga a due
 // colonne (.rja-side), così i media orizzontali stanno al lato del testo e non
