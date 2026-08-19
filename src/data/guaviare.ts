@@ -408,7 +408,7 @@ const tocEs = mkToc([
 export const guaviare: Record<Lang, GuaviareLang> = {
   it: {
     kicker: 'Guida · Guaviare · Colombia',
-    title: 'Guaviare 2026: la giungla perduta (e ritrovata) della Colombia',
+    title: 'Guaviare guida completa: costi, itinerario e sicurezza (2026)',
     sub: 'Guida pratica a San José del Guaviare: quando andare, come arrivare, cosa vedere, e perché questa regione protetta si visita solo con tour locali regolati.',
     facts: [{ n: 'Lug/Nov', l: 'stagione migliore' }, { n: '3 giorni', l: 'circuito classico' }, { n: '12.000+ anni', l: 'arte rupestre' }, { n: 'da 400€', l: 'guidato' }],
     tocTitle: 'In questa guida',
@@ -418,7 +418,7 @@ export const guaviare: Record<Lang, GuaviareLang> = {
   },
   en: {
     kicker: 'Guide · Guaviare · Colombia',
-    title: "Guaviare 2026: how to visit Colombia's reopened jungle",
+    title: 'Guaviare Complete Guide: Cost, Itinerary & Safety (2026)',
     sub: 'A practical guide to San José del Guaviare: when to go, how to get there, what to see, and why this protected region is visited only through local, regulated tours.',
     facts: [{ n: 'Jul/Nov', l: 'best season' }, { n: '3 days', l: 'classic loop' }, { n: '12,000+ yr', l: 'rock art' }, { n: 'from 400€', l: 'guided' }],
     tocTitle: 'In this guide',
@@ -428,7 +428,7 @@ export const guaviare: Record<Lang, GuaviareLang> = {
   },
   es: {
     kicker: 'Guía · Guaviare · Colombia',
-    title: 'Guaviare 2026: cómo visitar la selva reabierta de Colombia',
+    title: 'Guaviare guía completa: costes, itinerario y seguridad (2026)',
     sub: 'Guía práctica a San José del Guaviare: cuándo ir, cómo llegar, qué ver, y por qué esta región protegida se visita solo con tours locales regulados.',
     facts: [{ n: 'Jul/Nov', l: 'mejor temporada' }, { n: '3 días', l: 'circuito clásico' }, { n: '12.000+ años', l: 'arte rupestre' }, { n: 'desde 400€', l: 'guiado' }],
     tocTitle: 'En esta guía',
@@ -444,8 +444,8 @@ export const guaviareMeta = {
   cover: M.cover,
   titleTag: {
     en: 'Guaviare Complete Guide: Cost, Itinerary & Safety (2026)',
-    it: 'Guaviare 2026: Guida nella giungla perduta (e ritrovata) della Colombia',
-    es: 'Guía del Guaviare 2026: cómo visitar la selva reabierta de Colombia',
+    it: 'Guaviare guida completa: costi, itinerario e sicurezza (2026)',
+    es: 'Guaviare guía completa: costes, itinerario y seguridad (2026)',
   } as Record<Lang, string>,
   keywords: {
     en: 'Guaviare travel guide, San José del Guaviare, Cerro Azul rock art, Tranquilandia coloured river, Raudal del Guayabero, Colombia Amazon, Guaviare tours, La Lindosa, pink river dolphins Colombia',
