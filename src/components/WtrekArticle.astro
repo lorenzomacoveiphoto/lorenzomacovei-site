@@ -10,6 +10,35 @@ const html = wtrekHtml as Record<string, string>;
 const { lang, langPaths } = Astro.props as { lang: string; langPaths: Record<string, string> };
 const t = i18n[lang];
 const cover = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872218/IMG_6343_ff4jyl.jpg';
+
+const site = 'https://lorenzomacovei.com';
+const pageUrl = `${site}${langPaths[lang]}`;
+const crumbs = ({ en: ['Home', 'Journal'], it: ['Home', 'Journal'], es: ['Inicio', 'Journal'] } as Record<string, string[]>)[lang];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BlogPosting',
+      headline: t.guide_wtrek_title.replace(' (2026)', ''),
+      description: t.guide_wtrek_desc,
+      image: [cover],
+      inLanguage: lang,
+      author: { '@type': 'Person', name: 'Lorenzo Macovei', url: site },
+      publisher: { '@type': 'Person', name: 'Lorenzo Macovei', url: site },
+      datePublished: '2026-01-15',
+      dateModified: '2026-05-01',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: crumbs[0], item: `${site}/${lang}/` },
+        { '@type': 'ListItem', position: 2, name: crumbs[1], item: `${site}/${lang}/journal` },
+        { '@type': 'ListItem', position: 3, name: 'W-Trek', item: pageUrl },
+      ],
+    },
+  ],
+};
 ---
 <Base
   lang={lang}
@@ -19,6 +48,9 @@ const cover = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v
   image={cover}
   langPaths={langPaths}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </Fragment>
   <div style="max-width:680px; margin:0 auto; padding:92px 24px 0;">
     <a
       href={`/${lang}/journal/guides`}
