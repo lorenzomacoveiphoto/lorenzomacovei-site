@@ -408,7 +408,7 @@ const tocEs = mkToc([
 export const guaviare: Record<Lang, GuaviareLang> = {
   it: {
     kicker: 'Guida · Guaviare · Colombia',
-    title: 'Guaviare guida completa: costi, itinerario e sicurezza (2026)',
+    title: 'Guaviare guida completa: costi, itinerario e sicurezza',
     sub: 'Guida pratica a San José del Guaviare: quando andare, come arrivare, cosa vedere, e perché questa regione protetta si visita solo con tour locali regolati.',
     facts: [{ n: 'Lug/Nov', l: 'stagione migliore' }, { n: '3 giorni', l: 'circuito classico' }, { n: '12.000+ anni', l: 'arte rupestre' }, { n: 'da 400€', l: 'guidato' }],
     tocTitle: 'In questa guida',
@@ -418,7 +418,7 @@ export const guaviare: Record<Lang, GuaviareLang> = {
   },
   en: {
     kicker: 'Guide · Guaviare · Colombia',
-    title: 'Guaviare Complete Guide: Cost, Itinerary & Safety (2026)',
+    title: 'Guaviare Complete Guide: Cost, Itinerary & Safety',
     sub: 'A practical guide to San José del Guaviare: when to go, how to get there, what to see, and why this protected region is visited only through local, regulated tours.',
     facts: [{ n: 'Jul/Nov', l: 'best season' }, { n: '3 days', l: 'classic loop' }, { n: '12,000+ yr', l: 'rock art' }, { n: 'from 400€', l: 'guided' }],
     tocTitle: 'In this guide',
@@ -428,7 +428,7 @@ export const guaviare: Record<Lang, GuaviareLang> = {
   },
   es: {
     kicker: 'Guía · Guaviare · Colombia',
-    title: 'Guaviare guía completa: costes, itinerario y seguridad (2026)',
+    title: 'Guaviare guía completa: costes, itinerario y seguridad',
     sub: 'Guía práctica a San José del Guaviare: cuándo ir, cómo llegar, qué ver, y por qué esta región protegida se visita solo con tours locales regulados.',
     facts: [{ n: 'Jul/Nov', l: 'mejor temporada' }, { n: '3 días', l: 'circuito clásico' }, { n: '12.000+ años', l: 'arte rupestre' }, { n: 'desde 400€', l: 'guiado' }],
     tocTitle: 'En esta guía',

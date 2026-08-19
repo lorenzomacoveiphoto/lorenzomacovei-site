@@ -601,7 +601,7 @@ const toc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 export const raja: Record<Lang, RajaLang> = {
   it: {
     kicker: 'Diario · Papua Occidentale · Indonesia',
-    title: 'Guida a Raja Ampat 2026: immersioni, homestay e budget per backpacker',
+    title: 'Guida a Raja Ampat: immersioni, homestay e budget per backpacker',
     sub: "Sette giorni a ovest, cinque a est, tutto quello che serve per organizzare l'arcipelago dei Quattro Re, raccontato da chi ci è stato davvero.",
     facts: [{ n: '12', l: 'giorni' }, { n: 'SOQ', l: 'scalo' }, { n: '~610€', l: 'in loco' }, { n: 'Ott/Apr', l: 'stagione' }],
     tocTitle: 'In questa guida',
@@ -611,7 +611,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   en: {
     kicker: 'Diary · West Papua · Indonesia',
-    title: 'Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary (2026)',
+    title: 'Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary',
     sub: "Seven days west, five east, everything you need to plan the archipelago of the Four Kings, told by someone who's actually been there.",
     facts: [{ n: '12', l: 'days' }, { n: 'SOQ', l: 'hub' }, { n: '~€610', l: 'on-site' }, { n: 'Oct/Apr', l: 'season' }],
     tocTitle: 'In this guide',
@@ -621,7 +621,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   es: {
     kicker: 'Diario · Papúa Occidental · Indonesia',
-    title: 'Guía de Raja Ampat 2026: buceo, homestays y presupuesto para mochileros',
+    title: 'Guía de Raja Ampat: buceo, homestays y presupuesto para mochileros',
     sub: 'Siete días al oeste, cinco al este, todo lo que necesitas para organizar el archipiélago de los Cuatro Reyes, contado por quien ha estado de verdad.',
     facts: [{ n: '12', l: 'días' }, { n: 'SOQ', l: 'escala' }, { n: '~610€', l: 'en el sitio' }, { n: 'Oct/Abr', l: 'temporada' }],
     tocTitle: 'En esta guía',
