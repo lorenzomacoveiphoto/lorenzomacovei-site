@@ -295,7 +295,7 @@ STAY
 <p>Le immersioni costano in genere circa <strong>30€</strong> e includono il transfer al sito entro un certo raggio. Con base a <strong>Corepen</strong>, Cape Kri era coperto senza sovrapprezzo, ma per Mayhem c'era un costo di trasporto extra. Con base ad <strong>Arborek</strong>, Mayhem si raggiungeva senza costi aggiuntivi, da valutare nella scelta della base.</p>
 <h3>Lato ovest: Corepen</h3>
 <div class="tdp-fig"><video muted loop playsinline src="${M.corepen}"></video></div>
-<p>La mia scelta preferita in assoluto. Ottimo cibo e centro immersioni in loco, quindi non serve prenotare le immersioni in anticipo, come ospite hai la precedenza sulla barca.</p>
+<p>Corepen è stata la mia base preferita di tutto il viaggio, l'unico posto dove tornerei senza pensarci due volte. Il cibo era davvero buono, migliore di quanto avesse diritto di essere così lontano da tutto, e c'è un centro immersioni proprio sulla spiaggia, quindi non ho mai dovuto prenotare nulla in anticipo: come ospite hai semplicemente la precedenza sulla barca ogni mattina e vai dritto ai siti. Tra questo, la quiete e quanto sono diventate facili le immersioni da qui, ha fissato l'asticella per tutto il resto.</p>
 <details class="tdp-acc"><summary>Corepen, prezzi immersioni</summary><div class="acc-body"><table>
 <tr><td>Immersione diurna (con attrezzatura)</td><td class="r">600.000 IDR</td></tr>
 <tr><td>Immersione notturna</td><td class="r">700.000 IDR</td></tr></table></div></details>
@@ -446,7 +446,7 @@ STAY
 <p>Las inmersiones cuestan en general unos <strong>30€</strong> e incluyen el traslado al punto dentro de cierto radio. Con base en <strong>Corepen</strong>, Cape Kri estaba cubierto sin coste extra, pero llegar a Mayhem suponía un transporte adicional. Con base en <strong>Arborek</strong>, Mayhem se alcanzaba sin coste extra, algo a tener en cuenta al elegir base.</p>
 <h3>Lado oeste: Corepen</h3>
 <div class="tdp-fig"><video muted loop playsinline src="${M.corepen}"></video></div>
-<p>Mi elección preferida en general. Gran comida y centro de buceo in situ, así que no hace falta reservar las inmersiones con antelación, como huésped tienes prioridad en el barco.</p>
+<p>Corepen fue mi base preferida de todo el viaje, el único sitio al que volvería sin pensarlo dos veces. La comida era realmente buena, mejor de lo que cabía esperar tan lejos de todo, y hay un centro de buceo justo en la playa, así que nunca tuve que reservar nada con antelación: como huésped simplemente tienes prioridad en el barco cada mañana y sales directo a los puntos de inmersión. Entre eso, la calma y lo fácil que se volvió bucear desde aquí, marcó el listón para todo lo que vino después.</p>
 <details class="tdp-acc"><summary>Corepen, precios de buceo</summary><div class="acc-body"><table>
 <tr><td>Inmersión diurna (con equipo)</td><td class="r">600.000 IDR</td></tr>
 <tr><td>Inmersión nocturna</td><td class="r">700.000 IDR</td></tr></table></div></details>
