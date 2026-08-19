@@ -10,7 +10,7 @@
 [[redirects]]
   from = "/"
   to = "/en/"
-  status = 302
+  status = 301
   force = true
 
 # /journal ora ha due pagine (stories/guides): l'indice va alle storie
