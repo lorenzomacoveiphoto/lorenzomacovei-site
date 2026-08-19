@@ -1575,3 +1575,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rf-op summary .rf-cost{font-family:'Oswald',system-ui,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek .rf-op .acc-body a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line);font-weight:600}
 #journal-post-wtrek .rf-op .acc-body a:hover{border-bottom-color:var(--accent)}
+#journal-post-wtrek .rf-op .acc-body p strong{color:#fbf9f4}
+#journal-post-wtrek .rf-op .rf-price{display:inline-block;font-family:'Oswald',system-ui,sans-serif;font-weight:600;letter-spacing:.02em;color:var(--accent);white-space:nowrap}
+#journal-post-wtrek .rf-op .acc-body .rf-intro{color:var(--paper);border-left:2px solid var(--accent);padding-left:14px}
+#journal-post-wtrek .rf-op .rf-fac{font-size:13px;white-space:nowrap;letter-spacing:2px;margin:0 4px;vertical-align:middle}
