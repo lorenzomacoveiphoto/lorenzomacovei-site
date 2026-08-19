@@ -144,7 +144,7 @@ STAY
 <p>Dives generally run about <strong>€30 each</strong> and include transfer to the site within a certain radius. Based in <strong>Corepen</strong>, Cape Kri was covered at no extra cost, but reaching Mayhem meant an extra transport fee. Based in <strong>Arborek</strong>, Mayhem was reachable with no extra charge, worth factoring in when picking a base.</p>
 <h3>West side pick: Corepen</h3>
 <div class="tdp-fig"><video muted loop playsinline src="${M.corepen}"></video></div>
-<p>My top choice overall. Great food, and a dive centre on-site, so no need to book dives in advance, you just get priority on the boat as a guest.</p>
+<p>Corepen was my favourite base of the whole trip, the one place I would go back to without thinking twice. The food was genuinely good, better than it had any right to be that far off the grid, and there is a dive centre right on the beach, so I never had to book anything ahead: as a guest you simply get priority on the boat each morning and roll straight out to the sites. Between that, the quiet and how easy the diving became from here, it set the bar for everywhere that followed.</p>
 <details class="tdp-acc"><summary>Corepen, diving prices</summary><div class="acc-body"><table>
 <tr><td>Day dive (with equipment)</td><td class="r">600,000 IDR</td></tr>
 <tr><td>Night dive</td><td class="r">700,000 IDR</td></tr></table></div></details>
@@ -530,6 +530,12 @@ function pairMedia(html: string) {
   );
   // 2) rendi flottanti i media verticali.
   html = html.replace(new RegExp(PFIG, 'g'), '<figure class="rja-float">$1</figure>');
+  // 2b) accoppia il media col paragrafo adiacente in una riga flex (testo
+  //     centrato verticalmente): i testi corti non lasciano più spazi vuoti.
+  html = html.replace(
+    /(<figure class="rja-float">[\s\S]*?<\/figure>)\s*(<p>(?:(?!<\/p>)[\s\S])*<\/p>)(\s*<details class="tdp-acc">[\s\S]*?<\/details>)?/g,
+    '<div class="rja-side"><div class="rja-side-text">$2$3</div>$1</div>'
+  );
   // 3) Foto ORIZZONTALI: scenery a tutto schermo (full-bleed)…
   html = html.replace(
     /<div class="tdp-fig">(<img src="[^"]*IMG_8816[^"]*"[^>]*>)<\/div>/g,
