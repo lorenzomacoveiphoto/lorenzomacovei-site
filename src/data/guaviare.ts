@@ -47,7 +47,7 @@ const albumSection = (heading: string) =>
 const en_body = `
 <section><p class="lead"><span class="drop">T</span>he Guaviare sits on the seam of Colombia where the eastern plains, the <em>llanos</em>, dissolve into the Amazon. It is hot, green and thinly populated, a frontier of sandstone towers, tannin-dark rivers and forest that runs unbroken to the horizon. And for most of recent history, it was a place you could not travel to.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>What the Guaviare is</h2>
+<section id="what"><span class="eyebrow">01</span><h2>What is Guaviare, Colombia?</h2>
 ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and still water: the Guaviare on the seam between llano and Amazon.')}
 <p>For decades this was coca country and FARC territory, one of the corners of Colombia where the armed conflict, the drug economy and the absence of the state were knotted most tightly together. The 2016 peace agreement changed that. Security improved, the region opened, and San José del Guaviare, the small departmental capital, became the base for one of the most surprising trips in the country: rock art painted more than twelve thousand years ago, a river that turns red, natural rock arches, pink river dolphins, and communities deciding for themselves how they want to be met.</p>
 </section>
@@ -61,7 +61,7 @@ ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and st
 <a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Book with Geotours · WhatsApp →</a>
 </section>
 
-<section id="when"><span class="eyebrow">03</span><h2>When to go</h2>
+<section id="when"><span class="eyebrow">03</span><h2>Best Time to Visit Guaviare (Weather &amp; Seasons)</h2>
 <p>The Guaviare is hot and humid year round, usually between 28 and 30°C. What changes with the calendar is water, and water is what most of the attractions are made of. There are two seasons, and the wetter one is, counter-intuitively, the better one to travel in.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">Approx. May/Nov · best</span><h4>Green season</h4><p>Rivers, waterfalls and natural pools are full and at their most spectacular. This is when the region is at its best. More clear, sunny days come towards August to November.</p></div>
@@ -78,7 +78,7 @@ ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and st
 <p>Once you arrive, remember the rule from the section above: to reach the sites you go with a guide and a vehicle, arranged through your operator. San José itself is small, safe and easygoing, and every excursion leaves from here.</p>
 </section>
 
-<section id="see"><span class="eyebrow">05</span><h2>What to see and do</h2>
+<section id="see"><span class="eyebrow">05</span><h2>Top Things to Do in Guaviare: Cerro Azul &amp; Tranquilandia</h2>
 <p>The classic loop, the one a three-day tour covers, strings together the four sights that define the region. Here is what each one is, and why it earns its place.</p>
 <h3>Tranquilandia and the coloured river</h3>
 ${floatFig(M.tranq, 'Tranquilandia, the coloured river of the Guaviare', 'Tranquilandia: the Caño Sabana runs red when the <em>Macarenia clavigera</em> blooms, roughly July to November.')}
@@ -117,7 +117,7 @@ ${floatVid(M.raudalVid, 'Up the Guayabero river by boat towards the raudal.')}
 ${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the day.')}
 </section>
 
-<section id="sleep"><span class="eyebrow">07</span><h2>Where to stay</h2>
+<section id="sleep"><span class="eyebrow">07</span><h2>Where to Stay in San José del Guaviare</h2>
 <p>Most tours include lodging, but it is worth knowing what you are getting. San José has options for every budget, from simple hostels in town to ecolodges just outside it. These are the two I used.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">3 nights · half board</span><h4>La Herradura Ecolodge</h4><p>Included in the Geotours package. Beautiful setting, genuinely good food, attentive service on half board. The kind of base that makes the long excursion days easy to come back to, and one of the nicest places I stayed in Colombia.</p></div>
@@ -126,7 +126,7 @@ ${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the d
 ${wide(M.herra, 'Sunset over La Herradura Ecolodge', 'Sunset over La Herradura, the ecolodge that was my base for the trip.')}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>Total Cost Breakdown: Local Guides, Food, and Stays</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Guaviare Budget &amp; Travel Cost Breakdown</h2>
 <p>The Geotours package was 400€ for three days, everything included: excursions, guiding, and three nights at La Herradura on half board. On top of that sat the transport in, the extra community day and the night in town. Here is the whole thing.</p>
 <table><tr><th>Item</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -157,7 +157,7 @@ ${albumSection('More from the Guaviare')}
 const it_body = `
 <section><p class="lead"><span class="drop">I</span>l Guaviare si trova sulla cucitura della Colombia, dove le pianure orientali, i <em>llanos</em>, si dissolvono nell'Amazzonia. È caldo, verde e poco popolato, una frontiera di torri di arenaria, fiumi scuri di tannino e foresta che corre ininterrotta fino all'orizzonte. E per gran parte della storia recente è stato un posto in cui non si poteva viaggiare.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>Cos'è il Guaviare</h2>
+<section id="what"><span class="eyebrow">01</span><h2>Cos'è il Guaviare, Colombia?</h2>
 ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e acqua immobile: il Guaviare sulla cucitura tra llano e Amazzonia.')}
 <p>Per decenni è stato terra di coca e territorio delle FARC, uno degli angoli della Colombia dove il conflitto armato, l'economia della droga e l'assenza dello Stato erano annodati più strettamente. L'accordo di pace del 2016 ha cambiato le cose. La sicurezza è migliorata, la regione si è aperta e San José del Guaviare, la piccola capitale del dipartimento, è diventata la base per uno dei viaggi più sorprendenti del Paese: arte rupestre dipinta più di dodicimila anni fa, un fiume che diventa rosso, archi naturali di roccia, delfini rosa di fiume, e comunità che decidono da sé come vogliono essere incontrate.</p>
 </section>
@@ -171,7 +171,7 @@ ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e 
 <a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Prenota con Geotours · WhatsApp →</a>
 </section>
 
-<section id="when"><span class="eyebrow">03</span><h2>Quando andare</h2>
+<section id="when"><span class="eyebrow">03</span><h2>Periodo migliore per visitare il Guaviare (clima e stagioni)</h2>
 <p>Il Guaviare è caldo e umido tutto l'anno, di solito tra i 28 e i 30°C. Ciò che cambia col calendario è l'acqua, e l'acqua è ciò di cui è fatta gran parte delle attrazioni. Ci sono due stagioni, e quella più piovosa è, controintuitivamente, la migliore per viaggiare.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">Circa mag/nov · la migliore</span><h4>Stagione verde</h4><p>Fiumi, cascate e piscine naturali sono pieni e al loro massimo splendore. È il periodo in cui la regione dà il meglio. Più giornate limpide e soleggiate arrivano verso agosto/novembre.</p></div>
@@ -188,7 +188,7 @@ ${floatFig(M.palms, 'Foresta di palme allagata nel Guaviare', 'Palme allagate e 
 <p>Una volta arrivato, ricorda la regola della sezione precedente: per raggiungere i siti si va con una guida e un mezzo, tramite il tuo operatore. San José è piccola, sicura e tranquilla, e ogni escursione parte da qui.</p>
 </section>
 
-<section id="see"><span class="eyebrow">05</span><h2>Cosa vedere e fare</h2>
+<section id="see"><span class="eyebrow">05</span><h2>Cosa fare nel Guaviare: Cerro Azul e Tranquilandia</h2>
 <p>Il circuito classico, quello che copre un tour di tre giorni, mette in fila le quattro attrazioni che definiscono la regione. Ecco cosa sono e perché meritano il loro posto.</p>
 <h3>Tranquilandia e il fiume colorato</h3>
 ${floatFig(M.tranq, 'Tranquilandia, il fiume colorato del Guaviare', "Tranquilandia: il Caño Sabana diventa rosso quando fiorisce la <em>Macarenia clavigera</em>, all'incirca da luglio a novembre.")}
@@ -227,7 +227,7 @@ ${floatVid(M.raudalVid, 'Su per il fiume Guayabero in barca, verso il raudal.')}
 ${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a cui ruota la giornata.")}
 </section>
 
-<section id="sleep"><span class="eyebrow">07</span><h2>Dove dormire</h2>
+<section id="sleep"><span class="eyebrow">07</span><h2>Dove dormire a San José del Guaviare</h2>
 <p>Molti tour includono l'alloggio, ma vale la pena sapere cosa ti aspetta. San José ha opzioni per ogni budget, dagli ostelli semplici in città agli ecolodge appena fuori. Questi sono i due che ho usato.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">3 notti · mezza pensione</span><h4>La Herradura Ecolodge</h4><p>Incluso nel pacchetto Geotours. Ambientazione bellissima, cibo davvero buono, servizio attento in mezza pensione. Il tipo di base che rende facile tornare dopo le lunghe giornate di escursione, e uno dei posti più belli in cui ho dormito in Colombia.</p></div>
@@ -236,7 +236,7 @@ ${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a 
 ${wide(M.herra, 'Tramonto su La Herradura Ecolodge', "Tramonto su La Herradura, l'ecolodge che è stato la mia base per il viaggio.")}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>Costi dettagliati: guide locali, cibo e alloggi</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Guaviare: budget e costi di viaggio</h2>
 <p>Il pacchetto Geotours era 400€ per tre giorni, tutto incluso: escursioni, guida e tre notti a La Herradura in mezza pensione. Sopra a questo si sono aggiunti il trasporto per arrivare, il giorno extra con le comunità e la notte in città. Ecco il quadro completo.</p>
 <table><tr><th>Voce</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -267,7 +267,7 @@ ${albumSection('Altro dal Guaviare')}
 const es_body = `
 <section><p class="lead"><span class="drop">E</span>l Guaviare se asienta en la costura de Colombia donde los llanos orientales, los <em>llanos</em>, se disuelven en la Amazonía. Es caluroso, verde y poco poblado, una frontera de torres de arenisca, ríos oscuros de taninos y selva que corre sin interrupción hasta el horizonte. Y durante gran parte de la historia reciente fue un lugar al que no se podía viajar.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>Qué es el Guaviare</h2>
+<section id="what"><span class="eyebrow">01</span><h2>¿Qué es el Guaviare, Colombia?</h2>
 ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundadas y agua quieta: el Guaviare en la costura entre el llano y la Amazonía.')}
 <p>Durante décadas fue tierra de coca y territorio de las FARC, uno de los rincones de Colombia donde el conflicto armado, la economía de la droga y la ausencia del Estado estaban más estrechamente anudados. El acuerdo de paz de 2016 cambió eso. La seguridad mejoró, la región se abrió, y San José del Guaviare, la pequeña capital departamental, se convirtió en la base de uno de los viajes más sorprendentes del país: arte rupestre pintado hace más de doce mil años, un río que se vuelve rojo, arcos naturales de roca, delfines rosados de río, y comunidades que deciden por sí mismas cómo quieren ser encontradas.</p>
 </section>
@@ -281,7 +281,7 @@ ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundada
 <a class="rja-btn" href="https://wa.me/573182269161" target="_blank" rel="noopener">Reserva con Geotours · WhatsApp →</a>
 </section>
 
-<section id="when"><span class="eyebrow">03</span><h2>Cuándo ir</h2>
+<section id="when"><span class="eyebrow">03</span><h2>Mejor época para visitar el Guaviare (clima y temporadas)</h2>
 <p>El Guaviare es cálido y húmedo todo el año, normalmente entre 28 y 30°C. Lo que cambia con el calendario es el agua, y el agua es de lo que está hecha la mayoría de las atracciones. Hay dos temporadas, y la más lluviosa es, contra toda intuición, la mejor para viajar.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">Aprox. may/nov · la mejor</span><h4>Temporada verde</h4><p>Ríos, cascadas y piscinas naturales están llenos y en su punto más espectacular. Es cuando la región da lo mejor de sí. Más días despejados y soleados llegan hacia agosto/noviembre.</p></div>
@@ -298,7 +298,7 @@ ${floatFig(M.palms, 'Bosque de palmas inundado en el Guaviare', 'Palmas inundada
 <p>Una vez llegues, recuerda la regla de la sección anterior: para llegar a los sitios se va con un guía y un vehículo, a través de tu operador. San José en sí es pequeña, segura y tranquila, y toda excursión sale de aquí.</p>
 </section>
 
-<section id="see"><span class="eyebrow">05</span><h2>Qué ver y hacer</h2>
+<section id="see"><span class="eyebrow">05</span><h2>Qué hacer en el Guaviare: Cerro Azul y Tranquilandia</h2>
 <p>El circuito clásico, el que cubre un tour de tres días, enlaza las cuatro atracciones que definen la región. Esto es qué es cada una, y por qué se gana su lugar.</p>
 <h3>Tranquilandia y el río de colores</h3>
 ${floatFig(M.tranq, 'Tranquilandia, el río de colores del Guaviare', 'Tranquilandia: el Caño Sabana corre rojo cuando florece la <em>Macarenia clavigera</em>, aproximadamente de julio a noviembre.')}
@@ -337,7 +337,7 @@ ${floatVid(M.raudalVid, 'Río Guayabero arriba en lancha, hacia el raudal.')}
 ${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno al que gira el día.')}
 </section>
 
-<section id="sleep"><span class="eyebrow">07</span><h2>Dónde dormir</h2>
+<section id="sleep"><span class="eyebrow">07</span><h2>Dónde alojarse en San José del Guaviare</h2>
 <p>La mayoría de los tours incluyen alojamiento, pero vale la pena saber qué te toca. San José tiene opciones para todos los presupuestos, desde hostales sencillos en el pueblo hasta ecolodges justo a las afueras. Estos son los dos que usé.</p>
 <div class="rja-cols">
 <div class="rja-box hi"><span class="rb-tag">3 noches · media pensión</span><h4>La Herradura Ecolodge</h4><p>Incluido en el paquete Geotours. Entorno precioso, comida realmente buena, servicio atento en media pensión. El tipo de base que hace fácil volver tras los largos días de excursión, y uno de los sitios más bonitos en los que dormí en Colombia.</p></div>
@@ -346,7 +346,7 @@ ${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno
 ${wide(M.herra, 'Atardecer sobre La Herradura Ecolodge', 'Atardecer sobre La Herradura, el ecolodge que fue mi base para el viaje.')}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>Desglose de costes: guías locales, comida y alojamiento</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Guaviare: presupuesto y costes de viaje</h2>
 <p>El paquete Geotours fue 400€ por tres días, todo incluido: excursiones, guía y tres noches en La Herradura en media pensión. Encima de eso quedaron el transporte de llegada, el día extra con las comunidades y la noche en el pueblo. Aquí está el conjunto.</p>
 <table><tr><th>Concepto</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -384,24 +384,24 @@ export interface GuaviareLang {
 
 const mkToc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 const tocEn = mkToc([
-  ['01', 'what', 'What the Guaviare is'], ['02', 'access', 'Is it safe?'],
-  ['03', 'when', 'When to go'], ['04', 'getting', 'How to get there'],
-  ['05', 'see', 'What to see & do'], ['06', 'community', 'The communities'],
-  ['07', 'sleep', 'Where to stay'], ['08', 'costs', 'Cost breakdown'],
+  ['01', 'what', 'What is Guaviare, Colombia?'], ['02', 'access', 'Is Guaviare Safe for Solo Travelers & Backpackers?'],
+  ['03', 'when', 'Best Time to Visit Guaviare (Weather & Seasons)'], ['04', 'getting', 'How to Get to San José del Guaviare from Bogotá'],
+  ['05', 'see', 'Top Things to Do in Guaviare: Cerro Azul & Tranquilandia'], ['06', 'community', 'The communities'],
+  ['07', 'sleep', 'Where to Stay in San José del Guaviare'], ['08', 'costs', 'Guaviare Budget & Travel Cost Breakdown'],
   ['09', 'tips', 'Know before you go'],
 ]);
 const tocIt = mkToc([
-  ['01', 'what', "Cos'è il Guaviare"], ['02', 'access', 'È sicuro?'],
-  ['03', 'when', 'Quando andare'], ['04', 'getting', 'Come arrivare'],
-  ['05', 'see', 'Cosa vedere e fare'], ['06', 'community', 'Le comunità'],
-  ['07', 'sleep', 'Dove dormire'], ['08', 'costs', 'Costi'],
+  ['01', 'what', "Cos'è il Guaviare, Colombia?"], ['02', 'access', 'Il Guaviare è sicuro per chi viaggia da solo e backpacker?'],
+  ['03', 'when', 'Periodo migliore per visitare il Guaviare (clima e stagioni)'], ['04', 'getting', 'Come arrivare a San José del Guaviare da Bogotá'],
+  ['05', 'see', 'Cosa fare nel Guaviare: Cerro Azul e Tranquilandia'], ['06', 'community', 'Le comunità'],
+  ['07', 'sleep', 'Dove dormire a San José del Guaviare'], ['08', 'costs', 'Guaviare: budget e costi di viaggio'],
   ['09', 'tips', 'Da sapere prima'],
 ]);
 const tocEs = mkToc([
-  ['01', 'what', 'Qué es el Guaviare'], ['02', 'access', '¿Es seguro?'],
-  ['03', 'when', 'Cuándo ir'], ['04', 'getting', 'Cómo llegar'],
-  ['05', 'see', 'Qué ver y hacer'], ['06', 'community', 'Las comunidades'],
-  ['07', 'sleep', 'Dónde dormir'], ['08', 'costs', 'Costes'],
+  ['01', 'what', '¿Qué es el Guaviare, Colombia?'], ['02', 'access', '¿Es seguro el Guaviare para viajeros solos y mochileros?'],
+  ['03', 'when', 'Mejor época para visitar el Guaviare (clima y temporadas)'], ['04', 'getting', 'Cómo llegar a San José del Guaviare desde Bogotá'],
+  ['05', 'see', 'Qué hacer en el Guaviare: Cerro Azul y Tranquilandia'], ['06', 'community', 'Las comunidades'],
+  ['07', 'sleep', 'Dónde alojarse en San José del Guaviare'], ['08', 'costs', 'Guaviare: presupuesto y costes de viaje'],
   ['09', 'tips', 'Antes de ir'],
 ]);
 
