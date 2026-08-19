@@ -440,7 +440,7 @@ export const guaviareMeta = {
   date: '2026-08-01',
   cover: M.cover,
   titleTag: {
-    en: "Guaviare travel guide 2026: how to visit Colombia's reopened jungle",
+    en: 'Guaviare Complete Guide: Cost, Itinerary & Safety (2026)',
     it: 'Guaviare 2026: Guida nella giungla perduta (e ritrovata) della Colombia',
     es: 'Guía del Guaviare 2026: cómo visitar la selva reabierta de Colombia',
   } as Record<Lang, string>,
