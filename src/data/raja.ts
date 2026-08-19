@@ -639,7 +639,7 @@ export const rajaMeta = {
   meta: { en: 'Indonesia · West Papua · Guide · 2026', it: 'Indonesia · Papua Occidentale · Guida · 2026', es: 'Indonesia · Papúa Occidental · Guía · 2026' } as Record<Lang, string>,
   // Title tag (SEO): keyword-first, distinct from the on-page H1.
   titleTag: {
-    en: 'Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary (2026)',
+    en: 'Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary',
     it: 'Guida a Raja Ampat 2026: immersioni, homestay e budget per backpacker',
     es: 'Guía de Raja Ampat 2026: buceo, homestays y presupuesto para mochileros',
   } as Record<Lang, string>,
@@ -649,7 +649,7 @@ export const rajaMeta = {
     es: 'guía Raja Ampat, buceo Raja Ampat, homestay Raja Ampat, presupuesto Raja Ampat, cómo llegar a Raja Ampat, Cape Kri, Manta Point, Misool, Papúa Occidental, archipiélago de los Cuatro Reyes',
   } as Record<Lang, string>,
   desc: {
-    en: 'A field-tested Raja Ampat travel guide: how to get there, the best dive sites (Cape Kri, Manta Point, Misool), homestay costs, ferry logistics and a full budget breakdown for the Four Kings, West Papua.',
+    en: "Complete Raja Ampat budget travel guide. Learn how to visit Indonesia's paradise on a backpacker budget: local homestays, entry permits, costs, and 10-day itinerary.",
     it: "Guida a Raja Ampat provata sul campo: come arrivare, i migliori siti d'immersione (Cape Kri, Manta Point, Misool), costi delle homestay, traghetti e budget completo per i Quattro Re, Papua Occidentale.",
     es: 'Guía de Raja Ampat probada sobre el terreno: cómo llegar, los mejores puntos de buceo (Cape Kri, Manta Point, Misool), costes de homestays, ferries y presupuesto completo de los Cuatro Reyes, Papúa Occidental.',
   } as Record<Lang, string>,
