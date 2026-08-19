@@ -52,8 +52,8 @@ ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and st
 <p>For decades this was coca country and FARC territory, one of the corners of Colombia where the armed conflict, the drug economy and the absence of the state were knotted most tightly together. The 2016 peace agreement changed that. Security improved, the region opened, and San José del Guaviare, the small departmental capital, became the base for one of the most surprising trips in the country: rock art painted more than twelve thousand years ago, a river that turns red, natural rock arches, pink river dolphins, and communities deciding for themselves how they want to be met.</p>
 </section>
 
-<section id="access"><span class="eyebrow">02</span><h2>A protected, strictly regulated region</h2>
-<p>This is the single most important thing to understand before you plan a trip here, and it is what makes the Guaviare different from most of Colombia.</p>
+<section id="access"><span class="eyebrow">02</span><h2>Is Guaviare Safe for Solo Travelers &amp; Backpackers?</h2>
+<p><strong>Short answer: yes.</strong> Since the 2016 peace agreement San José del Guaviare has become a calm, easygoing town and a comfortable base for solo travellers and backpackers. The catch isn't safety, it's access, and it's the single most important thing to understand before you plan a trip here: it's what makes the Guaviare different from most of Colombia.</p>
 <div class="rja-panel"><b>You cannot do this one independently</b>
 <p>Almost every site worth seeing, the rock art, the coloured river, the rapids, the forest trails, lies inside protected land of enormous archaeological and ecological value. Access is regulated: you visit with <strong>authorised local guides, and usually a jeep</strong>, arranged through a licensed operator. You do not turn up and wander in.</p>
 <p>This is not bureaucracy for its own sake. The rock paintings are among the oldest on the continent and irreplaceable, the ecosystems are fragile, and much of the land and its stories belong to communities who are only now shaping how tourism works here. The permit system, the guides and the community protocols are what keep all of it intact, and what make sure the money reaches the people who live here. Booking through a local tour is not a compromise on the adventure. It <em>is</em> the way in.</p></div>
@@ -70,7 +70,7 @@ ${floatFig(M.palms, 'Flooded palm forest in the Guaviare', 'Flooded palms and st
 <div class="tip"><b>If the coloured river is your priority</b>Tranquilandia's water only turns red when its endemic plant, the <em>Macarenia clavigera</em>, blooms, roughly <strong>July to November</strong>, and the colour is brightest on a sunny day. Outside that window the river runs clear and the visit is much less worth the trip. I went in late July and it was already in full colour.</div>
 </section>
 
-<section id="getting"><span class="eyebrow">04</span><h2>How to get there</h2>
+<section id="getting"><span class="eyebrow">04</span><h2>How to Get to San José del Guaviare from Bogotá</h2>
 <p>San José del Guaviare is about 400 km south of Bogotá, and getting there has become straightforward. There are two ways in: a <strong>short domestic flight from Bogotá</strong> straight into San José, or the <strong>bus</strong>, which is slower on paper but has far more going for it than the distance suggests.</p>
 <p>My own route came through <strong>Villavicencio</strong>, the gateway to the eastern plains. I flew <strong>Cali to Villavicencio with Clic Air for 60€</strong>, on one of its Tuesday, Thursday, Saturday and Sunday departures, then took the <strong>bus on to San José, about six hours for 26€</strong>. It is cheaper than flying the whole way and an easy connection if you are coming from the south or west of the country.</p>
 <div class="tip"><b>Take the bus if you can</b>Given the choice, I would take the bus over the plane. It is the cheapest way in, the simplest to arrange and book, and by far the lightest on the environment. A single company runs the route, <strong>Flota La Macarena</strong>, so there is nothing to compare or agonise over. Look for the <strong>overnight services</strong>: the best of them run <em>diamante</em> seats, the wide reclining executive class, nine to a coach and comfortable enough to actually sleep. You cross the distance overnight and arrive rested, without losing a day to travel.</div>
@@ -98,7 +98,8 @@ ${wide(M.cerro, 'Ancient rock paintings on the wall of Cerro Azul', 'Cerro Azul:
 <h3>The Raudal del Guayabero</h3>
 ${floatVid(M.raudalVid, 'Up the Guayabero river by boat towards the raudal.')}
 <p>A day on the water. A boat carries you up the <strong>Guayabero river</strong> to the <em>raudal</em>, where the current breaks over rock into rapids, past more painted panels on the cliffs and a string of viewpoints out over the river and the forest. It is the most cinematic day of the loop, and the one where the scale of the landscape really lands.</p>
-<div class="tip"><b>A sample 3-day loop</b>How the classic Geotours circuit breaks down, and a good template whoever you book with.</div>
+<h2 id="itinerary">Guaviare 3-Day Itinerary: Cerro Azul, Puerta de Orión &amp; Tranquilandia</h2>
+<p>How the classic Geotours circuit breaks down, and a good template whoever you book with.</p>
 <table>
 <tr><td>Day 1</td><td><strong>Tranquilandia</strong> and the Puerta de Orión</td></tr>
 <tr><td>Day 2</td><td><strong>Finca Chontaduro</strong> and <strong>Cerro Azul</strong></td></tr>
@@ -125,7 +126,7 @@ ${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the d
 ${wide(M.herra, 'Sunset over La Herradura Ecolodge', 'Sunset over La Herradura, the ecolodge that was my base for the trip.')}
 </section>
 
-<section id="costs"><span class="eyebrow">08</span><h2>What it costs</h2>
+<section id="costs"><span class="eyebrow">08</span><h2>Total Cost Breakdown: Local Guides, Food, and Stays</h2>
 <p>The Geotours package was 400€ for three days, everything included: excursions, guiding, and three nights at La Herradura on half board. On top of that sat the transport in, the extra community day and the night in town. Here is the whole thing.</p>
 <table><tr><th>Item</th><th class="r">EUR</th></tr>
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
@@ -381,10 +382,10 @@ export interface GuaviareLang {
 
 const mkToc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 const tocEn = mkToc([
-  ['01', 'what', 'What the Guaviare is'], ['02', 'access', 'A regulated region'],
+  ['01', 'what', 'What the Guaviare is'], ['02', 'access', 'Is it safe?'],
   ['03', 'when', 'When to go'], ['04', 'getting', 'How to get there'],
   ['05', 'see', 'What to see & do'], ['06', 'community', 'The communities'],
-  ['07', 'sleep', 'Where to stay'], ['08', 'costs', 'What it costs'],
+  ['07', 'sleep', 'Where to stay'], ['08', 'costs', 'Cost breakdown'],
   ['09', 'tips', 'Know before you go'],
 ]);
 const tocIt = mkToc([
