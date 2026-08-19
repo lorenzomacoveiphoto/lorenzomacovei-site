@@ -63,7 +63,7 @@ const en_body = `
 
 <section><p class="lead"><span class="drop">R</span>aja Ampat is an Indonesian archipelago off West Papua, the epicentre of marine biodiversity on the planet. In the heart of the «Coral Triangle» it holds over 1,500 largely uninhabited islands, 75% of the world's known coral species and more than 1,500 fish species. Its name, «The Four Kings», comes from a legend tied to four islands: Waigeo, Batanta, Salawati and Misool. What follows is a field-tested plan, a week in the west, a week in the east.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>What Raja Ampat Really Is</h2>
+<section id="what"><span class="eyebrow">01</span><h2>What &amp; Where is Raja Ampat, Indonesia?</h2>
 <p><strong>Underwater</strong> is why most people come: mantas, wobbegong sharks, dense fish schools, coral walls, pygmy seahorses. Reefs often start metres from shore or right under the jetties, so snorkelling works for beginners too, though currents at some sites demand real experience.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p><strong>Piaynemo</strong> holds the archipelago's signature karst viewpoint, turquoise, islet-studded lagoons seen from above after a short, steep climb.</p>
@@ -73,7 +73,7 @@ const en_body = `
 <div class="tdp-fig"><img src="${M.scenery}" alt="Raja Ampat scenery"></div>
 </section>
 
-<section id="cost"><span class="eyebrow">02</span><h2>Is Raja Ampat Actually Expensive?</h2>
+<section id="cost"><span class="eyebrow">02</span><h2>How Much Does a Raja Ampat Backpacker Trip Cost?</h2>
 <p>On the ground, costs stay reasonable thanks to the exchange rate, and sharing boat transfers is what makes the biggest dent. Flights are the real variable, so here's the full picture, not just the on-site spend.</p>
 <table><tr><th>Item</th><th class="r">Cost</th></tr>
 <tr><td>Corepen Homestay, 7 nights, full board</td><td class="r">€288</td></tr>
@@ -91,7 +91,7 @@ const en_body = `
 <div class="tip"><b>On airfares</b>Fares swing a lot with season and how far ahead you book, the figure above assumes an average fare, not a rock-bottom deal. Booking the domestic leg together with the international ticket, on the same alliance, is usually the cheapest way to avoid a pricier one-off domestic fare.</div>
 </section>
 
-<section id="permits"><span class="eyebrow">03</span><h2>Permits, PIN Fees &amp; Entry Rules</h2>
+<section id="permits"><span class="eyebrow">03</span><h2>Raja Ampat Entry Permit &amp; Marine Park PIN Fee Explained</h2>
 <p>Two separate fees are required to enter the marine park. Pay both <strong>online before you arrive</strong> if you can, since the local offices are often closed.</p>
 <table><tr><th>Fee</th><th class="r">International</th><th class="r">Indonesian</th></tr>
 <tr><td>Marine Park Environmental Service Fee</td><td class="r">700,000</td><td class="r">425,000</td></tr>
@@ -100,7 +100,7 @@ const en_body = `
 <li><strong>Visitor Entry Ticket</strong>, pay <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, or in person at the port office on arrival.</li></ul>
 </section>
 
-<section id="how-to-get-there"><span class="eyebrow">04</span><h2>How to Get There Without a Charter</h2>
+<section id="how-to-get-there"><span class="eyebrow">04</span><h2>How to Get to Raja Ampat: Ferries, Flights &amp; Boats</h2>
 <h3>Flights and the ferry to Waisai</h3>
 <p>No airline flies direct from Europe. Route through a major Indonesian hub, Jakarta, Bali or Makassar, then take a domestic leg into <strong>Sorong (SOQ)</strong>, the mainland gateway city. From Sorong you still need to reach <strong>Waisai</strong>, the regency capital on Waigeo island:</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Arriving in Raja Ampat"></div>
@@ -120,7 +120,7 @@ FLIGHT
 <div class="tip"><b>Find a boat-share</b>Ask at your homestay or reception first, they'll often help arrange a shared ride. Otherwise the Facebook group «Raja Ampat Backpackers / Travellers» or the newer <a href="https://rajaride.com/" target="_blank" rel="noopener">Raja Ride</a> both work well for finding people to split a transfer with.</div>
 </section>
 
-<section id="where-to-stay"><span class="eyebrow">05</span><h2>Where to Stay: Homestays vs Resorts</h2>
+<section id="where-to-stay"><span class="eyebrow">05</span><h2>Where to Stay in Raja Ampat: Local Homestays Guide</h2>
 <table><tr><th>Type</th><th class="r">Typical price / night</th></tr>
 <tr><td>Homestay <button type="button" class="hs-i" onclick="rajaHs(true)" aria-label="About homestays">i</button></td><td class="r">€30/€50</td></tr>
 <tr><td>Eco-lodge / dive resort</td><td class="r">€150/€280</td></tr>
@@ -131,7 +131,7 @@ ${slider('Homestay room', 'Rooms and homestays.')}
 STAY
 </section>
 
-<section id="itinerary"><span class="eyebrow">06</span><h2>The Ideal Backpacker Route</h2>
+<section id="itinerary"><span class="eyebrow">06</span><h2>Raja Ampat 7 to 10-Day Itinerary: Kri, Gam &amp; Pianemo</h2>
 <h3>When to go</h3>
 <p>Aim for <strong>October/November through April</strong>, the local dry season, which runs opposite the rainy season elsewhere in Indonesia. Rain still falls year-round, usually short heavy bursts that clear into dramatic sunsets. Seas are calmest and visibility best in this window; manta encounters peak December/March.</p>
 <h3>How long to stay</h3>
@@ -188,7 +188,7 @@ STAY
 </div></details>
 </section>
 
-<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Know Before You Go</h2>
+<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Essential Raja Ampat Travel Tips: Cash, SIM Cards &amp; Gear</h2>
 <h3>Cash, SIM cards &amp; health</h3>
 <ul><li><strong>Visa</strong>, visa-on-arrival (30 days) for many nationalities; verify current rules before departure.</li>
 <li><strong>Connectivity</strong>, weak or nonexistent phone/internet on many islands; plan around it.</li>
@@ -214,7 +214,7 @@ const it_body = `
 
 <section><p class="lead"><span class="drop">R</span>aja Ampat è un arcipelago indonesiano al largo della Papua Occidentale, l'epicentro mondiale della biodiversità marina. Nel cuore del «Triangolo dei Coralli» ospita oltre 1.500 isole in gran parte disabitate, il 75% delle specie di corallo conosciute e più di 1.500 specie di pesci. Il nome, «I Quattro Re», deriva da una leggenda legata a quattro isole: Waigeo, Batanta, Salawati e Misool. Quella che segue è un'organizzazione provata sul campo, una settimana a ovest, una a est.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>Cos'è davvero Raja Ampat</h2>
+<section id="what"><span class="eyebrow">01</span><h2>Cos'è e dove si trova Raja Ampat, Indonesia?</h2>
 <p><strong>Il sottacqua</strong> è il motivo per cui quasi tutti arrivano fin qui: mante, squali wobbegong, banchi fittissimi, pareti di corallo, cavallucci pigmei. Spesso la barriera parte a pochi metri dalla riva o sotto i pontili, quindi lo snorkeling è alla portata anche dei principianti, ma in alcuni siti le correnti richiedono vera esperienza.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p><strong>Piaynemo</strong> è il punto panoramico kárstico simbolo dell'arcipelago, lagune turchesi punteggiate di isolotti viste dall'alto dopo una breve salita ripida.</p>
@@ -224,7 +224,7 @@ const it_body = `
 <div class="tdp-fig"><img src="${M.scenery}" alt="Paesaggi di Raja Ampat"></div>
 </section>
 
-<section id="cost"><span class="eyebrow">02</span><h2>Raja Ampat è davvero costosa?</h2>
+<section id="cost"><span class="eyebrow">02</span><h2>Quanto costa un viaggio a Raja Ampat da backpacker?</h2>
 <p>Sul posto i costi restano ragionevoli grazie al cambio, e dividere i transfer è ciò che incide di più. I voli sono la vera variabile, quindi ecco il quadro completo, non solo la spesa in loco.</p>
 <table><tr><th>Voce</th><th class="r">Costo</th></tr>
 <tr><td>Corepen Homestay, 7 notti, pensione completa</td><td class="r">288€</td></tr>
@@ -242,7 +242,7 @@ const it_body = `
 <div class="tip"><b>Sui voli</b>Le tariffe oscillano molto con la stagione e con quanto prenoti in anticipo, la cifra sopra ipotizza un prezzo medio, non un'occasione. Prenotare la tratta interna insieme al biglietto internazionale, sulla stessa alleanza, è di solito il modo più economico per evitare un volo interno singolo più caro.</div>
 </section>
 
-<section id="permits"><span class="eyebrow">03</span><h2>Permessi, tasse PIN e regole d'ingresso</h2>
+<section id="permits"><span class="eyebrow">03</span><h2>Permesso d'ingresso e tassa PIN del parco marino</h2>
 <p>Per entrare nel parco marino servono due tasse distinte. Pagale entrambe <strong>online prima di arrivare</strong>, se puoi: gli uffici locali sono spesso chiusi.</p>
 <table><tr><th>Tassa</th><th class="r">Straniero</th><th class="r">Indonesiano</th></tr>
 <tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
@@ -251,7 +251,7 @@ const it_body = `
 <li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, oppure di persona all'ufficio del porto all'arrivo.</li></ul>
 </section>
 
-<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Come arrivare senza charter</h2>
+<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Come arrivare a Raja Ampat: traghetti, voli e barche</h2>
 <h3>Voli e traghetto per Waisai</h3>
 <p>Nessuna compagnia vola diretta dall'Europa. Si passa da un hub indonesiano, Giacarta, Bali o Makassar, e da lì un volo interno fino a <strong>Sorong (SOQ)</strong>, la città-porta sulla terraferma. Da Sorong bisogna raggiungere <strong>Waisai</strong>, capoluogo della reggenza sull'isola di Waigeo:</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Arrivo a Raja Ampat"></div>
@@ -271,7 +271,7 @@ FLIGHT
 <div class="tip"><b>Trova con chi dividere</b>Chiedi prima in homestay o alla reception, spesso ti aiutano a organizzare un passaggio condiviso. In alternativa il gruppo Facebook «Raja Ampat Backpackers / Travellers» o il più recente <a href="https://rajaride.com/" target="_blank" rel="noopener">Raja Ride</a> funzionano bene per trovare compagni con cui dividere il transfer.</div>
 </section>
 
-<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dove dormire: homestay o resort</h2>
+<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dove dormire a Raja Ampat: guida alle homestay locali</h2>
 <table><tr><th>Tipo</th><th class="r">Prezzo tipico / notte</th></tr>
 <tr><td>Homestay <button type="button" class="hs-i" onclick="rajaHs(true)" aria-label="Sulle homestay">i</button></td><td class="r">30€/50€</td></tr>
 <tr><td>Eco-lodge / dive resort</td><td class="r">150€/280€</td></tr>
@@ -282,7 +282,7 @@ ${slider('Camera in homestay', 'Camere e homestay.')}
 STAY
 </section>
 
-<section id="itinerary"><span class="eyebrow">06</span><h2>L'itinerario ideale per backpacker</h2>
+<section id="itinerary"><span class="eyebrow">06</span><h2>Itinerario Raja Ampat 7-10 giorni: Kri, Gam e Pianemo</h2>
 <h3>Quando andare</h3>
 <p>Punta su <strong>ottobre/novembre ad aprile</strong>, la stagione secca locale, opposta a quella delle piogge nel resto dell'Indonesia. Piove comunque tutto l'anno, di solito brevi rovesci intensi che aprono a tramonti spettacolari. In questa finestra il mare è calmo e la visibilità è al massimo; gli incontri con le mante sono più frequenti tra dicembre e marzo.</p>
 <h3>Quanti giorni servono</h3>
@@ -339,7 +339,7 @@ STAY
 </div></details>
 </section>
 
-<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Da sapere prima di partire</h2>
+<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Consigli essenziali per Raja Ampat: contanti, SIM e attrezzatura</h2>
 <h3>Contanti, SIM e salute</h3>
 <ul><li><strong>Visto</strong>, visto all'arrivo (30 giorni) per molte nazionalità; verifica le regole aggiornate prima di partire.</li>
 <li><strong>Connettività</strong>, segnale telefonico/internet debole o assente su molte isole; organizzati di conseguenza.</li>
@@ -365,7 +365,7 @@ const es_body = `
 
 <section><p class="lead"><span class="drop">R</span>aja Ampat es un archipiélago indonesio frente a Papúa Occidental, el epicentro mundial de la biodiversidad marina. En el corazón del «Triángulo de Coral» reúne más de 1.500 islas en gran parte deshabitadas, el 75% de las especies de coral conocidas y más de 1.500 especies de peces. Su nombre, «Los Cuatro Reyes», viene de una leyenda ligada a cuatro islas: Waigeo, Batanta, Salawati y Misool. Lo que sigue es un plan probado sobre el terreno, una semana al oeste, una al este.</p></section>
 
-<section id="what"><span class="eyebrow">01</span><h2>Qué es realmente Raja Ampat</h2>
+<section id="what"><span class="eyebrow">01</span><h2>¿Qué es y dónde está Raja Ampat, Indonesia?</h2>
 <p><strong>El fondo marino</strong> es el motivo por el que casi todos vienen: mantas, tiburones wobbegong, cardúmenes densos, paredes de coral, caballitos pigmeos. A menudo el arrecife empieza a metros de la orilla o justo bajo los pontones, así que el snorkel vale también para principiantes, aunque las corrientes en algunos sitios exigen experiencia real.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p><strong>Piaynemo</strong> tiene el mirador kárstico emblema del archipiélago, lagunas turquesa salpicadas de islotes vistas desde arriba tras una subida corta y empinada.</p>
@@ -375,7 +375,7 @@ const es_body = `
 <div class="tdp-fig"><img src="${M.scenery}" alt="Paisajes de Raja Ampat"></div>
 </section>
 
-<section id="cost"><span class="eyebrow">02</span><h2>¿Es Raja Ampat realmente cara?</h2>
+<section id="cost"><span class="eyebrow">02</span><h2>¿Cuánto cuesta un viaje a Raja Ampat para mochileros?</h2>
 <p>Sobre el terreno los costes se mantienen razonables gracias al cambio, y compartir los traslados es lo que más recorta. Los vuelos son la verdadera variable, así que aquí va el cuadro completo, no solo el gasto en el sitio.</p>
 <table><tr><th>Concepto</th><th class="r">Coste</th></tr>
 <tr><td>Corepen Homestay, 7 noches, pensión completa</td><td class="r">288€</td></tr>
@@ -393,7 +393,7 @@ const es_body = `
 <div class="tip"><b>Sobre los vuelos</b>Las tarifas oscilan mucho con la temporada y con cuánto reserves de antelación, la cifra de arriba supone un precio medio, no un chollo. Reservar el tramo interno junto con el billete internacional, en la misma alianza, suele ser la forma más barata de evitar un vuelo interno suelto más caro.</div>
 </section>
 
-<section id="permits"><span class="eyebrow">03</span><h2>Permisos, tasa PIN y normas de entrada</h2>
+<section id="permits"><span class="eyebrow">03</span><h2>Permiso de entrada y tasa PIN del parque marino de Raja Ampat</h2>
 <p>Para entrar al parque marino se requieren dos tasas distintas. Paga ambas <strong>online antes de llegar</strong>, si puedes: las oficinas locales suelen estar cerradas.</p>
 <table><tr><th>Tasa</th><th class="r">Extranjero</th><th class="r">Indonesio</th></tr>
 <tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
@@ -402,7 +402,7 @@ const es_body = `
 <li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, o en persona en la oficina del puerto al llegar.</li></ul>
 </section>
 
-<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Cómo llegar sin chárter</h2>
+<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Cómo llegar a Raja Ampat: ferris, vuelos y barcos</h2>
 <h3>Vuelos y ferry a Waisai</h3>
 <p>Ninguna aerolínea vuela directa desde Europa. Se hace escala en un hub indonesio, Yakarta, Bali o Makassar, y desde allí un vuelo interno hasta <strong>Sorong (SOQ)</strong>, la ciudad-puerta en tierra firme. Desde Sorong aún hay que llegar a <strong>Waisai</strong>, capital de la regencia en la isla de Waigeo:</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Llegada a Raja Ampat"></div>
@@ -422,7 +422,7 @@ FLIGHT
 <div class="tip"><b>Encuentra con quién compartir</b>Pregunta primero en tu homestay o en recepción, suelen ayudar a organizar un trayecto compartido. Si no, el grupo de Facebook «Raja Ampat Backpackers / Travellers» o el más reciente <a href="https://rajaride.com/" target="_blank" rel="noopener">Raja Ride</a> funcionan bien para encontrar gente con quien compartir el traslado.</div>
 </section>
 
-<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dónde dormir: homestays o resorts</h2>
+<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dónde alojarse en Raja Ampat: guía de homestays locales</h2>
 <table><tr><th>Tipo</th><th class="r">Precio típico / noche</th></tr>
 <tr><td>Homestay <button type="button" class="hs-i" onclick="rajaHs(true)" aria-label="Sobre las homestays">i</button></td><td class="r">30€/50€</td></tr>
 <tr><td>Eco-lodge / dive resort</td><td class="r">150€/280€</td></tr>
@@ -433,7 +433,7 @@ ${slider('Habitación de homestay', 'Habitaciones y homestays.')}
 STAY
 </section>
 
-<section id="itinerary"><span class="eyebrow">06</span><h2>El itinerario ideal para mochileros</h2>
+<section id="itinerary"><span class="eyebrow">06</span><h2>Itinerario Raja Ampat 7-10 días: Kri, Gam y Pianemo</h2>
 <h3>Cuándo ir</h3>
 <p>Apunta a <strong>octubre/noviembre a abril</strong>, la estación seca local, opuesta a la de lluvias en el resto de Indonesia. Llueve algo todo el año, normalmente chubascos breves e intensos que dan paso a atardeceres espectaculares. En esta ventana el mar está más en calma y la visibilidad es máxima; los encuentros con mantas son más frecuentes entre diciembre y marzo.</p>
 <h3>Cuántos días</h3>
@@ -490,7 +490,7 @@ STAY
 </div></details>
 </section>
 
-<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Antes de ir</h2>
+<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Consejos esenciales para Raja Ampat: efectivo, SIM y equipo</h2>
 <h3>Efectivo, SIM y salud</h3>
 <ul><li><strong>Visado</strong>, visado a la llegada (30 días) para muchas nacionalidades; verifica las reglas actuales antes de salir.</li>
 <li><strong>Conectividad</strong>, señal de teléfono/internet débil o inexistente en muchas islas; organízate en consecuencia.</li>
@@ -564,38 +564,38 @@ export interface RajaLang {
 }
 
 const tocEn = [
-  ['01', 'what', 'What & Where is Raja Ampat, Indonesia?'],
-  ['02', 'cost', 'How Much Does a Raja Ampat Backpacker Trip Cost?'],
-  ['03', 'permits', 'Raja Ampat Entry Permit & Marine Park PIN Fee Explained'],
-  ['04', 'how-to-get-there', 'How to Get to Raja Ampat: Ferries, Flights & Boats'],
-  ['05', 'where-to-stay', 'Where to Stay in Raja Ampat: Local Homestays Guide'],
-  ['06', 'itinerary', 'Raja Ampat 7-10-Day Itinerary: Kri, Gam & Pianemo'],
-  ['07', 'practical-tips', 'Essential Raja Ampat Travel Tips: Cash, SIM Cards & Gear'],
+  ['01', 'what', "What Raja Ampat Really Is"],
+  ['02', 'cost', "Is Raja Ampat Actually Expensive?"],
+  ['03', 'permits', "Permits, PIN Fees & Entry Rules"],
+  ['04', 'how-to-get-there', "How to Get There Without a Charter"],
+  ['05', 'where-to-stay', "Where to Stay: Homestays vs Resorts"],
+  ['06', 'itinerary', "The Ideal Backpacker Route"],
+  ['07', 'practical-tips', "Know Before You Go"],
 ];
 const tocIt = [
-  ['01', 'what', "Cos'è e dove si trova Raja Ampat, Indonesia?"],
-  ['02', 'cost', "Quanto costa un viaggio a Raja Ampat da backpacker?"],
-  ['03', 'permits', "Permesso d'ingresso e tassa PIN del parco marino"],
-  ['04', 'how-to-get-there', "Come arrivare a Raja Ampat: traghetti, voli e barche"],
-  ['05', 'where-to-stay', "Dove dormire a Raja Ampat: guida alle homestay locali"],
-  ['06', 'itinerary', "Itinerario Raja Ampat 7-10 giorni: Kri, Gam e Pianemo"],
-  ['07', 'practical-tips', "Consigli essenziali per Raja Ampat: contanti, SIM e attrezzatura"],
+  ['01', 'what', "Cos'è davvero Raja Ampat"],
+  ['02', 'cost', "Raja Ampat è davvero costosa?"],
+  ['03', 'permits', "Permessi, tasse PIN e regole d'ingresso"],
+  ['04', 'how-to-get-there', "Come arrivare senza charter"],
+  ['05', 'where-to-stay', "Dove dormire: homestay o resort"],
+  ['06', 'itinerary', "L'itinerario ideale per backpacker"],
+  ['07', 'practical-tips', "Da sapere prima di partire"],
 ];
 const tocEs = [
-  ['01', 'what', "¿Qué es y dónde está Raja Ampat, Indonesia?"],
-  ['02', 'cost', "¿Cuánto cuesta un viaje a Raja Ampat para mochileros?"],
-  ['03', 'permits', "Permiso de entrada y tasa PIN del parque marino de Raja Ampat"],
-  ['04', 'how-to-get-there', "Cómo llegar a Raja Ampat: ferris, vuelos y barcos"],
-  ['05', 'where-to-stay', "Dónde alojarse en Raja Ampat: guía de homestays locales"],
-  ['06', 'itinerary', "Itinerario Raja Ampat 7-10 días: Kri, Gam y Pianemo"],
-  ['07', 'practical-tips', "Consejos esenciales para Raja Ampat: efectivo, SIM y equipo"],
+  ['01', 'what', "Qué es realmente Raja Ampat"],
+  ['02', 'cost', "¿Es Raja Ampat realmente cara?"],
+  ['03', 'permits', "Permisos, tasa PIN y normas de entrada"],
+  ['04', 'how-to-get-there', "Cómo llegar sin chárter"],
+  ['05', 'where-to-stay', "Dónde dormir: homestays o resorts"],
+  ['06', 'itinerary', "El itinerario ideal para mochileros"],
+  ['07', 'practical-tips', "Antes de ir"],
 ];
 const toc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 
 export const raja: Record<Lang, RajaLang> = {
   it: {
     kicker: 'Diario · Papua Occidentale · Indonesia',
-    title: "Guida di viaggio a Raja Ampat: immersioni, homestay e budget per l'arcipelago dei Quattro Re",
+    title: 'Guida a Raja Ampat 2026: immersioni, homestay e budget per backpacker',
     sub: "Sette giorni a ovest, cinque a est, tutto quello che serve per organizzare l'arcipelago dei Quattro Re, raccontato da chi ci è stato davvero.",
     facts: [{ n: '12', l: 'giorni' }, { n: 'SOQ', l: 'scalo' }, { n: '~610€', l: 'in loco' }, { n: 'Ott/Apr', l: 'stagione' }],
     tocTitle: 'In questa guida',
@@ -605,7 +605,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   en: {
     kicker: 'Diary · West Papua · Indonesia',
-    title: 'Raja Ampat Travel Guide: Diving, Homestays & Budget Itinerary for the Four Kings Archipelago',
+    title: 'Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary (2026)',
     sub: "Seven days west, five east, everything you need to plan the archipelago of the Four Kings, told by someone who's actually been there.",
     facts: [{ n: '12', l: 'days' }, { n: 'SOQ', l: 'hub' }, { n: '~€610', l: 'on-site' }, { n: 'Oct/Apr', l: 'season' }],
     tocTitle: 'In this guide',
@@ -615,7 +615,7 @@ export const raja: Record<Lang, RajaLang> = {
   },
   es: {
     kicker: 'Diario · Papúa Occidental · Indonesia',
-    title: 'Guía de viaje a Raja Ampat: buceo, homestays y presupuesto para el archipiélago de los Cuatro Reyes',
+    title: 'Guía de Raja Ampat 2026: buceo, homestays y presupuesto para mochileros',
     sub: 'Siete días al oeste, cinco al este, todo lo que necesitas para organizar el archipiélago de los Cuatro Reyes, contado por quien ha estado de verdad.',
     facts: [{ n: '12', l: 'días' }, { n: 'SOQ', l: 'escala' }, { n: '~610€', l: 'en el sitio' }, { n: 'Oct/Abr', l: 'temporada' }],
     tocTitle: 'En esta guía',
