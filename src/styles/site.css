@@ -1579,3 +1579,4 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rf-op .rf-price{display:inline-block;font-family:'Oswald',system-ui,sans-serif;font-weight:600;letter-spacing:.02em;color:var(--accent);white-space:nowrap}
 #journal-post-wtrek .rf-op .acc-body .rf-intro{color:var(--paper);border-left:2px solid var(--accent);padding-left:14px}
 #journal-post-wtrek .rf-op .rf-fac{font-size:13px;white-space:nowrap;letter-spacing:2px;margin:0 4px;vertical-align:middle}
+#journal-post-wtrek .rf-op .rf-meals{margin-top:8px;font-size:14px;color:var(--paper-dim)}
