@@ -40,9 +40,9 @@ export const articles: Article[] = [
     type: 'guide',
     date: '2026-06-15',
     slugs: {
-      en: 'raja-ampat',
-      it: 'raja-ampat-guida-completa',
-      es: 'raja-ampat-guia-completa',
+      en: 'raja-ampat-backpacker-guide',
+      it: 'raja-ampat-guida-backpacker',
+      es: 'raja-ampat-guia-mochileros',
     },
     meta: 'Indonesia · West Papua · Guide · 2026',
     cover: `${CDN}/v1780954114/IMG_7954_njn95r.jpg`,

@@ -632,7 +632,7 @@ export const raja: Record<Lang, RajaLang> = {
 };
 
 export const rajaMeta = {
-  slug: 'raja-ampat',
+  slug: 'raja-ampat-backpacker-guide',
   date: '2026-07-13',
   cover: 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto,f_auto/v1783965784/IMG_8817_sdhbgj.jpg',
   coverVideo: M.cover,
