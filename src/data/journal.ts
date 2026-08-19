@@ -55,7 +55,7 @@ export const articles: Article[] = [
     type: 'guide',
     date: '2026-05-01',
     slugs: {
-      en: 'w-trek',
+      en: 'w-trek-torres-del-paine-guide',
       it: 'w-trek-guida-torres-del-paine',
       es: 'w-trek-guia-torres-del-paine',
     },

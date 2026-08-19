@@ -62,7 +62,11 @@
   from = "/es/journal/raja-ampat-guia-completa"
   to = "/es/journal/raja-ampat-guia-mochileros"
   status = 301
-# W-Trek (IT/ES localizzati)
+# W-Trek (slug EN -> torres-del-paine-guide; IT/ES localizzati)
+[[redirects]]
+  from = "/en/journal/w-trek"
+  to = "/en/journal/w-trek-torres-del-paine-guide"
+  status = 301
 [[redirects]]
   from = "/it/journal/w-trek"
   to = "/it/journal/w-trek-guida-torres-del-paine"
