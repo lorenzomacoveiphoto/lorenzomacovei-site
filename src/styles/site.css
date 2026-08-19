@@ -1543,3 +1543,17 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* Home 3a slide (scena bio): allineata al nuovo stile (Oswald/Open Sans/Lora + terracotta) */
 #sceneBio{--serif:'Lora',Georgia,serif;--display:'Oswald',system-ui,sans-serif;--mono:'Oswald',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif;--accent:#C56A45;font-family:var(--body)}
+
+/* ── Guide card (invito a leggere una guida): usata in fondo alle guide, About, ecc. ── */
+.guide-cards-wrap { margin: 60px 0 8px; }
+.gc-h { font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted, rgba(240,236,228,0.45)); margin-bottom: 18px; }
+.guide-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.guide-card { display: flex; flex-direction: column; align-items: flex-start; border: 1px solid var(--line); border-radius: 12px; padding: 26px 26px 24px; text-decoration: none; transition: border-color 0.25s, transform 0.2s, background 0.25s; }
+.guide-card:hover { border-color: var(--accent); transform: translateY(-2px); background: rgba(255,255,255,0.02); }
+.gc-eyebrow { font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.gc-title { font-family: var(--display); font-weight: 600; font-size: 22px; line-height: 1.15; letter-spacing: 0.01em; text-transform: uppercase; color: #fbf9f4; margin-bottom: 12px; }
+.gc-excerpt { font-family: var(--body); font-size: 14px; line-height: 1.7; color: rgba(240,236,228,0.7); margin-bottom: 18px; }
+.gc-read { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 8px; margin-top: auto; }
+.gc-arrow { display: inline-block; transition: transform 0.2s; }
+.guide-card:hover .gc-arrow { transform: translateX(4px); }
+@media (max-width: 768px) { .guide-cards { grid-template-columns: 1fr; } }

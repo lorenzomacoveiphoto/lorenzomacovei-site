@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { guaviare, guaviareMeta, type Lang } from '../data/guaviare';
+import GuideCards from './GuideCards.astro';
 
 const { lang, langPaths } = Astro.props as { lang: Lang; langPaths: Record<string, string> };
 const d = guaviare[lang];
@@ -98,6 +99,7 @@ const jsonLd = {
       </nav>
 
       <Fragment set:html={d.body} />
+      <GuideCards lang={lang} excludeId="guaviare" />
     </div>
   </div>
 </Base>

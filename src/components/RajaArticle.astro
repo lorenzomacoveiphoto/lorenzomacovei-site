@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { raja, rajaMeta, type Lang } from '../data/raja';
+import GuideCards from './GuideCards.astro';
 
 const { lang, langPaths } = Astro.props as { lang: Lang; langPaths: Record<string, string> };
 const d = raja[lang];
@@ -99,6 +100,7 @@ const jsonLd = {
       </nav>
 
       <Fragment set:html={d.body} />
+      <GuideCards lang={lang} excludeId="raja-ampat" />
     </div>
   </div>
 </Base>

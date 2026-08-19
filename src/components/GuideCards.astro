@@ -1,0 +1,28 @@
+---
+import { articles, articlePath, type Lang } from '../data/journal';
+import i18n from '../data/i18n.json';
+
+interface Props { lang: Lang; excludeId?: string; heading?: string; limit?: number; }
+const { lang, excludeId, heading, limit } = Astro.props;
+const t = (i18n as Record<string, Record<string, string>>)[lang] ?? {};
+let guides = articles.filter((a) => a.type === 'guide' && a.id !== excludeId);
+if (limit) guides = guides.slice(0, limit);
+
+const readLabel = ({ en: 'Read the guide', it: 'Leggi la guida', es: 'Leer la guía' } as Record<Lang, string>)[lang];
+const headTxt = heading ?? ({ en: 'More guides', it: 'Altre guide', es: 'Más guías' } as Record<Lang, string>)[lang];
+---
+{guides.length > 0 && (
+  <section class="guide-cards-wrap" aria-label={headTxt}>
+    <div class="gc-h">{headTxt}</div>
+    <div class="guide-cards">
+      {guides.map((g) => (
+        <a class="guide-card" href={articlePath(g, lang)}>
+          <span class="gc-eyebrow">{g.meta}</span>
+          <span class="gc-title">{t[g.titleKey]}</span>
+          <span class="gc-excerpt">{t[g.descKey]}</span>
+          <span class="gc-read">{readLabel} <span class="gc-arrow">&#8594;</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
