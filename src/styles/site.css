@@ -1316,7 +1316,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
 #journal-post-wtrek .fact{flex:1 1 120px;padding:22px 10px;border-right:1px solid var(--line-soft)}
 #journal-post-wtrek .fact:last-child{border-right:0}
-#journal-post-wtrek .fact .n{font-family:'Inter',system-ui,sans-serif;font-size:30px;font-weight:600;letter-spacing:-0.01em;color:var(--paper);line-height:1}
+#journal-post-wtrek .fact .n{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;letter-spacing:0;color:var(--paper);line-height:1}
 #journal-post-wtrek .fact .l{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px}
 
 /* ── Indice ── */
