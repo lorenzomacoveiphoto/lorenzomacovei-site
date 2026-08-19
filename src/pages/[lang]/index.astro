@@ -22,8 +22,32 @@ const titles: Record<string, string> = {
   it: 'Lorenzo Macovei — Fotografo Senza Confini',
   es: 'Lorenzo Macovei — Fotógrafo Sin Fronteras',
 };
+
+// Dati strutturati Person (per la home)
+const jobTitle: Record<string, string> = { en: 'Photographer', it: 'Fotografo', es: 'Fotógrafo' };
+const personDesc: Record<string, string> = {
+  en: 'Personal website and photography portfolio of Lorenzo Macovei, travel photographer and climate activist.',
+  it: 'Sito personale e portfolio fotografico di Lorenzo Macovei, fotografo di viaggio e attivista climatico.',
+  es: 'Sitio personal y portafolio fotográfico de Lorenzo Macovei, fotógrafo de viajes y activista climático.',
+};
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Lorenzo Macovei',
+  url: 'https://lorenzomacovei.com',
+  jobTitle: jobTitle[lang],
+  description: personDesc[lang],
+  sameAs: [
+    'https://www.instagram.com/lorenzomacovei_',
+    'https://www.linkedin.com/in/lorenzo-macovei-71ba4a199/',
+    'https://www.facebook.com/lorenzo.macovei',
+  ],
+};
 ---
 <Base lang={lang} page="home" title={titles[lang]} description={t.tagline}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
+  </Fragment>
   <Fragment set:html={homeHtml} />
   <Lightbox />
 </Base>
