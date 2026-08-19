@@ -13,17 +13,13 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'Article',
-      headline: d.title,
+      '@type': 'BlogPosting',
+      headline: rajaMeta.titleTag[lang],
       description: rajaMeta.desc[lang],
-      image: rajaMeta.cover,
+      image: [rajaMeta.cover],
       inLanguage: lang,
-      author: { '@type': 'Person', name: 'Lorenzo Macovei' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Lorenzo Macovei Photography',
-        logo: { '@type': 'ImageObject', url: rajaMeta.cover },
-      },
+      author: { '@type': 'Person', name: 'Lorenzo Macovei', url: site },
+      publisher: { '@type': 'Person', name: 'Lorenzo Macovei', url: site },
       datePublished: '2026-01-15',
       dateModified: rajaMeta.date,
       mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
