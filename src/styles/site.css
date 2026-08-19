@@ -13,7 +13,7 @@
   --text2: rgba(232,228,220,0.48);
   --text3: rgba(232,228,220,0.22);
   --accent: #a8b0b8;
-  --serif: 'Cormorant Garamond', Georgia, serif;
+  --serif: 'Inter', system-ui, sans-serif;
   --display: 'Inter', system-ui, sans-serif;
   --mono: 'Inter', system-ui, sans-serif;
 }
@@ -630,7 +630,7 @@ body { overflow-x: hidden; }
   color: rgba(240,236,228,0.45); margin-bottom: 12px;
 }
 .about-s2-title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(32px, 3.8vw, 54px);
   font-weight: 600; font-style: italic;
   color: #fbf9f4; line-height: 1.1;
@@ -654,7 +654,7 @@ body { overflow-x: hidden; }
 .contact-field textarea {
   background: transparent;
   border: none; border-bottom: 1px solid rgba(240,236,228,0.2);
-  color: #f0ece4; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 17px;
+  color: #f0ece4; font-family: 'Inter', system-ui, sans-serif; font-size: 17px;
   padding: 8px 0; outline: none;
   transition: border-color 0.25s;
   resize: none;
@@ -681,7 +681,7 @@ body { overflow-x: hidden; }
 .contact-submit:hover { color: #f0ece4; border-bottom-color: #f0ece4; }
 .contact-success {
   display: none; margin-top: 24px;
-  font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic;
+  font-family: 'Inter', system-ui, sans-serif; font-style: italic;
   font-size: 16px; color: rgba(240,236,228,0.75);
 }
 .about-contact-footer {
@@ -1194,7 +1194,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
     color: rgba(240,236,228,0.35); margin-bottom: 12px; display: block;
   }
   .m-about-contact-title {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: clamp(34px, 10vw, 52px);
     font-weight: 600; font-style: italic;
     color: #f0ece4; line-height: 1.1; margin-bottom: 36px;
@@ -1312,11 +1312,11 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .hero{padding:76px 0 54px;text-align:center}
 #journal-post-wtrek .hero .kicker{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
 #journal-post-wtrek .hero h1{font-family:'Inter',system-ui,sans-serif;font-weight:300;font-size:clamp(34px,7vw,58px);line-height:1.12;letter-spacing:.08em;text-transform:uppercase;margin:0 0 20px;color:#fbf9f4}
-#journal-post-wtrek .hero .sub{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(19px,2.6vw,22px);line-height:1.55;letter-spacing:.01em;color:rgba(242,239,232,0.85);max-width:34ch;margin:0 auto 48px}
+#journal-post-wtrek .hero .sub{font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:clamp(17px,2.2vw,20px);line-height:1.6;letter-spacing:.01em;color:rgba(242,239,232,0.85);max-width:34ch;margin:0 auto 48px}
 #journal-post-wtrek .facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
 #journal-post-wtrek .fact{flex:1 1 120px;padding:22px 10px;border-right:1px solid var(--line-soft)}
 #journal-post-wtrek .fact:last-child{border-right:0}
-#journal-post-wtrek .fact .n{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:400;color:var(--paper);line-height:1}
+#journal-post-wtrek .fact .n{font-family:'Inter',system-ui,sans-serif;font-size:30px;font-weight:600;letter-spacing:-0.01em;color:var(--paper);line-height:1}
 #journal-post-wtrek .fact .l{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px}
 
 /* ── Indice ── */
@@ -1326,21 +1326,21 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .toc a{display:flex;align-items:baseline;gap:12px;text-decoration:none;padding:4px 0;transition:.25s ease}
 #journal-post-wtrek .toc a:hover,#journal-post-wtrek .toc a:focus-visible{background:none}
 #journal-post-wtrek .toc a .idx{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.1em;color:var(--accent);min-width:22px;transition:.25s ease}
-#journal-post-wtrek .toc a .txt{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;line-height:1.22;letter-spacing:.01em;color:rgba(242,239,232,0.9);transition:.25s ease}
+#journal-post-wtrek .toc a .txt{font-family:'Inter',system-ui,sans-serif;font-size:15px;font-weight:500;line-height:1.3;letter-spacing:.01em;color:rgba(242,239,232,0.9);transition:.25s ease}
 #journal-post-wtrek .toc a:hover .txt,#journal-post-wtrek .toc a:focus-visible .txt{color:var(--paper)}
 
 /* ── Testo ── */
 #journal-post-wtrek section{padding:62px 0;border-bottom:1px solid var(--line-soft)}
 #journal-post-wtrek .eyebrow{font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;display:block}
-#journal-post-wtrek h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:0;margin:0 0 28px;color:#fbf9f4}
-#journal-post-wtrek h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:27px;letter-spacing:.01em;margin:0 0 4px;color:#fbf9f4}
+#journal-post-wtrek h2{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.15;letter-spacing:-0.01em;margin:0 0 28px;color:#fbf9f4}
+#journal-post-wtrek h3{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:21px;letter-spacing:-0.01em;letter-spacing:.01em;margin:0 0 4px;color:#fbf9f4}
 #journal-post-wtrek p{margin:0 0 26px}
-#journal-post-wtrek .lead{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:23px;line-height:1.65;letter-spacing:.01em;color:var(--paper)}
-#journal-post-wtrek .lead .drop{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:82px;line-height:.7;float:left;margin:12px 14px 0 0;padding:0;color:var(--accent)}
+#journal-post-wtrek .lead{font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:20px;line-height:1.7;letter-spacing:.01em;color:var(--paper)}
+#journal-post-wtrek .lead .drop{font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:700;font-size:64px;line-height:.7;float:left;margin:12px 14px 0 0;padding:0;color:var(--accent)}
 #journal-post-wtrek .lead strong{font-weight:500}
 #journal-post-wtrek strong{color:#fbf9f4;font-weight:500}
 #journal-post-wtrek em{color:var(--paper-dim);font-style:italic}
-#journal-post-wtrek .pull{border-left:2px solid var(--accent);padding:4px 0 4px 26px;margin:38px 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:27px;line-height:1.35;letter-spacing:.01em;color:#fbf9f4}
+#journal-post-wtrek .pull{border-left:2px solid var(--accent);padding:4px 0 4px 26px;margin:38px 0;font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:500;font-size:23px;line-height:1.4;letter-spacing:-0.01em;color:#fbf9f4}
 
 /* ── Mappa ── */
 #journal-post-wtrek .mapcap{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin:16px 2px 0;line-height:1.8}
@@ -1354,7 +1354,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rf.f::before{background:var(--accent-dim)}
 #journal-post-wtrek .rf.c::before{background:var(--line2)}
 #journal-post-wtrek .rf-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
-#journal-post-wtrek .rf-name{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:#fbf9f4}
+#journal-post-wtrek .rf-name{font-family:'Inter',system-ui,sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
 #journal-post-wtrek .rf-cost{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;letter-spacing:.04em;white-space:nowrap;color:var(--paper-dim)}
 #journal-post-wtrek .rf.v .rf-cost{color:var(--accent)}
 #journal-post-wtrek .rf-sec{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
@@ -1389,7 +1389,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek th.r,#journal-post-wtrek td.r{text-align:right}
 #journal-post-wtrek td{padding:14px 6px;border-bottom:1px solid var(--line-soft);color:var(--paper-soft)}
 #journal-post-wtrek tr.total td{border-top:1px solid var(--line2);border-bottom:0;font-size:14px;color:var(--paper);padding-top:18px}
-#journal-post-wtrek tr.total .big{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:var(--accent)}
+#journal-post-wtrek tr.total .big{font-family:'Inter',system-ui,sans-serif;font-size:26px;font-weight:600;color:var(--accent)}
 
 /* ── CTA ── */
 #journal-post-wtrek .natales-cta{display:inline-flex;align-items:center;gap:12px;margin-top:12px;font-family:'Inter',system-ui,sans-serif;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;background:none;color:var(--accent);border:0;border-bottom:1px solid var(--accent-dim);padding:0 0 9px;border-radius:0;cursor:pointer;transition:.25s ease;font-weight:400}
@@ -1401,14 +1401,14 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .backdrop.open{display:flex}
 #journal-post-wtrek .modal{background:var(--ink-soft);border:1px solid var(--line);border-radius:0;max-width:560px;width:100%;max-height:88vh;overflow:auto}
 #journal-post-wtrek .modal-h{display:flex;justify-content:space-between;align-items:flex-start;padding:28px 28px 12px}
-#journal-post-wtrek .modal-h .mt{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:#fbf9f4;line-height:1.15;margin:0}
+#journal-post-wtrek .modal-h .mt{font-family:'Inter',system-ui,sans-serif;font-size:25px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.15;margin:0}
 #journal-post-wtrek .modal-h .ms{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
 #journal-post-wtrek .modal-x{background:none;border:1px solid var(--line);color:var(--muted);width:34px;height:34px;border-radius:0;cursor:pointer;font-size:16px;line-height:1;flex-shrink:0;transition:.25s}
 #journal-post-wtrek .modal-x:hover,#journal-post-wtrek .modal-x:focus-visible{border-color:var(--accent);color:var(--accent)}
 #journal-post-wtrek .stay{margin:8px 28px;padding:22px 0;border-top:1px solid var(--line-soft)}
 #journal-post-wtrek .stay:first-of-type{border-top:0}
 #journal-post-wtrek .s-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
-#journal-post-wtrek .s-name{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:400;color:#fbf9f4}
+#journal-post-wtrek .s-name{font-family:'Inter',system-ui,sans-serif;font-size:21px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4}
 #journal-post-wtrek .s-badge{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:0}
 #journal-post-wtrek .badge-yes{background:none;color:var(--accent);border:1px solid var(--accent-dim)}
 #journal-post-wtrek .badge-no{background:none;color:var(--muted);border:1px solid var(--line)}
@@ -1419,7 +1419,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .tdp-hotels{margin-top:24px;border:1px solid var(--line);padding:22px 24px}
 #journal-post-wtrek .th-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
 #journal-post-wtrek .th-k{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
-#journal-post-wtrek .th-t{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#fbf9f4;line-height:1.2}
+#journal-post-wtrek .th-t{font-family:'Inter',system-ui,sans-serif;font-size:19px;font-weight:600;letter-spacing:-0.01em;color:#fbf9f4;line-height:1.2}
 #journal-post-wtrek .th-src{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;margin-top:4px}
 #journal-post-wtrek .th-fields{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
 #journal-post-wtrek .th-field{display:flex;flex-direction:column;gap:7px;flex:1 1 150px}
@@ -1455,7 +1455,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .tdp-acc{border:1px solid var(--line);background:var(--ink-soft);margin:24px 0}
 #journal-post-wtrek .tdp-acc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 18px;font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek .tdp-acc summary::-webkit-details-marker{display:none}
-#journal-post-wtrek .tdp-acc summary::after{content:'+';font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1;color:var(--muted);transition:color .2s}
+#journal-post-wtrek .tdp-acc summary::after{content:'+';font-family:'Inter',system-ui,sans-serif;font-size:24px;line-height:1;color:var(--muted);transition:color .2s}
 #journal-post-wtrek .tdp-acc[open] summary::after{content:'–';color:var(--accent)}
 #journal-post-wtrek .tdp-acc .acc-body{padding:4px 18px 16px;border-top:1px solid var(--line-soft)}
 #journal-post-wtrek .tdp-acc .acc-body p{margin:14px 0 0;font-size:15px;line-height:1.75;color:var(--paper-dim)}
@@ -1475,7 +1475,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek section::after{content:'';display:table;clear:both}
 #journal-post-wtrek h3,#journal-post-wtrek table,#journal-post-wtrek .tdp-acc,#journal-post-wtrek .tdp-hotels,#journal-post-wtrek .rja-wide,#journal-post-wtrek .rja-bleed,#journal-post-wtrek .rja-panel,#journal-post-wtrek .rja-cols{clear:both}
 /* didascalie delle figure (wide / float centrate a sinistra, bleed centrata) */
-#journal-post-wtrek .rja-wide figcaption,#journal-post-wtrek .rja-float figcaption{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);margin-top:12px;line-height:1.7}
+#journal-post-wtrek .rja-wide figcaption,#journal-post-wtrek .rja-float figcaption{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;letter-spacing:.01em;color:var(--muted);margin-top:12px;line-height:1.7}
 #journal-post-wtrek .rja-bleed figcaption{font-family:'Inter',system-ui,sans-serif;font-size:10px;letter-spacing:.04em;color:var(--muted);line-height:1.7;text-align:center;max-width:var(--maxw);margin:12px auto 0;padding:0 24px}
 /* pannello informativo in evidenza */
 #journal-post-wtrek .rja-panel{border:1px solid var(--accent-dim);background:var(--ink-soft);padding:22px 24px;margin:30px 0}
@@ -1491,7 +1491,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rja-box.hi{border-color:var(--accent-dim)}
 #journal-post-wtrek .rja-box .rb-tag{font-family:'Inter',system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 #journal-post-wtrek .rja-box.hi .rb-tag{color:var(--accent)}
-#journal-post-wtrek .rja-box h4{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:22px;margin:8px 0 8px;color:#fbf9f4}
+#journal-post-wtrek .rja-box h4{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.01em;margin:8px 0 8px;color:#fbf9f4}
 #journal-post-wtrek .rja-box p{font-size:14.5px;line-height:1.65;margin:0;color:var(--paper-dim)}
 @media(max-width:600px){#journal-post-wtrek .rja-cols{grid-template-columns:1fr}}
 @media(max-width:640px){
@@ -1516,7 +1516,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 
 /* ── Footer ── */
 #journal-post-wtrek footer{padding:60px 0 84px;text-align:center}
-#journal-post-wtrek footer .fq{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:26px;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}
+#journal-post-wtrek footer .fq{font-family:'Inter',system-ui,sans-serif;font-style:normal;font-weight:500;font-size:22px;letter-spacing:-0.01em;line-height:1.45;color:#fbf9f4;max-width:32ch;margin:0 auto 32px}
 #journal-post-wtrek footer .fb{font-family:'Inter',system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
 #journal-post-wtrek :focus-visible{outline:1px solid var(--accent);outline-offset:3px}
 @media(max-width:600px){
