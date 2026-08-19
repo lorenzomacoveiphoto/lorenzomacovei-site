@@ -214,7 +214,45 @@ const it_body = `
 
 <section><p class="lead"><span class="drop">R</span>aja Ampat è un arcipelago indonesiano al largo della Papua Occidentale, l'epicentro mondiale della biodiversità marina. Nel cuore del «Triangolo dei Coralli» ospita oltre 1.500 isole in gran parte disabitate, il 75% delle specie di corallo conosciute e più di 1.500 specie di pesci. Il nome, «I Quattro Re», deriva da una leggenda legata a quattro isole: Waigeo, Batanta, Salawati e Misool. Quella che segue è un'organizzazione provata sul campo, una settimana a ovest, una a est.</p></section>
 
-<section id="getting-there"><span class="eyebrow">01</span><h2>Come arrivare</h2>
+<section id="what"><span class="eyebrow">01</span><h2>Cos'è davvero Raja Ampat</h2>
+<p><strong>Il sottacqua</strong> è il motivo per cui quasi tutti arrivano fin qui: mante, squali wobbegong, banchi fittissimi, pareti di corallo, cavallucci pigmei. Spesso la barriera parte a pochi metri dalla riva o sotto i pontili, quindi lo snorkeling è alla portata anche dei principianti, ma in alcuni siti le correnti richiedono vera esperienza.</p>
+<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
+<p><strong>Piaynemo</strong> è il punto panoramico kárstico simbolo dell'arcipelago, lagune turchesi punteggiate di isolotti viste dall'alto dopo una breve salita ripida.</p>
+<div class="tip"><b>Wayag al momento chiusa</b>Wayag è per ora chiusa ai visitatori, dopo proteste locali legate a dispute sui permessi minerari regionali. Verifica lo stato aggiornato prima di pianificarci sopra, Piaynemo resta aperta ed è comunque il belvedere più accessibile.</div>
+<p>Il <strong>villaggio di Arborek</strong> merita una passeggiata lenta, non solo una sosta snorkeling, uno sguardo autentico sulla vita e le tradizioni locali. Sulla terraferma, <strong>Kali Biru</strong> su Waigeo è un fiume d'acqua dolce di una trasparenza sorprendente nella giungla, e le camminate guidate all'alba, soprattutto su Batanta, possono regalare l'Uccello del Paradiso Rosso e quello di Wilson.</p>
+<p>Più a sud, <strong>Misool</strong> è un mondo a parte: karst che emerge dritto dal mare, grotte nascoste e resti archeologici sommersi, un viaggio più lungo, ma un altro volto di Raja Ampat.</p>
+<div class="tdp-fig"><img src="${M.scenery}" alt="Paesaggi di Raja Ampat"></div>
+</section>
+
+<section id="cost"><span class="eyebrow">02</span><h2>Raja Ampat è davvero costosa?</h2>
+<p>Sul posto i costi restano ragionevoli grazie al cambio, e dividere i transfer è ciò che incide di più. I voli sono la vera variabile, quindi ecco il quadro completo, non solo la spesa in loco.</p>
+<table><tr><th>Voce</th><th class="r">Costo</th></tr>
+<tr><td>Corepen Homestay, 7 notti, pensione completa</td><td class="r">288€</td></tr>
+<tr><td>Kalabia Homestay (Arborek), 4 notti, pensione completa</td><td class="r">128€</td></tr>
+<tr><td>Traghetto Sorong ↔ Waisai, a/r (economy)</td><td class="r">~18€</td></tr>
+<tr><td>Marine Park + Visitor Entry (straniero)</td><td class="r">~82€</td></tr>
+<tr><td>Transfer in barca, condivisi</td><td class="r">~6/27€ per tratta</td></tr>
+<tr><td>Immersioni, a immersione</td><td class="r">~29€ diurna / ~34€ notturna</td></tr></table>
+<h3>Viaggio intero, porta a porta</h3>
+<table><tr><td>Volo internazionale a/r (Europa ↔ Bali/Giacarta)</td><td class="r">~850/1.050€</td></tr>
+<tr><td>Tratta/e interne per Sorong, a/r</td><td class="r">~150/250€</td></tr>
+<tr><td>Spesa in loco (alloggi, immersioni, tasse, transfer, cibo)</td><td class="r">~600/700€</td></tr>
+<tr><td>Notti cuscinetto a Sorong (2, hotel + cibo)</td><td class="r">~80/120€</td></tr>
+<tr class="total"><td>Totale indicativo a persona</td><td class="r big">~1.700/2.100€</td></tr></table>
+<div class="tip"><b>Sui voli</b>Le tariffe oscillano molto con la stagione e con quanto prenoti in anticipo, la cifra sopra ipotizza un prezzo medio, non un'occasione. Prenotare la tratta interna insieme al biglietto internazionale, sulla stessa alleanza, è di solito il modo più economico per evitare un volo interno singolo più caro.</div>
+</section>
+
+<section id="permits"><span class="eyebrow">03</span><h2>Permessi, tasse PIN e regole d'ingresso</h2>
+<p>Per entrare nel parco marino servono due tasse distinte. Pagale entrambe <strong>online prima di arrivare</strong>, se puoi: gli uffici locali sono spesso chiusi.</p>
+<table><tr><th>Tassa</th><th class="r">Straniero</th><th class="r">Indonesiano</th></tr>
+<tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
+<tr><td>Visitor Entry Ticket</td><td class="r">1.000.000</td><td class="r">300.000</td></tr></table>
+<ul><li><strong>Marine Park fee</strong>, paga <a href="https://kkprajaampat.com/en/marine-park-fees-2/" target="_blank" rel="noopener">online in anticipo</a>.</li>
+<li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, oppure di persona all'ufficio del porto all'arrivo.</li></ul>
+</section>
+
+<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Come arrivare senza charter</h2>
+<h3>Voli e traghetto per Waisai</h3>
 <p>Nessuna compagnia vola diretta dall'Europa. Si passa da un hub indonesiano, Giacarta, Bali o Makassar, e da lì un volo interno fino a <strong>Sorong (SOQ)</strong>, la città-porta sulla terraferma. Da Sorong bisogna raggiungere <strong>Waisai</strong>, capoluogo della reggenza sull'isola di Waigeo:</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Arrivo a Raja Ampat"></div>
 <ul><li><strong>Traghetto pubblico</strong>, circa due ore. Una corsa al giorno alle 14:00, più una extra alle 9:00 la domenica. Economy ~150.000 IDR (~9€); cabina VIP con aria condizionata e bagno privato ~250.000 IDR (~15€). Si compra in giornata al porto.</li>
@@ -222,9 +260,7 @@ const it_body = `
 <div class="tip"><b>Notti cuscinetto, a inizio e fine</b>Le coincidenze tra traghetti e voli sono strette e i ritardi frequenti: metti in conto <strong>due notti in più a Sorong</strong>, una all'andata e una al ritorno. Ottima scusa per concederti un vero hotel prima e dopo la parte spartana in homestay: l'<strong>Aston Sorong</strong> (~35€/notte) è la scelta affidabile, oppure il <strong>Favehotel</strong> per un buon equilibrio tra comfort e prezzo, con una spa piccola ma dignitosa.</div>
 <div class="tip"><b>Bali/Sorong: solo Garuda</b><strong>Garuda Indonesia</strong> è al momento l'unica compagnia sulla tratta Bali/Sorong, e non sempre affidabile, il mio volo è stato cancellato e dirottato via Giacarta.</div>
 FLIGHT
-</section>
-
-<section id="getting-around"><span class="eyebrow">02</span><h2>Spostarsi tra le isole</h2>
+<h3>Spostarsi tra le isole in barca</h3>
 <p>Dopo Waisai la barca è l'unico modo per muoversi, ed è la voce di spesa più pesante di tutto il viaggio. I prezzi sono <strong>a barca, non a persona</strong>: condividere il passaggio abbatte drasticamente il costo.</p>
 <div class="tdp-fig"><img src="${M.map}" alt="Mappa di Raja Ampat"><div class="tdp-cap">Le isole intorno allo Stretto di Dampier e a Waisai.</div></div>
 <table><tr><th>Tratta</th><th class="r">Prezzo a barca</th></tr>
@@ -235,51 +271,7 @@ FLIGHT
 <div class="tip"><b>Trova con chi dividere</b>Chiedi prima in homestay o alla reception, spesso ti aiutano a organizzare un passaggio condiviso. In alternativa il gruppo Facebook «Raja Ampat Backpackers / Travellers» o il più recente <a href="https://rajaride.com/" target="_blank" rel="noopener">Raja Ride</a> funzionano bene per trovare compagni con cui dividere il transfer.</div>
 </section>
 
-<section id="when-to-go"><span class="eyebrow">03</span><h2>Quando andare</h2>
-<p>Punta su <strong>ottobre/novembre ad aprile</strong>, la stagione secca locale, opposta a quella delle piogge nel resto dell'Indonesia. Piove comunque tutto l'anno, di solito brevi rovesci intensi che aprono a tramonti spettacolari. In questa finestra il mare è calmo e la visibilità è al massimo; gli incontri con le mante sono più frequenti tra dicembre e marzo.</p>
-</section>
-
-<section id="fees"><span class="eyebrow">04</span><h2>Tasse obbligatorie</h2>
-<p>Per entrare nel parco marino servono due tasse distinte. Pagale entrambe <strong>online prima di arrivare</strong>, se puoi: gli uffici locali sono spesso chiusi.</p>
-<table><tr><th>Tassa</th><th class="r">Straniero</th><th class="r">Indonesiano</th></tr>
-<tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
-<tr><td>Visitor Entry Ticket</td><td class="r">1.000.000</td><td class="r">300.000</td></tr></table>
-<ul><li><strong>Marine Park fee</strong>, paga <a href="https://kkprajaampat.com/en/marine-park-fees-2/" target="_blank" rel="noopener">online in anticipo</a>.</li>
-<li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, oppure di persona all'ufficio del porto all'arrivo.</li></ul>
-</section>
-
-<section id="duration"><span class="eyebrow">05</span><h2>Quanti giorni servono</h2>
-<ul><li><strong>Minimo che valga la pena</strong>, 6/7 giorni sul posto, esclusi i giorni di viaggio.</li>
-<li><strong>Comodo</strong>, 10/14 giorni per muoversi tra le isole senza fretta.</li>
-<li><strong>~15 giorni</strong> per abbinare il nord (Waigeo, Piaynemo) alla remota Misool a sud, al prezzo di traversate più lunghe.</li></ul>
-</section>
-
-<section id="see-do"><span class="eyebrow">06</span><h2>Cosa vedere e fare</h2>
-<p><strong>Il sottacqua</strong> è il motivo per cui quasi tutti arrivano fin qui: mante, squali wobbegong, banchi fittissimi, pareti di corallo, cavallucci pigmei. Spesso la barriera parte a pochi metri dalla riva o sotto i pontili, quindi lo snorkeling è alla portata anche dei principianti, ma in alcuni siti le correnti richiedono vera esperienza.</p>
-<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
-<p><strong>Piaynemo</strong> è il punto panoramico kárstico simbolo dell'arcipelago, lagune turchesi punteggiate di isolotti viste dall'alto dopo una breve salita ripida.</p>
-<div class="tip"><b>Wayag al momento chiusa</b>Wayag è per ora chiusa ai visitatori, dopo proteste locali legate a dispute sui permessi minerari regionali. Verifica lo stato aggiornato prima di pianificarci sopra, Piaynemo resta aperta ed è comunque il belvedere più accessibile.</div>
-<p>Il <strong>villaggio di Arborek</strong> merita una passeggiata lenta, non solo una sosta snorkeling, uno sguardo autentico sulla vita e le tradizioni locali. Sulla terraferma, <strong>Kali Biru</strong> su Waigeo è un fiume d'acqua dolce di una trasparenza sorprendente nella giungla, e le camminate guidate all'alba, soprattutto su Batanta, possono regalare l'Uccello del Paradiso Rosso e quello di Wilson.</p>
-<p>Più a sud, <strong>Misool</strong> è un mondo a parte: karst che emerge dritto dal mare, grotte nascoste e resti archeologici sommersi, un viaggio più lungo, ma un altro volto di Raja Ampat.</p>
-<div class="tdp-fig"><img src="${M.scenery}" alt="Paesaggi di Raja Ampat"></div>
-</section>
-
-<section id="diving"><span class="eyebrow">07</span><h2>Immersioni</h2>
-<p>Le immersioni sono il vero protagonista di qualsiasi viaggio a Raja Ampat, e tra le esperienze subacquee più belle del pianeta, ma non è una meta facile per tutti. Le correnti possono essere fortissime e cambiare in fretta, quindi devi essere a tuo agio sia in acqua sia con l'attrezzatura prima di arrivare. Vieni con almeno un brevetto <strong>Advanced Open Water</strong> e un buon numero di immersioni loggate. Non è il posto dove imparare l'assetto per la prima volta.</p>
-<div class="tip"><b>Non è un posto da principianti</b>Evita i battesimi e le immersioni «prova», ed evita i centri che li propongono. Le condizioni qui non perdonano chi si immerge senza vera esperienza, e mette a rischio anche gli altri sulla barca.</div>
-<p>Essendo Raja Ampat remota, metti in conto lo scenario peggiore anche se non ti servirà. La camera iperbarica più vicina è a <strong>Sorong</strong>, a ore di barca dalla maggior parte delle homestay: viaggia con una vera assicurazione subacquea <strong>DAN</strong> e assicurati che il centro conosca la procedura di evacuazione. Sul volo, non prenderlo per almeno 18 ore dopo l'ultima immersione, 24 ore è la regola più prudente, e concediti di più se hai fatto immersioni per più giorni di fila.</p>
-<div class="tdp-fig"><img src="${M.diving}" alt="Immersioni a Raja Ampat"></div>
-<p>Niente di tutto questo vuole spaventarti, serve solo perché tu te la goda davvero. Pochi posti al mondo reggono il confronto, e per qualsiasi subacqueo è un'esperienza da una volta nella vita che vale ogni fatica per arrivarci.</p>
-<details class="tdp-acc"><summary>I miei siti preferiti</summary><div class="acc-body">
-<p><strong>Cape Kri</strong>, uno dei miei preferiti in assoluto, un sito da lista dei desideri. Le correnti possono essere fortissime, ed è proprio qui che serve il reef hook: in molte immersioni vorrai agganciarti per tenere la posizione e goderti lo spettacolo. Non presentarti senza averlo mai usato, fatti mostrare prima la tecnica corretta, perché un gancio piazzato male danneggia la barriera e usato male può metterti in difficoltà in corrente forte.</p>
-<p><strong>Mayhem</strong>, meno famoso di Cape Kri, ma la densità di vita lo rende assolutamente da fare.</p>
-<p><strong>Sawandarek</strong>, un'immersione più tranquilla, ottima da alternare ai siti con più corrente.</p>
-<p><strong>Batu Lima, di notte</strong>, la miglior immersione notturna che ho fatto a Raja Ampat. Se ami i grandi pelagici, dalle priorità dopo il tramonto.</p>
-<p><strong>Manta Point</strong>, vedere le mante scivolare via, lente ed enormi, vale da solo l'intero viaggio. Eleganza è l'unica parola giusta.</p>
-</div></details>
-</section>
-
-<section id="stay"><span class="eyebrow">08</span><h2>Dove dormire</h2>
+<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dove dormire: homestay o resort</h2>
 <table><tr><th>Tipo</th><th class="r">Prezzo tipico / notte</th></tr>
 <tr><td>Homestay <button type="button" class="hs-i" onclick="rajaHs(true)" aria-label="Sulle homestay">i</button></td><td class="r">30€/50€</td></tr>
 <tr><td>Eco-lodge / dive resort</td><td class="r">150€/280€</td></tr>
@@ -290,7 +282,14 @@ ${slider('Camera in homestay', 'Camere e homestay.')}
 STAY
 </section>
 
-<section id="experience"><span class="eyebrow">09</span><h2>La mia scelta: ovest ed est dello Stretto di Dampier</h2>
+<section id="itinerary"><span class="eyebrow">06</span><h2>L'itinerario ideale per backpacker</h2>
+<h3>Quando andare</h3>
+<p>Punta su <strong>ottobre/novembre ad aprile</strong>, la stagione secca locale, opposta a quella delle piogge nel resto dell'Indonesia. Piove comunque tutto l'anno, di solito brevi rovesci intensi che aprono a tramonti spettacolari. In questa finestra il mare è calmo e la visibilità è al massimo; gli incontri con le mante sono più frequenti tra dicembre e marzo.</p>
+<h3>Quanti giorni servono</h3>
+<ul><li><strong>Minimo che valga la pena</strong>, 6/7 giorni sul posto, esclusi i giorni di viaggio.</li>
+<li><strong>Comodo</strong>, 10/14 giorni per muoversi tra le isole senza fretta.</li>
+<li><strong>~15 giorni</strong> per abbinare il nord (Waigeo, Piaynemo) alla remota Misool a sud, al prezzo di traversate più lunghe.</li></ul>
+<h3>Ovest ed est dello Stretto di Dampier</h3>
 <p>Consiglio con forza le homestay ai resort. Per tenere basso il budget la leva principale è ridurre gli spostamenti tra isole, quindi dividi il soggiorno tra il <strong>lato ovest e il lato est dello Stretto di Dampier</strong> invece di saltare da un'isola all'altra.</p>
 <div class="tip"><b>Corallo sotto stress</b>Lo Stretto di Dampier è anche dove il cambiamento climatico inizia a vedersi, acqua più calda e salinità in aumento stressano visibilmente siti come <strong>Melissa's Garden</strong>, un tempo un giardino di corallo da manuale. Vale ancora l'immersione, ma il cambiamento si nota di anno in anno.</p>
 <p>Le immersioni costano in genere circa <strong>30€</strong> e includono il transfer al sito entro un certo raggio. Con base a <strong>Corepen</strong>, Cape Kri era coperto senza sovrapprezzo, ma per Mayhem c'era un costo di trasporto extra. Con base ad <strong>Arborek</strong>, Mayhem si raggiungeva senza costi aggiuntivi, da valutare nella scelta della base.</p>
@@ -314,9 +313,20 @@ STAY
 <tr><td>Waisai → Corepen</td><td class="r">500k</td><td class="r">4</td><td class="r">~125k · 6€</td></tr>
 <tr><td>Corepen → Arborek</td><td class="r">600k</td><td class="r">3</td><td class="r">~200k · 10€</td></tr>
 <tr><td>Arborek → Waisai</td><td class="r">1.1m</td><td class="r">2</td><td class="r">~550k · 27€</td></tr></table>
-</section>
-
-<section id="misool"><span class="eyebrow">10</span><h2>Misool</h2>
+<h3>Immersioni</h3>
+<p>Le immersioni sono il vero protagonista di qualsiasi viaggio a Raja Ampat, e tra le esperienze subacquee più belle del pianeta, ma non è una meta facile per tutti. Le correnti possono essere fortissime e cambiare in fretta, quindi devi essere a tuo agio sia in acqua sia con l'attrezzatura prima di arrivare. Vieni con almeno un brevetto <strong>Advanced Open Water</strong> e un buon numero di immersioni loggate. Non è il posto dove imparare l'assetto per la prima volta.</p>
+<div class="tip"><b>Non è un posto da principianti</b>Evita i battesimi e le immersioni «prova», ed evita i centri che li propongono. Le condizioni qui non perdonano chi si immerge senza vera esperienza, e mette a rischio anche gli altri sulla barca.</div>
+<p>Essendo Raja Ampat remota, metti in conto lo scenario peggiore anche se non ti servirà. La camera iperbarica più vicina è a <strong>Sorong</strong>, a ore di barca dalla maggior parte delle homestay: viaggia con una vera assicurazione subacquea <strong>DAN</strong> e assicurati che il centro conosca la procedura di evacuazione. Sul volo, non prenderlo per almeno 18 ore dopo l'ultima immersione, 24 ore è la regola più prudente, e concediti di più se hai fatto immersioni per più giorni di fila.</p>
+<div class="tdp-fig"><img src="${M.diving}" alt="Immersioni a Raja Ampat"></div>
+<p>Niente di tutto questo vuole spaventarti, serve solo perché tu te la goda davvero. Pochi posti al mondo reggono il confronto, e per qualsiasi subacqueo è un'esperienza da una volta nella vita che vale ogni fatica per arrivarci.</p>
+<details class="tdp-acc"><summary>I miei siti preferiti</summary><div class="acc-body">
+<p><strong>Cape Kri</strong>, uno dei miei preferiti in assoluto, un sito da lista dei desideri. Le correnti possono essere fortissime, ed è proprio qui che serve il reef hook: in molte immersioni vorrai agganciarti per tenere la posizione e goderti lo spettacolo. Non presentarti senza averlo mai usato, fatti mostrare prima la tecnica corretta, perché un gancio piazzato male danneggia la barriera e usato male può metterti in difficoltà in corrente forte.</p>
+<p><strong>Mayhem</strong>, meno famoso di Cape Kri, ma la densità di vita lo rende assolutamente da fare.</p>
+<p><strong>Sawandarek</strong>, un'immersione più tranquilla, ottima da alternare ai siti con più corrente.</p>
+<p><strong>Batu Lima, di notte</strong>, la miglior immersione notturna che ho fatto a Raja Ampat. Se ami i grandi pelagici, dalle priorità dopo il tramonto.</p>
+<p><strong>Manta Point</strong>, vedere le mante scivolare via, lente ed enormi, vale da solo l'intero viaggio. Eleganza è l'unica parola giusta.</p>
+</div></details>
+<h3>Misool</h3>
 <p>Misool dovrebbe essere il paradiso, e a detta di tutti è ancora in gran parte intatta: isole kárstiche che si alzano dritte dall'acqua, lagune nascoste e una delle barriere più sane della regione. Non ci sono ancora stato, è la prossima in lista, quindi consideralo un segnaposto da riempire come si deve una volta andato.</p>
 <p><strong>Come arrivare:</strong> il traghetto pubblico per Misool parte di solito il <strong>lunedì alle 22:00</strong>, con arrivo la mattina dopo. Questa è la teoria, <strong>i traghetti pubblici non sono per niente affidabili</strong>: gli orari cambiano, le corse vengono cancellate del tutto e non c'è modo di confermare la partenza finché non sei al porto.</p>
 <div class="tip"><b>Lascia margine</b>Non incastrare coincidenze strette attorno al traghetto per Misool. Considera la corsa del lunedì un obiettivo, non una certezza, e tieni un giorno cuscinetto a entrambe le estremità in caso di ritardo o cancellazione.</div>
@@ -329,37 +339,18 @@ STAY
 </div></details>
 </section>
 
-<section id="budget"><span class="eyebrow">11</span><h2>Budget</h2>
-<p>Sul posto i costi restano ragionevoli grazie al cambio, e dividere i transfer è ciò che incide di più. I voli sono la vera variabile, quindi ecco il quadro completo, non solo la spesa in loco.</p>
-<table><tr><th>Voce</th><th class="r">Costo</th></tr>
-<tr><td>Corepen Homestay, 7 notti, pensione completa</td><td class="r">288€</td></tr>
-<tr><td>Kalabia Homestay (Arborek), 4 notti, pensione completa</td><td class="r">128€</td></tr>
-<tr><td>Traghetto Sorong ↔ Waisai, a/r (economy)</td><td class="r">~18€</td></tr>
-<tr><td>Marine Park + Visitor Entry (straniero)</td><td class="r">~82€</td></tr>
-<tr><td>Transfer in barca, condivisi</td><td class="r">~6/27€ per tratta</td></tr>
-<tr><td>Immersioni, a immersione</td><td class="r">~29€ diurna / ~34€ notturna</td></tr></table>
-<h3>Viaggio intero, porta a porta</h3>
-<table><tr><td>Volo internazionale a/r (Europa ↔ Bali/Giacarta)</td><td class="r">~850/1.050€</td></tr>
-<tr><td>Tratta/e interne per Sorong, a/r</td><td class="r">~150/250€</td></tr>
-<tr><td>Spesa in loco (alloggi, immersioni, tasse, transfer, cibo)</td><td class="r">~600/700€</td></tr>
-<tr><td>Notti cuscinetto a Sorong (2, hotel + cibo)</td><td class="r">~80/120€</td></tr>
-<tr class="total"><td>Totale indicativo a persona</td><td class="r big">~1.700/2.100€</td></tr></table>
-<div class="tip"><b>Sui voli</b>Le tariffe oscillano molto con la stagione e con quanto prenoti in anticipo, la cifra sopra ipotizza un prezzo medio, non un'occasione. Prenotare la tratta interna insieme al biglietto internazionale, sulla stessa alleanza, è di solito il modo più economico per evitare un volo interno singolo più caro.</div>
-</section>
-
-<section id="ethics"><span class="eyebrow">12</span><h2>Viaggiare in modo etico</h2>
+<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Da sapere prima di partire</h2>
+<h3>Contanti, SIM e salute</h3>
+<ul><li><strong>Visto</strong>, visto all'arrivo (30 giorni) per molte nazionalità; verifica le regole aggiornate prima di partire.</li>
+<li><strong>Connettività</strong>, segnale telefonico/internet debole o assente su molte isole; organizzati di conseguenza.</li>
+<li><strong>Abbigliamento</strong>, caldo tropicale in generale, fresco dopo la pioggia o con vento; porta una giacca antipioggia leggera.</li>
+<li><strong>Assicurazione</strong>, vista la remotezza, un'assicurazione viaggio con evacuazione medica e copertura ritardi/cancellazioni è consigliata, oltre alla copertura subacquea DAN.</li></ul>
+<h3>Viaggiare in modo etico</h3>
 <p>Le barriere di Raja Ampat e la sua economia seguono lo stesso principio: tieni locali i soldi e l'impatto. Prenota homestay a gestione familiare papuana invece delle catene resort, è la differenza tra finanziare direttamente una famiglia o un investitore lontano, e paga per intero entrambe le tasse del parco, perché pattugliamento e conservazione si finanziano proprio con quei soldi.</p>
 <p>La barriera chiede poco: non toccarla, non calpestarla e tieni le mani a posto con mante, squali e qualsiasi specie protetta. A terra, porta una borraccia riutilizzabile, le homestay vanno ad acqua di cisterna e non c'è alcun sistema per smaltire la plastica una volta qui.</p>
 <p>La vita del villaggio merita la stessa cura. Chiedi prima di puntare la fotocamera su qualcuno, soprattutto in un posto come Arborek, e tieni spalle e ginocchia coperte quando lasci la spiaggia e sei tra le case. Compra souvenir e spuntini dai residenti invece che dai negozi d'importazione, e se porti regali, quaderni o materiale scolastico funzionano meglio dei contanti. Un po' di preparazione prima di arrivare, la struttura a due famiglie di Arborek ne è un buon esempio, fa una gran differenza.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.ethics}"></video></div>
 <div class="tip"><b>In sintesi</b>Vai in meno posti, fermati più a lungo in ognuno, scegli l'homestay al resort, e ricorda che sei un ospite sia nella barriera sia nel villaggio, non un cliente di nessuno dei due.</div>
-</section>
-
-<section id="tips" style="border-bottom:0"><span class="eyebrow">13</span><h2>Consigli pratici</h2>
-<ul><li><strong>Visto</strong>, visto all'arrivo (30 giorni) per molte nazionalità; verifica le regole aggiornate prima di partire.</li>
-<li><strong>Connettività</strong>, segnale telefonico/internet debole o assente su molte isole; organizzati di conseguenza.</li>
-<li><strong>Abbigliamento</strong>, caldo tropicale in generale, fresco dopo la pioggia o con vento; porta una giacca antipioggia leggera.</li>
-<li><strong>Assicurazione</strong>, vista la remotezza, un'assicurazione viaggio con evacuazione medica e copertura ritardi/cancellazioni è consigliata, oltre alla copertura subacquea DAN.</li></ul>
 <p class="rf-foot" style="margin-top:20px">Appunti di chi c'è stato davvero: <b>7 giorni a Corepen, 5 ad Arborek</b>, Misool ancora da fare.</p>
 </section>
 ${hsModal({ k: 'Homestay', title: 'Cosa aspettarsi', close: 'Chiudi', body: "Spartane per scelta, è il compromesso per il prezzo e per l'accesso alla vita locale. La corrente di solito c'è solo la sera, all'incirca <strong>dalle 18 alle 23</strong>. Il cibo è semplice ed equilibrato: in genere una proteina, riso e fagioli, più frutta." })}
@@ -374,7 +365,45 @@ const es_body = `
 
 <section><p class="lead"><span class="drop">R</span>aja Ampat es un archipiélago indonesio frente a Papúa Occidental, el epicentro mundial de la biodiversidad marina. En el corazón del «Triángulo de Coral» reúne más de 1.500 islas en gran parte deshabitadas, el 75% de las especies de coral conocidas y más de 1.500 especies de peces. Su nombre, «Los Cuatro Reyes», viene de una leyenda ligada a cuatro islas: Waigeo, Batanta, Salawati y Misool. Lo que sigue es un plan probado sobre el terreno, una semana al oeste, una al este.</p></section>
 
-<section id="getting-there"><span class="eyebrow">01</span><h2>Cómo llegar</h2>
+<section id="what"><span class="eyebrow">01</span><h2>Qué es realmente Raja Ampat</h2>
+<p><strong>El fondo marino</strong> es el motivo por el que casi todos vienen: mantas, tiburones wobbegong, cardúmenes densos, paredes de coral, caballitos pigmeos. A menudo el arrecife empieza a metros de la orilla o justo bajo los pontones, así que el snorkel vale también para principiantes, aunque las corrientes en algunos sitios exigen experiencia real.</p>
+<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
+<p><strong>Piaynemo</strong> tiene el mirador kárstico emblema del archipiélago, lagunas turquesa salpicadas de islotes vistas desde arriba tras una subida corta y empinada.</p>
+<div class="tip"><b>Wayag cerrada por ahora</b>Wayag está cerrada a los visitantes por ahora, tras protestas locales ligadas a disputas sobre permisos mineros regionales. Comprueba el estado actualizado antes de planificar en torno a ella, Piaynemo sigue abierta y es de todos modos el mirador más accesible.</div>
+<p>El <strong>pueblo de Arborek</strong> merece un paseo tranquilo por sí mismo, no solo una parada de snorkel, una mirada auténtica a la vida y las tradiciones locales. En tierra, <strong>Kali Biru</strong> en Waigeo es un río de agua dulce de una claridad asombrosa en plena selva, y las caminatas guiadas al amanecer, sobre todo en Batanta, pueden dar con el Ave del Paraíso Roja y la de Wilson.</p>
+<p>Más al sur, <strong>Misool</strong> es otro mundo: karst que emerge recto del mar, cuevas ocultas y restos arqueológicos sumergidos, un viaje más largo, pero otra cara de Raja Ampat.</p>
+<div class="tdp-fig"><img src="${M.scenery}" alt="Paisajes de Raja Ampat"></div>
+</section>
+
+<section id="cost"><span class="eyebrow">02</span><h2>¿Es Raja Ampat realmente cara?</h2>
+<p>Sobre el terreno los costes se mantienen razonables gracias al cambio, y compartir los traslados es lo que más recorta. Los vuelos son la verdadera variable, así que aquí va el cuadro completo, no solo el gasto en el sitio.</p>
+<table><tr><th>Concepto</th><th class="r">Coste</th></tr>
+<tr><td>Corepen Homestay, 7 noches, pensión completa</td><td class="r">288€</td></tr>
+<tr><td>Kalabia Homestay (Arborek), 4 noches, pensión completa</td><td class="r">128€</td></tr>
+<tr><td>Ferry Sorong ↔ Waisai, ida y vuelta (economy)</td><td class="r">~18€</td></tr>
+<tr><td>Marine Park + Visitor Entry (extranjero)</td><td class="r">~82€</td></tr>
+<tr><td>Traslados en barco, compartidos</td><td class="r">~6/27€ por trayecto</td></tr>
+<tr><td>Buceo, por inmersión</td><td class="r">~29€ diurna / ~34€ nocturna</td></tr></table>
+<h3>Viaje completo, puerta a puerta</h3>
+<table><tr><td>Vuelo internacional ida y vuelta (Europa ↔ Bali/Yakarta)</td><td class="r">~850/1.050€</td></tr>
+<tr><td>Tramo(s) interno(s) a Sorong, ida y vuelta</td><td class="r">~150/250€</td></tr>
+<tr><td>Gasto en el sitio (alojamiento, buceo, tasas, traslados, comida)</td><td class="r">~600/700€</td></tr>
+<tr><td>Noches colchón en Sorong (2, hotel + comida)</td><td class="r">~80/120€</td></tr>
+<tr class="total"><td>Total aproximado por persona</td><td class="r big">~1.700/2.100€</td></tr></table>
+<div class="tip"><b>Sobre los vuelos</b>Las tarifas oscilan mucho con la temporada y con cuánto reserves de antelación, la cifra de arriba supone un precio medio, no un chollo. Reservar el tramo interno junto con el billete internacional, en la misma alianza, suele ser la forma más barata de evitar un vuelo interno suelto más caro.</div>
+</section>
+
+<section id="permits"><span class="eyebrow">03</span><h2>Permisos, tasa PIN y normas de entrada</h2>
+<p>Para entrar al parque marino se requieren dos tasas distintas. Paga ambas <strong>online antes de llegar</strong>, si puedes: las oficinas locales suelen estar cerradas.</p>
+<table><tr><th>Tasa</th><th class="r">Extranjero</th><th class="r">Indonesio</th></tr>
+<tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
+<tr><td>Visitor Entry Ticket</td><td class="r">1.000.000</td><td class="r">300.000</td></tr></table>
+<ul><li><strong>Marine Park fee</strong>, paga <a href="https://kkprajaampat.com/en/marine-park-fees-2/" target="_blank" rel="noopener">online por adelantado</a>.</li>
+<li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, o en persona en la oficina del puerto al llegar.</li></ul>
+</section>
+
+<section id="how-to-get-there"><span class="eyebrow">04</span><h2>Cómo llegar sin chárter</h2>
+<h3>Vuelos y ferry a Waisai</h3>
 <p>Ninguna aerolínea vuela directa desde Europa. Se hace escala en un hub indonesio, Yakarta, Bali o Makassar, y desde allí un vuelo interno hasta <strong>Sorong (SOQ)</strong>, la ciudad-puerta en tierra firme. Desde Sorong aún hay que llegar a <strong>Waisai</strong>, capital de la regencia en la isla de Waigeo:</p>
 <div class="tdp-fig"><img src="${M.arrive}" alt="Llegada a Raja Ampat"></div>
 <ul><li><strong>Ferry público</strong>, unas dos horas. Una salida diaria a las 14:00, más una extra a las 9:00 los domingos. Economy ~150.000 IDR (~9€); camarote VIP con aire acondicionado y baño privado ~250.000 IDR (~15€). Se compra el mismo día en el puerto.</li>
@@ -382,9 +411,7 @@ const es_body = `
 <div class="tip"><b>Noches colchón, a la ida y a la vuelta</b>Las conexiones entre ferries y vuelos son ajustadas y los retrasos frecuentes: cuenta con <strong>dos noches extra en Sorong</strong>, una a la ida y otra a la vuelta. Buena excusa para darte un hotel decente antes y después de la parte espartana en homestay: el <strong>Aston Sorong</strong> (~35€/noche) es la opción fiable, o el <strong>Favehotel</strong> por un buen equilibrio entre comodidad y precio, con un pequeño pero digno spa.</div>
 <div class="tip"><b>Bali/Sorong: solo Garuda</b><strong>Garuda Indonesia</strong> es de momento la única compañía en la ruta Bali/Sorong, y no siempre fiable, el mío fue cancelado y desviado por Yakarta.</div>
 FLIGHT
-</section>
-
-<section id="getting-around"><span class="eyebrow">02</span><h2>Moverse entre las islas</h2>
+<h3>Moverse entre las islas en barco</h3>
 <p>Pasado Waisai, el barco es la única forma de moverse, y es la mayor partida de gasto de todo el viaje. Las tarifas son <strong>por barco, no por persona</strong>: compartir el trayecto reduce muchísimo el coste.</p>
 <div class="tdp-fig"><img src="${M.map}" alt="Mapa de Raja Ampat"><div class="tdp-cap">Las islas alrededor del Estrecho de Dampier y Waisai.</div></div>
 <table><tr><th>Ruta</th><th class="r">Precio por barco</th></tr>
@@ -395,51 +422,7 @@ FLIGHT
 <div class="tip"><b>Encuentra con quién compartir</b>Pregunta primero en tu homestay o en recepción, suelen ayudar a organizar un trayecto compartido. Si no, el grupo de Facebook «Raja Ampat Backpackers / Travellers» o el más reciente <a href="https://rajaride.com/" target="_blank" rel="noopener">Raja Ride</a> funcionan bien para encontrar gente con quien compartir el traslado.</div>
 </section>
 
-<section id="when-to-go"><span class="eyebrow">03</span><h2>Cuándo ir</h2>
-<p>Apunta a <strong>octubre/noviembre a abril</strong>, la estación seca local, opuesta a la de lluvias en el resto de Indonesia. Llueve algo todo el año, normalmente chubascos breves e intensos que dan paso a atardeceres espectaculares. En esta ventana el mar está más en calma y la visibilidad es máxima; los encuentros con mantas son más frecuentes entre diciembre y marzo.</p>
-</section>
-
-<section id="fees"><span class="eyebrow">04</span><h2>Tasas obligatorias</h2>
-<p>Para entrar al parque marino se requieren dos tasas distintas. Paga ambas <strong>online antes de llegar</strong>, si puedes: las oficinas locales suelen estar cerradas.</p>
-<table><tr><th>Tasa</th><th class="r">Extranjero</th><th class="r">Indonesio</th></tr>
-<tr><td>Marine Park Environmental Service Fee</td><td class="r">700.000</td><td class="r">425.000</td></tr>
-<tr><td>Visitor Entry Ticket</td><td class="r">1.000.000</td><td class="r">300.000</td></tr></table>
-<ul><li><strong>Marine Park fee</strong>, paga <a href="https://kkprajaampat.com/en/marine-park-fees-2/" target="_blank" rel="noopener">online por adelantado</a>.</li>
-<li><strong>Visitor Entry Ticket</strong>, paga <a href="https://sipari-rajaampat.id/en/registrasi/international-online-registration/" target="_blank" rel="noopener">online</a>, o en persona en la oficina del puerto al llegar.</li></ul>
-</section>
-
-<section id="duration"><span class="eyebrow">05</span><h2>Cuántos días</h2>
-<ul><li><strong>Mínimo que merece la pena</strong>, 6/7 días sobre el terreno, sin contar los de viaje.</li>
-<li><strong>Cómodo</strong>, 10/14 días para moverse entre islas sin prisas.</li>
-<li><strong>~15 días</strong> para combinar el norte (Waigeo, Piaynemo) con la remota Misool al sur, a costa de travesías más largas.</li></ul>
-</section>
-
-<section id="see-do"><span class="eyebrow">06</span><h2>Qué ver y hacer</h2>
-<p><strong>El fondo marino</strong> es el motivo por el que casi todos vienen: mantas, tiburones wobbegong, cardúmenes densos, paredes de coral, caballitos pigmeos. A menudo el arrecife empieza a metros de la orilla o justo bajo los pontones, así que el snorkel vale también para principiantes, aunque las corrientes en algunos sitios exigen experiencia real.</p>
-<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
-<p><strong>Piaynemo</strong> tiene el mirador kárstico emblema del archipiélago, lagunas turquesa salpicadas de islotes vistas desde arriba tras una subida corta y empinada.</p>
-<div class="tip"><b>Wayag cerrada por ahora</b>Wayag está cerrada a los visitantes por ahora, tras protestas locales ligadas a disputas sobre permisos mineros regionales. Comprueba el estado actualizado antes de planificar en torno a ella, Piaynemo sigue abierta y es de todos modos el mirador más accesible.</div>
-<p>El <strong>pueblo de Arborek</strong> merece un paseo tranquilo por sí mismo, no solo una parada de snorkel, una mirada auténtica a la vida y las tradiciones locales. En tierra, <strong>Kali Biru</strong> en Waigeo es un río de agua dulce de una claridad asombrosa en plena selva, y las caminatas guiadas al amanecer, sobre todo en Batanta, pueden dar con el Ave del Paraíso Roja y la de Wilson.</p>
-<p>Más al sur, <strong>Misool</strong> es otro mundo: karst que emerge recto del mar, cuevas ocultas y restos arqueológicos sumergidos, un viaje más largo, pero otra cara de Raja Ampat.</p>
-<div class="tdp-fig"><img src="${M.scenery}" alt="Paisajes de Raja Ampat"></div>
-</section>
-
-<section id="diving"><span class="eyebrow">07</span><h2>Buceo</h2>
-<p>El buceo es el gran protagonista de cualquier viaje a Raja Ampat, y de verdad una de las experiencias submarinas más espectaculares del planeta, pero no es un destino fácil para todos. Las corrientes pueden ser fortísimas y cambiar rápido, así que tienes que sentirte cómodo tanto en el agua como con el equipo antes de llegar. Ven con al menos un título <strong>Advanced Open Water</strong> y un buen número de inmersiones registradas. No es el lugar para descubrir la flotabilidad por primera vez.</p>
-<div class="tip"><b>No es un sitio para principiantes</b>Evita los bautismos y las inmersiones «de prueba», y evita los centros que los ofrecen. Las condiciones aquí no perdonan a quien bucea sin experiencia real, y ponen en riesgo también al resto del barco.</div>
-<p>Como Raja Ampat es remota, planifica el peor escenario aunque nunca lo necesites. La cámara hiperbárica más cercana está en <strong>Sorong</strong>, a horas de barco de la mayoría de las homestays: viaja con un buen seguro de buceo <strong>DAN</strong> y asegúrate de que tu centro conoce el procedimiento de evacuación. En cuanto al vuelo, no vueles al menos 18 horas tras la última inmersión, 24 horas es la regla más segura, y date más margen si has buceado varios días seguidos.</p>
-<div class="tdp-fig"><img src="${M.diving}" alt="Buceo en Raja Ampat"></div>
-<p>Nada de esto pretende asustarte, solo asegurarse de que lo disfrutes de verdad. Pocos lugares en la tierra se le comparan, y para cualquier buceador es una experiencia única en la vida que vale cada esfuerzo por llegar.</p>
-<details class="tdp-acc"><summary>Mis puntos de buceo favoritos</summary><div class="acc-body">
-<p><strong>Cape Kri</strong>, uno de mis favoritos, un sitio de lista de deseos. Las corrientes pueden ser muy fuertes, y es justo aquí donde entra el reef hook: en muchas inmersiones querrás uno para mantener la posición y disfrutar del espectáculo. No aparezcas sin haberlo usado nunca, que te enseñen antes la técnica correcta, porque un gancho mal colocado daña el arrecife y mal usado puede meterte en un aprieto con corriente fuerte.</p>
-<p><strong>Mayhem</strong>, menos famoso que Cape Kri, pero la densidad de vida lo hace más que digno del viaje.</p>
-<p><strong>Sawandarek</strong>, una inmersión más tranquila, ideal para alternar con los sitios de más corriente.</p>
-<p><strong>Batu Lima, de noche</strong>, la mejor inmersión nocturna que hice en Raja Ampat. Si te van los grandes pelágicos, priorízala tras el anochecer.</p>
-<p><strong>Manta Point</strong>, ver las mantas deslizarse, lentas y enormes, vale por sí solo todo el viaje. Elegancia es la única palabra.</p>
-</div></details>
-</section>
-
-<section id="stay"><span class="eyebrow">08</span><h2>Dónde dormir</h2>
+<section id="where-to-stay"><span class="eyebrow">05</span><h2>Dónde dormir: homestays o resorts</h2>
 <table><tr><th>Tipo</th><th class="r">Precio típico / noche</th></tr>
 <tr><td>Homestay <button type="button" class="hs-i" onclick="rajaHs(true)" aria-label="Sobre las homestays">i</button></td><td class="r">30€/50€</td></tr>
 <tr><td>Eco-lodge / dive resort</td><td class="r">150€/280€</td></tr>
@@ -450,7 +433,14 @@ ${slider('Habitación de homestay', 'Habitaciones y homestays.')}
 STAY
 </section>
 
-<section id="experience"><span class="eyebrow">09</span><h2>Mi reparto: oeste y este del Estrecho de Dampier</h2>
+<section id="itinerary"><span class="eyebrow">06</span><h2>El itinerario ideal para mochileros</h2>
+<h3>Cuándo ir</h3>
+<p>Apunta a <strong>octubre/noviembre a abril</strong>, la estación seca local, opuesta a la de lluvias en el resto de Indonesia. Llueve algo todo el año, normalmente chubascos breves e intensos que dan paso a atardeceres espectaculares. En esta ventana el mar está más en calma y la visibilidad es máxima; los encuentros con mantas son más frecuentes entre diciembre y marzo.</p>
+<h3>Cuántos días</h3>
+<ul><li><strong>Mínimo que merece la pena</strong>, 6/7 días sobre el terreno, sin contar los de viaje.</li>
+<li><strong>Cómodo</strong>, 10/14 días para moverse entre islas sin prisas.</li>
+<li><strong>~15 días</strong> para combinar el norte (Waigeo, Piaynemo) con la remota Misool al sur, a costa de travesías más largas.</li></ul>
+<h3>Oeste y este del estrecho de Dampier</h3>
 <p>Recomiendo con fuerza las homestays frente a los resorts. Para mantener bajo el presupuesto, la palanca principal es reducir los traslados entre islas, así que divide la estancia entre el <strong>lado oeste y el lado este del Estrecho de Dampier</strong> en vez de ir saltando.</p>
 <div class="tip"><b>Coral bajo estrés</b>El Estrecho de Dampier es también donde el cambio climático empieza a notarse, el agua más cálida y la mayor salinidad estresan visiblemente sitios como <strong>Melissa's Garden</strong>, antaño un jardín de coral de manual. Sigue mereciendo la inmersión, pero el cambio se nota de un año a otro.</p>
 <p>Las inmersiones cuestan en general unos <strong>30€</strong> e incluyen el traslado al punto dentro de cierto radio. Con base en <strong>Corepen</strong>, Cape Kri estaba cubierto sin coste extra, pero llegar a Mayhem suponía un transporte adicional. Con base en <strong>Arborek</strong>, Mayhem se alcanzaba sin coste extra, algo a tener en cuenta al elegir base.</p>
@@ -474,9 +464,20 @@ STAY
 <tr><td>Waisai → Corepen</td><td class="r">500k</td><td class="r">4</td><td class="r">~125k · 6€</td></tr>
 <tr><td>Corepen → Arborek</td><td class="r">600k</td><td class="r">3</td><td class="r">~200k · 10€</td></tr>
 <tr><td>Arborek → Waisai</td><td class="r">1.1m</td><td class="r">2</td><td class="r">~550k · 27€</td></tr></table>
-</section>
-
-<section id="misool"><span class="eyebrow">10</span><h2>Misool</h2>
+<h3>Buceo</h3>
+<p>El buceo es el gran protagonista de cualquier viaje a Raja Ampat, y de verdad una de las experiencias submarinas más espectaculares del planeta, pero no es un destino fácil para todos. Las corrientes pueden ser fortísimas y cambiar rápido, así que tienes que sentirte cómodo tanto en el agua como con el equipo antes de llegar. Ven con al menos un título <strong>Advanced Open Water</strong> y un buen número de inmersiones registradas. No es el lugar para descubrir la flotabilidad por primera vez.</p>
+<div class="tip"><b>No es un sitio para principiantes</b>Evita los bautismos y las inmersiones «de prueba», y evita los centros que los ofrecen. Las condiciones aquí no perdonan a quien bucea sin experiencia real, y ponen en riesgo también al resto del barco.</div>
+<p>Como Raja Ampat es remota, planifica el peor escenario aunque nunca lo necesites. La cámara hiperbárica más cercana está en <strong>Sorong</strong>, a horas de barco de la mayoría de las homestays: viaja con un buen seguro de buceo <strong>DAN</strong> y asegúrate de que tu centro conoce el procedimiento de evacuación. En cuanto al vuelo, no vueles al menos 18 horas tras la última inmersión, 24 horas es la regla más segura, y date más margen si has buceado varios días seguidos.</p>
+<div class="tdp-fig"><img src="${M.diving}" alt="Buceo en Raja Ampat"></div>
+<p>Nada de esto pretende asustarte, solo asegurarse de que lo disfrutes de verdad. Pocos lugares en la tierra se le comparan, y para cualquier buceador es una experiencia única en la vida que vale cada esfuerzo por llegar.</p>
+<details class="tdp-acc"><summary>Mis puntos de buceo favoritos</summary><div class="acc-body">
+<p><strong>Cape Kri</strong>, uno de mis favoritos, un sitio de lista de deseos. Las corrientes pueden ser muy fuertes, y es justo aquí donde entra el reef hook: en muchas inmersiones querrás uno para mantener la posición y disfrutar del espectáculo. No aparezcas sin haberlo usado nunca, que te enseñen antes la técnica correcta, porque un gancho mal colocado daña el arrecife y mal usado puede meterte en un aprieto con corriente fuerte.</p>
+<p><strong>Mayhem</strong>, menos famoso que Cape Kri, pero la densidad de vida lo hace más que digno del viaje.</p>
+<p><strong>Sawandarek</strong>, una inmersión más tranquila, ideal para alternar con los sitios de más corriente.</p>
+<p><strong>Batu Lima, de noche</strong>, la mejor inmersión nocturna que hice en Raja Ampat. Si te van los grandes pelágicos, priorízala tras el anochecer.</p>
+<p><strong>Manta Point</strong>, ver las mantas deslizarse, lentas y enormes, vale por sí solo todo el viaje. Elegancia es la única palabra.</p>
+</div></details>
+<h3>Misool</h3>
 <p>Misool se supone que es el paraíso, y por todos los relatos sigue en gran parte intacta: islas kársticas que se alzan rectas del agua, lagunas ocultas y una de las densidades de arrecife más sanas de la región. Yo aún no he estado, es la próxima en la lista, así que tómalo como un marcador para completar como es debido cuando vaya.</p>
 <p><strong>Cómo llegar:</strong> el ferry público a Misool suele salir el <strong>lunes a las 22:00</strong>, llegando a la mañana siguiente. Esa es la teoría, <strong>los ferries públicos no son nada fiables</strong>: los horarios cambian, las salidas se cancelan sin más y no hay forma real de confirmar una salida hasta que estás en el puerto.</p>
 <div class="tip"><b>Deja margen</b>No planifiques una conexión ajustada en torno al ferry de Misool. Toma la salida del lunes como un objetivo, no una garantía, y guarda un día colchón a ambos lados por si se retrasa o se cancela.</div>
@@ -489,37 +490,18 @@ STAY
 </div></details>
 </section>
 
-<section id="budget"><span class="eyebrow">11</span><h2>Presupuesto</h2>
-<p>Sobre el terreno los costes se mantienen razonables gracias al cambio, y compartir los traslados es lo que más recorta. Los vuelos son la verdadera variable, así que aquí va el cuadro completo, no solo el gasto en el sitio.</p>
-<table><tr><th>Concepto</th><th class="r">Coste</th></tr>
-<tr><td>Corepen Homestay, 7 noches, pensión completa</td><td class="r">288€</td></tr>
-<tr><td>Kalabia Homestay (Arborek), 4 noches, pensión completa</td><td class="r">128€</td></tr>
-<tr><td>Ferry Sorong ↔ Waisai, ida y vuelta (economy)</td><td class="r">~18€</td></tr>
-<tr><td>Marine Park + Visitor Entry (extranjero)</td><td class="r">~82€</td></tr>
-<tr><td>Traslados en barco, compartidos</td><td class="r">~6/27€ por trayecto</td></tr>
-<tr><td>Buceo, por inmersión</td><td class="r">~29€ diurna / ~34€ nocturna</td></tr></table>
-<h3>Viaje completo, puerta a puerta</h3>
-<table><tr><td>Vuelo internacional ida y vuelta (Europa ↔ Bali/Yakarta)</td><td class="r">~850/1.050€</td></tr>
-<tr><td>Tramo(s) interno(s) a Sorong, ida y vuelta</td><td class="r">~150/250€</td></tr>
-<tr><td>Gasto en el sitio (alojamiento, buceo, tasas, traslados, comida)</td><td class="r">~600/700€</td></tr>
-<tr><td>Noches colchón en Sorong (2, hotel + comida)</td><td class="r">~80/120€</td></tr>
-<tr class="total"><td>Total aproximado por persona</td><td class="r big">~1.700/2.100€</td></tr></table>
-<div class="tip"><b>Sobre los vuelos</b>Las tarifas oscilan mucho con la temporada y con cuánto reserves de antelación, la cifra de arriba supone un precio medio, no un chollo. Reservar el tramo interno junto con el billete internacional, en la misma alianza, suele ser la forma más barata de evitar un vuelo interno suelto más caro.</div>
-</section>
-
-<section id="ethics"><span class="eyebrow">12</span><h2>Viajar con ética</h2>
+<section id="practical-tips" style="border-bottom:0"><span class="eyebrow">07</span><h2>Antes de ir</h2>
+<h3>Efectivo, SIM y salud</h3>
+<ul><li><strong>Visado</strong>, visado a la llegada (30 días) para muchas nacionalidades; verifica las reglas actuales antes de salir.</li>
+<li><strong>Conectividad</strong>, señal de teléfono/internet débil o inexistente en muchas islas; organízate en consecuencia.</li>
+<li><strong>Ropa</strong>, calor tropical en general, fresco tras la lluvia o con viento; lleva un chubasquero ligero.</li>
+<li><strong>Seguro</strong>, dada la lejanía, un seguro de viaje con evacuación médica y cobertura de retrasos/cancelaciones merece la pena, además de la cobertura de buceo DAN.</li></ul>
+<h3>Viajar con ética</h3>
 <p>Los arrecifes de Raja Ampat y su economía se rigen por el mismo principio: mantén locales el dinero y el impacto. Reserva homestays de familias papúes frente a las cadenas de resort, es la diferencia entre financiar directamente a un hogar o a un inversor lejano, y paga íntegras ambas tasas del parque, porque la vigilancia y la conservación se financian justo con ese dinero.</p>
 <p>El arrecife pide poco: no lo toques, no lo pises y mantén las manos quietas con mantas, tiburones y cualquier especie protegida. En tierra, lleva una botella reutilizable, las homestays van con agua de cisterna y no hay infraestructura para absorber el plástico una vez aquí.</p>
 <p>La vida del pueblo merece el mismo cuidado. Pregunta antes de apuntar la cámara a alguien, sobre todo en un lugar como Arborek, y cubre hombros y rodillas al dejar la playa y estar entre las casas. Compra souvenirs y aperitivos a los residentes en vez de a tiendas de importación, y si llevas regalos, cuadernos o material escolar funcionan mejor que el dinero. Un poco de preparación antes de llegar, la estructura de dos familias de Arborek es un buen ejemplo, marca la diferencia.</p>
 <div class="tdp-fig"><video muted loop playsinline src="${M.ethics}"></video></div>
 <div class="tip"><b>En resumen</b>Ve a menos sitios, quédate más en cada uno, elige la homestay frente al resort, y recuerda que eres un huésped tanto del arrecife como del pueblo, no un cliente de ninguno.</div>
-</section>
-
-<section id="tips" style="border-bottom:0"><span class="eyebrow">13</span><h2>Consejos prácticos</h2>
-<ul><li><strong>Visado</strong>, visado a la llegada (30 días) para muchas nacionalidades; verifica las reglas actuales antes de salir.</li>
-<li><strong>Conectividad</strong>, señal de teléfono/internet débil o inexistente en muchas islas; organízate en consecuencia.</li>
-<li><strong>Ropa</strong>, calor tropical en general, fresco tras la lluvia o con viento; lleva un chubasquero ligero.</li>
-<li><strong>Seguro</strong>, dada la lejanía, un seguro de viaje con evacuación médica y cobertura de retrasos/cancelaciones merece la pena, además de la cobertura de buceo DAN.</li></ul>
 <p class="rf-foot" style="margin-top:20px">Apuntes de quien ha estado de verdad: <b>7 días en Corepen, 5 en Arborek</b>, Misool aún pendiente.</p>
 </section>
 ${hsModal({ k: 'Homestays', title: 'Qué esperar', close: 'Cerrar', body: 'Básicas a propósito, es el intercambio por el precio y el acceso a la vida local. La electricidad suele funcionar solo por la tarde-noche, aproximadamente <strong>de 18:00 a 23:00</strong>. La comida es sencilla y equilibrada: normalmente una proteína, arroz y frijoles, más fruta.' })}
@@ -591,22 +573,22 @@ const tocEn = [
   ['07', 'practical-tips', 'Essential Raja Ampat Travel Tips: Cash, SIM Cards & Gear'],
 ];
 const tocIt = [
-  ['01', 'getting-there', 'Come arrivare'], ['02', 'getting-around', 'Trasferimenti in barca'],
-  ['03', 'when-to-go', 'Quando andare'], ['04', 'fees', 'Tasse obbligatorie'],
-  ['05', 'duration', 'Quanti giorni'], ['06', 'see-do', 'Cosa vedere e fare'],
-  ['07', 'diving', 'Immersioni'], ['08', 'stay', 'Dove dormire'],
-  ['09', 'experience', 'Ovest + est'], ['10', 'misool', 'Misool'],
-  ['11', 'budget', 'Budget'], ['12', 'ethics', 'Viaggiare in modo etico'],
-  ['13', 'tips', 'Consigli pratici'],
+  ['01', 'what', "Cos'è e dove si trova Raja Ampat, Indonesia?"],
+  ['02', 'cost', "Quanto costa un viaggio a Raja Ampat da backpacker?"],
+  ['03', 'permits', "Permesso d'ingresso e tassa PIN del parco marino"],
+  ['04', 'how-to-get-there', "Come arrivare a Raja Ampat: traghetti, voli e barche"],
+  ['05', 'where-to-stay', "Dove dormire a Raja Ampat: guida alle homestay locali"],
+  ['06', 'itinerary', "Itinerario Raja Ampat 7-10 giorni: Kri, Gam e Pianemo"],
+  ['07', 'practical-tips', "Consigli essenziali per Raja Ampat: contanti, SIM e attrezzatura"],
 ];
 const tocEs = [
-  ['01', 'getting-there', 'Cómo llegar'], ['02', 'getting-around', 'Traslados en barco'],
-  ['03', 'when-to-go', 'Cuándo ir'], ['04', 'fees', 'Tasas obligatorias'],
-  ['05', 'duration', 'Cuántos días'], ['06', 'see-do', 'Qué ver y hacer'],
-  ['07', 'diving', 'Buceo'], ['08', 'stay', 'Dónde dormir'],
-  ['09', 'experience', 'Oeste + este'], ['10', 'misool', 'Misool'],
-  ['11', 'budget', 'Presupuesto'], ['12', 'ethics', 'Viajar con ética'],
-  ['13', 'tips', 'Consejos prácticos'],
+  ['01', 'what', "¿Qué es y dónde está Raja Ampat, Indonesia?"],
+  ['02', 'cost', "¿Cuánto cuesta un viaje a Raja Ampat para mochileros?"],
+  ['03', 'permits', "Permiso de entrada y tasa PIN del parque marino de Raja Ampat"],
+  ['04', 'how-to-get-there', "Cómo llegar a Raja Ampat: ferris, vuelos y barcos"],
+  ['05', 'where-to-stay', "Dónde alojarse en Raja Ampat: guía de homestays locales"],
+  ['06', 'itinerary', "Itinerario Raja Ampat 7-10 días: Kri, Gam y Pianemo"],
+  ['07', 'practical-tips', "Consejos esenciales para Raja Ampat: efectivo, SIM y equipo"],
 ];
 const toc = (a: string[][]) => a.map(([n, id, label]) => ({ n, id, label }));
 
