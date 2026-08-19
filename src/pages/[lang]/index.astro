@@ -23,26 +23,39 @@ const titles: Record<string, string> = {
   es: 'Lorenzo Macovei — Fotógrafo Sin Fronteras',
 };
 
-// Dati strutturati Person (per la home)
-const jobTitle: Record<string, string> = { en: 'Photographer', it: 'Fotografo', es: 'Fotógrafo' };
+// Dati strutturati Person (entità "brand") per la home
+const jobTitles: Record<string, string[]> = {
+  en: ['Photographer', 'Writer', 'Author'],
+  it: ['Fotografo', 'Scrittore', 'Autore'],
+  es: ['Fotógrafo', 'Escritor', 'Autor'],
+};
+const knowsAbout: Record<string, string[]> = {
+  en: ['Photography', 'Writing', 'Climate activism', 'Travel writing', 'Visual storytelling', 'Creative writing'],
+  it: ['Fotografia', 'Scrittura', 'Attivismo climatico', 'Scrittura di viaggio', 'Narrazione visiva', 'Scrittura creativa'],
+  es: ['Fotografía', 'Escritura', 'Activismo climático', 'Escritura de viajes', 'Narrativa visual', 'Escritura creativa'],
+};
 const personDesc: Record<string, string> = {
-  en: 'Personal website and photography portfolio of Lorenzo Macovei, travel photographer and climate activist.',
-  it: 'Sito personale e portfolio fotografico di Lorenzo Macovei, fotografo di viaggio e attivista climatico.',
-  es: 'Sitio personal y portafolio fotográfico de Lorenzo Macovei, fotógrafo de viajes y activista climático.',
+  en: 'Lorenzo Macovei is a photographer, writer, climate activist and traveler.',
+  it: 'Lorenzo Macovei è fotografo, scrittore, attivista climatico e viaggiatore.',
+  es: 'Lorenzo Macovei es fotógrafo, escritor, activista climático y viajero.',
 };
 const personLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': 'https://lorenzomacovei.com/#person',
   name: 'Lorenzo Macovei',
   url: 'https://lorenzomacovei.com',
   image: 'https://res.cloudinary.com/dligvuje7/image/upload/v1780878455/BE98473E-9543-483E-ABF5-6E8DD9C4EA1D_ttmvum.jpg',
-  jobTitle: jobTitle[lang],
+  jobTitle: jobTitles[lang],
   description: personDesc[lang],
+  knowsAbout: knowsAbout[lang],
   sameAs: [
     'https://www.instagram.com/lorenzomacovei_',
     'https://www.linkedin.com/in/lorenzo-macovei-71ba4a199/',
     'https://www.facebook.com/lorenzo.macovei',
+    'https://medium.com/@lorenzomacovei18',
   ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `https://lorenzomacovei.com/${lang}/` },
 };
 ---
 <Base lang={lang} page="home" title={titles[lang]} description={t.tagline}>
