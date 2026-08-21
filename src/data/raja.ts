@@ -533,8 +533,8 @@ function pairMedia(html: string) {
   // 2b) accoppia il media col paragrafo adiacente in una riga flex (testo
   //     centrato verticalmente): i testi corti non lasciano più spazi vuoti.
   html = html.replace(
-    /(<figure class="rja-float">[\s\S]*?<\/figure>)\s*(<p>(?:(?!<\/p>)[\s\S])*<\/p>)(\s*<details class="tdp-acc">[\s\S]*?<\/details>)?/g,
-    '<div class="rja-side"><div class="rja-side-text">$2$3</div>$1</div>'
+    /(<p>(?:(?!<\/p>)[\s\S])*<\/p>\s*)?(<figure class="rja-float">[\s\S]*?<\/figure>)\s*(<p>(?:(?!<\/p>)[\s\S])*<\/p>)(\s*<details class="tdp-acc">[\s\S]*?<\/details>)?/g,
+    '<div class="rja-side"><div class="rja-side-text">$1$3$4</div>$2</div>'
   );
   // 3) Foto ORIZZONTALI: scenery a tutto schermo (full-bleed)…
   html = html.replace(
