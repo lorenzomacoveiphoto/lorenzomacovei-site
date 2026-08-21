@@ -1076,7 +1076,6 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   /* mostra la striscia categorie su mobile nelle pagine portfolio */
   body.portfolio-mode #mobile-cat-tabs { display: flex; align-items: center; }
 
-  #page-portfolio { padding-top: 115px; } /* nav ~67px + tabs ~43px */
 
   /* cat tabs — fixed strip just below nav, transforms with nav via JS */
   #mobile-cat-tabs {
@@ -1106,8 +1105,8 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   .portfolio-grid {
     columns: 2 !important;
     column-gap: 10px !important;
-    padding: 16px 20px 80px !important;
-    column-fill: auto !important;
+    padding: 110px 20px 80px !important;
+    column-fill: balance !important;
   }
   .pg-item { margin-bottom: 10px !important; display: block !important; break-inside: avoid !important; }
   .col-break { break-before: auto !important; }
