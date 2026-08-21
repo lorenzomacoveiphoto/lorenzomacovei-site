@@ -65,8 +65,8 @@ const en_body = `
 
 <section id="what"><span class="eyebrow">01</span><h2>What &amp; Where is Raja Ampat, Indonesia?</h2>
 <p>On paper Raja Ampat is a scatter of islands off the western edge of West Papua; in the water it becomes something else entirely. Everyone comes for what is <strong>underwater</strong>, and they are right to, mantas, wobbegong sharks, walls of coral, schools so dense they close around you, pygmy seahorses if you know where to look. What caught me off guard was how little it asks to reach all this: the reef often starts a few metres off the beach, or right under the jetty of your homestay, so even snorkelling you are straight into it, though the currents at some sites are serious and want real experience.</p>
-<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p>Above the surface, the image everyone carries of Raja Ampat is <strong>Piaynemo</strong>, the karst viewpoint where turquoise lagoons sit studded with little green islands, seen from a platform at the top of a short, steep climb. For once it is exactly as good as the photographs, and I stayed up there far longer than I meant to.</p>
+<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <div class="tip"><b>Wayag currently closed</b>Wayag is closed to all visitors for now, following local protests tied to disputes over regional mining permits. Check the latest status before planning around it, Piaynemo remains open and is the more accessible viewpoint anyway.</div>
 <p>But the places that stayed with me were not only the postcards. <strong>Arborek</strong> deserves a slow morning on its own, not just a snorkel stop, a small island where daily life goes on around you rather than for you. On Waigeo, <strong>Kali Biru</strong> is a freshwater river so clear it barely looks real, and if you drag yourself up before dawn the guided walks, especially on Batanta, can turn up the Red and Wilson's Birds of Paradise.</p>
 <p>Further south, <strong>Misool</strong> stands apart: dramatic karst rising straight out of the sea, hidden caves, submerged archaeological remains. I have not made it there yet, and that, more than anything, is the reason I already want to go back.</p>
@@ -216,8 +216,8 @@ const it_body = `
 
 <section id="what"><span class="eyebrow">01</span><h2>Cos'è e dove si trova Raja Ampat, Indonesia?</h2>
 <p><strong>Il sottacqua</strong> è il motivo per cui quasi tutti arrivano fin qui: mante, squali wobbegong, banchi fittissimi, pareti di corallo, cavallucci pigmei. Spesso la barriera parte a pochi metri dalla riva o sotto i pontili, quindi lo snorkeling è alla portata anche dei principianti, ma in alcuni siti le correnti richiedono vera esperienza.</p>
-<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p><strong>Piaynemo</strong> è il punto panoramico kárstico simbolo dell'arcipelago, lagune turchesi punteggiate di isolotti viste dall'alto dopo una breve salita ripida.</p>
+<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <div class="tip"><b>Wayag al momento chiusa</b>Wayag è per ora chiusa ai visitatori, dopo proteste locali legate a dispute sui permessi minerari regionali. Verifica lo stato aggiornato prima di pianificarci sopra, Piaynemo resta aperta ed è comunque il belvedere più accessibile.</div>
 <p>Il <strong>villaggio di Arborek</strong> merita una passeggiata lenta, non solo una sosta snorkeling, uno sguardo autentico sulla vita e le tradizioni locali. Sulla terraferma, <strong>Kali Biru</strong> su Waigeo è un fiume d'acqua dolce di una trasparenza sorprendente nella giungla, e le camminate guidate all'alba, soprattutto su Batanta, possono regalare l'Uccello del Paradiso Rosso e quello di Wilson.</p>
 <p>Più a sud, <strong>Misool</strong> è un mondo a parte: karst che emerge dritto dal mare, grotte nascoste e resti archeologici sommersi, un viaggio più lungo, ma un altro volto di Raja Ampat.</p>
@@ -367,8 +367,8 @@ const es_body = `
 
 <section id="what"><span class="eyebrow">01</span><h2>¿Qué es y dónde está Raja Ampat, Indonesia?</h2>
 <p><strong>El fondo marino</strong> es el motivo por el que casi todos vienen: mantas, tiburones wobbegong, cardúmenes densos, paredes de coral, caballitos pigmeos. A menudo el arrecife empieza a metros de la orilla o justo bajo los pontones, así que el snorkel vale también para principiantes, aunque las corrientes en algunos sitios exigen experiencia real.</p>
-<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <p><strong>Piaynemo</strong> tiene el mirador kárstico emblema del archipiélago, lagunas turquesa salpicadas de islotes vistas desde arriba tras una subida corta y empinada.</p>
+<div class="tdp-fig"><video muted loop playsinline src="${M.piaynemo}"></video></div>
 <div class="tip"><b>Wayag cerrada por ahora</b>Wayag está cerrada a los visitantes por ahora, tras protestas locales ligadas a disputas sobre permisos mineros regionales. Comprueba el estado actualizado antes de planificar en torno a ella, Piaynemo sigue abierta y es de todos modos el mirador más accesible.</div>
 <p>El <strong>pueblo de Arborek</strong> merece un paseo tranquilo por sí mismo, no solo una parada de snorkel, una mirada auténtica a la vida y las tradiciones locales. En tierra, <strong>Kali Biru</strong> en Waigeo es un río de agua dulce de una claridad asombrosa en plena selva, y las caminatas guiadas al amanecer, sobre todo en Batanta, pueden dar con el Ave del Paraíso Roja y la de Wilson.</p>
 <p>Más al sur, <strong>Misool</strong> es otro mundo: karst que emerge recto del mar, cuevas ocultas y restos arqueológicos sumergidos, un viaje más largo, pero otra cara de Raja Ampat.</p>
