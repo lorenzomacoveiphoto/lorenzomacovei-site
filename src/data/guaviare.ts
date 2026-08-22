@@ -111,7 +111,7 @@ ${floatVid(M.raudalVid, 'Up the Guayabero river by boat towards the raudal.')}
 </section>
 
 <section id="community"><span class="eyebrow">06</span><h2>Indigenous Communities &amp; Culture in Guaviare</h2>
-<p>The classic loop covers the icons, and covers them well. But the day I keep coming back to was not on the standard itinerary. I asked the person who handles bookings at Geotours whether it would be possible to spend a real day with the indigenous communities of the Guaviare. Not a <em>velada</em> staged for visitors, an hour of dancing laid on and paid for, but an ordinary day, on their terms. He arranged it directly, and the 50€ it cost went to the communities as an offering rather than to an agency.</p>
+<p>The classic loop covers the icons, and covers them well. But the day I keep coming back to was not on the standard itinerary. I asked the person who handles bookings at Geotours whether it would be possible to spend a real day with the indigenous communities of the Guaviare. Not a <em>velada</em> staged for visitors, an hour of dancing laid on and paid for, but an ordinary day, on their terms. He arranged it directly, and the 100€ it cost went to the communities as an offering rather than to an agency.</p>
 <p>What it held was ordinary work, not performance: cassava sieved and toasted into <em>fariña</em>, the coarse flour that anchors daily life here, things made by hand, the slow rhythm of a household going about its day with us in it rather than watching from the outside. That is exactly why it stayed with me. Nothing was staged, and nothing needed to be.</p>
 <div class="tip"><b>How to arrange it</b>Ask for it when you book, and let your operator set it up through the same regulated, community-linked channel that protects everything else here. What you pay goes to the communities directly. Treat the day as a privilege, not a product. It is the single thing that turned a good tour into a trip I won't forget.</div>
 ${wideVid(M.commVid, 'Cassava worked into fariña, the staple that anchors the day.')}
@@ -132,10 +132,10 @@ ${wide(M.herra, 'Sunset over La Herradura Ecolodge', 'Sunset over La Herradura, 
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
 <tr><td>Villavicencio → San José (bus, ~6 h)</td><td class="r">26€</td></tr>
 <tr><td>Geotours 3-day tour, all inclusive</td><td class="r">400€</td></tr>
-<tr><td>Extra day · communities (offering)</td><td class="r">50€</td></tr>
+<tr><td>Extra day · communities (offering)</td><td class="r">100€</td></tr>
 <tr><td>Hotel Garden House (1 night)</td><td class="r">18€</td></tr>
-<tr class="total"><td>Total</td><td class="r big">554€</td></tr></table>
-<p>Meals on the tour days are covered by La Herradura's half board, so extras on the ground come down to food and drinks in town. These are the prices I paid when I went; the tour was booked directly with Geotours del Guaviare. Around 550€ door to door, most of it the package, for four guided days in one of the regions of Colombia hardest to reach on your own.</p>
+<tr class="total"><td>Total</td><td class="r big">604€</td></tr></table>
+<p>Meals on the tour days are covered by La Herradura's half board, so extras on the ground come down to food and drinks in town. These are the prices I paid when I went; the tour was booked directly with Geotours del Guaviare. Around 600€ door to door, most of it the package, for four guided days in one of the regions of Colombia hardest to reach on your own.</p>
 </section>
 
 <section id="tips" style="border-bottom:0"><span class="eyebrow">09</span><h2>Guaviare Travel Tips: Know Before You Go</h2>
@@ -221,7 +221,7 @@ ${floatVid(M.raudalVid, 'Su per il fiume Guayabero in barca, verso il raudal.')}
 </section>
 
 <section id="community"><span class="eyebrow">06</span><h2>Comunità indigene e cultura nel Guaviare</h2>
-<p>Il circuito classico copre le icone, e le copre bene. Ma la giornata a cui torno col pensiero non era nell'itinerario standard. Ho chiesto alla persona che gestisce le prenotazioni di Geotours se fosse possibile passare una giornata vera con le comunità indigene del Guaviare. Non una <em>velada</em> messa in scena per i visitatori, un'ora di danze organizzata e pagata, ma una giornata ordinaria, alle loro condizioni. Ha organizzato tutto direttamente, e i 50€ che è costata sono andati alle comunità come offerta, non a un'agenzia.</p>
+<p>Il circuito classico copre le icone, e le copre bene. Ma la giornata a cui torno col pensiero non era nell'itinerario standard. Ho chiesto alla persona che gestisce le prenotazioni di Geotours se fosse possibile passare una giornata vera con le comunità indigene del Guaviare. Non una <em>velada</em> messa in scena per i visitatori, un'ora di danze organizzata e pagata, ma una giornata ordinaria, alle loro condizioni. Ha organizzato tutto direttamente, e i 100€ che è costata sono andati alle comunità come offerta, non a un'agenzia.</p>
 <p>Quello che ha offerto era lavoro ordinario, non uno spettacolo: la cassava setacciata e tostata in <em>fariña</em>, la farina grezza attorno a cui ruota la vita quotidiana qui, cose fatte a mano, il ritmo lento di una casa che va avanti con la sua giornata, con noi dentro e non a guardare da fuori. È proprio per questo che mi è rimasta. Niente era messo in scena, e non ce n'era bisogno.</p>
 <div class="tip"><b>Come organizzarla</b>Chiedila al momento della prenotazione, e lascia che il tuo operatore la imposti attraverso lo stesso canale regolato e legato alle comunità che protegge tutto il resto qui. Quello che paghi va direttamente alle comunità. Trattala come un privilegio, non un prodotto. È la cosa che ha trasformato un buon tour in un viaggio che non dimenticherò.</div>
 ${wideVid(M.commVid, "La cassava lavorata in fariña, l'alimento base attorno a cui ruota la giornata.")}
@@ -242,10 +242,10 @@ ${wide(M.herra, 'Tramonto su La Herradura Ecolodge', "Tramonto su La Herradura, 
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
 <tr><td>Villavicencio → San José (bus, ~6 h)</td><td class="r">26€</td></tr>
 <tr><td>Tour Geotours 3 giorni, tutto incluso</td><td class="r">400€</td></tr>
-<tr><td>Giorno extra · comunità (offerta)</td><td class="r">50€</td></tr>
+<tr><td>Giorno extra · comunità (offerta)</td><td class="r">100€</td></tr>
 <tr><td>Hotel Garden House (1 notte)</td><td class="r">18€</td></tr>
-<tr class="total"><td>Totale</td><td class="r big">554€</td></tr></table>
-<p>I pasti nei giorni di tour sono coperti dalla mezza pensione di La Herradura, quindi gli extra sul posto si riducono a cibo e bevande in città. Questi sono i prezzi che ho pagato quando ci sono stato; il tour è stato prenotato direttamente con Geotours del Guaviare. Circa 550€ porta a porta, per lo più il pacchetto, per quattro giorni guidati in una delle regioni della Colombia più difficili da raggiungere da soli.</p>
+<tr class="total"><td>Totale</td><td class="r big">604€</td></tr></table>
+<p>I pasti nei giorni di tour sono coperti dalla mezza pensione di La Herradura, quindi gli extra sul posto si riducono a cibo e bevande in città. Questi sono i prezzi che ho pagato quando ci sono stato; il tour è stato prenotato direttamente con Geotours del Guaviare. Circa 600€ porta a porta, per lo più il pacchetto, per quattro giorni guidati in una delle regioni della Colombia più difficili da raggiungere da soli.</p>
 </section>
 
 <section id="tips" style="border-bottom:0"><span class="eyebrow">09</span><h2>Consigli di viaggio per il Guaviare: da sapere prima di partire</h2>
@@ -331,7 +331,7 @@ ${floatVid(M.raudalVid, 'Río Guayabero arriba en lancha, hacia el raudal.')}
 </section>
 
 <section id="community"><span class="eyebrow">06</span><h2>Comunidades indígenas y cultura en el Guaviare</h2>
-<p>El circuito clásico cubre los iconos, y los cubre bien. Pero el día al que sigo volviendo no estaba en el itinerario estándar. Le pregunté a la persona que lleva las reservas de Geotours si sería posible pasar un día real con las comunidades indígenas del Guaviare. No una <em>velada</em> montada para visitantes, una hora de danzas preparada y pagada, sino un día corriente, en sus términos. Lo organizó directamente, y los 50€ que costó fueron a las comunidades como ofrenda, no a una agencia.</p>
+<p>El circuito clásico cubre los iconos, y los cubre bien. Pero el día al que sigo volviendo no estaba en el itinerario estándar. Le pregunté a la persona que lleva las reservas de Geotours si sería posible pasar un día real con las comunidades indígenas del Guaviare. No una <em>velada</em> montada para visitantes, una hora de danzas preparada y pagada, sino un día corriente, en sus términos. Lo organizó directamente, y los 100€ que costó fueron a las comunidades como ofrenda, no a una agencia.</p>
 <p>Lo que ofreció fue trabajo corriente, no un espectáculo: la yuca cernida y tostada en <em>fariña</em>, la harina gruesa en torno a la que gira la vida diaria aquí, cosas hechas a mano, el ritmo lento de una casa haciendo su día con nosotros dentro y no mirando desde fuera. Por eso mismo se me quedó grabado. Nada estaba montado, y no hacía falta que lo estuviera.</p>
 <div class="tip"><b>Cómo organizarlo</b>Pídelo al reservar, y deja que tu operador lo monte por el mismo canal regulado y ligado a las comunidades que protege todo lo demás aquí. Lo que pagas va directo a las comunidades. Trátalo como un privilegio, no un producto. Es lo único que convirtió un buen tour en un viaje que no olvidaré.</div>
 ${wideVid(M.commVid, 'La yuca trabajada en fariña, el alimento básico en torno al que gira el día.')}
@@ -352,10 +352,10 @@ ${wide(M.herra, 'Atardecer sobre La Herradura Ecolodge', 'Atardecer sobre La Her
 <tr><td>Cali → Villavicencio (Clic Air)</td><td class="r">60€</td></tr>
 <tr><td>Villavicencio → San José (bus, ~6 h)</td><td class="r">26€</td></tr>
 <tr><td>Tour Geotours 3 días, todo incluido</td><td class="r">400€</td></tr>
-<tr><td>Día extra · comunidades (ofrenda)</td><td class="r">50€</td></tr>
+<tr><td>Día extra · comunidades (ofrenda)</td><td class="r">100€</td></tr>
 <tr><td>Hotel Garden House (1 noche)</td><td class="r">18€</td></tr>
-<tr class="total"><td>Total</td><td class="r big">554€</td></tr></table>
-<p>Las comidas en los días de tour las cubre la media pensión de La Herradura, así que los extras sobre el terreno se reducen a comida y bebidas en el pueblo. Estos son los precios que pagué cuando fui; el tour se reservó directamente con Geotours del Guaviare. Unos 550€ puerta a puerta, la mayoría el paquete, por cuatro días guiados en una de las regiones de Colombia más difíciles de alcanzar por tu cuenta.</p>
+<tr class="total"><td>Total</td><td class="r big">604€</td></tr></table>
+<p>Las comidas en los días de tour las cubre la media pensión de La Herradura, así que los extras sobre el terreno se reducen a comida y bebidas en el pueblo. Estos son los precios que pagué cuando fui; el tour se reservó directamente con Geotours del Guaviare. Unos 600€ puerta a puerta, la mayoría el paquete, por cuatro días guiados en una de las regiones de Colombia más difíciles de alcanzar por tu cuenta.</p>
 </section>
 
 <section id="tips" style="border-bottom:0"><span class="eyebrow">09</span><h2>Consejos de viaje para el Guaviare: antes de ir</h2>
