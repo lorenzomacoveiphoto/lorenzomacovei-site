@@ -1581,3 +1581,8 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 #journal-post-wtrek .rf-op .acc-body .rf-intro{color:var(--paper);border-left:2px solid var(--accent);padding-left:14px}
 #journal-post-wtrek .rf-op .rf-fac{font-size:13px;white-space:nowrap;letter-spacing:2px;margin:0 4px;vertical-align:middle}
 #journal-post-wtrek .rf-op .rf-meals{margin-top:8px;font-size:14px;color:var(--paper-dim)}
+
+/* ── Scroll-reveal (motion) — applicato alle guide via JS (IntersectionObserver) ── */
+.rise{ opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s ease; }
+.rise.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){ .rise{ opacity:1; transform:none; transition:none; } }

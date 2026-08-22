@@ -189,5 +189,25 @@ const pages = [
         }
       })();
     </script>
+
+    <script is:inline>
+      /* Scroll-reveal sulle guide: fade + slide-up al primo ingresso in viewport */
+      (function () {
+        var root = document.getElementById('journal-post-wtrek');
+        if (!root || !('IntersectionObserver' in window)) return;
+        var sel = 'p, .lead, .pull, h2, h3, ul, table, figure, details, .tip, .facts, .toc, .rja-side, .rja-wide, .rja-bleed, .rf-grid, .rja-panel, .rja-cols, .day, .tdp-gallery, .guide-cards-wrap';
+        var all = Array.prototype.slice.call(root.querySelectorAll(sel));
+        var els = all.filter(function (el) { return !all.some(function (o) { return o !== el && o.contains(el); }); });
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        els.forEach(function (el) {
+          if (el.getBoundingClientRect().top < vh * 0.9) return; /* già in vista: niente flash */
+          el.classList.add('rise');
+          io.observe(el);
+        });
+      })();
+    </script>
   </body>
 </html>
