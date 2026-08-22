@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import i18nData from '../../../data/i18n.json';
-import { articles, byDateDesc, articlePath } from '../../../data/journal';
+import { articles, byGuideOrder, articlePath } from '../../../data/journal';
 
 const i18n = i18nData as Record<string, Record<string, string>>;
 
@@ -11,7 +11,7 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = i18n[lang];
-const list = articles.filter((a) => a.type === 'guide').sort(byDateDesc);
+const list = articles.filter((a) => a.type === 'guide').sort(byGuideOrder);
 const tabStyle = 'text-decoration:none;';
 ---
 <Base lang={lang} page="journal" title={`${t.journal_tab_guides} — ${t.nav_journal} — Lorenzo Macovei`} description={t.journal_sub ?? ''}>

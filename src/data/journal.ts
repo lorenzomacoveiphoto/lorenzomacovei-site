@@ -104,6 +104,11 @@ export const articles: Article[] = [
 
 export const byDateDesc = (a: Article, b: Article) => (a.date < b.date ? 1 : -1);
 
+// Ordine di visualizzazione delle guide (non cronologico, scelto a mano).
+export const guideOrder = ['raja-ampat', 'w-trek', 'guaviare'];
+export const byGuideOrder = (a: Article, b: Article) =>
+  guideOrder.indexOf(a.id) - guideOrder.indexOf(b.id);
+
 // URL localizzato di un articolo in una lingua.
 export const articlePath = (a: Article, lang: Lang) => `/${lang}/journal/${a.slugs[lang]}`;
 

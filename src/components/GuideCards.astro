@@ -1,11 +1,11 @@
 ---
-import { articles, articlePath, type Lang } from '../data/journal';
+import { articles, articlePath, byGuideOrder, type Lang } from '../data/journal';
 import i18n from '../data/i18n.json';
 
 interface Props { lang: Lang; excludeId?: string; heading?: string; limit?: number; }
 const { lang, excludeId, heading, limit } = Astro.props;
 const t = (i18n as Record<string, Record<string, string>>)[lang] ?? {};
-let guides = articles.filter((a) => a.type === 'guide' && a.id !== excludeId);
+let guides = articles.filter((a) => a.type === 'guide' && a.id !== excludeId).sort(byGuideOrder);
 if (limit) guides = guides.slice(0, limit);
 
 const readLabel = ({ en: 'Read the guide', it: 'Leggi la guida', es: 'Leer la guía' } as Record<Lang, string>)[lang];
