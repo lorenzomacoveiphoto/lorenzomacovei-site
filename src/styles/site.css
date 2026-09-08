@@ -336,7 +336,9 @@ body { overflow-x: hidden; }
 
 /* ── PORTFOLIO GRID — structured alternating layout ── */
 .portfolio-grid {
-  padding: 5vw 5vw 80px 32px;
+  /* Il padding-top deve superare la nav fissa (~76px), altrimenti su desktop
+     stretti (dove 5vw < 76px) la prima riga finisce sotto la barra delle voci. */
+  padding: max(5vw, 92px) 5vw 80px 32px;
   columns: 3;
   column-gap: 18px;
 }

@@ -1,0 +1,118 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esempio esteso — font su tutto il sito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0a0a;--ink:#171614;--text:#f0ece4;--dim:rgba(240,236,228,.72);--muted:rgba(240,236,228,.42);--acc:#C56A45;--line:rgba(255,255,255,.09);--inter:'Inter',system-ui,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Open Sans',system-ui,sans-serif}
+  .tag-page{font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--acc);padding:8px 40px;border-bottom:1px solid var(--line);background:#000}
+  section{border-bottom:1px solid var(--line);padding:56px 40px}
+  .wrap{max-width:1040px;margin:0 auto}
+  /* ---- NAV ---- */
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid var(--line)}
+  .logo{font-family:var(--inter);font-weight:400;font-size:14px;letter-spacing:.22em;text-transform:uppercase}
+  .menu{display:flex;gap:24px;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+  /* ---- HOME (INVARIATA) ---- */
+  .home{text-align:center;padding:70px 24px}
+  .svgname{display:flex;justify-content:center;align-items:center;gap:26px;margin-bottom:16px}
+  .svgname i{display:block;background:#fff;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain}
+  .svgname .l{height:64px;aspect-ratio:1473.39/278.55;-webkit-mask-image:url(/lorenzo.svg);mask-image:url(/lorenzo.svg)}
+  .svgname .m{height:64px;aspect-ratio:1473.09/324.9;-webkit-mask-image:url(/macovei.svg);mask-image:url(/macovei.svg)}
+  .home .tg{font-family:var(--inter);font-weight:300;font-size:14px;letter-spacing:.06em;color:var(--dim)}
+  .keep{font-family:'Oswald',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+  /* ---- generic new-font blocks ---- */
+  .lbl{font-family:'Oswald',sans-serif;font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+  h2.big{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(26px,4vw,40px);text-transform:uppercase;letter-spacing:.02em;margin-bottom:14px}
+  .italic{font-family:'Lora',serif;font-style:italic;color:var(--dim)}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:24px}
+  .thumb{aspect-ratio:4/3;background:linear-gradient(135deg,#2a2622,#3a332c);border-radius:8px;display:flex;align-items:flex-end;padding:14px}
+  .thumb span{font-family:'Lora',serif;font-style:italic;font-size:15px;color:#fff}
+  .cats{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+  .cat{font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .cat.on{color:var(--acc)}
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .bio-head{font-family:'Lora',serif;font-style:italic;font-size:clamp(19px,2.4vw,27px);color:rgba(240,236,228,.92);line-height:1.3;margin-bottom:14px}
+  .bio-center{font-family:'Oswald',sans-serif;font-weight:600;font-size:34px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+  .bio-body{font-family:'Open Sans',sans-serif;font-size:15px;line-height:1.85;color:rgba(240,236,228,.85);border-left:2px solid var(--acc);padding-left:16px;margin-bottom:14px}
+  .roles{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:24px}
+  .card .meta{font-family:'Oswald',sans-serif;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+  .card .t{font-family:'Oswald',sans-serif;font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.02em;line-height:1.2;margin-bottom:10px}
+  .card .ex{font-family:'Open Sans',sans-serif;font-size:14px;line-height:1.7;color:var(--dim);margin-bottom:14px}
+  .card .r{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+  /* contact */
+  .form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px;max-width:620px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field span{font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .field .in{border:1px solid var(--line);border-radius:6px;padding:12px;font-family:'Open Sans',sans-serif;font-size:14px;color:var(--dim)}
+  .btn{font-family:'Oswald',sans-serif;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#000;background:var(--acc);border:0;border-radius:6px;padding:13px 22px;justify-self:start}
+</style></head>
+<body>
+
+<div class="nav">
+  <span class="logo">Borderless Photographer</span>
+  <span class="menu"><span>Home</span><span>Portfolio</span><span>Journal</span><span>About</span></span>
+</div>
+
+<div class="tag-page">01 · Homepage — INVARIATA (logotipo SVG, font attuale)</div>
+<div class="home">
+  <div class="svgname"><i class="l"></i><i class="m"></i></div>
+  <div class="tg">Borderless Photographer</div>
+  <div class="keep">Questo blocco resta esattamente com'è ora — non lo tocco</div>
+</div>
+
+<div class="tag-page">02 · Portfolio — indice</div>
+<section><div class="wrap">
+  <div class="lbl">Portfolio</div>
+  <h2 class="big">Selected Work</h2>
+  <p class="italic">Four bodies of work, shot on the ground across five continents.</p>
+  <div class="cats"><span class="cat on">Nature</span><span class="cat">People</span><span class="cat">Places</span><span class="cat">Climate</span></div>
+  <div class="grid3">
+    <div class="thumb"><span>Manta Ray, Raja Ampat</span></div>
+    <div class="thumb"><span>Cerro Azul, Guaviare</span></div>
+    <div class="thumb"><span>Torres del Paine</span></div>
+  </div>
+</div></section>
+
+<div class="tag-page">03 · About</div>
+<section><div class="wrap"><div class="about">
+  <div>
+    <div class="bio-head">Photography that goes where the road ends.</div>
+    <div class="bio-body">I photograph remote places and the people who call them home — from the reefs of Raja Ampat to the rock art of the Guaviare. The work sits between documentary and landscape, always shot on the ground, never staged.</div>
+    <div class="roles">Photographer · Writer · Climate activist · Traveler</div>
+  </div>
+  <div>
+    <div class="lbl">About</div>
+    <div class="bio-center">Lorenzo</div>
+    <p class="italic" style="font-size:17px">“The edges of the map are where the real stories live.”</p>
+  </div>
+</div></div></section>
+
+<div class="tag-page">04 · Journal — indice storie/guide</div>
+<section><div class="wrap">
+  <div class="lbl">Journal · Guides</div>
+  <h2 class="big">Field Guides</h2>
+  <div class="cards">
+    <div class="card"><div class="meta">Guide · Colombia</div><div class="t">Guaviare Complete Guide</div><div class="ex">When to go, how to get there, and why this frontier is worth the effort.</div><div class="r">Read the guide →</div></div>
+    <div class="card"><div class="meta">Guide · Indonesia</div><div class="t">Raja Ampat for Backpackers</div><div class="ex">Budget, homestays and a 7–10 day route through the Four Kings.</div><div class="r">Read the guide →</div></div>
+  </div>
+</div></section>
+
+<div class="tag-page">05 · Contatti</div>
+<section><div class="wrap">
+  <div class="lbl">Get in touch</div>
+  <h2 class="big">Work With Me</h2>
+  <p class="italic">Assignments, prints and collaborations.</p>
+  <div class="form">
+    <div class="field"><span>Name</span><div class="in">Your name</div></div>
+    <div class="field"><span>Email</span><div class="in">you@email.com</div></div>
+    <div class="field" style="grid-column:1/3"><span>Message</span><div class="in" style="min-height:80px">…</div></div>
+    <button class="btn">Send message</button>
+  </div>
+</div></section>
+
+</body></html>

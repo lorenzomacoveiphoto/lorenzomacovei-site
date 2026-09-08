@@ -3,7 +3,7 @@
     <div class="lb-click-prev" onclick="lbNav(-1)"></div>
     <div class="lb-click-next" onclick="lbNav(1)"></div>
     <img id="lbImg" src="" alt="" />
-    <video id="lbVideo" controls playsinline loop style="display:none;"></video>
+    <video id="lbVideo" playsinline loop muted autoplay style="display:none;"></video>
     <div class="lb-caption">
       <span class="lb-caption-name" id="lbName"></span>
       <span class="lb-caption-loc" id="lbLoc"></span>
@@ -56,6 +56,8 @@
         img.style.display = 'none';
         vid.style.display = 'block';
         vid.src = src;
+        vid.muted = true;          // indispensabile per l'autoplay in loop su mobile
+        vid.loop = true;
         var p = vid.play(); if (p && p.catch) p.catch(function () {});
       } else {
         vid.pause();

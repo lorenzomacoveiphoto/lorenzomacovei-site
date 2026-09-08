@@ -35,6 +35,26 @@ const { items } = Astro.props as { items: Item[] };
     position: relative;
     overflow: hidden;
   }
+  /* La cornice intera entra da sotto (slide-up + fade). La foto ci si
+     dissolve dentro come prima, indipendentemente da questo movimento. */
+  .portfolio-grid .pg-item.pg-rise {
+    opacity: 0 !important;
+    transform: translateY(46px) !important;
+    transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+    will-change: opacity, transform;
+  }
+  .portfolio-grid .pg-item.pg-rise.pg-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .portfolio-grid .pg-item.pg-rise {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
   .portfolio-grid .pg-media {
     width: 100%;
     height: 100%;
@@ -81,5 +101,39 @@ const { items } = Astro.props as { items: Item[] };
       }
     });
     [].forEach.call(grid.querySelectorAll('video.pg-media'), function (v) { v.classList.add('loaded'); });
+
+    // La CORNICE entra da sotto (slide-up + fade). Indipendente dalla dissolvenza
+    // della foto qui sopra: prima la cornice sale in posizione, poi la foto ci si
+    // dissolve dentro come sempre. Sopra la piega: entra al load, a cascata.
+    // Sotto la piega: entra quando scrolli fin lì (IntersectionObserver).
+    var items = [].slice.call(grid.querySelectorAll('.pg-item'));
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (it) { it.classList.add('pg-rise', 'pg-in'); });
+    } else {
+      items.forEach(function (it) { it.classList.add('pg-rise'); });
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('pg-in'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
+      var nAbove = 0;
+      items.forEach(function (it) {
+        if (it.getBoundingClientRect().top < vh) {   // già in vista: entra subito, a cascata
+          it.style.transitionDelay = Math.min(nAbove * 70, 500) + 'ms';
+          nAbove++;
+        } else {                                     // sotto la piega: entra allo scroll
+          io.observe(it);
+        }
+      });
+      // doppio rAF: fa dipingere lo stato iniziale (.pg-rise) prima di rivelare,
+      // così la transizione parte davvero anche per le cornici già in vista.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          items.forEach(function (it) {
+            if (it.getBoundingClientRect().top < vh) it.classList.add('pg-in');
+          });
+        });
+      });
+    }
   })();
 </script>
