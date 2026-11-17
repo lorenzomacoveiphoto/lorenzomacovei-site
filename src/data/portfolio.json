@@ -151,14 +151,14 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965466/IMG_0180_2_ttkrnu.jpg",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794898851/69A2472F-CBC1-4FFD-A943-D4E7206657B0_1_201_a_ru96x6.jpg",
       "name": "The Weight of Silk",
       "loc": "People · Japan",
       "category": "people",
       "location": "Japan",
       "w": 1280,
       "h": 1920,
-      "color": "#4a3d48"
+      "color": "#2b2b2b"
     },
     {
       "type": "image",
@@ -170,17 +170,6 @@
       "w": 3264,
       "h": 4896,
       "color": "#38474e"
-    },
-    {
-      "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780967398/IMG_9823_edit_lg2go5.jpg",
-      "name": "Casting Light",
-      "loc": "People · Japan",
-      "category": "people",
-      "location": "Japan",
-      "w": 3264,
-      "h": 4896,
-      "color": "#4a4038"
     },
     {
       "type": "image",
@@ -206,25 +195,14 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872224/IMG_9603_i9bik4.jpg",
-      "name": "The Last Pages",
-      "loc": "People · Japan",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965571/000054_lbcgxn.jpg",
+      "name": "Between Tides",
+      "loc": "People · Thailand",
       "category": "people",
-      "location": "Japan",
-      "w": 3264,
-      "h": 4896,
-      "color": "#3f3f4c"
-    },
-    {
-      "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965533/2025-09-12_18-03-46_0384_cqa9tf.jpg",
-      "name": "Market Hours",
-      "loc": "People · Vietnam",
-      "category": "people",
-      "location": "Vietnam",
-      "w": 3636,
-      "h": 2350,
-      "color": "#4e4636"
+      "location": "Thailand",
+      "w": 1628,
+      "h": 2433,
+      "color": "#463a3a"
     },
     {
       "type": "image",
@@ -239,21 +217,21 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965571/000054_lbcgxn.jpg",
-      "name": "Between Tides",
-      "loc": "People · Thailand",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872224/IMG_9603_i9bik4.jpg",
+      "name": "The Last Pages",
+      "loc": "People · Japan",
       "category": "people",
-      "location": "Thailand",
-      "w": 1628,
-      "h": 2433,
-      "color": "#463a3a"
+      "location": "Japan",
+      "w": 3264,
+      "h": 4896,
+      "color": "#3f3f4c"
     },
     {
       "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965636/0017__nwduae.jpg",
       "name": "Window Seat",
-      "loc": "People · India",
-      "category": "people",
+      "loc": "Places · India",
+      "category": "places",
       "location": "India",
       "w": 3090,
       "h": 2048,
@@ -263,8 +241,8 @@
       "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965645/IMG_7144_2_n91ush.jpg",
       "name": "Folding the Sky",
-      "loc": "People · Egypt",
-      "category": "people",
+      "loc": "Places · Egypt",
+      "category": "places",
       "location": "Egypt",
       "w": 1149,
       "h": 890,
@@ -280,28 +258,6 @@
       "w": 1219,
       "h": 1699,
       "color": "#3a4a45"
-    },
-    {
-      "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781044218/IMG_4297_svp4oa.jpg",
-      "name": "Still Together",
-      "loc": "People · Europe",
-      "category": "people",
-      "location": "Europe",
-      "w": 3024,
-      "h": 2933,
-      "color": "#4a3d48"
-    },
-    {
-      "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965656/0026__grdoop.jpg",
-      "name": "A Vintage Excitement",
-      "loc": "People · India",
-      "category": "people",
-      "location": "India",
-      "w": 2764,
-      "h": 1832,
-      "color": "#38474e"
     },
     {
       "type": "image",
@@ -327,11 +283,11 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872653/IMG_1716_mo4npi.jpg",
-      "name": "Drift",
-      "loc": "Places · Amazon",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983380/IMG_7604_kytett.jpg",
+      "name": "Wired",
+      "loc": "Places · Buenos Aires",
       "category": "places",
-      "location": "Amazon",
+      "location": "Buenos Aires",
       "w": 3264,
       "h": 4896,
       "color": "#48383f"
@@ -448,11 +404,11 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983380/IMG_7604_kytett.jpg",
-      "name": "Wired",
-      "loc": "Places · Buenos Aires",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872653/IMG_1716_mo4npi.jpg",
+      "name": "Drift",
+      "loc": "Places · Amazon",
       "category": "places",
-      "location": "Buenos Aires",
+      "location": "Amazon",
       "w": 3264,
       "h": 4896,
       "color": "#48383f"
@@ -549,8 +505,8 @@
       "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794895432/DSCF8973_xki9tm.jpg",
       "name": "Grounding the Dawn",
-      "loc": "People · Egypt",
-      "category": "people",
+      "loc": "Places · Egypt",
+      "category": "places",
       "location": "Egypt",
       "w": 4896,
       "h": 3264,
@@ -604,8 +560,8 @@
       "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894506/DSCF9266_2_gthnzy.jpg",
       "name": "Borrowed Dynasty",
-      "loc": "People · China",
-      "category": "people",
+      "loc": "Places · China",
+      "category": "places",
       "location": "China",
       "w": 3499,
       "h": 2332,

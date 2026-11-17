@@ -29,7 +29,8 @@ body { font-family: var(--body); font-size: 12px; font-weight: 400; }
   position: fixed; top: 0; left: 0; right: 0; z-index: 400;
   display: flex; align-items: center; justify-content: space-between;
   padding: 30px 40px;
-  transition: background 0.5s, border-color 0.5s, padding 0.4s, opacity 0.3s ease;
+  transition: background 0.5s, border-color 0.5s, padding 0.4s, opacity 0.3s ease,
+              transform 0.4s cubic-bezier(0.22,1,0.36,1);
   border-bottom: 1px solid transparent;
   pointer-events: all;
 }
@@ -68,9 +69,17 @@ body.portfolio-mode #top-nav {
   pointer-events: all;
   background: rgba(10,10,10,0.94);
   backdrop-filter: blur(14px);
-  transform: none !important;   /* la nav non si nasconde mai nel portfolio */
+  /* la nav può nascondersi scorrendo (hide-on-scroll via .nav-hidden) */
 }
-body.portfolio-mode .top-nav-left { opacity: 0; pointer-events: none; }
+/* portfolio: barra in alto in stile "top nav" (niente sidebar fissa che ruba
+   spazio alle foto). Il logo LORENZO MACOVEI resta a sinistra, esteso su una
+   riga, con la tagline su una riga; i link pagina restano a destra. */
+body.portfolio-mode .top-nav-left { opacity: 1; pointer-events: auto; }
+body.portfolio-mode .top-logo { opacity: 1 !important; transform: none !important; white-space: nowrap; gap: 0.5em; }
+body.portfolio-mode .top-logo .lm-w { height: 20px; }
+body.portfolio-mode .top-tagline { opacity: 1 !important; white-space: nowrap; font-size: 9px; }
+/* portfolio: nessun selettore lingua EN/IT/ES nella barra */
+body.portfolio-mode #lang-switcher { display: none !important; }
 
 /* articolo aperto: la nav lascia il posto alla barra "torna al journal" */
 body.article-open #top-nav { opacity: 0; pointer-events: none; }
@@ -87,7 +96,8 @@ body.article-open #top-nav { opacity: 0; pointer-events: none; }
   border-right: none;
   transform: translateX(-100%);
 }
-body.portfolio-mode #sidebar { transform: translateX(0); }
+/* sidebar rimossa dal portfolio desktop: la nav sta tutta in alto */
+body.portfolio-mode #sidebar { display: none; }
 
 .sidebar-name {
   font-family: var(--display);
@@ -151,7 +161,7 @@ body.portfolio-mode #sidebar { transform: translateX(0); }
   position: relative;
   transition: margin-left 0.55s cubic-bezier(0.22,1,0.36,1);
 }
-body.portfolio-mode #main { margin-left: 240px; }
+body.portfolio-mode #main { margin-left: 0; }
 
 /* Ingresso pagina: leggera dissolvenza + entrata laterale ad ogni cambio pagina.
    È un'animazione d'ingresso del contenuto (non un cross-fade tra documenti),
@@ -336,9 +346,9 @@ body { overflow-x: hidden; }
 
 /* ── PORTFOLIO GRID — structured alternating layout ── */
 .portfolio-grid {
-  /* Il padding-top deve superare la nav fissa (~76px), altrimenti su desktop
-     stretti (dove 5vw < 76px) la prima riga finisce sotto la barra delle voci. */
-  padding: max(5vw, 92px) 5vw 80px 32px;
+  /* desktop: griglia a tutta larghezza (niente sidebar). Il padding-top libera
+     la top-nav fissa + la barra categorie sottostante. */
+  padding: 144px 24px 80px 24px;
   columns: 3;
   column-gap: 18px;
 }
@@ -830,7 +840,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   #top-nav.nav-hidden { transform: translateY(-100%); opacity: 0; }
   #top-nav.scrolled { padding: 16px 20px; border-bottom: none; }
   .top-logo { opacity: 1 !important; transform: none !important; font-size: 12px; }
-  .top-tagline { opacity: 1 !important; display: block !important; font-size: 7px; }
+  .top-tagline { display: none !important; } /* mobile: niente "Borderless Photographer" sotto il logo */
   .top-nav-links { display: none; }
 
   /* ── Mobile menu — serif italic, bigger ── */
@@ -1083,7 +1093,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   #mobile-cat-tabs {
     display: none;
     position: fixed;
-    top: 67px; left: 0; right: 0;
+    top: 52px; left: 0; right: 0;   /* subito sotto la nav (53px) — niente gap */
     z-index: 398;
     background: rgba(10,10,10,0.94);
     backdrop-filter: blur(14px);
@@ -1091,8 +1101,11 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
     padding: 0 20px;
     border: none;
     will-change: transform;
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
     -webkit-overflow-scrolling: touch;
   }
+  /* hide-on-scroll: scende -> sparisce in alto; sale -> riappare */
+  #mobile-cat-tabs.cat-hidden { transform: translateY(calc(-100% - 60px)); }
   #mobile-cat-tabs::-webkit-scrollbar { display: none; }
   .mobile-cat-tab {
     display: inline-block;
@@ -1107,7 +1120,9 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   .portfolio-grid {
     columns: 2 !important;
     column-gap: 10px !important;
-    padding: 110px 20px 80px !important;
+    /* foto a filo dei bordi schermo: nessun padding laterale, solo il gap
+       tra le due colonne e il top per nav + barra categorie */
+    padding: 110px 0 80px !important;
     column-fill: balance !important;
   }
   .pg-item { margin-bottom: 10px !important; display: block !important; break-inside: avoid !important; }
@@ -1278,7 +1293,28 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
 @media (min-width: 769px) {
   #hamburger { display: none; }
   #mobile-menu { display: none !important; }
-  #mobile-cat-tabs { display: none !important; } /* desktop: always hidden */
+  #mobile-cat-tabs { display: none !important; } /* desktop: nascosta, tranne nel portfolio (sotto) */
+  /* portfolio desktop: barra categorie orizzontale attaccata alla top-nav */
+  body.portfolio-mode #mobile-cat-tabs {
+    display: flex !important; align-items: center; justify-content: center; gap: 10px;
+    position: fixed; top: 80px; left: 0; right: 0; z-index: 398;
+    background: rgba(10,10,10,0.94); backdrop-filter: blur(14px);
+    padding: 12px 40px;
+    will-change: transform;
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
+  }
+  /* hide-on-scroll anche su desktop: nav + barra categorie scompaiono
+     scorrendo in basso e riappaiono scorrendo in alto */
+  body.portfolio-mode #top-nav.nav-hidden { transform: translateY(-100%); opacity: 0; }
+  body.portfolio-mode #mobile-cat-tabs.cat-hidden { transform: translateY(calc(-100% - 90px)); }
+  body.portfolio-mode #mobile-cat-tabs .mobile-cat-tab {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--text3); cursor: pointer;
+    padding: 4px 16px; text-decoration: none; white-space: nowrap;
+    transition: color 0.2s;
+  }
+  body.portfolio-mode #mobile-cat-tabs .mobile-cat-tab:hover,
+  body.portfolio-mode #mobile-cat-tabs .mobile-cat-tab.active { color: var(--text); }
   .mobile-bio-text, .mobile-bio-photo, .mobile-bio-contact { display: none !important; }
   .mobile-bio-combined, .mobile-home-contact { display: none !important; }
   .m-about-scroll-page { display: none !important; }

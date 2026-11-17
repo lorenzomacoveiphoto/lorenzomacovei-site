@@ -179,6 +179,13 @@ const personLd = {
             topNav && topNav.classList.add('scrolled');
             var bi = document.getElementById('bioInner');
             bi && bi.classList.add('visible');
+          } else if (id === 'mobileBioCombined') {
+            // scena bio mobile: rivela foto + testo (classe in-bio prevista dal CSS)
+            heroBg && heroBg.classList.remove('bright');
+            s2Inner && s2Inner.classList.remove('visible');
+            topNav && topNav.classList.add('scrolled');
+            e.target.classList.add('in-bio');
+            e.target.classList.remove('out-bio');
           } else {
             topNav && topNav.classList.add('scrolled');
           }

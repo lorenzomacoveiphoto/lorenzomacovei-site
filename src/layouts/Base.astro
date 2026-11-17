@@ -191,6 +191,32 @@ const pages = [
     </script>
 
     <script is:inline>
+      /* Portfolio: la top-nav e la barra categorie si nascondono scorrendo in
+         basso e riappaiono scorrendo in alto (così non resta la striscia fissa
+         a rubare spazio alle foto). Le classi hanno effetto visivo solo su mobile. */
+      (function () {
+        if (!document.body.classList.contains('portfolio-mode')) return;
+        var nav = document.getElementById('top-nav');
+        var cat = document.getElementById('mobile-cat-tabs');
+        var lastY = window.scrollY || 0, ticking = false;
+        function update() {
+          var y = window.scrollY || 0;
+          if (y > lastY && y > 90) {              // giù: nascondi
+            nav && nav.classList.add('nav-hidden');
+            cat && cat.classList.add('cat-hidden');
+          } else if (y < lastY - 4) {             // su: mostra
+            nav && nav.classList.remove('nav-hidden');
+            cat && cat.classList.remove('cat-hidden');
+          }
+          lastY = y; ticking = false;
+        }
+        window.addEventListener('scroll', function () {
+          if (!ticking) { requestAnimationFrame(update); ticking = true; }
+        }, { passive: true });
+      })();
+    </script>
+
+    <script is:inline>
       /* Scroll-reveal sulle guide: fade + slide-up al primo ingresso in viewport */
       (function () {
         var root = document.getElementById('journal-post-wtrek');
