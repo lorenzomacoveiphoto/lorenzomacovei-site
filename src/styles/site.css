@@ -346,11 +346,11 @@ body { overflow-x: hidden; }
 
 /* ── PORTFOLIO GRID — structured alternating layout ── */
 .portfolio-grid {
-  /* desktop: griglia a tutta larghezza (niente sidebar). Il padding-top libera
-     la top-nav fissa + la barra categorie sottostante. */
-  padding: 144px 24px 80px 24px;
+  /* desktop: niente sidebar. Margini laterali ampi (cornice sinistra/destra
+     ben presente) e più aria tra le foto. Il padding-top libera top-nav + barra. */
+  padding: 144px 5vw 96px 5vw;
   columns: 3;
-  column-gap: 18px;
+  column-gap: 30px;
 }
 
 .pg-item {
@@ -359,7 +359,7 @@ body { overflow-x: hidden; }
   cursor: pointer;
   background: var(--bg3);
   break-inside: avoid;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   display: block;
   opacity: 0;
   transform: translateY(48px) scale(0.98);
