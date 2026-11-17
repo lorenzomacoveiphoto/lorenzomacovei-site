@@ -8,6 +8,28 @@
   "items": [
     {
       "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985849/001804340006_ybdgrf.jpg",
+      "name": "The Black Church",
+      "loc": "Places · Iceland",
+      "category": "places",
+      "location": "Iceland",
+      "w": 1545,
+      "h": 1024,
+      "color": "#463a3a"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894572/IMG_6250_2_ybkrmy.jpg",
+      "name": "The Narrow Hours",
+      "loc": "Places · Hong Kong",
+      "category": "places",
+      "location": "Hong Kong",
+      "w": 4896,
+      "h": 3264,
+      "color": "#333333"
+    },
+    {
+      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780872218/IMG_6343_ff4jyl.jpg",
       "name": "End of the World",
       "loc": "Nature · Patagonia",
@@ -252,9 +274,9 @@
       "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965677/9900000018609-0011_b32w79.jpg",
       "name": "The Offering",
-      "loc": "People · Asia",
+      "loc": "People · Sri Lanka",
       "category": "people",
-      "location": "Asia",
+      "location": "Sri Lanka",
       "w": 1219,
       "h": 1699,
       "color": "#3a4a45"
@@ -346,17 +368,6 @@
       "w": 4896,
       "h": 3264,
       "color": "#374751"
-    },
-    {
-      "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985849/001804340006_ybdgrf.jpg",
-      "name": "Black Church",
-      "loc": "Places · Iceland",
-      "category": "places",
-      "location": "Iceland",
-      "w": 1545,
-      "h": 1024,
-      "color": "#463a3a"
     },
     {
       "type": "image",
@@ -533,6 +544,160 @@
       "w": 4896,
       "h": 3264,
       "color": "#4a3d48"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794895432/DSCF8973_xki9tm.jpg",
+      "name": "Grounding the Dawn",
+      "loc": "People · Egypt",
+      "category": "people",
+      "location": "Egypt",
+      "w": 4896,
+      "h": 3264,
+      "color": "#694c46"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894506/DSCF0088_mzsapt.jpg",
+      "name": "The Bookkeeper",
+      "loc": "People · China",
+      "category": "people",
+      "location": "China",
+      "w": 3174,
+      "h": 2488,
+      "color": "#4d4d4d"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894524/DSCF9625_csbaey.jpg",
+      "name": "In Her Arms",
+      "loc": "People · China",
+      "category": "people",
+      "location": "China",
+      "w": 4896,
+      "h": 3264,
+      "color": "#2b2b2b"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894544/IMG_6112_2_tiyqsn.jpg",
+      "name": "School Run",
+      "loc": "People · Vietnam",
+      "category": "people",
+      "location": "Vietnam",
+      "w": 4896,
+      "h": 3264,
+      "color": "#424242"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894581/IMG_6245_2_sizs8v.jpg",
+      "name": "Unseen",
+      "loc": "People · Hong Kong",
+      "category": "people",
+      "location": "Hong Kong",
+      "w": 4896,
+      "h": 3264,
+      "color": "#404040"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894506/DSCF9266_2_gthnzy.jpg",
+      "name": "Borrowed Dynasty",
+      "loc": "People · China",
+      "category": "people",
+      "location": "China",
+      "w": 3499,
+      "h": 2332,
+      "color": "#594c46"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894525/DSCF9638_wgmjnt.jpg",
+      "name": "Endless Vows",
+      "loc": "People · China",
+      "category": "people",
+      "location": "China",
+      "w": 4896,
+      "h": 3264,
+      "color": "#2a2a2a"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894533/DSCF9686_v47xcy.jpg",
+      "name": "Leaning In",
+      "loc": "People · China",
+      "category": "people",
+      "location": "China",
+      "w": 3264,
+      "h": 4896,
+      "color": "#1d1d1d"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894507/IMG_6215_2_uoy0g8.jpg",
+      "name": "Kwun Tong",
+      "loc": "Places · Hong Kong",
+      "category": "places",
+      "location": "Hong Kong",
+      "w": 4896,
+      "h": 3264,
+      "color": "#2d2d2d"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794896746/6DA7EC78-20B8-419F-8A2A-CF4B06141FD5_1_201_a_exisv9.jpg",
+      "name": "Stone Pharaohs",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 2333,
+      "h": 3880,
+      "color": "#4f3b2f"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794896760/0D44F2D6-D0C6-4278-A48E-7048E9939A70_1_105_c_rymg20.jpg",
+      "name": "Hewn from the Mountain",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 1086,
+      "h": 724,
+      "color": "#4f392b"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894686/29FC2A01-6414-4836-A00A-1910A0E54270_1_105_c_u02j5r.jpg",
+      "name": "Theban Dawn",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 1086,
+      "h": 724,
+      "color": "#4e3d36"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894707/9C33B28F-14AC-4ADD-9C69-1C51FFE5B0AC_1_105_c_wjqt1f.jpg",
+      "name": "Edges of Giza",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 1086,
+      "h": 724,
+      "color": "#59514f"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894677/3B38E48F-8232-43A0-8D81-718A84B283DF_1_105_c_k7evz2.jpg",
+      "name": "Rooftops of the Nile",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 1086,
+      "h": 724,
+      "color": "#332821"
     }
   ]
 }
