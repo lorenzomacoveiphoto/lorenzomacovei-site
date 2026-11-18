@@ -1118,14 +1118,22 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   .mobile-cat-tab.active { color: rgba(240,236,228,0.95); }
 
   .portfolio-grid {
-    columns: 2 !important;
-    column-gap: 10px !important;
-    /* foto a filo dei bordi schermo: nessun padding laterale, solo il gap
-       tra le due colonne e il top per nav + barra categorie */
-    padding: 110px 0 80px !important;
-    column-fill: balance !important;
+    /* fallback senza JS: colonna singola. Il JS costruisce la masonry a 2
+       colonne (colonna più corta) e aggiunge .masonry-ready. */
+    display: block !important;
+    columns: auto !important;
+    padding: 110px 5vw 80px 5vw !important;
   }
-  .pg-item { margin-bottom: 10px !important; display: block !important; break-inside: avoid !important; }
+  .portfolio-grid.masonry-ready {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+  .pg-col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+  .portfolio-grid > .pg-item { margin-bottom: 18px !important; }
+  .pg-col > .pg-item { margin-bottom: 0 !important; }
+  .pg-item { display: block !important; break-inside: avoid !important; }
   .col-break { break-before: auto !important; }
   .pg-item img, .pg-item video { width: 100% !important; height: auto !important; display: block !important; }
 

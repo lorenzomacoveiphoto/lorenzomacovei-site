@@ -613,17 +613,6 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794896760/0D44F2D6-D0C6-4278-A48E-7048E9939A70_1_105_c_rymg20.jpg",
-      "name": "Hewn from the Mountain",
-      "loc": "Places · Egypt",
-      "category": "places",
-      "location": "Egypt",
-      "w": 1086,
-      "h": 724,
-      "color": "#4f392b"
-    },
-    {
-      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894686/29FC2A01-6414-4836-A00A-1910A0E54270_1_105_c_u02j5r.jpg",
       "name": "Theban Dawn",
       "loc": "Places · Egypt",

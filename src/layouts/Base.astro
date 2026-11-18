@@ -35,7 +35,7 @@ const cats = [
 ];
 const pages = [
   { key: 'home', href: `/${lang}/`, label: t.nav_home ?? 'Home' },
-  { key: 'portfolio', href: `/${lang}/portfolio/nature`, label: t.nav_portfolio ?? 'Portfolio' },
+  { key: 'portfolio', href: `/${lang}/portfolio/`, label: t.nav_portfolio ?? 'Portfolio' },
   { key: 'journal', href: `/${lang}/journal/stories`, label: t.nav_journal ?? 'Journal' },
   { key: 'about', href: `/${lang}/about`, label: t.nav_about ?? 'About' },
 ];
@@ -198,17 +198,24 @@ const pages = [
         if (!document.body.classList.contains('portfolio-mode')) return;
         var nav = document.getElementById('top-nav');
         var cat = document.getElementById('mobile-cat-tabs');
-        var lastY = window.scrollY || 0, ticking = false;
+        var lastY = window.scrollY || 0;
+        var hidden = false, ticking = false;
+        function apply(h) {
+          if (h === hidden) return;             // evita toggle inutili (niente flicker)
+          hidden = h;
+          if (nav) nav.classList.toggle('nav-hidden', h);
+          if (cat) cat.classList.toggle('cat-hidden', h);
+        }
         function update() {
           var y = window.scrollY || 0;
-          if (y > lastY && y > 90) {              // giù: nascondi
-            nav && nav.classList.add('nav-hidden');
-            cat && cat.classList.add('cat-hidden');
-          } else if (y < lastY - 4) {             // su: mostra
-            nav && nav.classList.remove('nav-hidden');
-            cat && cat.classList.remove('cat-hidden');
+          var dy = y - lastY;
+          if (y <= 140) { apply(false); lastY = y; ticking = false; return; } // vicino alla cima: sempre visibile
+          if (Math.abs(dy) > 6) {               // ignora i micro-movimenti (fluidità)
+            if (dy > 0) apply(true);            // giù -> nascondi
+            else apply(false);                  // su -> mostra
+            lastY = y;
           }
-          lastY = y; ticking = false;
+          ticking = false;
         }
         window.addEventListener('scroll', function () {
           if (!ticking) { requestAnimationFrame(update); ticking = true; }

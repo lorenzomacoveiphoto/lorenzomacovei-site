@@ -45,7 +45,16 @@
     if (!lb) return;
     var items = [];
     var idx = 0;
-    function refresh() { items = [].slice.call(document.querySelectorAll('.portfolio-grid .pg-item')); }
+    function refresh() {
+      items = [].slice.call(document.querySelectorAll('.portfolio-grid .pg-item'));
+      // Con la masonry a colonne (mobile) l'ordine nel DOM è colonna-per-colonna:
+      // riordino per posizione visiva (riga, poi colonna) così avanti/indietro
+      // seguono l'ordine di lettura.
+      items.sort(function (a, b) {
+        var ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+        return (ra.top - rb.top) || (ra.left - rb.left);
+      });
+    }
     function show(i) {
       if (!items.length) return;
       idx = (i + items.length) % items.length;

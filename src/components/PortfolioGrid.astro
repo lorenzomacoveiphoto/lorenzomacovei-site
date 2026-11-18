@@ -80,6 +80,37 @@ const { items } = Astro.props as { items: Item[] };
   (function () {
     var grid = document.querySelector('.portfolio-grid');
     if (!grid) return;
+
+    // ── Masonry a 2 colonne su mobile: ogni foto nella colonna più "corta"
+    //    (stimata dalle proporzioni note) → alternanza coerente orizz/vert. ──
+    function _isMobile() { return window.matchMedia('(max-width: 768px)').matches; }
+    function _ratio(it) {
+      var m = (it.getAttribute('style') || '').match(/aspect-ratio:\s*([\d.]+)\s*\/\s*([\d.]+)/);
+      if (m) { var w = parseFloat(m[1]), h = parseFloat(m[2]); if (w > 0) return h / w; }
+      return 1;
+    }
+    function _flatten() {
+      var cols = grid.querySelectorAll('.pg-col');
+      if (!cols.length) return;
+      var frag = document.createDocumentFragment();
+      [].forEach.call(grid.querySelectorAll('.pg-item'), function (it) { frag.appendChild(it); });
+      [].forEach.call(cols, function (c) { c.remove(); });
+      grid.appendChild(frag);
+    }
+    function _masonry() {
+      _flatten();
+      if (!_isMobile()) { grid.classList.remove('masonry-ready'); return; }
+      var items = [].slice.call(grid.children).filter(function (n) { return n.classList && n.classList.contains('pg-item'); });
+      var c1 = document.createElement('div'); c1.className = 'pg-col';
+      var c2 = document.createElement('div'); c2.className = 'pg-col';
+      var h1 = 0, h2 = 0;
+      items.forEach(function (it) { var r = _ratio(it); if (h1 <= h2) { c1.appendChild(it); h1 += r; } else { c2.appendChild(it); h2 += r; } });
+      grid.appendChild(c1); grid.appendChild(c2);
+      grid.classList.add('masonry-ready');
+    }
+    _masonry();
+    var _rt; window.addEventListener('resize', function () { clearTimeout(_rt); _rt = setTimeout(_masonry, 200); });
+
     var lastAt = 0, step = 0;
     // Rivela la foto con una piccola cascata (una per una) e SEMPRE in dissolvenza,
     // anche se è già in cache: un reflow sincrono (offsetWidth) fa "vedere" al
