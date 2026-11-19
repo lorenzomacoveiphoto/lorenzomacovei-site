@@ -147,7 +147,7 @@ const personLd = {
   function featStopAuto() { if (featAutoTimer) { clearInterval(featAutoTimer); featAutoTimer = null; } }
 
   window.showPage = function () {};
-  window.showCat = function (cat) { location.href = '/' + LANG + '/portfolio/' + cat; };
+  window.showCat = function (cat) { location.href = '/' + LANG + '/portfolio/#' + cat; };
 
   function initHome() {
     if (innerWidth > 768) { featInitLoop(); window.featSlide(0); featStartAuto(); }

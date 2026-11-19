@@ -87,12 +87,13 @@ const year = new Date().getFullYear();
   .cat-bar{display:flex;justify-content:center;gap:30px;padding:11px 4.5vw;background:rgba(10,10,10,0.92);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   /* blur frosted solo da desktop: su mobile niente backdrop-filter, altrimenti
      il menu a tutto schermo (position:fixed) si ancorerebbe all'header */
+  .langs-desk{display:none}
   @media(min-width:761px){
     .hd-main,.cat-bar{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-    .hd-main{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
-    .brand{grid-column:1;justify-self:start}
-    .site-nav{grid-column:2;justify-self:center}
-    .langs{position:absolute;right:4.5vw;top:50%;transform:translateY(-50%);margin:0}
+    /* stesso meccanismo della homepage: space-between (logo sx · nav · lingue dx), padding 40px */
+    .hd-main{display:flex;justify-content:space-between;align-items:center;padding:13px 40px}
+    .langs-desk{display:flex}
+    .langs-mob{display:none}
   }
   .cat-bar a{font-family:var(--display);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);transition:color .25s}
   .cat-bar a:hover,.cat-bar a.active{color:var(--text)}
@@ -132,6 +133,7 @@ const year = new Date().getFullYear();
      con object-fit:cover) → tutte le orizzontali uguali, tutte le verticali uguali. */
   .shot{display:block;width:100%;margin:0;padding:0;border:0;overflow:hidden;background:var(--bg2);aspect-ratio:3/2;cursor:pointer}
   figure.port .shot{aspect-ratio:2/3}
+  figure.square .shot{aspect-ratio:1/1}
   .shot img,.shot video{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.92) saturate(.9);opacity:0;transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .5s,opacity .9s ease}
   .shot img.loaded,.shot video.loaded{opacity:1}
   figure:hover .shot img,figure:hover .shot video{transform:scale(1.035);filter:brightness(.6) saturate(.72)}
@@ -203,8 +205,9 @@ const year = new Date().getFullYear();
       <a class="active" href={`/${lang}/portfolio/`}>{t.nav_portfolio ?? 'Portfolio'}</a>
       <a href={`/${lang}/journal/stories`}>{t.nav_journal ?? 'Journal'}</a>
       <a href={`/${lang}/about`}>{t.nav_about ?? 'About'}</a>
-      <span class="langs">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/`}>{l.toUpperCase()}</a>)}</span>
+      <span class="langs langs-mob">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/`}>{l.toUpperCase()}</a>)}</span>
     </nav>
+    <span class="langs langs-desk">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/`}>{l.toUpperCase()}</a>)}</span>
   </div>
   <div class="cat-bar" id="catBar">
     {sel.map((s) => <a class="jump" href={`#${s.cat}`}>{s.label}</a>)}
@@ -222,7 +225,7 @@ const year = new Date().getFullYear();
       <div class="head rise"><h2>{s.label}</h2></div>
       <div class="gallery">
         {s.items.map((it) => (
-          <figure class={`rise ${it.w >= it.h ? 'land' : 'port'}${it.series ? ' is-series' : ''}`} data-ar={it.w >= it.h ? '0.667' : '1.5'} data-full={it.src} data-name={it.name} data-loc={it.location} data-vid={it.type === 'video' ? '1' : '0'} data-series={it.series}>
+          <figure class={`rise ${it.w === it.h ? 'square' : (it.w > it.h ? 'land' : 'port')}${it.series ? ' is-series' : ''}`} data-ar={it.w === it.h ? '1' : (it.w > it.h ? '0.667' : '1.5')} data-full={it.src} data-name={it.name} data-loc={it.location} data-vid={it.type === 'video' ? '1' : '0'} data-series={it.series}>
             <button class="shot" type="button" aria-label={it.name} style={`background-color:${it.color || '#141414'}`}>
               {it.type === 'video'
                 ? <video class="ph" src={it.src} autoplay muted loop playsinline></video>

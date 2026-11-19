@@ -67,13 +67,15 @@ const year = new Date().getFullYear();
   .langs{display:flex;gap:9px;margin-left:8px}
   .langs a{font-size:10px;letter-spacing:0.12em}
   .langs a.on{color:var(--text)}
+  .langs-desk{display:none}
   @media(min-width:761px){
+    /* stesso meccanismo della homepage: space-between (logo sx · nav · lingue dx),
+       padding orizzontale 40px → la nav cade nella stessa posizione della home */
     .hd-main{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-      position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
-    .brand{grid-column:1;justify-self:start}
-    .site-nav{grid-column:2;justify-self:center}
-    /* lingue pinnate a destra, fuori dal gruppo centrato */
-    .langs{position:absolute;right:4.5vw;top:50%;transform:translateY(-50%);margin:0}
+      display:flex;justify-content:space-between;align-items:center;padding:13px 40px}
+    .back-bar{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:9px 40px}
+    .langs-desk{display:flex}
+    .langs-mob{display:none}
   }
   .burger{display:none;flex-direction:column;gap:5px;width:26px;background:none;border:0;cursor:pointer;padding:6px 0;z-index:50}
   .burger span{display:block;height:1.5px;width:24px;background:var(--text);transition:transform .3s,opacity .3s}
@@ -90,7 +92,9 @@ const year = new Date().getFullYear();
   }
 
   main{max-width:1180px;margin:0 auto;padding:0 4.5vw}
-  .back{display:inline-block;margin-top:5vh;font-family:var(--display);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color .25s}
+  /* sotto-barra "indietro": dentro l'header, si nasconde/mostra con l'hide-on-scroll */
+  .back-bar{display:flex;align-items:center;padding:9px 4.5vw;background:rgba(10,10,10,0.92);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .back{display:inline-flex;align-items:center;gap:5px;font-family:var(--display);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);transition:color .25s}
   .back:hover{color:var(--text)}
   .s-head{padding:6vh 0 8vh;border-bottom:1px solid var(--line)}
   .s-head .kicker{font-family:var(--display);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
@@ -116,7 +120,7 @@ const year = new Date().getFullYear();
 
   @media(max-width:760px){
     main{padding:0}
-    .back{margin-left:5vw}
+    .back-bar{padding:8px 5vw}
     .s-head{padding:5vh 5vw 6vh}
     .seq{padding:7vh 0 2vh}
     .seq figure{width:100%!important;max-width:none!important;margin:0 0 2vh!important;left:0!important}
@@ -151,13 +155,16 @@ const year = new Date().getFullYear();
       <a class="active" href={`/${lang}/portfolio/`}>{t.nav_portfolio ?? 'Portfolio'}</a>
       <a href={`/${lang}/journal/stories`}>{t.nav_journal ?? 'Journal'}</a>
       <a href={`/${lang}/about`}>{t.nav_about ?? 'About'}</a>
-      <span class="langs">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/series/${slug}/`}>{l.toUpperCase()}</a>)}</span>
+      <span class="langs langs-mob">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/series/${slug}/`}>{l.toUpperCase()}</a>)}</span>
     </nav>
+    <span class="langs langs-desk">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/series/${slug}/`}>{l.toUpperCase()}</a>)}</span>
+  </div>
+  <div class="back-bar">
+    <a class="back" href={`/${lang}/portfolio/`}>← {t.nav_portfolio ?? 'Portfolio'}</a>
   </div>
 </header>
 
 <main>
-  <a class="back" href={`/${lang}/portfolio/`}>← {t.nav_portfolio ?? 'Portfolio'}</a>
   <div class="s-head">
     <div class="kicker">{serie.place} · {serie.year}</div>
     <h1>{serie.title}</h1>
