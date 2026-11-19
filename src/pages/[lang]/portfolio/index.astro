@@ -336,9 +336,10 @@ const year = new Date().getFullYear();
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { for (var k in links) links[k].classList.remove('active'); links[e.target.id] && links[e.target.id].classList.add('active'); } }); }, { rootMargin: '-45% 0px -50% 0px' });
     secs.forEach(function (s) { io.observe(s); });
-    var rio = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: .04 });
-    var vh = innerHeight;
-    document.querySelectorAll('.rise').forEach(function (el) { el.getBoundingClientRect().top < vh * .92 ? el.classList.add('in') : rio.observe(el); });
+    // reveal bidirezionale: fade-in quando entra in vista (sù o giù), reset quando è
+    // completamente fuori (fuori schermo, invisibile) → scorrendo su si ri-anima uguale
+    var rio = new IntersectionObserver(function (es) { es.forEach(function (e) { e.target.classList.toggle('in', e.isIntersecting); }); }, { rootMargin: '0px 0px -6% 0px', threshold: 0 });
+    document.querySelectorAll('.rise').forEach(function (el) { rio.observe(el); });
   } else { document.querySelectorAll('.rise').forEach(function (e) { e.classList.add('in'); }); }
 
   // Lightbox: clic su una foto la apre a schermo (niente redirect alla vecchia galleria).

@@ -559,6 +559,17 @@
     },
     {
       "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795092895/IMG_9271_yd4oxn.jpg",
+      "name": "Two Shadows",
+      "loc": "People · Guatemala",
+      "category": "people",
+      "location": "Guatemala",
+      "w": 2619,
+      "h": 3492,
+      "color": "#9a9894"
+    },
+    {
+      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894507/IMG_6215_2_uoy0g8.jpg",
       "name": "Kwun Tong",
       "loc": "Places · Hong Kong",
