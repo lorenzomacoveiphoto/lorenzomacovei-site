@@ -199,7 +199,8 @@
     "guide_raja_title": "Raja Ampat Travel Guide for Backpackers: Budget, Homestays & Itinerary (2026)",
     "guide_raja_desc": "Seven days west, five east — the complete backpacker guide to the Four Kings archipelago.",
     "guide_guaviare_title": "Guaviare Complete Guide: Cost, Itinerary & Safety (2026)",
-    "guide_guaviare_desc": "When to go, how to get there, what to see, and why the Guaviare is visited only through local, regulated tours."
+    "guide_guaviare_desc": "When to go, how to get there, what to see, and why the Guaviare is visited only through local, regulated tours.",
+    "view_series": "Discover"
   },
   "it": {
     "tagline": "Fotografo Senza Confini",
@@ -401,7 +402,8 @@
     "guide_raja_title": "Guida a Raja Ampat 2026: immersioni, homestay e budget per backpacker",
     "guide_raja_desc": "Sette giorni a ovest, cinque a est — la guida completa all'arcipelago dei Quattro Re.",
     "guide_guaviare_title": "Guaviare guida completa: costi, itinerario e sicurezza (2026)",
-    "guide_guaviare_desc": "Quando andare, come arrivare, cosa vedere, e perché il Guaviare si visita solo con tour locali regolati."
+    "guide_guaviare_desc": "Quando andare, come arrivare, cosa vedere, e perché il Guaviare si visita solo con tour locali regolati.",
+    "view_series": "Scopri"
   },
   "es": {
     "tagline": "Fotógrafo Sin Fronteras",
@@ -603,6 +605,7 @@
     "guide_raja_title": "Guía de Raja Ampat 2026: buceo, homestays y presupuesto para mochileros",
     "guide_raja_desc": "Siete días al oeste, cinco al este — la guía completa al archipiélago de los Cuatro Reyes.",
     "guide_guaviare_title": "Guaviare guía completa: costes, itinerario y seguridad (2026)",
-    "guide_guaviare_desc": "Cuándo ir, cómo llegar, qué ver, y por qué el Guaviare se visita solo con tours locales regulados."
+    "guide_guaviare_desc": "Cuándo ir, cómo llegar, qué ver, y por qué el Guaviare se visita solo con tours locales regulados.",
+    "view_series": "Descubrir"
   }
 }

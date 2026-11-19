@@ -135,6 +135,7 @@ const year = new Date().getFullYear();
   figure:hover figcaption{opacity:1}
   figcaption .n{font-family:var(--body);color:#fff;font-size:clamp(15px,1.25vw,19px);letter-spacing:0;text-shadow:0 1px 16px rgba(0,0,0,.55)}
   figcaption .l{font-family:var(--body);color:rgba(255,255,255,0.72);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+  figcaption .series-tag{margin-top:9px;padding:5px 12px;border:1px solid rgba(255,255,255,0.5);border-radius:40px;font-family:var(--body);color:#fff;font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;text-shadow:0 1px 10px rgba(0,0,0,.5)}
   .rule{height:1px;background:var(--line);margin-top:34px}
   @media(max-width:700px){
     /* foto a filo dei bordi: padding solo su testo, galleria piena */
@@ -142,8 +143,8 @@ const year = new Date().getFullYear();
     .intro{padding-left:4.5vw;padding-right:4.5vw}
     .head{padding-left:4.5vw;padding-right:4.5vw}
     .rule{margin-left:4.5vw;margin-right:4.5vw}
-    .gallery{columns:2 140px;column-gap:4px}figure{margin-bottom:4px}
-    .gallery.masoned{gap:4px}.gcol{gap:4px}
+    .gallery{columns:2 140px;column-gap:10px}figure{margin-bottom:10px}
+    .gallery.masoned{gap:10px}.gcol{gap:10px}
     /* mobile: niente nomi sulle foto */
     figcaption{display:none}
   }
@@ -215,13 +216,13 @@ const year = new Date().getFullYear();
       <div class="head rise"><h2>{s.label}</h2></div>
       <div class="gallery">
         {s.items.map((it) => (
-          <figure class={`rise ${it.w >= it.h ? 'land' : 'port'}`} data-ar={it.w >= it.h ? '0.667' : '1.5'} data-full={it.src} data-name={it.name} data-loc={it.location} data-vid={it.type === 'video' ? '1' : '0'}>
+          <figure class={`rise ${it.w >= it.h ? 'land' : 'port'}${it.series ? ' is-series' : ''}`} data-ar={it.w >= it.h ? '0.667' : '1.5'} data-full={it.src} data-name={it.name} data-loc={it.location} data-vid={it.type === 'video' ? '1' : '0'} data-series={it.series}>
             <button class="shot" type="button" aria-label={it.name} style={`background-color:${it.color || '#141414'}`}>
               {it.type === 'video'
                 ? <video class="ph" src={it.src} autoplay muted loop playsinline></video>
                 : <img class="ph" loading="lazy" src={it.src} alt={it.name} />}
             </button>
-            <figcaption><span class="n">{it.name}</span><span class="l">{it.location}</span></figcaption>
+            <figcaption><span class="n">{it.name}</span><span class="l">{it.location}</span>{it.series && <span class="series-tag">+ {t.view_series ?? 'Discover'}</span>}</figcaption>
           </figure>
         ))}
       </div>
@@ -348,7 +349,11 @@ const year = new Date().getFullYear();
     function close() { lb.classList.remove('open'); document.body.style.overflow = ''; vid.pause(); }
     document.addEventListener('click', function (e) {
       var btn = e.target.closest && e.target.closest('.shot');
-      if (btn) { var f = btn.closest('figure'); if (f) open(f); }
+      if (!btn) return;
+      var f = btn.closest('figure'); if (!f) return;
+      var ser = f.getAttribute('data-series');
+      if (ser) { var lg = document.documentElement.lang || 'en'; window.location.href = '/' + lg + '/portfolio/series/' + ser + '/'; return; }
+      open(f);
     });
     document.getElementById('lbX').addEventListener('click', close);
     document.getElementById('lbPrev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });

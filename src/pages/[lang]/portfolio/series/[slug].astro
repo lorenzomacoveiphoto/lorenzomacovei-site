@@ -1,0 +1,229 @@
+---
+import i18n from '../../../../data/i18n.json';
+import seriesData from '../../../../data/series.json';
+
+export function getStaticPaths() {
+  const langs = ['en', 'it', 'es'];
+  const out: { params: { lang: string; slug: string } }[] = [];
+  for (const lang of langs) {
+    for (const s of seriesData.series) {
+      out.push({ params: { lang, slug: s.slug } });
+    }
+  }
+  return out;
+}
+
+const { lang, slug } = Astro.params;
+const t = (i18n as Record<string, Record<string, string>>)[lang] ?? {};
+const locales = ['en', 'it', 'es'];
+const site = 'https://lorenzomacovei.com';
+
+const serie = seriesData.series.find((s) => s.slug === slug)!;
+const intro = (serie.intro as Record<string, string>)[lang] ?? (serie.intro as Record<string, string>).en;
+const canonical = `${site}/${lang}/portfolio/series/${slug}/`;
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <style is:inline>html,body{background:#0a0a0a}</style>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>{serie.title} — Lorenzo Macovei</title>
+  <meta name="description" content={`${serie.title} — ${serie.place}. ${intro}`} />
+  <link rel="canonical" href={canonical} />
+  {locales.map((l) => <link rel="alternate" hreflang={l} href={`${site}/${l}/portfolio/series/${slug}/`} />)}
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={`${serie.title} — Lorenzo Macovei`} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={serie.items[0]?.src} />
+<style>
+  :root{
+    --bg:#0a0a0a;--bg2:#161616;--text:#e8e4dc;--muted:rgba(232,228,220,0.46);
+    --faint:rgba(232,228,220,0.3);--line:rgba(232,228,220,0.13);--accent:rgba(232,228,220,0.5);
+    --display:Arial,Helvetica,sans-serif;--body:Arial,Helvetica,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{background:var(--bg);color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+
+  .hd{position:sticky;top:0;z-index:40;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+  .hd.up{transform:translateY(-100%)}
+  .hd-main{display:flex;align-items:center;justify-content:space-between;padding:13px 4.5vw;background:rgba(10,10,10,0.92)}
+  .brand{display:flex;flex-direction:column;gap:5px}
+  .lm{display:flex;align-items:center;gap:0.4em}
+  .lm>span{display:block;width:auto;height:15px;background:currentColor;
+    -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-size:contain;mask-size:contain}
+  .lm .l{aspect-ratio:1473.39/278.55;-webkit-mask-image:url(/lorenzo.svg);mask-image:url(/lorenzo.svg)}
+  .lm .m{aspect-ratio:1473.09/324.9;-webkit-mask-image:url(/macovei.svg);mask-image:url(/macovei.svg)}
+  .brand small{font-family:var(--body);font-weight:600;font-size:9px;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .site-nav{display:flex;align-items:center;gap:22px}
+  .site-nav a{font-family:var(--display);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color .25s}
+  .site-nav a:hover,.site-nav a.active{color:var(--text)}
+  .langs{display:flex;gap:9px;margin-left:8px}
+  .langs a{font-size:10px;letter-spacing:0.12em}
+  .langs a.on{color:var(--text)}
+  @media(min-width:761px){.hd-main{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}}
+  .burger{display:none;flex-direction:column;gap:5px;width:26px;background:none;border:0;cursor:pointer;padding:6px 0;z-index:50}
+  .burger span{display:block;height:1.5px;width:24px;background:var(--text);transition:transform .3s,opacity .3s}
+  @media(max-width:760px){
+    .burger{display:flex}
+    .hd-main{background:#0a0a0a}
+    .site-nav{position:fixed;inset:0;z-index:45;flex-direction:column;align-items:center;justify-content:center;gap:28px;
+      background:#0a0a0a;transform:translateX(100%);transition:transform .42s cubic-bezier(.22,1,.36,1);visibility:hidden}
+    .hd.menu-open .site-nav{visibility:visible;transform:none}
+    .hd.menu-open .burger span:first-child{transform:translateY(3.2px) rotate(45deg)}
+    .hd.menu-open .burger span:last-child{transform:translateY(-3.2px) rotate(-45deg)}
+    .site-nav a{font-size:17px;letter-spacing:0.18em}
+    .langs{margin:12px 0 0}
+  }
+
+  main{max-width:1180px;margin:0 auto;padding:0 4.5vw}
+  .back{display:inline-block;margin-top:5vh;font-family:var(--display);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color .25s}
+  .back:hover{color:var(--text)}
+  .s-head{padding:6vh 0 8vh;border-bottom:1px solid var(--line)}
+  .s-head .kicker{font-family:var(--display);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .s-head h1{font-family:var(--display);font-weight:500;font-size:clamp(46px,8.5vw,112px);line-height:.88;letter-spacing:-0.075em}
+  .s-head .intro{margin-top:26px;max-width:440px;font-family:var(--body);font-size:14px;line-height:1.75;color:var(--muted)}
+
+  /* sequenza coerente: larghezza FISSA per orientamento, alternanza FISSA sx/dx, gap FISSO */
+  .seq{padding:9vh 0 4vh}
+  /* stessa larghezza per TUTTE (verticali e orizzontali); due linee limite fisse */
+  .seq figure{display:block;width:56%;max-width:760px;margin:0 auto 4.5vh;position:relative}
+  .seq figure:nth-child(odd){left:-9%}
+  .seq figure:nth-child(even){left:9%}
+  .seq .frame{overflow:hidden;background:var(--bg2);display:block}
+  .seq img{width:100%;height:auto;display:block;filter:brightness(.95) saturate(.92);opacity:0;transition:opacity 1s ease}
+  .seq img.loaded{opacity:1}
+  .seq figcaption{margin-top:12px;display:flex;justify-content:space-between;gap:14px;
+    font-family:var(--body);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint)}
+  .seq figcaption .l{color:rgba(232,228,220,0.28)}
+
+  .rise{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.22,1,.36,1)}
+  .rise.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rise,.seq img{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media(max-width:760px){
+    main{padding:0}
+    .back{margin-left:5vw}
+    .s-head{padding:5vh 5vw 6vh}
+    .seq{padding:7vh 0 2vh}
+    .seq figure{width:100%!important;max-width:none!important;margin:0 0 2vh!important;left:0!important}
+  }
+
+  .foot{border-top:1px solid var(--line);margin-top:9vh;padding:7vh 4.5vw;max-width:1180px;margin-left:auto;margin-right:auto;
+    display:flex;justify-content:space-between;align-items:center;gap:20px}
+  .foot-right{display:flex;align-items:center;gap:20px}
+  .ic{display:flex;color:var(--faint);transition:color .25s}
+  .ic:hover{color:var(--text)}
+  .ic svg{width:18px;height:18px;display:block}
+  .copy{font-family:var(--display);font-size:10px;letter-spacing:0.1em;color:var(--faint);white-space:nowrap}
+  #totop{font-family:var(--display);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);cursor:pointer;transition:color .25s;background:none;border:0}
+  #totop:hover{color:var(--text)}
+  @media(max-width:700px){
+    .foot{flex-direction:column;align-items:flex-start;gap:22px;padding:6vh 5vw}
+    .foot-right{width:100%;flex-wrap:wrap;gap:18px}
+    .copy{order:3;width:100%}
+  }
+</style>
+</head>
+<body>
+<header class="hd" id="hd">
+  <div class="hd-main">
+    <a class="brand" href={`/${lang}/`}>
+      <span class="lm"><span class="l"></span><span class="m"></span></span>
+      <small>{t.tagline ?? 'Borderless Photographer'}</small>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav">
+      <a href={`/${lang}/`}>{t.nav_home ?? 'Home'}</a>
+      <a class="active" href={`/${lang}/portfolio/`}>{t.nav_portfolio ?? 'Portfolio'}</a>
+      <a href={`/${lang}/journal/stories`}>{t.nav_journal ?? 'Journal'}</a>
+      <a href={`/${lang}/about`}>{t.nav_about ?? 'About'}</a>
+      <span class="langs">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/series/${slug}/`}>{l.toUpperCase()}</a>)}</span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <a class="back" href={`/${lang}/portfolio/`}>← {t.nav_portfolio ?? 'Portfolio'}</a>
+  <div class="s-head">
+    <div class="kicker">{serie.place} · {serie.year}</div>
+    <h1>{serie.title}</h1>
+    {intro && <p class="intro">{intro}</p>}
+  </div>
+
+  <div class="seq">
+    {serie.items.map((it) => (
+      <figure class={`rise ${it.h > it.w ? 'port' : 'land'}`}>
+        <span class="frame" style={`background-color:${it.color || '#141414'}`}>
+          <img loading="lazy" src={it.src} alt={it.name} />
+        </span>
+      </figure>
+    ))}
+  </div>
+</main>
+
+<footer class="foot">
+  <span class="lm"><span class="l"></span><span class="m"></span></span>
+  <div class="foot-right">
+    <a class="ic" href="https://instagram.com/lorenzomacovei_" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a class="ic" href="mailto:lorenzomacoveiphoto@gmail.com" aria-label="Mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+    </a>
+    <span class="copy">© {year} Lorenzo Macovei</span>
+    <button id="totop">↑ Top</button>
+  </div>
+</footer>
+
+<script is:inline>
+  document.getElementById('totop').addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  (function () {
+    var hd = document.getElementById('hd'), burger = document.getElementById('burger'), nav = document.getElementById('siteNav');
+    var lastY = window.scrollY || 0, hidden = false, ticking = false, menuOpen = false;
+    burger.addEventListener('click', function () { menuOpen = !menuOpen; hd.classList.toggle('menu-open', menuOpen); document.body.style.overflow = menuOpen ? 'hidden' : ''; });
+    nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') { menuOpen = false; hd.classList.remove('menu-open'); document.body.style.overflow = ''; } });
+
+    var lm = document.querySelector('.lm'), tag = document.querySelector('.brand small');
+    function fitBrand() {
+      if (!lm || !tag) return;
+      tag.style.letterSpacing = '0px';
+      var lw = lm.getBoundingClientRect().width, tw = tag.getBoundingClientRect().width, n = (tag.textContent || '').length;
+      if (n > 1 && lw > tw) tag.style.letterSpacing = ((lw - tw) / (n - 1)) + 'px';
+    }
+    fitBrand();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitBrand);
+    window.addEventListener('resize', fitBrand);
+    function update() {
+      var y = window.scrollY || 0;
+      if (!menuOpen) {
+        if (y > lastY && y > 120) { if (!hidden) { hd.classList.add('up'); hidden = true; } }
+        else if (y < lastY - 4) { if (hidden) { hd.classList.remove('up'); hidden = false; } }
+      }
+      lastY = y; ticking = false;
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, { passive: true });
+  })();
+
+  // Reveal + fade-in foto (cornice colore → foto)
+  var vh = window.innerHeight;
+  var rio = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.rise').forEach(function (el) { el.getBoundingClientRect().top < vh * .92 ? el.classList.add('in') : rio.observe(el); });
+
+  [].forEach.call(document.querySelectorAll('.seq img'), function (img) {
+    var done = function () { img.classList.add('loaded'); };
+    if (img.complete && img.naturalWidth > 0) done();
+    else { img.addEventListener('load', done); img.addEventListener('error', done); }
+  });
+</script>
+</body>
+</html>

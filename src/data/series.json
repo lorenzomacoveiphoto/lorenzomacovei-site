@@ -1,0 +1,44 @@
+{
+  "series": [
+    {
+      "slug": "abu-simbel",
+      "title": "Abu Simbel",
+      "place": "Egypt",
+      "year": "2025",
+      "intro": {
+        "en": "Carved into the sandstone above Lake Nasser, the temples of Ramesses II hold the line where the desert meets the Nile.",
+        "it": "Scolpiti nell'arenaria sopra il lago Nasser, i templi di Ramesse II segnano il confine dove il deserto incontra il Nilo.",
+        "es": "Tallados en la arenisca sobre el lago Nasser, los templos de Ramsés II marcan la línea donde el desierto se encuentra con el Nilo."
+      },
+      "items": [
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025282/DSCF8806_jpcbg6.jpg", "name": "Stone Pharaohs", "w": 2333, "h": 3880, "color": "#4f3b2f" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055114/DSCF8817_uymwrc.jpg", "name": "The Facade", "w": 4896, "h": 3264, "color": "#8a6b45" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055293/DSCF8823_pjwxxf.jpg", "name": "Colossus", "w": 3264, "h": 4896, "color": "#7d5f3e" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055118/DSCF8808_mxrhoc.jpg", "name": "Twin Temples", "w": 4896, "h": 3264, "color": "#9a7b52" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055285/DSCF8798_izj8rq.jpg", "name": "The Sanctuary", "w": 3264, "h": 4896, "color": "#6f553a" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055301/DSCF8821_m0llka.jpg", "name": "Carved in Stone", "w": 3264, "h": 4896, "color": "#b08a5e" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795055024/DSCF8796_n0dlhi.jpg", "name": "The Approach", "w": 4896, "h": 3264, "color": "#96744c" }
+      ]
+    },
+    {
+      "slug": "balloons",
+      "title": "Dawn Over Thebes",
+      "place": "Egypt",
+      "year": "2025",
+      "intro": {
+        "en": "Before the heat, the valley fills with balloons — rising, drifting and settling again over the Theban hills.",
+        "it": "Prima del caldo, la valle si riempie di mongolfiere: salgono, scivolano e si posano di nuovo sulle colline tebane.",
+        "es": "Antes del calor, el valle se llena de globos: suben, se deslizan y vuelven a posarse sobre las colinas tebanas."
+      },
+      "items": [
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025115/DSCF8944_nrtes2.jpg", "name": "Theban Dawn", "w": 4896, "h": 3264, "color": "#4e3d36" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795057946/DSCF8930_p81ut2.jpg", "name": "Aloft", "w": 3264, "h": 4896, "color": "#6b574a" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025556/DSCF8961_giz5wh.jpg", "name": "Grounded at Dawn", "w": 4896, "h": 3264, "color": "#b08860" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025219/DSCF8955_tm77xt.jpg", "name": "Valley at First Light", "w": 4896, "h": 3264, "color": "#7e6a57" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794895432/DSCF8973_xki9tm.jpg", "name": "Grounding the Dawn", "w": 4896, "h": 3264, "color": "#694c46" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795057989/DSCF8969_v301fe.jpg", "name": "Ground Crew", "w": 4896, "h": 3264, "color": "#8a7560" },
+        { "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965645/IMG_7144_2_n91ush.jpg", "name": "Folding the Sky", "w": 1149, "h": 890, "color": "#45473a" }
+      ]
+    }
+  ]
+}

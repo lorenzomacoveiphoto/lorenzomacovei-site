@@ -239,17 +239,6 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965645/IMG_7144_2_n91ush.jpg",
-      "name": "Folding the Sky",
-      "loc": "Places · Egypt",
-      "category": "places",
-      "location": "Egypt",
-      "w": 1149,
-      "h": 890,
-      "color": "#45473a"
-    },
-    {
-      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780965677/9900000018609-0011_b32w79.jpg",
       "name": "The Offering",
       "loc": "People · Sri Lanka",
@@ -334,7 +323,8 @@
       "location": "Egypt",
       "w": 2333,
       "h": 3880,
-      "color": "#4f3b2f"
+      "color": "#4f3b2f",
+      "series": "abu-simbel"
     },
     {
       "type": "image",
@@ -492,17 +482,6 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794895432/DSCF8973_xki9tm.jpg",
-      "name": "Grounding the Dawn",
-      "loc": "Places · Egypt",
-      "category": "places",
-      "location": "Egypt",
-      "w": 4896,
-      "h": 3264,
-      "color": "#694c46"
-    },
-    {
-      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894506/DSCF0088_mzsapt.jpg",
       "name": "The Bookkeeper",
       "loc": "People · China",
@@ -602,17 +581,6 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025115/DSCF8944_nrtes2.jpg",
-      "name": "Theban Dawn",
-      "loc": "Places · Egypt",
-      "category": "places",
-      "location": "Egypt",
-      "w": 4896,
-      "h": 3264,
-      "color": "#4e3d36"
-    },
-    {
-      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025556/DSCF8961_giz5wh.jpg",
       "name": "Grounded at Dawn",
       "loc": "Places · Egypt",
@@ -620,7 +588,8 @@
       "location": "Egypt",
       "w": 4896,
       "h": 3264,
-      "color": "#b08860"
+      "color": "#b08860",
+      "series": "balloons"
     },
     {
       "type": "image",
