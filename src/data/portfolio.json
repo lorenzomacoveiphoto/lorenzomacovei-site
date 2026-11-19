@@ -316,17 +316,6 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780983223/IMG_0410_nbmqrs.jpg",
-      "name": "Golden Hour",
-      "loc": "Places · Japan",
-      "category": "places",
-      "location": "Japan",
-      "w": 4896,
-      "h": 3264,
-      "color": "#374751"
-    },
-    {
-      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780985323/IMG_9325_2_stucpf.jpg",
       "name": "White Rose",
       "loc": "Places · New York",
@@ -338,7 +327,7 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794896746/6DA7EC78-20B8-419F-8A2A-CF4B06141FD5_1_201_a_exisv9.jpg",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025282/DSCF8806_jpcbg6.jpg",
       "name": "Stone Pharaohs",
       "loc": "Places · Egypt",
       "category": "places",
@@ -613,14 +602,25 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894686/29FC2A01-6414-4836-A00A-1910A0E54270_1_105_c_u02j5r.jpg",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025115/DSCF8944_nrtes2.jpg",
       "name": "Theban Dawn",
       "loc": "Places · Egypt",
       "category": "places",
       "location": "Egypt",
-      "w": 1086,
-      "h": 724,
+      "w": 4896,
+      "h": 3264,
       "color": "#4e3d36"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025556/DSCF8961_giz5wh.jpg",
+      "name": "Grounded at Dawn",
+      "loc": "Places · Egypt",
+      "category": "places",
+      "location": "Egypt",
+      "w": 4896,
+      "h": 3264,
+      "color": "#b08860"
     },
     {
       "type": "image",
@@ -635,13 +635,13 @@
     },
     {
       "type": "image",
-      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1794894677/3B38E48F-8232-43A0-8D81-718A84B283DF_1_105_c_k7evz2.jpg",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795025216/DSCF8956_z7g7eq.jpg",
       "name": "Rooftops of the Nile",
       "loc": "Places · Egypt",
       "category": "places",
       "location": "Egypt",
-      "w": 1086,
-      "h": 724,
+      "w": 4896,
+      "h": 3264,
       "color": "#332821"
     }
   ]

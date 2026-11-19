@@ -909,7 +909,7 @@ footer { padding: 24px 40px; border-top: 1px solid var(--line); display: flex; j
   html, body { overflow-x: hidden; max-width: 100vw; }
   #page-home { overflow-x: hidden; }
   #homeScroll {
-    background: url('https://res.cloudinary.com/dligvuje7/image/upload/q_auto,f_auto,w_1600/v1780872218/IMG_6343_ff4jyl.jpg') center/cover no-repeat fixed;
+    background: url('https://res.cloudinary.com/dligvuje7/image/upload/q_auto,f_auto,w_1600/v1795024727/IMG_6330_3_jtynbv.jpg') center/cover no-repeat fixed;
   }
   .snap-scene { max-width: 100vw; overflow: hidden; }
   /* hide the absolute hero-bg element on mobile — bg handled by homeScroll */

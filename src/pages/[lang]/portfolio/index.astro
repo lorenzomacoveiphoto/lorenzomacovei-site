@@ -34,6 +34,7 @@ const sel = themes.map((cat) => ({
 const site = 'https://lorenzomacovei.com';
 const locales = ['en', 'it', 'es'];
 const canonical = `${site}/${lang}/portfolio/`;
+const year = new Date().getFullYear();
 ---
 <!doctype html>
 <html lang={lang}>
@@ -59,41 +60,50 @@ const canonical = `${site}/${lang}/portfolio/`;
     --display:Arial,Helvetica,sans-serif;--body:Arial,Helvetica,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;overflow-x:hidden}
   body{background:var(--bg);color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{display:block;max-width:100%}
   a{color:inherit;text-decoration:none}
 
-  .hd{position:sticky;top:0;z-index:40;height:74px;display:flex;align-items:center;justify-content:space-between;
-    padding:0 4.5vw;background:rgba(10,10,10,0.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
-    transition:transform .5s cubic-bezier(.22,1,.36,1)}
+  .hd{position:sticky;top:0;z-index:40;transition:transform .5s cubic-bezier(.22,1,.36,1)}
   .hd.up{transform:translateY(-100%)}
+  .hd-main{display:flex;align-items:center;justify-content:space-between;padding:13px 4.5vw;
+    background:rgba(10,10,10,0.92)}
+  /* Nome = logotipo del sito; la tagline è larga quanto il logotipo (--brandw da JS) */
   .brand{display:flex;flex-direction:column;gap:5px}
   .lm{display:flex;align-items:center;gap:0.4em}
   .lm>span{display:block;width:auto;height:15px;background:currentColor;
     -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-size:contain;mask-size:contain}
   .lm .l{aspect-ratio:1473.39/278.55;-webkit-mask-image:url(/lorenzo.svg);mask-image:url(/lorenzo.svg)}
   .lm .m{aspect-ratio:1473.09/324.9;-webkit-mask-image:url(/macovei.svg);mask-image:url(/macovei.svg)}
-  .brand small{font-family:var(--body);font-weight:600;font-size:8.5px;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted)}
-  .nav{display:flex;align-items:center;gap:22px}
-  .nav a{font-family:var(--display);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color .25s}
-  .nav a:hover,.nav a.active{color:var(--text)}
-  .nav .sep{width:1px;height:13px;background:var(--line);flex-shrink:0}
-  .langs{display:flex;gap:9px;margin-left:4px}
+  .brand small{font-family:var(--body);font-weight:600;font-size:9px;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .site-nav{display:flex;align-items:center;gap:22px}
+  .site-nav a{font-family:var(--display);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color .25s}
+  .site-nav a:hover,.site-nav a.active{color:var(--text)}
+  .langs{display:flex;gap:9px;margin-left:8px}
   .langs a{font-size:10px;letter-spacing:0.12em}
   .langs a.on{color:var(--text)}
+  /* barra temi, separata dalla nav generale */
+  .cat-bar{display:flex;justify-content:center;gap:30px;padding:11px 4.5vw;background:rgba(10,10,10,0.92);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  /* blur frosted solo da desktop: su mobile niente backdrop-filter, altrimenti
+     il menu a tutto schermo (position:fixed) si ancorerebbe all'header */
+  @media(min-width:761px){.hd-main,.cat-bar{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}}
+  .cat-bar a{font-family:var(--display);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);transition:color .25s}
+  .cat-bar a:hover,.cat-bar a.active{color:var(--text)}
   .burger{display:none;flex-direction:column;gap:5px;width:26px;background:none;border:0;cursor:pointer;padding:6px 0;z-index:50}
   .burger span{display:block;height:1.5px;width:24px;background:var(--text);transition:transform .3s,opacity .3s}
   @media(max-width:760px){
     .burger{display:flex}
-    .nav{position:fixed;inset:0;z-index:45;flex-direction:column;align-items:center;justify-content:center;gap:26px;
-      background:rgba(10,10,10,0.97);backdrop-filter:blur(8px);transform:translateX(100%);transition:transform .42s cubic-bezier(.22,1,.36,1)}
-    .hd.menu-open .nav{transform:none}
+    .hd-main,.cat-bar{background:#0a0a0a}
+    .site-nav{position:fixed;inset:0;z-index:45;flex-direction:column;align-items:center;justify-content:center;gap:28px;
+      background:#0a0a0a;transform:translateX(100%);transition:transform .42s cubic-bezier(.22,1,.36,1);visibility:hidden}
+    .hd.menu-open .site-nav{visibility:visible}
+    .hd.menu-open .site-nav{transform:none}
     .hd.menu-open .burger span:first-child{transform:translateY(3.2px) rotate(45deg)}
     .hd.menu-open .burger span:last-child{transform:translateY(-3.2px) rotate(-45deg)}
-    .nav a{font-size:15px;letter-spacing:0.16em}
-    .nav .sep{display:none}
-    .langs{margin:8px 0 0}
+    .site-nav a{font-size:17px;letter-spacing:0.18em}
+    .langs{margin:12px 0 0}
+    .cat-bar{gap:20px;padding:10px 4.5vw}
   }
 
   main{max-width:1640px;margin:0 auto;padding:0 4.5vw}
@@ -114,10 +124,11 @@ const canonical = `${site}/${lang}/portfolio/`;
   figure{break-inside:avoid;margin:0 0 26px;position:relative}
   /* dimensioni FISSE per orientamento: orizzontali 3:2, verticali 2:3 (ritaglio
      con object-fit:cover) → tutte le orizzontali uguali, tutte le verticali uguali. */
-  figure a{display:block;overflow:hidden;background:var(--bg2);aspect-ratio:3/2}
-  figure.port a{aspect-ratio:2/3}
-  figure img,figure video{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.92) saturate(.9);transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .5s}
-  figure:hover img,figure:hover video{transform:scale(1.035);filter:brightness(.6) saturate(.72)}
+  .shot{display:block;width:100%;margin:0;padding:0;border:0;overflow:hidden;background:var(--bg2);aspect-ratio:3/2;cursor:pointer}
+  figure.port .shot{aspect-ratio:2/3}
+  .shot img,.shot video{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.92) saturate(.9);opacity:0;transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .5s,opacity .9s ease}
+  .shot img.loaded,.shot video.loaded{opacity:1}
+  figure:hover .shot img,figure:hover .shot video{transform:scale(1.035);filter:brightness(.6) saturate(.72)}
   /* didascalia: compare in hover, centrata sopra la foto (stile Brittany) */
   figcaption{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;
     gap:5px;padding:18px;text-align:center;pointer-events:none;opacity:0;transition:opacity .45s ease}
@@ -126,8 +137,13 @@ const canonical = `${site}/${lang}/portfolio/`;
   figcaption .l{font-family:var(--body);color:rgba(255,255,255,0.72);font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.5)}
   .rule{height:1px;background:var(--line);margin-top:34px}
   @media(max-width:700px){
-    .gallery{columns:2 140px;column-gap:14px}figure{margin-bottom:14px}
-    .gallery.masoned{gap:14px}.gcol{gap:14px}
+    /* foto a filo dei bordi: padding solo su testo, galleria piena */
+    main{padding:0}
+    .intro{padding-left:4.5vw;padding-right:4.5vw}
+    .head{padding-left:4.5vw;padding-right:4.5vw}
+    .rule{margin-left:4.5vw;margin-right:4.5vw}
+    .gallery{columns:2 140px;column-gap:4px}figure{margin-bottom:4px}
+    .gallery.masoned{gap:4px}.gcol{gap:4px}
     /* mobile: niente nomi sulle foto */
     figcaption{display:none}
   }
@@ -138,8 +154,29 @@ const canonical = `${site}/${lang}/portfolio/`;
   .ic{display:flex;color:var(--faint);transition:color .25s}
   .ic:hover{color:var(--text)}
   .ic svg{width:18px;height:18px;display:block}
+  .copy{font-family:var(--display);font-size:10px;letter-spacing:0.1em;color:var(--faint);white-space:nowrap}
+  @media(max-width:700px){
+    .foot{flex-direction:column;align-items:flex-start;gap:22px;padding:6vh 5vw}
+    .foot-right{width:100%;flex-wrap:wrap;gap:18px}
+    .copy{order:3;width:100%}
+  }
   #totop{font-family:var(--display);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);cursor:pointer;transition:color .25s;background:none;border:0}
   #totop:hover{color:var(--text)}
+
+  /* Lightbox */
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(8,8,8,0.97);display:none;align-items:center;justify-content:center}
+  .lb.open{display:flex}
+  .lb-stage{display:flex;align-items:center;justify-content:center}
+  .lb-stage img,.lb-stage video{max-width:92vw;max-height:86vh;width:auto;height:auto;object-fit:contain;display:block}
+  .lb-cap{position:absolute;left:0;right:0;bottom:20px;text-align:center;font-family:var(--body);font-size:12px;color:var(--muted);letter-spacing:0.04em}
+  .lb-cap .n{color:var(--text)}
+  .lb-cap .l{margin-left:12px}
+  .lb-x{position:absolute;top:18px;right:24px;background:none;border:0;color:var(--text);font-size:22px;line-height:1;cursor:pointer;opacity:.7;transition:opacity .2s}
+  .lb-x:hover{opacity:1}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--text);font-size:42px;line-height:1;cursor:pointer;opacity:.5;transition:opacity .2s;padding:12px}
+  .lb-nav:hover{opacity:1}
+  .lb-prev{left:1.5vw}.lb-next{right:1.5vw}
+  @media(max-width:700px){.lb-nav{font-size:30px;padding:8px}.lb-x{font-size:20px;top:14px;right:16px}}
 
   .rise{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.22,1,.36,1)}
   .rise.in{opacity:1;transform:none}
@@ -148,18 +185,22 @@ const canonical = `${site}/${lang}/portfolio/`;
 </head>
 <body>
 <header class="hd" id="hd">
-  <a class="brand" href={`/${lang}/`}>
-    <span class="lm"><span class="l"></span><span class="m"></span></span>
-    <small>{t.tagline ?? 'Borderless Photographer'}</small>
-  </a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
-  <div class="nav" id="nav">
+  <div class="hd-main">
+    <a class="brand" href={`/${lang}/`}>
+      <span class="lm"><span class="l"></span><span class="m"></span></span>
+      <small>{t.tagline ?? 'Borderless Photographer'}</small>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav">
+      <a href={`/${lang}/`}>{t.nav_home ?? 'Home'}</a>
+      <a class="active" href={`/${lang}/portfolio/`}>{t.nav_portfolio ?? 'Portfolio'}</a>
+      <a href={`/${lang}/journal/stories`}>{t.nav_journal ?? 'Journal'}</a>
+      <a href={`/${lang}/about`}>{t.nav_about ?? 'About'}</a>
+      <span class="langs">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/`}>{l.toUpperCase()}</a>)}</span>
+    </nav>
+  </div>
+  <div class="cat-bar" id="catBar">
     {sel.map((s) => <a class="jump" href={`#${s.cat}`}>{s.label}</a>)}
-    <span class="sep" aria-hidden="true"></span>
-    <a href={`/${lang}/journal/stories`}>{t.nav_journal ?? 'Journal'}</a>
-    <a href={`/${lang}/about`}>{t.nav_about ?? 'About'}</a>
-    <a href={`/${lang}/`}>{t.nav_home ?? 'Home'}</a>
-    <span class="langs">{locales.map((l) => <a class={l === lang ? 'on' : ''} href={`/${l}/portfolio/`}>{l.toUpperCase()}</a>)}</span>
   </div>
 </header>
 
@@ -174,12 +215,12 @@ const canonical = `${site}/${lang}/portfolio/`;
       <div class="head rise"><h2>{s.label}</h2></div>
       <div class="gallery">
         {s.items.map((it) => (
-          <figure class={`rise ${it.w >= it.h ? 'land' : 'port'}`} data-ar={it.w >= it.h ? '0.667' : '1.5'}>
-            <a href={`/${lang}/portfolio/${s.cat}/`}>
+          <figure class={`rise ${it.w >= it.h ? 'land' : 'port'}`} data-ar={it.w >= it.h ? '0.667' : '1.5'} data-full={it.src} data-name={it.name} data-loc={it.location} data-vid={it.type === 'video' ? '1' : '0'}>
+            <button class="shot" type="button" aria-label={it.name} style={`background-color:${it.color || '#141414'}`}>
               {it.type === 'video'
-                ? <video src={it.src} autoplay muted loop playsinline></video>
-                : <img loading="lazy" src={it.src} alt={it.name} />}
-            </a>
+                ? <video class="ph" src={it.src} autoplay muted loop playsinline></video>
+                : <img class="ph" loading="lazy" src={it.src} alt={it.name} />}
+            </button>
             <figcaption><span class="n">{it.name}</span><span class="l">{it.location}</span></figcaption>
           </figure>
         ))}
@@ -198,19 +239,43 @@ const canonical = `${site}/${lang}/portfolio/`;
     <a class="ic" href="mailto:lorenzomacoveiphoto@gmail.com" aria-label="Mail">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
     </a>
+    <span class="copy">© {year} Lorenzo Macovei</span>
     <button id="totop">↑ Top</button>
   </div>
 </footer>
+
+<div class="lb" id="lb" aria-hidden="true">
+  <button class="lb-x" id="lbX" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-stage" id="lbStage">
+    <img id="lbImg" alt="" />
+    <video id="lbVid" playsinline loop muted autoplay style="display:none"></video>
+  </div>
+  <div class="lb-cap"><span class="n" id="lbName"></span><span class="l" id="lbLoc"></span></div>
+</div>
 
 <script is:inline>
   document.getElementById('totop').addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
   // Header: si nasconde scorrendo in basso, riappare in alto; hamburger su mobile.
   (function () {
-    var hd = document.getElementById('hd'), burger = document.getElementById('burger'), nav = document.getElementById('nav');
+    var hd = document.getElementById('hd'), burger = document.getElementById('burger'), nav = document.getElementById('siteNav');
     var lastY = window.scrollY || 0, hidden = false, ticking = false, menuOpen = false;
     burger.addEventListener('click', function () { menuOpen = !menuOpen; hd.classList.toggle('menu-open', menuOpen); document.body.style.overflow = menuOpen ? 'hidden' : ''; });
     nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') { menuOpen = false; hd.classList.remove('menu-open'); document.body.style.overflow = ''; } });
+
+    // tagline larga quanto il logotipo (stessa lunghezza del nome)
+    var lm = document.querySelector('.lm'), tag = document.querySelector('.brand small');
+    function fitBrand() {
+      if (!lm || !tag) return;
+      tag.style.letterSpacing = '0px';
+      var lw = lm.getBoundingClientRect().width, tw = tag.getBoundingClientRect().width, n = (tag.textContent || '').length;
+      if (n > 1 && lw > tw) tag.style.letterSpacing = ((lw - tw) / (n - 1)) + 'px';
+    }
+    fitBrand();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitBrand);
+    window.addEventListener('resize', fitBrand);
     function update() {
       var y = window.scrollY || 0;
       if (!menuOpen) {
@@ -242,9 +307,21 @@ const canonical = `${site}/${lang}/portfolio/`;
   masonry();
   var _rt; window.addEventListener('resize', function () { clearTimeout(_rt); _rt = setTimeout(masonry, 160); });
 
+  // Dissolvenza foto: la cornice colorata resta finché l'immagine non è pronta, poi la foto compare.
+  [].forEach.call(document.querySelectorAll('.shot .ph'), function (el) {
+    var done = function () { el.classList.add('loaded'); };
+    if (el.tagName === 'IMG') {
+      if (el.complete && el.naturalWidth > 0) done();
+      else { el.addEventListener('load', done); el.addEventListener('error', done); }
+    } else {
+      if (el.readyState >= 2) done();
+      else { el.addEventListener('loadeddata', done); el.addEventListener('error', done); }
+    }
+  });
+
   // nav attivo + reveal
   var secs = [].slice.call(document.querySelectorAll('section[id]'));
-  var links = {}; [].forEach.call(document.querySelectorAll('.nav > a'), function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var links = {}; [].forEach.call(document.querySelectorAll('.cat-bar a'), function (a) { links[a.getAttribute('href').slice(1)] = a; });
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { for (var k in links) links[k].classList.remove('active'); links[e.target.id] && links[e.target.id].classList.add('active'); } }); }, { rootMargin: '-45% 0px -50% 0px' });
     secs.forEach(function (s) { io.observe(s); });
@@ -252,6 +329,36 @@ const canonical = `${site}/${lang}/portfolio/`;
     var vh = innerHeight;
     document.querySelectorAll('.rise').forEach(function (el) { el.getBoundingClientRect().top < vh * .92 ? el.classList.add('in') : rio.observe(el); });
   } else { document.querySelectorAll('.rise').forEach(function (e) { e.classList.add('in'); }); }
+
+  // Lightbox: clic su una foto la apre a schermo (niente redirect alla vecchia galleria).
+  (function () {
+    var lb = document.getElementById('lb'), img = document.getElementById('lbImg'), vid = document.getElementById('lbVid'),
+        nm = document.getElementById('lbName'), lc = document.getElementById('lbLoc');
+    var figs = [], idx = 0;
+    function collect() { figs = [].slice.call(document.querySelectorAll('figure[data-full]')).sort(function (a, b) { var ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect(); return (ra.top - rb.top) || (ra.left - rb.left); }); }
+    function show(i) {
+      if (!figs.length) collect(); if (!figs.length) return;
+      idx = (i + figs.length) % figs.length;
+      var f = figs[idx], full = f.getAttribute('data-full'), isVid = f.getAttribute('data-vid') === '1';
+      if (isVid) { img.style.display = 'none'; vid.style.display = 'block'; vid.src = full; vid.muted = true; var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+      else { vid.pause(); vid.removeAttribute('src'); vid.style.display = 'none'; img.style.display = 'block'; img.src = full; }
+      nm.textContent = f.getAttribute('data-name') || ''; lc.textContent = f.getAttribute('data-loc') || '';
+    }
+    function open(f) { collect(); show(figs.indexOf(f)); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function close() { lb.classList.remove('open'); document.body.style.overflow = ''; vid.pause(); }
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.shot');
+      if (btn) { var f = btn.closest('figure'); if (f) open(f); }
+    });
+    document.getElementById('lbX').addEventListener('click', close);
+    document.getElementById('lbPrev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+    document.getElementById('lbNext').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb || e.target.id === 'lbStage') close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close(); else if (e.key === 'ArrowRight') show(idx + 1); else if (e.key === 'ArrowLeft') show(idx - 1);
+    });
+  })();
 </script>
 </body>
 </html>
