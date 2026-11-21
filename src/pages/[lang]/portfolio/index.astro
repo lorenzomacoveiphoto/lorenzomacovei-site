@@ -94,6 +94,9 @@ const year = new Date().getFullYear();
     .hd-main{display:flex;justify-content:space-between;align-items:center;padding:13px 40px}
     .langs-desk{display:flex}
     .langs-mob{display:none}
+    /* la nav (space-between logo/lingue) è ~42px a destra del centro: sposto la
+       cat-bar della stessa quantità così è allineata sotto la nav */
+    .cat-bar{padding-left:calc(4.5vw + 84px)}
   }
   .cat-bar a{font-family:var(--display);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);transition:color .25s}
   .cat-bar a:hover,.cat-bar a.active{color:var(--text)}
@@ -131,11 +134,16 @@ const year = new Date().getFullYear();
   figure{break-inside:avoid;margin:0 0 26px;position:relative}
   /* dimensioni FISSE per orientamento: orizzontali 3:2, verticali 2:3 (ritaglio
      con object-fit:cover) → tutte le orizzontali uguali, tutte le verticali uguali. */
-  .shot{display:block;width:100%;margin:0;padding:0;border:0;overflow:hidden;background:var(--bg2);aspect-ratio:3/2;cursor:pointer}
+  .shot{position:relative;display:block;width:100%;margin:0;padding:0;border:0;overflow:hidden;background:var(--bg2);aspect-ratio:3/2;cursor:pointer}
   figure.port .shot{aspect-ratio:2/3}
   figure.square .shot{aspect-ratio:1/1}
   .shot img,.shot video{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.92) saturate(.9);opacity:0;transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .5s,opacity .9s ease}
   .shot img.loaded,.shot video.loaded{opacity:1}
+  /* riquadro "cycle": 3 frame sovrapposte in dissolvenza, come un mini-video */
+  .cyc{position:absolute;inset:0}
+  .cyc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.5s ease;filter:brightness(.92) saturate(.9)}
+  .cyc img.on{opacity:1}
+  figure:hover .cyc img{filter:brightness(.6) saturate(.72)}
   figure:hover .shot img,figure:hover .shot video{transform:scale(1.035);filter:brightness(.6) saturate(.72)}
   /* didascalia: compare in hover, centrata sopra la foto (stile Brittany) */
   figcaption{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -229,7 +237,9 @@ const year = new Date().getFullYear();
             <button class="shot" type="button" aria-label={it.name} style={`background-color:${it.color || '#141414'}`}>
               {it.type === 'video'
                 ? <video class="ph" src={it.src} autoplay muted loop playsinline></video>
-                : <img class="ph" loading="lazy" src={it.src} alt={it.name} />}
+                : it.type === 'cycle'
+                  ? <span class="cyc">{it.frames.map((fr, i) => <img loading={i === 0 ? 'eager' : 'lazy'} src={fr} alt={it.name} />)}</span>
+                  : <img class="ph" loading="lazy" src={it.src} alt={it.name} />}
             </button>
             <figcaption><span class="n">{it.name}</span><span class="l">{it.location}</span>{it.series && <span class="series-tag">+ {t.view_series ?? 'Discover'}</span>}</figcaption>
           </figure>
@@ -317,6 +327,19 @@ const year = new Date().getFullYear();
   }
   masonry();
   var _rt; window.addEventListener('resize', function () { clearTimeout(_rt); _rt = setTimeout(masonry, 160); });
+
+  // Riquadro "cycle": passa in loop tra le 3 frame con dissolvenza (mini-video).
+  [].forEach.call(document.querySelectorAll('.cyc'), function (cyc) {
+    var frames = cyc.querySelectorAll('img');
+    if (frames.length < 2) { if (frames[0]) frames[0].classList.add('on'); return; }
+    var i = 0; frames[0].classList.add('on');
+    setInterval(function () {
+      var next = (i + 1) % frames.length;
+      frames[next].classList.add('on');
+      frames[i].classList.remove('on');
+      i = next;
+    }, 2800);
+  });
 
   // Dissolvenza foto: la cornice colorata resta finché l'immagine non è pronta, poi la foto compare.
   [].forEach.call(document.querySelectorAll('.shot .ph'), function (el) {

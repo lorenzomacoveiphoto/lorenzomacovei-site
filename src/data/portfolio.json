@@ -63,6 +63,17 @@
     },
     {
       "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795275069/DSCF7706_3_khwvqq.jpg",
+      "name": "Sea of Trees",
+      "loc": "Nature · Amazon",
+      "category": "nature",
+      "location": "Amazon",
+      "w": 4896,
+      "h": 3264,
+      "color": "#6f6f6b"
+    },
+    {
+      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1781115266/IMG_6405_fxah0k.jpg",
       "name": "The Valley Holds Its Breath",
       "loc": "Nature · Himalaya",
@@ -173,6 +184,17 @@
     },
     {
       "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795272949/DSCF0745_lifjae.jpg",
+      "name": "Madame Air",
+      "loc": "People · Laos",
+      "category": "people",
+      "location": "Laos",
+      "w": 4896,
+      "h": 3264,
+      "color": "#8a8884"
+    },
+    {
+      "type": "image",
       "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1780968426/9900000018609-0012_cvurox.jpg",
       "name": "Roots",
       "loc": "People · Sri Lanka",
@@ -181,6 +203,28 @@
       "w": 2267,
       "h": 1698,
       "color": "#3c4a3e"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795273282/DSCF0737_kiixho.jpg",
+      "name": "The Draughtsman",
+      "loc": "People · Laos",
+      "category": "people",
+      "location": "Laos",
+      "w": 4896,
+      "h": 3264,
+      "color": "#45433f"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795273283/DSCF0739_jbjpp5.jpg",
+      "name": "The Painter",
+      "loc": "People · Laos",
+      "category": "people",
+      "location": "Laos",
+      "w": 4896,
+      "h": 3264,
+      "color": "#3b3936"
     },
     {
       "type": "image",
@@ -623,6 +667,17 @@
       "w": 4896,
       "h": 3264,
       "color": "#332821"
+    },
+    {
+      "type": "image",
+      "src": "https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto/v1795272921/DSCF0724_rmqyre.jpg",
+      "name": "River of Gold",
+      "loc": "Places · Laos",
+      "category": "places",
+      "location": "Laos",
+      "w": 4774,
+      "h": 3182,
+      "color": "#7a5226"
     }
   ]
 }
