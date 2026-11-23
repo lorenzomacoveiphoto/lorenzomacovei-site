@@ -17,6 +17,7 @@ export interface Article {
   midImage?: string; // immagine opzionale a metà articolo
   midAfter?: number; // inserita DOPO il paragrafo con questo indice (0-based)
   midCaption?: string; // didascalia opzionale per midImage
+  sourceUrl?: string; // link opzionale all'originale (es. Substack)
   endImage?: string; // immagine di chiusura opzionale
 }
 
@@ -42,6 +43,7 @@ export const articles: Article[] = [
     midImage: `${CDN}/v1795443776/IMG_1345_zmwysb.jpg`,
     midAfter: 11,
     midCaption: 'Fill the Gap — Antalya',
+    sourceUrl: 'https://lorenzomacovei.substack.com/p/why-wasnt-i-in-antalya',
     endImage: `${CDN}/v1795443835/Capture_d_e%CC%81cran_2026-11-23_a%CC%80_19.23.33_t0og4g.jpg`,
   },
   {
