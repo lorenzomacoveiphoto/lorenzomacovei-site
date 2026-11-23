@@ -55,7 +55,27 @@ const pStyle =
         />
       )}
 
-      {paras.map((p) => <p class="journal-p" style={pStyle}>{p}</p>)}
+      {paras.map((p, i) => (
+        <>
+          <p class="journal-p" style={pStyle}>{p}</p>
+          {article.midImage && article.midAfter === i && (
+            <>
+              <img
+                src={article.midImage}
+                alt={article.midCaption ?? t[article.titleKey]}
+                style="width:100%; height:auto; display:block; margin:44px 0 18px; filter:brightness(0.95);"
+              />
+              {article.midCaption && (
+                <div
+                  style="font-family:var(--mono); font-size:9px; letter-spacing:0.22em; text-transform:uppercase; color:var(--text3); text-align:center; margin-bottom:40px;"
+                >
+                  {article.midCaption}
+                </div>
+              )}
+            </>
+          )}
+        </>
+      ))}
 
       {article.endImage && (
         <>

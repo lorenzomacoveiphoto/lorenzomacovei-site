@@ -14,12 +14,36 @@ export interface Article {
   descKey: string;
   bodyPrefix?: string; // storie: prefisso dei paragrafi, es. "article_confini_p_"
   bodyCount?: number;
+  midImage?: string; // immagine opzionale a metà articolo
+  midAfter?: number; // inserita DOPO il paragrafo con questo indice (0-based)
+  midCaption?: string; // didascalia opzionale per midImage
   endImage?: string; // immagine di chiusura opzionale
 }
 
 const CDN = 'https://res.cloudinary.com/dligvuje7/image/upload/q_auto/f_auto';
 
 export const articles: Article[] = [
+  {
+    id: 'antalya',
+    type: 'story',
+    date: '2026-11-23',
+    slugs: {
+      en: 'why-i-wasnt-in-antalya',
+      it: 'perche-non-ero-ad-antalya',
+      es: 'por-que-no-estuve-en-antalya',
+    },
+    meta: 'COP31 · Antalya · 2026',
+    cover: `${CDN}/v1795443775/image_tskgdo.jpg`,
+    hero: `${CDN}/v1795443775/image_tskgdo.jpg`,
+    titleKey: 'article_antalya_title',
+    descKey: 'article_antalya_desc',
+    bodyPrefix: 'article_antalya_p_',
+    bodyCount: 19,
+    midImage: `${CDN}/v1795443776/IMG_1345_zmwysb.jpg`,
+    midAfter: 11,
+    midCaption: 'Fill the Gap — Antalya',
+    endImage: `${CDN}/v1795443835/Capture_d_e%CC%81cran_2026-11-23_a%CC%80_19.23.33_t0og4g.jpg`,
+  },
   {
     id: 'guaviare',
     type: 'guide',
